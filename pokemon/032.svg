@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
-  <!-- White Background -->
-  <rect width="400" height="400" fill="white"/>
-  
+
   <!-- Nidoran Body -->
   <g id="nidoran">
     <!-- Body -->
