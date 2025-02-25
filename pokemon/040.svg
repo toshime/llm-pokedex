@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    @keyframes earWiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      75% { transform: rotate(-3deg); }
+    }
+    @keyframes curlBounce {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+    }
+    #body { animation: float 3s ease-in-out infinite; }
+    #left-ear, #right-ear { animation: earWiggle 5s ease-in-out infinite; }
+    #left-eye, #right-eye { animation: blink 4s ease-in-out infinite; }
+    #curl { animation: curlBounce 2s ease-in-out infinite; }
+  </style>
+  
+  <!-- Body -->
+  <g id="body">
+    <!-- Main body -->
+    <ellipse cx="200" cy="230" rx="90" ry="100" fill="#FFC0CB" />
+    
+    <!-- White belly -->
+    <ellipse cx="200" cy="240" rx="65" ry="80" fill="white" />
+    
+    <!-- Ears -->
+    <g id="left-ear">
+      <path d="M155 120 L130 40 L170 50 Z" fill="#FFC0CB" />
+      <path d="M155 120 L130 40 L170 50 Z" fill="black" opacity="0.2" />
+    </g>
+    <g id="right-ear">
+      <path d="M245 120 L270 40 L230 50 Z" fill="#FFC0CB" />
+      <path d="M245 120 L270 40 L230 50 Z" fill="black" opacity="0.2" />
+    </g>
+    
+    <!-- Curl -->
+    <g id="curl">
+      <path d="M200 90 Q220 70 210 50 Q200 30 180 40" stroke="#FFC0CB" stroke-width="12" fill="none" />
+    </g>
+    
+    <!-- Eyes -->
+    <g id="left-eye">
+      <circle cx="175" cy="180" r="20" fill="white" />
+      <circle cx="175" cy="180" r="15" fill="#39C5BB" />
+      <circle cx="170" cy="175" r="5" fill="white" />
+    </g>
+    <g id="right-eye">
+      <circle cx="225" cy="180" r="20" fill="white" />
+      <circle cx="225" cy="180" r="15" fill="#39C5BB" />
+      <circle cx="220" cy="175" r="5" fill="white" />
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M190 210 Q200 220 210 210" stroke="black" stroke-width="2" fill="none" />
+    
+    <!-- Arms -->
+    <ellipse cx="140" cy="230" rx="20" ry="15" fill="#FFC0CB" />
+    <ellipse cx="260" cy="230" rx="20" ry="15" fill="#FFC0CB" />
+    
+    <!-- Feet -->
+    <ellipse cx="175" cy="320" rx="25" ry="15" fill="#FFC0CB" />
+    <ellipse cx="225" cy="320" rx="25" ry="15" fill="#FFC0CB" />
+  </g>
+</svg>

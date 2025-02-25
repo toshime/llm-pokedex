@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- シェルダー (Shellder) -->
+  
+  <!-- 貝殻の外側 (外殻) -->
+  <path d="M150 220 C80 220 70 140 90 100 C110 60 190 60 210 100 C230 140 220 220 150 220" fill="#a8a0d0" stroke="#6c5ca0" stroke-width="3">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+      values="M150 220 C80 220 70 140 90 100 C110 60 190 60 210 100 C230 140 220 220 150 220;
+              M150 215 C85 215 75 145 95 105 C115 65 185 65 205 105 C225 145 215 215 150 215;
+              M150 220 C80 220 70 140 90 100 C110 60 190 60 210 100 C230 140 220 220 150 220" />
+  </path>
+  
+  <!-- 貝殻の上部スパイク -->
+  <path d="M130 70 L110 45 L135 62 L150 35 L165 62 L190 45 L170 70" fill="#a8a0d0" stroke="#6c5ca0" stroke-width="3">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+      values="M130 70 L110 45 L135 62 L150 35 L165 62 L190 45 L170 70;
+              M130 75 L110 50 L135 67 L150 40 L165 67 L190 50 L170 75;
+              M130 70 L110 45 L135 62 L150 35 L165 62 L190 45 L170 70" />
+  </path>
+  
+  <!-- 内側の黒い部分 (顔) -->
+  <ellipse cx="150" cy="130" rx="50" ry="55" fill="#202020">
+    <animate attributeName="ry" dur="2s" repeatCount="indefinite" values="55;50;55" />
+  </ellipse>
+  
+  <!-- 目 -->
+  <ellipse cx="150" cy="110" rx="35" ry="25" fill="white">
+    <animate attributeName="ry" dur="5s" repeatCount="indefinite" values="25;22;25" />
+  </ellipse>
+  
+  <!-- 瞳 -->
+  <circle cx="150" cy="110" r="12" fill="black">
+    <animate attributeName="r" dur="5s" repeatCount="indefinite" values="12;10;12" />
+  </circle>
+  
+  <!-- 舌 -->
+  <path d="M150 145 C150 160 150 175 150 185 C150 195 160 195 160 185 C160 175 160 160 150 145" fill="#ff9999" stroke="#ff7777" stroke-width="1">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M150 145 C150 160 150 175 150 185 C150 195 160 195 160 185 C160 175 160 160 150 145;
+              M150 145 C155 160 160 175 160 185 C160 195 170 195 170 185 C170 175 165 160 150 145;
+              M150 145 C150 160 150 175 150 185 C150 195 160 195 160 185 C160 175 160 160 150 145" />
+  </path>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Pinsir (カイロス) SVG Animation -->
+  
+  <!-- Body parts with animation -->
+  <g id="pinsir">
+    <!-- Body core -->
+    <path d="M200 220 L170 280 L230 280 Z" fill="#846956" />
+    <ellipse cx="200" cy="200" rx="60" ry="65" fill="#846956" />
+    
+    <!-- Belly/chest segments -->
+    <path d="M185 210 L190 235 L210 235 L215 210 Z" fill="#e8e8d0" />
+    <path d="M185 235 L190 260 L210 260 L215 235 Z" fill="#e8e8d0" />
+    
+    <!-- Legs -->
+    <g id="leftLeg">
+      <path d="M150 220 L130 270 L140 275 L160 230 Z" fill="#846956">
+        <animateTransform attributeName="transform" type="rotate" from="-5 150 220" to="10 150 220" dur="0.8s" repeatCount="indefinite" additive="sum" />
+      </path>
+    </g>
+    
+    <g id="rightLeg">
+      <path d="M250 220 L270 270 L260 275 L240 230 Z" fill="#846956">
+        <animateTransform attributeName="transform" type="rotate" from="5 250 220" to="-10 250 220" dur="0.8s" repeatCount="indefinite" additive="sum" />
+      </path>
+    </g>
+    
+    <!-- Arms -->
+    <g id="leftArm">
+      <path d="M150 180 L120 195 L110 185 L140 170 Z" fill="#846956">
+        <animateTransform attributeName="transform" type="rotate" from="-15 150 180" to="15 150 180" dur="1s" repeatCount="indefinite" additive="sum" />
+      </path>
+    </g>
+    
+    <g id="rightArm">
+      <path d="M250 180 L280 195 L290 185 L260 170 Z" fill="#846956">
+        <animateTransform attributeName="transform" type="rotate" from="15 250 180" to="-15 250 180" dur="1s" repeatCount="indefinite" additive="sum" />
+      </path>
+    </g>
+    
+    <!-- Pincers -->
+    <g id="pincers">
+      <!-- Left pincer -->
+      <path d="M170 120 C140 100, 130 70, 150 60 C160 55, 180 65, 175 75 C190 70, 200 85, 190 95 C205 90, 210 110, 195 115 L170 130 Z" fill="#a8a090">
+        <animateTransform attributeName="transform" type="rotate" from="-3 170 140" to="3 170 140" dur="1.2s" repeatCount="indefinite" additive="sum" />
+      </path>
+      
+      <!-- Right pincer -->
+      <path d="M230 120 C260 100, 270 70, 250 60 C240 55, 220 65, 225 75 C210 70, 200 85, 210 95 C195 90, 190 110, 205 115 L230 130 Z" fill="#a8a090">
+        <animateTransform attributeName="transform" type="rotate" from="3 230 140" to="-3 230 140" dur="1.2s" repeatCount="indefinite" additive="sum" />
+      </path>
+    </g>
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="140" rx="40" ry="35" fill="#846956" />
+    
+    <!-- Eyes -->
+    <g id="eyes">
+      <circle cx="180" cy="135" r="8" fill="white" />
+      <circle cx="220" cy="135" r="8" fill="white" />
+      <circle cx="180" cy="135" r="4" fill="black">
+        <animate attributeName="cy" values="135;133;135" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="220" cy="135" r="4" fill="black">
+        <animate attributeName="cy" values="135;133;135" dur="3s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M190 155 L210 155 L210 160 L190 160 Z" fill="#444" />
+    
+    <!-- Entire body animation - slight bounce -->
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="1.2s" repeatCount="indefinite" additive="sum" />
+  </g>
+  
+  <!-- Small horns on top of head -->
+  <path d="M185 110 L175 95 L185 105 Z" fill="#846956" />
+  <path d="M215 110 L225 95 L215 105 Z" fill="#846956" />
+</svg>

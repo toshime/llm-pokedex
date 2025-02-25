@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes armPunch {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(20deg); }
+        75% { transform: rotate(-20deg); }
+      }
+      @keyframes legKick {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(15deg); }
+      }
+      @keyframes blink {
+        0%, 10%, 100% { transform: scaleY(1); }
+        5% { transform: scaleY(0.1); }
+      }
+      @keyframes breathe {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      .body {
+        animation: bounce 1.8s ease-in-out infinite, breathe 4s ease-in-out infinite;
+      }
+      .right-arm {
+        transform-origin: 140px 190px;
+        animation: armPunch 0.8s ease-in-out infinite;
+      }
+      .left-arm {
+        transform-origin: 260px 190px;
+        animation: armPunch 0.8s ease-in-out infinite reverse;
+      }
+      .right-leg {
+        transform-origin: 170px 270px;
+        animation: legKick 1.5s ease-in-out infinite;
+      }
+      .left-leg {
+        transform-origin: 230px 270px;
+        animation: legKick 1.5s ease-in-out infinite reverse;
+      }
+      .eyes {
+        animation: blink 3s linear infinite;
+        transform-origin: center;
+      }
+    </style>
+  </defs>
+  
+  <!-- Body -->
+  <g class="body">
+    <!-- Main body fur -->
+    <circle cx="200" cy="200" r="100" fill="#F2D2A9"/>
+    
+    <!-- Face features -->
+    <g class="eyes">
+      <path d="M180 180 L160 190 L180 200 Z" fill="white" />
+      <path d="M220 180 L240 190 L220 200 Z" fill="white" />
+    </g>
+    
+    <!-- Nose -->
+    <ellipse cx="200" cy="210" rx="15" ry="10" fill="#FFC0CB"/>
+    
+    <!-- Fur spikes -->
+    <path d="M150 130 L140 100 L160 120" fill="#F2D2A9"/>
+    <path d="M180 110 L180 80 L200 110" fill="#F2D2A9"/>
+    <path d="M220 110 L220 80 L200 110" fill="#F2D2A9"/>
+    <path d="M250 130 L260 100 L240 120" fill="#F2D2A9"/>
+    
+    <!-- Wristbands -->
+    <path d="M120 150 A40 40 0 0 1 140 130" stroke="#333333" stroke-width="10" fill="none"/>
+    <path d="M280 150 A40 40 0 0 0 260 130" stroke="#333333" stroke-width="10" fill="none"/>
+    <path d="M150 280 A30 30 0 0 1 170 270" stroke="#333333" stroke-width="10" fill="none"/>
+    <path d="M250 280 A30 30 0 0 0 230 270" stroke="#333333" stroke-width="10" fill="none"/>
+  </g>
+  
+  <!-- Arms -->
+  <g class="right-arm">
+    <path d="M140 190 L90 150 L70 120" stroke="#A0522D" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <ellipse cx="65" cy="110" rx="18" ry="15" fill="#A0522D" transform="rotate(-20, 65, 110)"/>
+  </g>
+  
+  <g class="left-arm">
+    <path d="M260 190 L310 150 L330 120" stroke="#A0522D" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <ellipse cx="335" cy="110" rx="18" ry="15" fill="#A0522D" transform="rotate(20, 335, 110)"/>
+  </g>
+  
+  <!-- Legs -->
+  <g class="right-leg">
+    <path d="M170 270 L140 320 L120 340" stroke="#A0522D" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <ellipse cx="115" cy="350" rx="15" ry="12" fill="#A0522D" transform="rotate(-10, 115, 350)"/>
+  </g>
+  
+  <g class="left-leg">
+    <path d="M230 270 L260 320 L280 340" stroke="#A0522D" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <ellipse cx="285" cy="350" rx="15" ry="12" fill="#A0522D" transform="rotate(10, 285, 350)"/>
+  </g>
+</svg>

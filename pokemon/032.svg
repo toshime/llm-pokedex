@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- White Background -->
+  <rect width="400" height="400" fill="white"/>
+  
+  <!-- Nidoran Body -->
+  <g id="nidoran">
+    <!-- Body -->
+    <ellipse cx="200" cy="230" rx="80" ry="60" fill="#b689b6"/>
+    
+    <!-- Head -->
+    <path d="M130,200 C130,160 170,140 210,150 C240,155 260,180 270,210 C230,220 190,210 130,200" fill="#b689b6"/>
+    
+    <!-- Ears -->
+    <path d="M160,150 L140,100 L170,130 Z" fill="#b689b6">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite"
+        values="M160,150 L140,100 L170,130 Z;
+                M160,150 L135,95 L170,130 Z;
+                M160,150 L140,100 L170,130 Z"/>
+    </path>
+    <path d="M200,140 L210,80 L230,125 Z" fill="#b689b6">
+      <animate attributeName="d" dur="2.2s" repeatCount="indefinite"
+        values="M200,140 L210,80 L230,125 Z;
+                M200,140 L215,75 L230,125 Z;
+                M200,140 L210,80 L230,125 Z"/>
+    </path>
+    
+    <!-- Inner Ears -->
+    <path d="M155,140 L145,110 L165,130 Z" fill="#36a3a2"/>
+    <path d="M205,135 L212,100 L225,125 Z" fill="#36a3a2"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="175" cy="175" rx="8" ry="8" fill="#ffffff"/>
+    <ellipse cx="177" cy="175" rx="4" ry="4" fill="#a02c2c"/>
+    <animate xlink:href="#nidoran" attributeName="transform" attributeType="XML"
+      type="translate" from="0 0" to="0 -5" dur="1s" repeatCount="indefinite" additive="sum" />
+    
+    <!-- Spots -->
+    <circle cx="220" cy="210" r="10" fill="#9a6d9a"/>
+    <circle cx="180" cy="240" r="8" fill="#9a6d9a"/>
+    <circle cx="230" cy="250" r="12" fill="#9a6d9a"/>
+    
+    <!-- Feet -->
+    <ellipse cx="160" cy="285" rx="15" ry="10" fill="#b689b6"/>
+    <ellipse cx="240" cy="285" rx="15" ry="10" fill="#b689b6"/>
+    
+    <!-- Tail -->
+    <path d="M260,220 C280,210 290,230 280,240 C270,250 250,235 260,220" fill="#b689b6">
+      <animate attributeName="d" dur="1.5s" repeatCount="indefinite"
+               values="M260,220 C280,210 290,230 280,240 C270,250 250,235 260,220;
+                      M260,220 C285,215 295,235 285,245 C275,255 250,235 260,220;
+                      M260,220 C280,210 290,230 280,240 C270,250 250,235 260,220"/>
+    </path>
+    
+    <!-- Mouth -->
+    <path d="M170,190 C180,195 190,195 200,190" fill="none" stroke="#9a6d9a" stroke-width="2"/>
+    
+    <!-- Horn -->
+    <path d="M185,155 L175,125 L195,140 Z" fill="#9a6d9a"/>
+  </g>
+</svg>

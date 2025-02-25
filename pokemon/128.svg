@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
+  <!-- Tauros (ケンタロス) SVG Animation -->
+  
+  <style>
+    .tail {
+      animation: tailWag 2s infinite alternate ease-in-out;
+      transform-origin: 60px 180px;
+    }
+    
+    @keyframes tailWag {
+      0% { transform: rotate(-5deg); }
+      100% { transform: rotate(15deg); }
+    }
+    
+    .horns {
+      animation: hornShake 4s infinite alternate ease-in-out;
+      transform-origin: 230px 95px;
+    }
+    
+    @keyframes hornShake {
+      0% { transform: rotate(-2deg); }
+      100% { transform: rotate(2deg); }
+    }
+    
+    .body {
+      animation: breathe 3s infinite alternate ease-in-out;
+      transform-origin: center;
+    }
+    
+    @keyframes breathe {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.02); }
+    }
+    
+    .leg-front-right {
+      animation: legFrontRight 3s infinite alternate ease-in-out;
+      transform-origin: 290px 265px;
+    }
+    
+    @keyframes legFrontRight {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-5deg); }
+    }
+    
+    .leg-front-left {
+      animation: legFrontLeft 3s infinite alternate ease-in-out;
+      transform-origin: 230px 265px;
+    }
+    
+    @keyframes legFrontLeft {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(5deg); }
+    }
+    
+    .leg-back-right {
+      animation: legBackRight 3s infinite alternate ease-in-out;
+      transform-origin: 150px 265px;
+    }
+    
+    @keyframes legBackRight {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-3deg); }
+    }
+    
+    .leg-back-left {
+      animation: legBackLeft 3s infinite alternate ease-in-out;
+      transform-origin: 100px 265px;
+    }
+    
+    @keyframes legBackLeft {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(3deg); }
+    }
+  </style>
+  
+  <!-- Tail -->
+  <g class="tail">
+    <path d="M 60 180 C 40 190, 20 220, 35 250" stroke="#4A4A4A" stroke-width="8" fill="none"/>
+    <path d="M 35 250 C 38 260, 45 265, 30 280" stroke="#4A4A4A" stroke-width="5" fill="none"/>
+    <path d="M 30 280 L 40 285 L 20 287 L 35 295" stroke="#4A4A4A" stroke-width="3" fill="#5D6691"/>
+  </g>
+  
+  <!-- Back Legs -->
+  <g class="leg-back-left">
+    <path d="M 110 220 L 100 265" stroke="#B07B41" stroke-width="15" stroke-linecap="round"/>
+    <path d="M 100 265 L 100 285" stroke="#4A4A4A" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  
+  <g class="leg-back-right">
+    <path d="M 140 220 L 150 265" stroke="#B07B41" stroke-width="15" stroke-linecap="round"/>
+    <path d="M 150 265 L 150 285" stroke="#4A4A4A" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main Body -->
+  <g class="body">
+    <ellipse cx="200" cy="180" rx="150" ry="60" fill="#B07B41"/>
+    
+    <!-- Fur mane -->
+    <path d="M 100 120 C 120 100, 180 80, 220 105" stroke="#4A4A4A" stroke-width="25" fill="none"/>
+    
+    <!-- Markings on side -->
+    <path d="M 150 170 L 160 190" stroke="#4A4A4A" stroke-width="5"/>
+    <path d="M 180 165 L 190 195" stroke="#4A4A4A" stroke-width="5"/>
+    <path d="M 210 170 L 220 190" stroke="#4A4A4A" stroke-width="5"/>
+  </g>
+  
+  <!-- Front Legs -->
+  <g class="leg-front-left">
+    <path d="M 240 220 L 230 265" stroke="#B07B41" stroke-width="15" stroke-linecap="round"/>
+    <path d="M 230 265 L 230 285" stroke="#4A4A4A" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  
+  <g class="leg-front-right">
+    <path d="M 270 220 L 290 265" stroke="#B07B41" stroke-width="15" stroke-linecap="round"/>
+    <path d="M 290 265 L 290 285" stroke="#4A4A4A" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Head -->
+  <g>
+    <ellipse cx="230" cy="120" rx="45" ry="35" fill="#B07B41"/>
+    
+    <!-- Face details -->
+    <circle cx="260" cy="115" r="5" fill="#000000"/> <!-- Eye -->
+    <path d="M 240 135 C 250 140, 270 140, 275 130" stroke="#4A4A4A" stroke-width="3" fill="none"/> <!-- Mouth -->
+    <path d="M 240 125 C 225 120, 225 130, 240 130" stroke="#4A4A4A" stroke-width="2" fill="none"/> <!-- Nostril -->
+    
+    <!-- Horns -->
+    <g class="horns">
+      <path d="M 220 95 L 190 75" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 240 95 L 270 75" stroke="#C0C0C0" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

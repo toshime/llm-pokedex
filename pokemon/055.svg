@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <style>
+    .jewel-glow {
+      animation: glow 3s ease-in-out infinite;
+    }
+    .tail-sway {
+      animation: sway 4s ease-in-out infinite;
+    }
+    .hand-wave {
+      animation: wave 5s ease-in-out infinite;
+    }
+    .blink {
+      animation: blink 4s ease-in-out infinite;
+    }
+    @keyframes glow {
+      0%, 100% { fill: #E30B5D; }
+      50% { fill: #FF5E99; }
+    }
+    @keyframes sway {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-10deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(10deg); }
+    }
+    @keyframes blink {
+      0%, 95%, 100% { opacity: 1; }
+      97% { opacity: 0; }
+    }
+  </style>
+  
+  <!-- Tail -->
+  <g class="tail-sway" transform-origin="150 180">
+    <path d="M150 180 L120 220 L90 250" fill="none" stroke="#3B83BD" stroke-width="20" stroke-linecap="round" />
+  </g>
+  
+  <!-- Legs -->
+  <path d="M120 240 L105 270" fill="none" stroke="#3B83BD" stroke-width="16" stroke-linecap="round" />
+  <path d="M180 240 L195 270" fill="none" stroke="#3B83BD" stroke-width="16" stroke-linecap="round" />
+  
+  <!-- Feet claws -->
+  <path d="M95 275 L85 275" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" />
+  <path d="M105 275 L95 270" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" />
+  <path d="M105 265 L115 270" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" />
+  
+  <path d="M205 275 L215 275" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" />
+  <path d="M195 275 L205 270" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" />
+  <path d="M195 265 L185 270" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Body -->
+  <path d="M150 90 L130 180 C130 230, 170 230, 170 180 L150 90" fill="#3B83BD" />
+  
+  <!-- Chest plate -->
+  <ellipse cx="150" cy="180" rx="20" ry="30" fill="#D8E9F7" />
+  
+  <!-- Head -->
+  <ellipse cx="150" cy="80" rx="35" ry="40" fill="#3B83BD" />
+  
+  <!-- Bill -->
+  <path d="M150 95 C135 110, 165 110, 150 95" fill="#3B83BD" />
+  <ellipse cx="150" cy="110" rx="18" ry="10" fill="#D8E9F7" />
+  
+  <!-- Eyes -->
+  <g class="blink">
+    <ellipse cx="135" cy="75" rx="10" ry="8" fill="white" />
+    <ellipse cx="165" cy="75" rx="10" ry="8" fill="white" />
+  </g>
+  
+  <!-- Red eyes -->
+  <ellipse cx="135" cy="75" rx="5" ry="4" fill="#C1121C" />
+  <ellipse cx="165" cy="75" rx="5" ry="4" fill="#C1121C" />
+  
+  <!-- Head spikes -->
+  <path d="M120 55 L135 25 L150 45 L165 25 L180 55" fill="#3B83BD" />
+  
+  <!-- Forehead jewel -->
+  <circle cx="150" cy="55" r="8" class="jewel-glow" />
+  
+  <!-- Left arm with wave animation -->
+  <g class="hand-wave" transform-origin="120 140">
+    <path d="M120 140 L90 160" fill="none" stroke="#3B83BD" stroke-width="12" stroke-linecap="round" />
+    <path d="M90 160 L75 150" fill="none" stroke="#3B83BD" stroke-width="10" stroke-linecap="round" />
+    <!-- Claws -->
+    <path d="M70 145 L60 140" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <path d="M73 150 L63 150" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <path d="M70 155 L60 160" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" />
+  </g>
+  
+  <!-- Right arm -->
+  <path d="M180 140 L210 160" fill="none" stroke="#3B83BD" stroke-width="12" stroke-linecap="round" />
+  <path d="M210 160 L225 150" fill="none" stroke="#3B83BD" stroke-width="10" stroke-linecap="round" />
+  <!-- Claws -->
+  <path d="M230 145 L240 140" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" />
+  <path d="M227 150 L237 150" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" />
+  <path d="M230 155 L240 160" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <filter id="flameFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    
+    <radialGradient id="bodyGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFDD55" />
+      <stop offset="80%" stop-color="#FF8800" />
+      <stop offset="100%" stop-color="#FF4400" />
+    </radialGradient>
+    
+    <radialGradient id="flameGradient" cx="50%" cy="50%" r="60%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFF77" />
+      <stop offset="50%" stop-color="#FFAA44" />
+      <stop offset="100%" stop-color="#FF4400" />
+    </radialGradient>
+  </defs>
+
+  <!-- Flames (background) -->
+  <g id="flames" filter="url(#flameFilter)">
+    <!-- Tail Flames -->
+    <path d="M120,250 C80,230 60,270 40,240 C20,210 35,170 70,180 C80,160 70,140 90,120 C110,100 140,120 130,150 C170,140 190,180 170,210 C150,240 140,220 120,250 Z" fill="url(#flameGradient)">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+        M120,250 C80,230 60,270 40,240 C20,210 35,170 70,180 C80,160 70,140 90,120 C110,100 140,120 130,150 C170,140 190,180 170,210 C150,240 140,220 120,250 Z;
+        M120,250 C85,225 55,265 45,235 C25,205 40,165 75,175 C85,150 75,135 95,115 C115,95 145,115 135,145 C175,135 195,175 175,205 C155,235 145,215 120,250 Z;
+        M120,250 C80,230 60,270 40,240 C20,210 35,170 70,180 C80,160 70,140 90,120 C110,100 140,120 130,150 C170,140 190,180 170,210 C150,240 140,220 120,250 Z" />
+    </path>
+    
+    <!-- Head Crest Flames -->
+    <path d="M320,110 C340,80 360,70 370,40 C380,10 400,20 390,50 C410,30 430,40 420,70 C410,100 390,110 380,120 C370,130 350,120 320,110 Z" fill="url(#flameGradient)">
+      <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+        M320,110 C340,80 360,70 370,40 C380,10 400,20 390,50 C410,30 430,40 420,70 C410,100 390,110 380,120 C370,130 350,120 320,110 Z;
+        M320,110 C345,75 365,65 375,35 C385,5 405,15 395,45 C415,25 435,35 425,65 C415,95 395,105 385,115 C375,125 355,115 320,110 Z;
+        M320,110 C340,80 360,70 370,40 C380,10 400,20 390,50 C410,30 430,40 420,70 C410,100 390,110 380,120 C370,130 350,120 320,110 Z" />
+    </path>
+    
+    <!-- Wing Flames -->
+    <path d="M230,180 C260,150 290,140 320,110 C350,80 380,90 360,120 C400,90 430,120 400,150 C370,180 340,190 310,200 C280,210 250,200 230,180 Z" fill="url(#flameGradient)">
+      <animate attributeName="d" dur="2.2s" repeatCount="indefinite" values="
+        M230,180 C260,150 290,140 320,110 C350,80 380,90 360,120 C400,90 430,120 400,150 C370,180 340,190 310,200 C280,210 250,200 230,180 Z;
+        M230,180 C265,145 295,135 325,105 C355,75 385,85 365,115 C405,85 435,115 405,145 C375,175 345,185 315,195 C285,205 255,195 230,180 Z;
+        M230,180 C260,150 290,140 320,110 C350,80 380,90 360,120 C400,90 430,120 400,150 C370,180 340,190 310,200 C280,210 250,200 230,180 Z" />
+    </path>
+  </g>
+
+  <!-- Body (main) -->
+  <g id="body">
+    <!-- Main Body -->
+    <path d="M250,200 C280,180 290,150 280,120 C270,90 250,80 230,90 C210,100 200,130 180,150 C160,170 140,180 120,200 C100,220 110,250 130,260 C150,270 170,260 190,240 C210,220 220,220 250,200 Z" fill="url(#bodyGradient)" />
+    
+    <!-- Neck and Head -->
+    <path d="M280,120 C290,100 310,90 330,90 C350,90 360,100 360,120 C360,140 350,160 340,170 C330,180 310,180 300,170 C290,160 270,140 280,120 Z" fill="url(#bodyGradient)" />
+    
+    <!-- Beak -->
+    <path d="M340,130 C350,125 370,125 380,130 C390,135 385,145 375,148 C365,151 355,145 340,130 Z" fill="#884400" />
+    
+    <!-- Eye -->
+    <ellipse cx="345" cy="120" rx="5" ry="5" fill="#000000" />
+    
+    <!-- Wings -->
+    <path d="M230,180 C250,160 270,170 290,150 C310,130 320,140 310,160 C300,180 280,190 260,190 C240,190 220,190 230,180 Z" fill="url(#bodyGradient)" />
+    
+    <!-- Legs/Talons -->
+    <path d="M190,240 C185,250 180,260 175,270 C170,280 175,290 185,285 C195,280 195,270 190,240 Z" fill="#884400" />
+    <path d="M170,245 C165,255 160,265 155,275 C150,285 155,295 165,290 C175,285 175,275 170,245 Z" fill="#884400" />
+  </g>
+  
+  <!-- Animation for body hovering -->
+  <animateTransform 
+    xlink:href="#body"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-5; 0,0; 0,5; 0,0"
+    dur="4s"
+    repeatCount="indefinite"
+  />
+</svg>

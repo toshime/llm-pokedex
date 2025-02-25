@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <style>
+    .body-move {
+      animation: bodyMove 3s infinite ease-in-out;
+      transform-origin: center center;
+    }
+    .arm-wave {
+      animation: armWave 2s infinite ease-in-out;
+      transform-origin: 130px 120px;
+    }
+    .mouth-move {
+      animation: mouthMove 1.5s infinite ease-in-out;
+    }
+    @keyframes bodyMove {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
+    }
+    @keyframes armWave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+    }
+    @keyframes mouthMove {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(0.8); }
+    }
+  </style>
+  
+  <!-- Shadow (optional) -->
+  <ellipse cx="150" cy="270" rx="70" ry="20" fill="rgba(0,0,0,0.1)"/>
+  
+  <!-- Lower body (darker brown part) -->
+  <g class="body-move">
+    <path d="M95 150 C80 190, 100 260, 150 260 C200 260, 220 190, 205 150 Z" fill="#5D5142"/>
+    
+    <!-- Upper body (yellow part) -->
+    <path d="M95 150 C90 100, 110 70, 150 70 C190 70, 210 100, 205 150 C190 170, 170 180, 150 180 C130 180, 110 170, 95 150 Z" fill="#F8D659"/>
+    
+    <!-- Arms -->
+    <path class="arm-wave" d="M110 120 C90 110, 75 90, 65 70 C60 60, 70 50, 80 60 C90 75, 100 90, 115 100 Z" fill="#F8D659"/>
+    <path d="M190 120 C210 110, 230 90, 240 80 C250 70, 245 60, 235 70 C220 85, 205 95, 185 100 Z" fill="#F8D659"/>
+    
+    <!-- Legs -->
+    <path d="M120 260 C110 270, 105 280, 105 290 C105 295, 115 295, 120 288 C125 282, 125 275, 120 260 Z" fill="#5D5142"/>
+    <path d="M180 260 C190 270, 195 280, 195 290 C195 295, 185 295, 180 288 C175 282, 175 275, 180 260 Z" fill="#5D5142"/>
+    
+    <!-- Face -->
+    <ellipse cx="130" cy="100" rx="10" ry="12" fill="#000"/>
+    <ellipse cx="170" cy="100" rx="10" ry="12" fill="#000"/>
+    
+    <!-- Nose -->
+    <ellipse cx="150" cy="115" rx="15" ry="10" fill="#5D5142"/>
+    
+    <!-- Mouth -->
+    <path class="mouth-move" d="M130 140 C140 150, 160 150, 170 140" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Trunk/hair on head -->
+    <path d="M150 70 C140 60, 135 50, 130 30 C128 20, 135 15, 140 25 C145 35, 150 40, 155 40 C160 40, 165 35, 170 25 C175 15, 182 20, 180 30 C175 50, 160 60, 150 70 Z" fill="#F8D659"/>
+  </g>
+</svg>

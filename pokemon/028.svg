@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Sandslash (サンドパン) -->
+  <g id="sandslash">
+    <!-- Body -->
+    <ellipse cx="200" cy="230" rx="65" ry="70" fill="#d4b169" />
+    
+    <!-- Belly -->
+    <ellipse cx="200" cy="250" rx="35" ry="40" fill="#f2e6c8" />
+    
+    <!-- Back Spikes -->
+    <path d="M145 180 L110 140 L150 185" fill="#c19e54" />
+    <path d="M155 165 L120 115 L160 170" fill="#c19e54" />
+    <path d="M170 155 L140 95 L175 160" fill="#c19e54" />
+    <path d="M185 150 L165 85 L190 155" fill="#c19e54" />
+    <path d="M200 145 L200 80 L205 150" fill="#c19e54" />
+    <path d="M215 150 L235 85 L210 155" fill="#c19e54" />
+    <path d="M230 155 L260 95 L225 160" fill="#c19e54" />
+    <path d="M245 165 L280 115 L240 170" fill="#c19e54" />
+    <path d="M255 180 L290 140 L250 185" fill="#c19e54" />
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="165" rx="40" ry="35" fill="#d4b169" />
+    
+    <!-- Ears -->
+    <path d="M170 140 L160 120 L180 135" fill="#d4b169" />
+    <path d="M230 140 L240 120 L220 135" fill="#d4b169" />
+    
+    <!-- Head Spikes -->
+    <path d="M180 135 L170 105 L185 140" fill="#c19e54" />
+    <path d="M195 130 L195 95 L200 135" fill="#c19e54" />
+    <path d="M210 135 L220 105 L205 140" fill="#c19e54" />
+    
+    <!-- Eyes -->
+    <ellipse cx="185" cy="160" rx="8" ry="10" fill="#2b2b2b" />
+    <ellipse cx="215" cy="160" rx="8" ry="10" fill="#2b2b2b" />
+    <circle cx="183" cy="157" r="2" fill="white" />
+    <circle cx="213" cy="157" r="2" fill="white" />
+    
+    <!-- Nose -->
+    <path d="M195 170 Q200 175 205 170" fill="none" stroke="#a27e38" stroke-width="2" />
+    
+    <!-- Arms -->
+    <path d="M145 210 Q125 220 135 240" fill="#d4b169" />
+    <path d="M255 210 Q275 220 265 240" fill="#d4b169" />
+    
+    <!-- Claws -->
+    <path d="M135 240 L120 250" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M135 240 L135 260" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M135 240 L150 250" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    
+    <path d="M265 240 L250 250" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M265 240 L265 260" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M265 240 L280 250" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    
+    <!-- Legs -->
+    <path d="M175 290 Q180 310 190 300" fill="#d4b169" />
+    <path d="M225 290 Q220 310 210 300" fill="#d4b169" />
+    
+    <!-- Feet Claws -->
+    <path d="M175 290 L165 305" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M180 295 L180 310" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M190 290 L195 305" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    
+    <path d="M225 290 L235 305" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M220 295 L220 310" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+    <path d="M210 290 L205 305" fill="none" stroke="#f2f2f2" stroke-width="5" stroke-linecap="round" />
+  </g>
+  
+  <!-- Animation -->
+  <animate xlink:href="#sandslash" attributeName="transform" 
+           attributeType="XML" type="rotate" 
+           from="-2 200 230" to="2 200 230" 
+           dur="0.8s" repeatCount="indefinite" 
+           values="-2 200 230; 2 200 230; -2 200 230" 
+           keyTimes="0; 0.5; 1"/>
+</svg>

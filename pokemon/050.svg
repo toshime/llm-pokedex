@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Diglett Animation -->
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="40%" r="50%" fx="50%" fy="40%">
+      <stop offset="0%" stop-color="#c49a73" />
+      <stop offset="100%" stop-color="#a37c59" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Rocks/Ground -->
+  <g>
+    <ellipse cx="150" cy="220" rx="80" ry="30" fill="#8c8c8c" />
+    
+    <!-- Individual small rocks -->
+    <ellipse cx="100" cy="215" rx="15" ry="10" fill="#a3a3a3" />
+    <ellipse cx="130" cy="225" rx="12" ry="8" fill="#a3a3a3" />
+    <ellipse cx="170" cy="218" rx="14" ry="9" fill="#a3a3a3" />
+    <ellipse cx="200" cy="222" rx="13" ry="7" fill="#a3a3a3" />
+  </g>
+  
+  <!-- Body with animation -->
+  <g>
+    <!-- Main body -->
+    <path d="M110,140 Q150,80 190,140 L190,210 Q150,230 110,210 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" 
+               values="M110,140 Q150,80 190,140 L190,210 Q150,230 110,210 Z;
+                       M110,145 Q150,85 190,145 L190,215 Q150,235 110,215 Z;
+                       M110,140 Q150,80 190,140 L190,210 Q150,230 110,210 Z"
+               dur="2s"
+               repeatCount="indefinite" />
+    </path>
+    
+    <!-- Nose -->
+    <ellipse cx="150" cy="150" rx="25" ry="15" fill="#f4b3c2">
+      <animate attributeName="cy" 
+               values="150;155;150" 
+               dur="2s" 
+               repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Eyes -->
+    <g>
+      <!-- Left eye -->
+      <ellipse cx="130" cy="130" rx="8" ry="12" fill="#111">
+        <animate attributeName="cy" 
+                 values="130;135;130" 
+                 dur="2s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+      
+      <!-- Right eye -->
+      <ellipse cx="170" cy="130" rx="8" ry="12" fill="#111">
+        <animate attributeName="cy" 
+                 values="130;135;130" 
+                 dur="2s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- Highlight on nose -->
+    <ellipse cx="145" cy="148" rx="8" ry="4" fill="#white" opacity="0.4">
+      <animate attributeName="cy" 
+               values="148;153;148" 
+               dur="2s" 
+               repeatCount="indefinite" />
+    </ellipse>
+  </g>
+</svg>

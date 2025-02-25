@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Sandshrew (サンド) -->
+  <g id="sandshrew">
+    <!-- Body -->
+    <ellipse cx="200" cy="220" rx="80" ry="75" fill="#e6c88a" />
+    
+    <!-- Shell segments -->
+    <path d="M140 180 Q200 120 260 180" fill="none" stroke="#d4b76e" stroke-width="15" />
+    <path d="M130 200 Q200 150 270 200" fill="none" stroke="#d4b76e" stroke-width="15" />
+    <path d="M130 220 Q200 180 270 220" fill="none" stroke="#d4b76e" stroke-width="15" />
+    <path d="M140 240 Q200 210 260 240" fill="none" stroke="#d4b76e" stroke-width="15" />
+    
+    <!-- Belly -->
+    <ellipse cx="200" cy="240" rx="40" ry="35" fill="#f4e8d0" />
+    
+    <!-- Head -->
+    <circle cx="200" cy="160" r="40" fill="#e6c88a" />
+    <path d="M160 135 Q180 115 200 135" fill="#e6c88a" />
+    <path d="M200 135 Q220 115 240 135" fill="#e6c88a" />
+    
+    <!-- Ears -->
+    <path d="M170 130 L160 110 L180 124" fill="#e6c88a" />
+    <path d="M230 130 L240 110 L220 124" fill="#e6c88a" />
+    
+    <!-- Eyes -->
+    <ellipse cx="180" cy="150" rx="10" ry="12" fill="#2b2b2b" />
+    <ellipse cx="220" cy="150" rx="10" ry="12" fill="#2b2b2b" />
+    <circle cx="177" cy="147" r="3" fill="white" />
+    <circle cx="217" cy="147" r="3" fill="white" />
+    
+    <!-- Nose -->
+    <path d="M195 160 Q200 165 205 160" fill="none" stroke="#a88848" stroke-width="2" />
+    
+    <!-- Arms -->
+    <path d="M140 220 Q120 230 130 250" fill="#e6c88a" stroke="#d4b76e" stroke-width="2" />
+    <path d="M260 220 Q280 230 270 250" fill="#e6c88a" stroke="#d4b76e" stroke-width="2" />
+    
+    <!-- Claws -->
+    <path d="M130 250 L125 260" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M130 250 L135 260" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M270 250 L265 260" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M270 250 L275 260" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Feet -->
+    <path d="M170 290 Q180 300 190 290" fill="#e6c88a" stroke="#d4b76e" stroke-width="2" />
+    <path d="M210 290 Q220 300 230 290" fill="#e6c88a" stroke="#d4b76e" stroke-width="2" />
+    
+    <!-- Feet Claws -->
+    <path d="M170 290 L165 300" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M180 290 L180 300" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M190 290 L195 300" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M210 290 L205 300" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M220 290 L220 300" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+    <path d="M230 290 L235 300" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round" />
+  </g>
+  
+  <!-- Animation -->
+  <animate xlink:href="#sandshrew" attributeName="transform" 
+           attributeType="XML" type="translate" 
+           from="0 0" to="0 -10" 
+           dur="1s" repeatCount="indefinite" 
+           values="0 0; 0 -10; 0 0" 
+           keyTimes="0; 0.5; 1"/>
+</svg>

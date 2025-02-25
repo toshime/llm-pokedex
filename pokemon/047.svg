@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+
+  
+  <!-- Main body -->
+  <ellipse cx="200" cy="250" rx="110" ry="70" fill="#9A6B49">
+    <animate attributeName="ry" 
+             values="70;66;70" 
+             dur="3s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Giant mushroom cap -->
+  <path d="M200 190 Q130 150 100 200 Q80 250 110 280 Q150 310 200 300 Q250 310 290 280 Q320 250 300 200 Q270 150 200 190" fill="#993366">
+    <animate attributeName="d" 
+             values="M200 190 Q130 150 100 200 Q80 250 110 280 Q150 310 200 300 Q250 310 290 280 Q320 250 300 200 Q270 150 200 190;
+                     M200 188 Q130 148 98 198 Q78 248 108 278 Q148 308 200 298 Q252 308 292 278 Q322 248 302 198 Q272 148 200 188;
+                     M200 190 Q130 150 100 200 Q80 250 110 280 Q150 310 200 300 Q250 310 290 280 Q320 250 300 200 Q270 150 200 190" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- Mushroom yellow spots -->
+  <ellipse cx="130" cy="210" rx="20" ry="12" fill="#FBEC5D">
+    <animate attributeName="cy" 
+             values="210;208;210" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="180" cy="190" rx="15" ry="10" fill="#FBEC5D">
+    <animate attributeName="cy" 
+             values="190;188;190" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="220" cy="190" rx="15" ry="10" fill="#FBEC5D">
+    <animate attributeName="cy" 
+             values="190;188;190" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="270" cy="210" rx="20" ry="12" fill="#FBEC5D">
+    <animate attributeName="cy" 
+             values="210;208;210" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="150" cy="250" rx="18" ry="12" fill="#FBEC5D">
+    <animate attributeName="cy" 
+             values="250;248;250" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="250" cy="250" rx="18" ry="12" fill="#FBEC5D">
+    <animate attributeName="cy" 
+             values="250;248;250" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="200" cy="240" rx="15" ry="10" fill="#FBEC5D">
+    <animate attributeName="cy" 
+             values="240;238;240" 
+             dur="4s" 
+             repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Legs -->
+  <!-- Left front leg -->
+  <path d="M120 270 Q100 290 80 320 Q75 330 85 335 Q95 340 105 330 Q115 320 130 290 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M120 270 Q100 290 80 320 Q75 330 85 335 Q95 340 105 330 Q115 320 130 290 Z;
+                     M120 270 Q98 285 78 315 Q73 325 83 330 Q93 335 103 325 Q113 315 130 290 Z;
+                     M120 270 Q100 290 80 320 Q75 330 85 335 Q95 340 105 330 Q115 320 130 290 Z" 
+             dur="1.7s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- Right front leg -->
+  <path d="M280 270 Q300 290 320 320 Q325 330 315 335 Q305 340 295 330 Q285 320 270 290 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M280 270 Q300 290 320 320 Q325 330 315 335 Q305 340 295 330 Q285 320 270 290 Z;
+                     M280 270 Q302 285 322 315 Q327 325 317 330 Q307 335 297 325 Q287 315 270 290 Z;
+                     M280 270 Q300 290 320 320 Q325 330 315 335 Q305 340 295 330 Q285 320 270 290 Z" 
+             dur="1.7s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- Middle legs -->
+  <path d="M150 280 Q140 300 130 330 Q125 340 135 345 Q145 350 155 340 Q165 330 170 300 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M150 280 Q140 300 130 330 Q125 340 135 345 Q145 350 155 340 Q165 330 170 300 Z;
+                     M150 280 Q138 295 128 325 Q123 335 133 340 Q143 345 153 335 Q163 325 170 300 Z;
+                     M150 280 Q140 300 130 330 Q125 340 135 345 Q145 350 155 340 Q165 330 170 300 Z" 
+             dur="2s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <path d="M250 280 Q260 300 270 330 Q275 340 265 345 Q255 350 245 340 Q235 330 230 300 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M250 280 Q260 300 270 330 Q275 340 265 345 Q255 350 245 340 Q235 330 230 300 Z;
+                     M250 280 Q262 295 272 325 Q277 335 267 340 Q257 345 247 335 Q237 325 230 300 Z;
+                     M250 280 Q260 300 270 330 Q275 340 265 345 Q255 350 245 340 Q235 330 230 300 Z" 
+             dur="2s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- Back legs -->
+  <path d="M180 285 Q175 305 170 335 Q168 345 178 348 Q188 351 193 340 Q198 330 200 300 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M180 285 Q175 305 170 335 Q168 345 178 348 Q188 351 193 340 Q198 330 200 300 Z;
+                     M180 285 Q173 300 168 330 Q166 340 176 343 Q186 346 191 335 Q196 325 200 300 Z;
+                     M180 285 Q175 305 170 335 Q168 345 178 348 Q188 351 193 340 Q198 330 200 300 Z" 
+             dur="2.3s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <path d="M220 285 Q225 305 230 335 Q232 345 222 348 Q212 351 207 340 Q202 330 200 300 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M220 285 Q225 305 230 335 Q232 345 222 348 Q212 351 207 340 Q202 330 200 300 Z;
+                     M220 285 Q227 300 232 330 Q234 340 224 343 Q214 346 209 335 Q204 325 200 300 Z;
+                     M220 285 Q225 305 230 335 Q232 345 222 348 Q212 351 207 340 Q202 330 200 300 Z" 
+             dur="2.3s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- Eyes (white with no pupils) -->
+  <circle cx="160" cy="235" r="12" fill="white">
+    <animate attributeName="r" 
+             values="12;11;12" 
+             dur="6s" 
+             repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="240" cy="235" r="12" fill="white">
+    <animate attributeName="r" 
+             values="12;11;12" 
+             dur="6s" 
+             repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Claws/Pincers -->
+  <path d="M90 260 Q60 250 40 230 Q30 210 40 190 Q50 170 70 175 Q90 180 100 210 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M90 260 Q60 250 40 230 Q30 210 40 190 Q50 170 70 175 Q90 180 100 210 Z;
+                     M90 260 Q55 245 35 225 Q25 205 35 185 Q45 165 65 170 Q85 175 100 210 Z;
+                     M90 260 Q60 250 40 230 Q30 210 40 190 Q50 170 70 175 Q90 180 100 210 Z" 
+             dur="2.5s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <path d="M310 260 Q340 250 360 230 Q370 210 360 190 Q350 170 330 175 Q310 180 300 210 Z" fill="#9A6B49">
+    <animate attributeName="d" 
+             values="M310 260 Q340 250 360 230 Q370 210 360 190 Q350 170 330 175 Q310 180 300 210 Z;
+                     M310 260 Q345 245 365 225 Q375 205 365 185 Q355 165 335 170 Q315 175 300 210 Z;
+                     M310 260 Q340 250 360 230 Q370 210 360 190 Q350 170 330 175 Q310 180 300 210 Z" 
+             dur="2.5s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- Pincer details -->
+  <path d="M50 200 Q60 205 70 200" fill="none" stroke="#111111" stroke-width="2">
+    <animate attributeName="d" 
+             values="M50 200 Q60 205 70 200;
+                     M45 195 Q55 200 65 195;
+                     M50 200 Q60 205 70 200" 
+             dur="2.5s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <path d="M350 200 Q340 205 330 200" fill="none" stroke="#111111" stroke-width="2">
+    <animate attributeName="d" 
+             values="M350 200 Q340 205 330 200;
+                     M355 195 Q345 200 335 195;
+                     M350 200 Q340 205 330 200" 
+             dur="2.5s" 
+             repeatCount="indefinite" />
+  </path>
+</svg>

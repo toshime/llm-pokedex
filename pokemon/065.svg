@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes spoonFloat {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-5px) rotate(5deg); }
+      }
+      @keyframes mustacheWave {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(3deg); }
+        75% { transform: rotate(-3deg); }
+      }
+      @keyframes blink {
+        0%, 95%, 100% { transform: scaleY(1); }
+        97% { transform: scaleY(0.1); }
+      }
+      @keyframes shoulderArmorBreathe {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+      }
+      .float { animation: float 3s ease-in-out infinite; }
+      .spoon1 { animation: spoonFloat 2.5s ease-in-out infinite; }
+      .spoon2 { animation: spoonFloat 2.5s ease-in-out infinite 0.5s; }
+      .mustache { animation: mustacheWave 2s ease-in-out infinite; }
+      .eyelid { animation: blink 4s ease-in-out infinite; }
+      .armor { animation: shoulderArmorBreathe 2s ease-in-out infinite; }
+    </style>
+  </defs>
+  
+  <g class="float">
+    <!-- Body -->
+    <path d="M220 300 C215 350, 235 380, 250 390 C265 380, 285 350, 280 300 Z" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Legs -->
+    <path d="M235 390 C225 395, 220 410, 230 425 C240 430, 250 425, 250 410" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    <path d="M265 390 C275 395, 280 410, 270 425 C260 430, 250 425, 250 410" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Shoulder armor -->
+    <g class="armor" transform-origin="220 270">
+      <path d="M200 270 C195 280, 195 290, 205 295 C215 300, 230 295, 235 285" fill="#8B7355" stroke="#000" stroke-width="2"/>
+    </g>
+    <g class="armor" transform-origin="280 270">
+      <path d="M300 270 C305 280, 305 290, 295 295 C285 300, 270 295, 265 285" fill="#8B7355" stroke="#000" stroke-width="2"/>
+    </g>
+    
+    <!-- Chest armor -->
+    <path d="M230 295 C240 300, 260 300, 270 295 C275 310, 275 325, 270 340 C260 345, 240 345, 230 340 C225 325, 225 310, 230 295Z" fill="#8B7355" stroke="#000" stroke-width="2"/>
+    
+    <!-- Head -->
+    <path d="M220 180 C210 190, 205 220, 215 250 C225 260, 275 260, 285 250 C295 220, 290 190, 280 180 C260 170, 240 170, 220 180Z" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Pointed head extension -->
+    <path d="M250 170 C240 150, 245 130, 250 110 C255 130, 260 150, 250 170Z" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="230" cy="220" rx="10" ry="12" fill="white" stroke="#000" stroke-width="1"/>
+    <ellipse cx="270" cy="220" rx="10" ry="12" fill="white" stroke="#000" stroke-width="1"/>
+    <g class="eyelid" transform-origin="230 220">
+      <circle cx="230" cy="220" r="5" fill="black"/>
+    </g>
+    <g class="eyelid" transform-origin="270 220">
+      <circle cx="270" cy="220" r="5" fill="black"/>
+    </g>
+    
+    <!-- Mustache -->
+    <g class="mustache" transform-origin="250 230">
+      <path d="M250 230 C220 235, 200 245, 180 240" stroke="#000" stroke-width="2" fill="none"/>
+      <path d="M250 230 C280 235, 300 245, 320 240" stroke="#000" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Arms and spoons -->
+    <path d="M200 270 C180 265, 160 245, 150 255 C140 265, 150 280, 160 275" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    <path d="M300 270 C320 265, 340 245, 350 255 C360 265, 350 280, 340 275" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <g class="spoon1" transform-origin="150 260">
+      <path d="M150 260 L145 245" stroke="#000" stroke-width="2" fill="none"/>
+      <ellipse cx="140" cy="240" rx="10" ry="7" transform="rotate(-15, 140, 240)" fill="#CCCCCC" stroke="#000" stroke-width="1"/>
+      <path d="M140 240 L125 230" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    
+    <g class="spoon2" transform-origin="350 260">
+      <path d="M350 260 L355 245" stroke="#000" stroke-width="2" fill="none"/>
+      <ellipse cx="360" cy="240" rx="10" ry="7" transform="rotate(15, 360, 240)" fill="#CCCCCC" stroke="#000" stroke-width="1"/>
+      <path d="M360 240 L375 230" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

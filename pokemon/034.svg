@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- White Background -->
+  <rect width="400" height="400" fill="white"/>
+  
+  <!-- Nidoking Body -->
+  <g id="nidoking">
+    <!-- Body -->
+    <path d="M180,240 C140,230 130,280 140,310 C150,340 200,340 220,310 C230,290 220,250 180,240" fill="#b689b6"/>
+    
+    <!-- Cream Belly -->
+    <path d="M180,250 C150,250 150,290 160,310 C170,330 200,330 210,310 C220,290 210,250 180,250" fill="#f0e6e6"/>
+    
+    <!-- Upper Body -->
+    <path d="M160,240 C150,200 170,160 200,150 C230,160 250,200 240,240 C210,260 190,260 160,240" fill="#b689b6"/>
+    
+    <!-- Head -->
+    <path d="M170,160 C170,130 190,110 220,120 C250,130 260,160 250,180 C220,190 180,180 170,160" fill="#b689b6"/>
+    
+    <!-- Ears -->
+    <path d="M200,120 L180,80 L210,110 Z" fill="#b689b6">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite"
+               values="M200,120 L180,80 L210,110 Z;
+                      M200,120 L175,75 L210,110 Z;
+                      M200,120 L180,80 L210,110 Z"/>
+    </path>
+    <path d="M230,120 L250,70 L260,110 Z" fill="#b689b6">
+      <animate attributeName="d" dur="2.2s" repeatCount="indefinite"
+               values="M230,120 L250,70 L260,110 Z;
+                      M230,120 L255,65 L260,110 Z;
+                      M230,120 L250,70 L260,110 Z"/>
+    </path>
+    
+    <!-- Inner Ears -->
+    <path d="M200,115 L190,90 L205,108 Z" fill="#36a3a2"/>
+    <path d="M235,115 L245,85 L255,105 Z" fill="#36a3a2"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="205" cy="145" rx="8" ry="8" fill="#ffffff"/>
+    <ellipse cx="207" cy="145" rx="4" ry="4" fill="#a02c2c"/>
+    
+    <!-- Horn -->
+    <path d="M220,115 L222,75 L235,100 Z" fill="#9a6d9a"/>
+    
+    <!-- Spikes on Back -->
+    <path d="M240,200 L270,170 L250,210 Z" fill="#b689b6"/>
+    <path d="M220,210 L250,180 L230,220 Z" fill="#b689b6"/>
+    
+    <!-- Arms -->
+    <path d="M160,220 C140,230 120,240 110,260 C105,270 110,280 120,280 C130,280 140,270 150,260" fill="#b689b6">
+      <animate attributeName="d" dur="1.5s" repeatCount="indefinite"
+               values="M160,220 C140,230 120,240 110,260 C105,270 110,280 120,280 C130,280 140,270 150,260;
+                      M160,220 C140,230 115,235 105,255 C100,265 110,280 120,280 C130,280 140,270 150,260;
+                      M160,220 C140,230 120,240 110,260 C105,270 110,280 120,280 C130,280 140,270 150,260"/>
+    </path>
+    <path d="M240,220 C260,230 270,250 270,270 C270,280 260,285 250,280 C240,275 230,260 230,250" fill="#b689b6">
+      <animate attributeName="d" dur="1.8s" repeatCount="indefinite"
+               values="M240,220 C260,230 270,250 270,270 C270,280 260,285 250,280 C240,275 230,260 230,250;
+                      M240,220 C260,230 275,245 275,265 C275,275 260,285 250,280 C240,275 230,260 230,250;
+                      M240,220 C260,230 270,250 270,270 C270,280 260,285 250,280 C240,275 230,260 230,250"/>
+    </path>
+    
+    <!-- Claws -->
+    <path d="M117,277 L110,270 L125,275 Z" fill="#f0e6e6"/>
+    <path d="M122,275 L115,265 L130,270 Z" fill="#f0e6e6"/>
+    <path d="M253,277 L260,270 L245,275 Z" fill="#f0e6e6"/>
+    <path d="M248,275 L255,265 L240,270 Z" fill="#f0e6e6"/>
+    
+    <!-- Legs -->
+    <path d="M160,310 C155,330 150,350 145,360 C140,370 150,375 160,370 C170,365 170,350 170,340" fill="#b689b6"/>
+    <path d="M200,310 C205,330 210,350 215,360 C220,370 210,375 200,370 C190,365 190,350 190,340" fill="#b689b6"/>
+    
+    <!-- Tail -->
+    <path d="M180,310 C160,330 140,350 130,370 C120,380 130,390 140,380 C150,370 170,340 180,310" fill="#b689b6">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite"
+               values="M180,310 C160,330 140,350 130,370 C120,380 130,390 140,380 C150,370 170,340 180,310;
+                      M180,310 C160,330 135,355 125,375 C115,385 130,390 140,380 C150,370 170,340 180,310;
+                      M180,310 C160,330 140,350 130,370 C120,380 130,390 140,380 C150,370 170,340 180,310"/>
+    </path>
+    
+    <!-- Mouth -->
+    <path d="M200,160 C210,165 220,165 230,160" fill="none" stroke="#9a6d9a" stroke-width="2"/>
+    <path d="M210,160 L215,170 L220,160" fill="none" stroke="#9a6d9a" stroke-width="1"/>
+    
+    <animate xlink:href="#nidoking" attributeName="transform" attributeType="XML"
+      type="translate" from="0 0" to="0 -4" dur="1s" repeatCount="indefinite" additive="sum" />
+  </g>
+</svg>

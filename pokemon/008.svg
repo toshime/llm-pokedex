@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Wartortle Body -->
+  <g id="wartortle">
+    <!-- Body -->
+    <ellipse cx="150" cy="160" rx="55" ry="60" fill="#5a8ac6" />
+    
+    <!-- Shell -->
+    <ellipse cx="150" cy="170" rx="65" ry="55" fill="#a17f55" />
+    <ellipse cx="150" cy="170" rx="55" ry="45" fill="#c9a87c" />
+    
+    <!-- Head -->
+    <circle cx="150" cy="90" r="43" fill="#5a8ac6" />
+    
+    <!-- Ears -->
+    <g id="left-ear">
+      <path d="M120 65 Q110 45 115 30" stroke="#5a8ac6" fill="#5a8ac6" stroke-width="12" stroke-linecap="round" />
+    </g>
+    <g id="right-ear">
+      <path d="M180 65 Q190 45 185 30" stroke="#5a8ac6" fill="#5a8ac6" stroke-width="12" stroke-linecap="round" />
+    </g>
+    
+    <!-- Eyes -->
+    <circle cx="135" cy="85" r="10" fill="white" />
+    <circle cx="165" cy="85" r="10" fill="white" />
+    <circle cx="135" cy="85" r="5" fill="black" />
+    <circle cx="165" cy="85" r="5" fill="black" />
+    <ellipse cx="138" cy="82" rx="2" ry="2" fill="white" />
+    <ellipse cx="168" cy="82" rx="2" ry="2" fill="white" />
+    
+    <!-- Mouth -->
+    <path d="M145 105 Q150 110 155 105" stroke="black" fill="none" stroke-width="2" />
+    
+    <!-- Arms -->
+    <g id="left-arm">
+      <path d="M100 150 Q90 140 95 130" stroke="#5a8ac6" fill="#5a8ac6" stroke-width="16" stroke-linecap="round" />
+    </g>
+    <g id="right-arm">
+      <path d="M200 150 Q210 140 205 130" stroke="#5a8ac6" fill="#5a8ac6" stroke-width="16" stroke-linecap="round" />
+    </g>
+    
+    <!-- Legs -->
+    <g id="left-leg">
+      <path d="M125 210 Q120 230 115 240" stroke="#5a8ac6" fill="#5a8ac6" stroke-width="16" stroke-linecap="round" />
+    </g>
+    <g id="right-leg">
+      <path d="M175 210 Q180 230 185 240" stroke="#5a8ac6" fill="#5a8ac6" stroke-width="16" stroke-linecap="round" />
+    </g>
+    
+    <!-- Tail -->
+    <g id="tail">
+      <path d="M215 160 Q245 140 270 150 Q280 170 260 180 Q240 185 215 170 Z" fill="#5a8ac6" />
+    </g>
+  </g>
+  
+  <!-- Animations -->
+  <style>
+    @keyframes floatBody {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes blinkEyes {
+      0%, 95%, 100% { transform: scaleY(1); }
+      97% { transform: scaleY(0.1); }
+    }
+    @keyframes moveTail {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      75% { transform: rotate(-10deg); }
+    }
+    @keyframes moveArms {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-10deg); }
+    }
+    @keyframes moveLegs {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    @keyframes moveEars {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-5deg); }
+    }
+    
+    #wartortle {
+      animation: floatBody 3s ease-in-out infinite;
+    }
+    #wartortle circle:nth-child(9),
+    #wartortle circle:nth-child(10) {
+      animation: blinkEyes 4s infinite;
+      transform-origin: center;
+    }
+    #tail {
+      animation: moveTail 2.5s ease-in-out infinite;
+      transform-origin: 215px 160px;
+    }
+    #left-arm {
+      animation: moveArms 3s ease-in-out infinite;
+      transform-origin: 100px 150px;
+    }
+    #right-arm {
+      animation: moveArms 3s ease-in-out infinite alternate;
+      transform-origin: 200px 150px;
+    }
+    #left-leg {
+      animation: moveLegs 3s ease-in-out infinite;
+    }
+    #right-leg {
+      animation: moveLegs 3s ease-in-out infinite alternate;
+    }
+    #left-ear {
+      animation: moveEars 4s ease-in-out infinite;
+      transform-origin: 120px 65px;
+    }
+    #right-ear {
+      animation: moveEars 4s ease-in-out infinite alternate;
+      transform-origin: 180px 65px;
+    }
+  </style>
+</svg>

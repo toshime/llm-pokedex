@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Butterfree with animation -->
+  <g id="butterfree">
+    <!-- Body -->
+    <ellipse cx="200" cy="220" rx="30" ry="40" fill="#A78BFA" stroke="#7C3AED" stroke-width="2">
+      <animate attributeName="cy" dur="2s" values="220;225;220" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Head -->
+    <circle cx="200" cy="170" r="25" fill="#A78BFA" stroke="#7C3AED" stroke-width="2">
+      <animate attributeName="cy" dur="2s" values="170;175;170" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Eyes -->
+    <g>
+      <circle cx="185" cy="160" r="12" fill="#EF4444" stroke="#B91C1C" stroke-width="1">
+        <animate attributeName="cy" dur="2s" values="160;165;160" repeatCount="indefinite" />
+      </circle>
+      <circle cx="215" cy="160" r="12" fill="#EF4444" stroke="#B91C1C" stroke-width="1">
+        <animate attributeName="cy" dur="2s" values="160;165;160" repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Pupils -->
+      <circle cx="185" cy="160" r="4" fill="#000">
+        <animate attributeName="cy" dur="2s" values="160;165;160" repeatCount="indefinite" />
+      </circle>
+      <circle cx="215" cy="160" r="4" fill="#000">
+        <animate attributeName="cy" dur="2s" values="160;165;160" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M195,180 Q200,185 205,180" stroke="#7C3AED" stroke-width="2" fill="none">
+      <animate attributeName="d" dur="2s" values="M195,180 Q200,185 205,180;M195,185 Q200,190 205,185;M195,180 Q200,185 205,180" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Antennae -->
+    <g>
+      <path d="M185,145 Q175,125 170,110" stroke="#7C3AED" stroke-width="2" fill="none">
+        <animate attributeName="d" 
+                dur="3s" 
+                values="M185,145 Q175,125 170,110;M185,150 Q175,130 168,115;M185,145 Q175,125 170,110" 
+                repeatCount="indefinite" />
+      </path>
+      <circle cx="170" cy="110" r="5" fill="#7C3AED">
+        <animate attributeName="cy" dur="3s" values="110;115;110" repeatCount="indefinite" />
+      </circle>
+      
+      <path d="M215,145 Q225,125 230,110" stroke="#7C3AED" stroke-width="2" fill="none">
+        <animate attributeName="d" 
+                dur="3s" 
+                values="M215,145 Q225,125 230,110;M215,150 Q225,130 232,115;M215,145 Q225,125 230,110" 
+                repeatCount="indefinite" />
+      </path>
+      <circle cx="230" cy="110" r="5" fill="#7C3AED">
+        <animate attributeName="cy" dur="3s" values="110;115;110" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Arms -->
+    <path d="M180,210 C170,220 165,230 170,240" stroke="#7C3AED" stroke-width="3" fill="none">
+      <animate attributeName="d" 
+              dur="2s" 
+              values="M180,210 C170,220 165,230 170,240;M180,215 C170,225 165,235 170,245;M180,210 C170,220 165,230 170,240" 
+              repeatCount="indefinite" />
+    </path>
+    
+    <path d="M220,210 C230,220 235,230 230,240" stroke="#7C3AED" stroke-width="3" fill="none">
+      <animate attributeName="d" 
+              dur="2s" 
+              values="M220,210 C230,220 235,230 230,240;M220,215 C230,225 235,235 230,245;M220,210 C230,220 235,230 230,240" 
+              repeatCount="indefinite" />
+    </path>
+    
+    <!-- Legs -->
+    <path d="M190,260 L185,280" stroke="#7C3AED" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="d" 
+              dur="2s" 
+              values="M190,260 L185,280;M190,265 L185,285;M190,260 L185,280" 
+              repeatCount="indefinite" />
+    </path>
+    
+    <path d="M210,260 L215,280" stroke="#7C3AED" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="d" 
+              dur="2s" 
+              values="M210,260 L215,280;M210,265 L215,285;M210,260 L215,280" 
+              repeatCount="indefinite" />
+    </path>
+    
+    <!-- Wings -->
+    <g>
+      <!-- Left Wing -->
+      <path d="M180,200 C150,170 100,170 80,200 C60,230 80,280 130,290 C160,295 180,270 180,240" 
+            fill="white" stroke="#7C3AED" stroke-width="2">
+        <animate attributeName="d" 
+                dur="0.5s" 
+                values="M180,200 C150,170 100,170 80,200 C60,230 80,280 130,290 C160,295 180,270 180,240;
+                        M180,205 C150,235 100,235 80,200 C60,230 80,280 130,290 C160,295 180,275 180,245;
+                        M180,200 C150,170 100,170 80,200 C60,230 80,280 130,290 C160,295 180,270 180,240" 
+                repeatCount="indefinite" />
+      </path>
+      
+      <!-- Wing Patterns -->
+      <path d="M150,200 L140,240" stroke="#7C3AED" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" 
+                dur="0.5s" 
+                values="M150,200 L140,240;M150,210 L140,250;M150,200 L140,240" 
+                repeatCount="indefinite" />
+      </path>
+      
+      <path d="M120,190 L110,250" stroke="#7C3AED" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" 
+                dur="0.5s" 
+                values="M120,190 L110,250;M120,210 L110,260;M120,190 L110,250" 
+                repeatCount="indefinite" />
+      </path>
+      
+      <!-- Right Wing -->
+      <path d="M220,200 C250,170 300,170 320,200 C340,230 320,280 270,290 C240,295 220,270 220,240" 
+            fill="white" stroke="#7C3AED" stroke-width="2">
+        <animate attributeName="d" 
+                dur="0.5s" 
+                values="M220,200 C250,170 300,170 320,200 C340,230 320,280 270,290 C240,295 220,270 220,240;
+                        M220,205 C250,235 300,235 320,200 C340,230 320,280 270,290 C240,295 220,275 220,245;
+                        M220,200 C250,170 300,170 320,200 C340,230 320,280 270,290 C240,295 220,270 220,240" 
+                repeatCount="indefinite" />
+      </path>
+      
+      <!-- Wing Patterns -->
+      <path d="M250,200 L260,240" stroke="#7C3AED" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" 
+                dur="0.5s" 
+                values="M250,200 L260,240;M250,210 L260,250;M250,200 L260,240" 
+                repeatCount="indefinite" />
+      </path>
+      
+      <path d="M280,190 L290,250" stroke="#7C3AED" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" 
+                dur="0.5s" 
+                values="M280,190 L290,250;M280,210 L290,260;M280,190 L290,250" 
+                repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+</svg>

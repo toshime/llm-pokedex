@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Ditto (more cute version) -->
+  <g id="ditto">
+    <!-- Blob shadow -->
+    <ellipse cx="100" cy="140" rx="65" ry="10" fill="#c3b7d1" opacity="0.3">
+      <animate attributeName="rx" values="65;58;65" dur="3s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Main body with softer edges and more vibrant color -->
+    <path id="body" d="M45,110 Q35,80 60,55 Q80,35 100,40 Q120,35 140,55 Q165,80 155,110 Q130,145 100,145 Q70,145 45,110 Z" fill="#cea5ce">
+      <animate attributeName="d" values="
+        M45,110 Q35,80 60,55 Q80,35 100,40 Q120,35 140,55 Q165,80 155,110 Q130,145 100,145 Q70,145 45,110 Z;
+        M50,115 Q40,85 65,60 Q85,40 100,45 Q115,40 135,60 Q160,85 150,115 Q125,140 100,140 Q75,140 50,115 Z;
+        M45,110 Q35,80 60,55 Q80,35 100,40 Q120,35 140,55 Q165,80 155,110 Q130,145 100,145 Q70,145 45,110 Z" 
+        dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Subtle inner body gradient for dimension -->
+    <path id="inner-body" d="M55,105 Q50,80 70,60 Q85,45 100,50 Q115,45 130,60 Q150,80 145,105 Q125,135 100,135 Q75,135 55,105 Z" fill="#d9b2d9" opacity="0.3">
+      <animate attributeName="d" values="
+        M55,105 Q50,80 70,60 Q85,45 100,50 Q115,45 130,60 Q150,80 145,105 Q125,135 100,135 Q75,135 55,105 Z;
+        M60,110 Q55,85 75,65 Q90,50 100,55 Q110,50 125,65 Q145,85 140,110 Q120,130 100,130 Q80,130 60,110 Z;
+        M55,105 Q50,80 70,60 Q85,45 100,50 Q115,45 130,60 Q150,80 145,105 Q125,135 100,135 Q75,135 55,105 Z" 
+        dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Face -->
+    <!-- Simple dot eyes -->
+    <g id="eyes">
+      <!-- Left eye (simple dot) -->
+      <circle cx="75" cy="80" r="3" fill="black">
+        <animate attributeName="r" values="3;0.8;3" dur="5s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      
+      <!-- Right eye (simple dot) -->
+      <circle cx="125" cy="80" r="3" fill="black">
+        <animate attributeName="r" values="3;0.8;3" dur="5s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+    </g>
+    
+    <!-- Cuter smile -->
+    <path d="M85,102 Q100,118 115,102" fill="none" stroke="#990099" stroke-width="2.5" stroke-linecap="round">
+      <animate attributeName="d" values="
+        M85,102 Q100,118 115,102;
+        M85,105 Q100,122 115,105;
+        M85,102 Q100,118 115,102" 
+        dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Cheek blush -->
+    <ellipse cx="65" cy="95" rx="10" ry="6" fill="#e991e9" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="135" cy="95" rx="10" ry="6" fill="#e991e9" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Subtle body highlights -->
+    <path d="M70,70 Q90,60 100,65 Q110,60 130,70" fill="none" stroke="#e7c2e7" stroke-width="4" stroke-linecap="round" opacity="0.6">
+      <animate attributeName="d" values="
+        M70,70 Q90,60 100,65 Q110,60 130,70;
+        M75,75 Q90,65 100,70 Q110,65 125,75;
+        M70,70 Q90,60 100,65 Q110,60 130,70" 
+        dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Subtle bouncing motion -->
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,-5; 0,0"
+      dur="3s" repeatCount="indefinite" />
+  </g>
+</svg>

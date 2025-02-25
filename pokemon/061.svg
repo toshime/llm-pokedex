@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Body -->
+  <circle cx="150" cy="150" r="70" fill="#5a9de8" stroke="#000" stroke-width="2">
+    <animate attributeName="cy" 
+             values="150;148;150;152;150" 
+             dur="1.5s" 
+             repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Belly Spiral -->
+  <g>
+    <circle cx="150" cy="150" r="45" fill="white" stroke="#000" stroke-width="2"/>
+    <path d="M150 150 Q160 140 170 150 Q160 160 150 150" fill="black">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 150 150"
+                        to="360 150 150"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+    </path>
+    <path d="M150 150 Q130 140 150 130 Q170 140 150 150" fill="black">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 150 150"
+                        to="360 150 150"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+    </path>
+    <path d="M150 150 Q130 160 130 140 Q150 120 170 140 Q150 160 150 150" fill="black">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 150 150"
+                        to="360 150 150"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Eyes -->
+  <g>
+    <circle cx="175" cy="120" r="15" fill="white" stroke="#000" stroke-width="2">
+      <animate attributeName="cy" 
+               values="120;118;120;122;120" 
+               dur="1.5s" 
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="175" cy="120" r="10" fill="#333">
+      <animate attributeName="cy" 
+               values="120;118;120;122;120" 
+               dur="1.5s" 
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="172" cy="117" r="3" fill="white">
+      <animate attributeName="cy" 
+               values="117;115;117;119;117" 
+               dur="1.5s" 
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Mouth -->
+  <path d="M160 135 C163 138, 167 138, 170 135" fill="none" stroke="#000" stroke-width="2">
+    <animate attributeName="d" 
+             values="M160 135 C163 138, 167 138, 170 135;
+                     M160 133 C163 136, 167 136, 170 133;
+                     M160 135 C163 138, 167 138, 170 135" 
+             dur="1.5s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Arms -->
+  <g>
+    <!-- Left arm -->
+    <path d="M80 130 Q60 120 50 140 Q60 150 75 145" fill="#c2d9f2" stroke="#000" stroke-width="2">
+      <animate attributeName="d" 
+               values="M80 130 Q60 120 50 140 Q60 150 75 145;
+                       M80 128 Q60 118 50 138 Q60 148 75 143;
+                       M80 130 Q60 120 50 140 Q60 150 75 145" 
+               dur="1.5s" 
+               repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Right arm -->
+    <path d="M220 130 Q240 120 250 140 Q240 150 225 145" fill="#c2d9f2" stroke="#000" stroke-width="2">
+      <animate attributeName="d" 
+               values="M220 130 Q240 120 250 140 Q240 150 225 145;
+                       M220 128 Q240 118 250 138 Q240 148 225 143;
+                       M220 130 Q240 120 250 140 Q240 150 225 145" 
+               dur="1.5s" 
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Feet -->
+  <g>
+    <!-- Left foot -->
+    <path d="M120 210 Q105 230 90 225 Q100 215 120 215" fill="#c2d9f2" stroke="#000" stroke-width="2">
+      <animate attributeName="d" 
+               values="M120 210 Q105 230 90 225 Q100 215 120 215;
+                       M120 208 Q105 228 90 223 Q100 213 120 213;
+                       M120 210 Q105 230 90 225 Q100 215 120 215" 
+               dur="1.5s" 
+               repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Right foot -->
+    <path d="M180 210 Q195 230 210 225 Q200 215 180 215" fill="#c2d9f2" stroke="#000" stroke-width="2">
+      <animate attributeName="d" 
+               values="M180 210 Q195 230 210 225 Q200 215 180 215;
+                       M180 208 Q195 228 210 223 Q200 213 180 213;
+                       M180 210 Q195 230 210 225 Q200 215 180 215" 
+               dur="1.5s" 
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

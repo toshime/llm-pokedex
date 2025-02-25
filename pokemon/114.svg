@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Tangela Animation -->
+  
+  <style>
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+    
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
+    }
+    
+    .body {
+      animation: bounce 2s ease-in-out infinite;
+    }
+    
+    .eyes {
+      animation: blink 4s ease-in-out infinite;
+    }
+    
+    .vine {
+      animation: wiggle 3s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+    
+    .vine:nth-child(odd) {
+      animation-delay: 0.5s;
+    }
+    
+    .vine:nth-child(even) {
+      animation-delay: 1s;
+    }
+  </style>
+
+  <!-- Body Group -->
+  <g class="body">
+    <!-- Main body (black core) -->
+    <circle cx="150" cy="165" r="45" fill="black"/>
+    
+    <!-- Feet -->
+    <ellipse cx="120" cy="220" rx="30" ry="15" fill="#E97461"/>
+    <ellipse cx="180" cy="220" rx="30" ry="15" fill="#E97461"/>
+    
+    <!-- Eyes -->
+    <g class="eyes">
+      <circle cx="135" cy="155" r="15" fill="white"/>
+      <circle cx="165" cy="155" r="15" fill="white"/>
+      <circle cx="135" cy="155" r="7" fill="black"/>
+      <circle cx="165" cy="155" r="7" fill="black"/>
+    </g>
+    
+    <!-- Vines -->
+    <path class="vine" d="M130,120 C120,100 130,80 150,70 C170,60 140,40 130,50" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M170,120 C190,100 180,70 160,60 C140,50 170,30 180,40" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M190,150 C220,140 230,100 210,90 C190,80 220,60 230,70" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M110,150 C80,140 70,100 90,90 C110,80 80,60 70,70" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M180,180 C210,190 230,170 220,150 C210,130 240,120 250,130" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M120,180 C90,190 70,170 80,150 C90,130 60,120 50,130" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M150,120 C150,90 170,70 190,80 C210,90 220,60 210,50" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M150,200 C150,230 130,250 110,240 C90,230 80,260 90,270" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M180,200 C190,220 210,230 230,220 C250,210 260,230 250,240" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+    <path class="vine" d="M120,200 C110,220 90,230 70,220 C50,210 40,230 50,240" fill="none" stroke="#5D90B7" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

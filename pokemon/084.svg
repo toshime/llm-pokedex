@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Doduo (ドードー) SVG Animation -->
+
+  
+  <!-- Legs -->
+  <g id="legs">
+    <path d="M250,380 L240,440 L230,450 L235,452" fill="none" stroke="#D2B48C" stroke-width="4" stroke-linecap="round"/>
+    <path d="M250,380 L260,440 L270,450 L265,452" fill="none" stroke="#D2B48C" stroke-width="4" stroke-linecap="round"/>
+    <path d="M235,452 L225,460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M235,452 L235,460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M235,452 L245,460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M265,452 L255,460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M265,452 L265,460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M265,452 L275,460" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    
+    <animateTransform attributeName="transform" attributeType="XML" type="translate"
+      values="0,0; 0,-5; 0,0" dur="1s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Body -->
+  <ellipse cx="250" cy="330" rx="50" ry="60" fill="#C19A6B"/>
+  
+  <!-- Fluffy body feathers -->
+  <g id="body-feathers">
+    <path d="M210,330 Q200,310 210,290 Q220,295 225,305 Z" fill="#C19A6B"/>
+    <path d="M215,350 Q200,340 195,320 Q210,325 220,335 Z" fill="#C19A6B"/>
+    <path d="M290,330 Q300,310 290,290 Q280,295 275,305 Z" fill="#C19A6B"/>
+    <path d="M285,350 Q300,340 305,320 Q290,325 280,335 Z" fill="#C19A6B"/>
+    
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      values="0,250,330; 2,250,330; 0,250,330; -2,250,330; 0,250,330" dur="3s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Necks -->
+  <g id="necks">
+    <path d="M230,280 Q220,240 230,200" fill="none" stroke="#C19A6B" stroke-width="25" stroke-linecap="round"/>
+    <path d="M270,280 Q280,240 270,200" fill="none" stroke="#C19A6B" stroke-width="25" stroke-linecap="round"/>
+    
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      values="0,250,280; 3,250,280; 0,250,280; -3,250,280; 0,250,280" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Left Head -->
+  <g id="left-head">
+    <ellipse cx="230" cy="180" rx="25" ry="30" fill="#C19A6B"/>
+    
+    <!-- Beak -->
+    <path d="M205,180 L160,175 L205,185" fill="#F4A460" stroke="#000" stroke-width="1"/>
+    
+    <!-- Eye -->
+    <circle cx="215" cy="175" r="5" fill="white"/>
+    <circle cx="215" cy="175" r="3" fill="black">
+      <animate attributeName="ry" values="3;1;3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      values="0,230,200; 8,230,200; 0,230,200; -5,230,200; 0,230,200" dur="5s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Right Head -->
+  <g id="right-head">
+    <ellipse cx="270" cy="180" rx="25" ry="30" fill="#C19A6B"/>
+    
+    <!-- Beak -->
+    <path d="M295,180 L340,185 L295,190" fill="#F4A460" stroke="#000" stroke-width="1"/>
+    
+    <!-- Eye -->
+    <circle cx="285" cy="175" r="5" fill="white"/>
+    <circle cx="285" cy="175" r="3" fill="black">
+      <animate attributeName="ry" values="3;1;3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      values="0,270,200; -5,270,200; 0,270,200; 8,270,200; 0,270,200" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Rattata Base Body -->
+  <g id="rattata-body">
+    <path d="M240,200 C240,220 230,250 190,260 C150,270 120,250 110,230 C100,210 100,190 110,170 C120,150 140,140 160,140 C180,140 200,150 220,170 C240,190 240,180 240,200 Z" fill="#9370DB" stroke="#000" stroke-width="2"/>
+    
+    <!-- Belly -->
+    <path d="M190,260 C170,270 140,260 130,240 C120,220 120,200 130,180 C140,160 160,150 180,160 C200,170 210,190 200,220 C190,250 190,260 190,260 Z" fill="#F8F8FF" stroke="#000" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <path d="M240,200 C260,190 280,170 300,180 C320,190 330,210 320,230 C310,250 290,255 270,245 C250,235 240,210 240,200 Z" fill="#9370DB" stroke="#000" stroke-width="2"/>
+    <path d="M320,230 C330,225 340,220 345,230 C350,240 340,250 330,245 C320,240 320,230 320,230 Z" fill="#9370DB" stroke="#000" stroke-width="2"/>
+    
+    <!-- Ears -->
+    <path d="M160,140 C155,120 145,100 135,105 C125,110 130,130 140,140 C150,150 160,140 160,140 Z" fill="#9370DB" stroke="#000" stroke-width="2"/>
+    <path d="M180,140 C185,120 200,100 210,105 C220,110 215,130 200,140 C185,150 180,140 180,140 Z" fill="#9370DB" stroke="#000" stroke-width="2"/>
+    
+    <!-- Inner Ears -->
+    <path d="M140,140 C135,125 138,115 140,115 C142,115 145,125 145,135 C145,145 140,140 140,140 Z" fill="#FFC0CB" stroke="#000" stroke-width="1"/>
+    <path d="M200,140 C205,125 202,115 200,115 C198,115 195,125 195,135 C195,145 200,140 200,140 Z" fill="#FFC0CB" stroke="#000" stroke-width="1"/>
+    
+    <!-- Face Details -->
+    <!-- Eyes -->
+    <ellipse cx="155" cy="160" rx="10" ry="8" fill="#FFF" stroke="#000" stroke-width="1"/>
+    <ellipse cx="185" cy="160" rx="10" ry="8" fill="#FFF" stroke="#000" stroke-width="1"/>
+    <ellipse cx="155" cy="160" rx="5" ry="5" fill="#FF0000"/>
+    <ellipse cx="185" cy="160" rx="5" ry="5" fill="#FF0000"/>
+    <ellipse cx="157" cy="158" rx="2" ry="2" fill="#FFF"/>
+    <ellipse cx="187" cy="158" rx="2" ry="2" fill="#FFF"/>
+    
+    <!-- Nose -->
+    <path d="M170,175 C165,175 160,180 165,185 C170,190 180,190 185,185 C190,180 185,175 180,175 Z" fill="#FF69B4" stroke="#000" stroke-width="1"/>
+    
+    <!-- Whiskers -->
+    <line x1="165" y1="180" x2="130" y2="170" stroke="#000" stroke-width="1"/>
+    <line x1="165" y1="180" x2="130" y2="180" stroke="#000" stroke-width="1"/>
+    <line x1="165" y1="180" x2="130" y2="190" stroke="#000" stroke-width="1"/>
+    <line x1="185" y1="180" x2="220" y2="170" stroke="#000" stroke-width="1"/>
+    <line x1="185" y1="180" x2="220" y2="180" stroke="#000" stroke-width="1"/>
+    <line x1="185" y1="180" x2="220" y2="190" stroke="#000" stroke-width="1"/>
+    
+    <!-- Feet -->
+    <path d="M130,230 C125,235 120,245 125,250 C130,255 140,255 145,250 C150,245 145,235 140,230 Z" fill="#FFC0CB" stroke="#000" stroke-width="1"/>
+    <path d="M180,250 C175,255 170,265 175,270 C180,275 190,275 195,270 C200,265 195,255 190,250 Z" fill="#FFC0CB" stroke="#000" stroke-width="1"/>
+    
+    <!-- Front paws -->
+    <path d="M150,200 C145,205 140,215 145,220 C150,225 160,225 165,220 C170,215 165,205 160,200 Z" fill="#FFC0CB" stroke="#000" stroke-width="1"/>
+    
+    <!-- Mouth -->
+    <path d="M170,185 C168,190 172,195 180,195 C188,195 192,190 190,185" fill="none" stroke="#000" stroke-width="1"/>
+    
+    <!-- Teeth -->
+    <path d="M173,185 L173,195" stroke="#000" stroke-width="1.5"/>
+    <path d="M187,185 L187,195" stroke="#000" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Animation -->
+  <animateTransform 
+    xlink:href="#rattata-body"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-5; 0,0"
+    dur="0.8s"
+    repeatCount="indefinite"/>
+</svg>

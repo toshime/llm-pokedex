@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- カイリュー (Dragonite) -->
+  
+  <defs>
+    <!-- Animation definitions -->
+    <animate id="eyeBlink" attributeName="ry" values="5;1;5" dur="4s" begin="2s" repeatCount="indefinite" />
+  </defs>
+  
+  <!-- Tail Group -->
+  <g id="tail">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="-5,140,310;5,140,310;-5,140,310" dur="2.5s" repeatCount="indefinite" />
+    <path d="M170,320 C160,350 140,370 110,360 C90,350 80,330 90,310 C100,290 120,280 140,290 C160,300 180,290 170,320 Z" 
+          fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+  </g>
+  
+  <!-- Body Group -->
+  <g id="body">
+    <animateTransform attributeName="transform" type="translate" 
+                     values="0,-2;0,2;0,-2" dur="3s" repeatCount="indefinite" />
+    <!-- Body -->
+    <ellipse cx="200" cy="230" rx="50" ry="70" fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+    
+    <!-- Belly -->
+    <path d="M170,200 C180,180 200,170 220,180 C240,190 250,230 240,260 C230,290 210,300 190,290 C170,280 160,220 170,200 Z" 
+          fill="#f8e6b5" stroke="none" />
+    
+    <!-- Left leg -->
+    <path d="M170,280 C160,300 150,320 160,340 C170,360 190,360 200,350 C210,340 210,320 200,310 C190,300 180,260 170,280 Z" 
+          fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+    
+    <!-- Right leg -->
+    <path d="M230,280 C240,300 250,320 240,340 C230,360 210,360 200,350 C190,340 190,320 200,310 C210,300 220,260 230,280 Z" 
+          fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+    
+    <!-- Left foot -->
+    <path d="M160,350 C150,360 160,370 170,370 C180,370 190,360 190,350 C190,340 170,340 160,350 Z" 
+          fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+    
+    <!-- Right foot -->
+    <path d="M240,350 C250,360 240,370 230,370 C220,370 210,360 210,350 C210,340 230,340 240,350 Z" 
+          fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+  </g>
+  
+  <!-- Left Arm Group -->
+  <g id="leftArm">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="0,160,180;5,160,180;0,160,180" dur="3s" repeatCount="indefinite" />
+    <path d="M160,200 C150,210 140,220 130,210 C120,200 120,180 130,170 C140,160 160,160 170,170 C180,180 170,190 160,200 Z" 
+          fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+  </g>
+  
+  <!-- Right Arm Group -->
+  <g id="rightArm">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="0,240,180;-5,240,180;0,240,180" dur="3s" repeatCount="indefinite" />
+    <path d="M240,200 C250,210 260,220 270,210 C280,200 280,180 270,170 C260,160 240,160 230,170 C220,180 230,190 240,200 Z" 
+          fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+  </g>
+  
+  <!-- Wings Group -->
+  <g id="wings">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="0,200,170;-2,200,170;0,200,170" dur="2s" repeatCount="indefinite" />
+    <!-- Left wing -->
+    <path d="M160,180 C140,170 120,180 100,170 C80,160 70,140 90,130 C110,120 130,130 150,150 C170,170 180,190 160,180 Z" 
+          fill="#7acfce" stroke="#5abab9" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="-2,160,180;2,160,180;-2,160,180" dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Right wing -->
+    <path d="M240,180 C260,170 280,180 300,170 C320,160 330,140 310,130 C290,120 270,130 250,150 C230,170 220,190 240,180 Z" 
+          fill="#7acfce" stroke="#5abab9" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="2,240,180;-2,240,180;2,240,180" dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Head Group -->
+  <g id="head">
+    <animateTransform attributeName="transform" type="translate" 
+                     values="0,-3;0,3;0,-3" dur="4s" repeatCount="indefinite" />
+    <!-- Head -->
+    <ellipse cx="200" cy="140" rx="40" ry="40" fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+    
+    <!-- Face -->
+    <path d="M180,140 C180,120 190,110 200,110 C210,110 220,120 220,140 C220,160 210,170 200,170 C190,170 180,160 180,140 Z" 
+          fill="#f8e6b5" stroke="none" />
+    
+    <!-- Left eye -->
+    <ellipse cx="185" cy="130" rx="7" ry="9" fill="white" stroke="#ca8324" stroke-width="1" />
+    <ellipse cx="183" cy="129" rx="3" ry="5" fill="#222" stroke="none">
+      <animate attributeName="ry" values="5;1;5" dur="4s" begin="2s" repeatCount="indefinite" />
+    </ellipse>
+    <circle cx="184" cy="127" r="1.5" fill="white" stroke="none" />
+    
+    <!-- Right eye -->
+    <ellipse cx="215" cy="130" rx="7" ry="9" fill="white" stroke="#ca8324" stroke-width="1" />
+    <ellipse cx="217" cy="129" rx="3" ry="5" fill="#222" stroke="none">
+      <animate attributeName="ry" values="5;1;5" dur="4s" begin="2s" repeatCount="indefinite" />
+    </ellipse>
+    <circle cx="216" cy="127" r="1.5" fill="white" stroke="none" />
+    
+    <!-- Nose -->
+    <path d="M195,145 C198,148 202,148 205,145" fill="none" stroke="#ca8324" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- Horns Group -->
+    <g id="horns">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="-1,200,130;1,200,130;-1,200,130" dur="3s" repeatCount="indefinite" />
+      <!-- Left horn -->
+      <path d="M175,110 C170,100 165,90 170,80 C175,70 185,70 190,80 C195,90 185,110 175,110 Z" 
+            fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+      
+      <!-- Right horn -->
+      <path d="M225,110 C230,100 235,90 230,80 C225,70 215,70 210,80 C205,90 215,110 225,110 Z" 
+            fill="#f1a540" stroke="#ca8324" stroke-width="2" />
+    </g>
+  </g>
+</svg>

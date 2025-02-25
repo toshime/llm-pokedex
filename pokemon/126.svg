@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Magmortar (Booburn/ブーバーン) SVG Animation -->
+  <style>
+    .flame {
+      animation: flicker 2s infinite alternate;
+    }
+    .body {
+      animation: breathe 4s infinite alternate;
+    }
+    .arm {
+      transform-origin: 170px 220px;
+      animation: moveArm 5s infinite alternate;
+    }
+    .arm-right {
+      transform-origin: 330px 220px;
+      animation: moveArmRight 5s infinite alternate;
+    }
+    .head {
+      animation: headTilt 6s infinite alternate;
+      transform-origin: 250px 150px;
+    }
+    @keyframes flicker {
+      0% { opacity: 0.8; }
+      25% { opacity: 1; }
+      50% { opacity: 0.9; }
+      75% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+    @keyframes breathe {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.02); }
+    }
+    @keyframes moveArm {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(5deg); }
+    }
+    @keyframes moveArmRight {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-5deg); }
+    }
+    @keyframes headTilt {
+      0% { transform: rotate(-2deg); }
+      100% { transform: rotate(2deg); }
+    }
+  </style>
+  
+  <!-- Body -->
+  <g class="body">
+    <!-- Main body/torso -->
+    <ellipse cx="250" cy="270" rx="80" ry="100" fill="#F8D030" />
+    <!-- Lower body -->
+    <path d="M210 360 Q250 410 290 360" fill="#F8D030" stroke="#B8A038" stroke-width="2" />
+  </g>
+  
+  <!-- Tail with flame -->
+  <g>
+    <path d="M180 350 Q150 390 170 430" fill="#F8D030" stroke="#B8A038" stroke-width="2" />
+    <g class="flame">
+      <path d="M170 430 Q160 460 150 440 Q140 470 160 480 Q180 500 200 480 Q210 450 190 440 Q180 420 170 430" fill="#F08030" />
+      <path d="M170 440 Q165 455 160 445 Q155 465 165 470 Q180 485 190 470 Q195 450 185 445 Q180 435 170 440" fill="#F8D030" />
+    </g>
+  </g>
+  
+  <!-- Legs -->
+  <g>
+    <path d="M210 360 L200 430" fill="none" stroke="#F08030" stroke-width="20" stroke-linecap="round" />
+    <path d="M290 360 L300 430" fill="none" stroke="#F08030" stroke-width="20" stroke-linecap="round" />
+    
+    <!-- Feet -->
+    <path d="M185 430 Q200 440 215 430" fill="#C03028" />
+    <path d="M285 430 Q300 440 315 430" fill="#C03028" />
+  </g>
+  
+  <!-- Left arm -->
+  <g class="arm">
+    <path d="M170 220 L130 280" fill="none" stroke="#F08030" stroke-width="28" stroke-linecap="round" />
+    <ellipse cx="120" cy="290" rx="24" ry="20" fill="#C03028" />
+    <ellipse cx="115" cy="285" rx="5" ry="5" fill="#F08030" />
+    <ellipse cx="125" cy="285" rx="5" ry="5" fill="#F08030" />
+  </g>
+  
+  <!-- Right arm -->
+  <g class="arm-right">
+    <path d="M330 220 L370 280" fill="none" stroke="#F08030" stroke-width="28" stroke-linecap="round" />
+    <ellipse cx="380" cy="290" rx="24" ry="20" fill="#C03028" />
+    <ellipse cx="375" cy="285" rx="5" ry="5" fill="#F08030" />
+    <ellipse cx="385" cy="285" rx="5" ry="5" fill="#F08030" />
+  </g>
+  
+  <!-- Head -->
+  <g class="head">
+    <!-- Main head -->
+    <ellipse cx="250" cy="150" rx="55" ry="50" fill="#F08030" />
+    
+    <!-- Face features -->
+    <path d="M230 160 Q250 170 270 160" fill="none" stroke="#C03028" stroke-width="3" />
+    <ellipse cx="230" cy="145" rx="10" ry="12" fill="#C03028" />
+    <ellipse cx="270" cy="145" rx="10" ry="12" fill="#C03028" />
+    <ellipse cx="230" cy="143" rx="4" ry="5" fill="#FFFFFF" />
+    <ellipse cx="270" cy="143" rx="4" ry="5" fill="#FFFFFF" />
+    
+    <!-- Head flames -->
+    <g class="flame">
+      <path d="M220 110 Q210 90 215 70 Q225 90 235 70 Q245 90 240 110" fill="#F08030" />
+      <path d="M225 110 Q220 95 225 80 Q235 95 240 80 Q245 95 240 110" fill="#F8D030" />
+      
+      <path d="M250 100 Q240 75 250 50 Q260 75 270 50 Q280 75 270 100" fill="#F08030" />
+      <path d="M250 100 Q245 80 250 60 Q260 80 270 60 Q275 80 270 100" fill="#F8D030" />
+      
+      <path d="M280 110 Q270 90 275 70 Q285 90 295 70 Q305 90 300 110" fill="#F08030" />
+      <path d="M285 110 Q280 95 285 80 Q295 95 300 80 Q305 95 300 110" fill="#F8D030" />
+    </g>
+  </g>
+  
+  <!-- Neck -->
+  <path d="M230 190 Q250 220 270 190" fill="#F08030" />
+  
+  <!-- Shoulders -->
+  <ellipse cx="180" cy="215" rx="25" ry="25" fill="#F08030" />
+  <ellipse cx="320" cy="215" rx="25" ry="25" fill="#F08030" />
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <style>
+    @keyframes wingFlap {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-15deg); }
+    }
+    
+    @keyframes tailWave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    
+    @keyframes bodyFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    
+    @keyframes crestWave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(3deg); }
+    }
+    
+    .body {
+      animation: bodyFloat 3s ease-in-out infinite;
+    }
+    
+    .wing-left {
+      transform-origin: 180px 200px;
+      animation: wingFlap 2s ease-in-out infinite;
+    }
+    
+    .wing-right {
+      transform-origin: 320px 200px;
+      animation: wingFlap 2s ease-in-out infinite alternate-reverse;
+    }
+    
+    .tail {
+      transform-origin: 250px 330px;
+      animation: tailWave 2.5s ease-in-out infinite;
+    }
+    
+    .crest {
+      transform-origin: 250px 145px;
+      animation: crestWave 2s ease-in-out infinite;
+    }
+  </style>
+  
+  <!-- Tail -->
+  <g class="tail">
+    <path d="M230,330 C240,380 260,420 240,470 C260,450 280,390 270,330" fill="#5EB9E0" />
+    <path d="M270,330 C280,380 270,420 290,470 C310,430 290,380 280,330" fill="#5EB9E0" />
+    <path d="M250,330 C260,370 250,410 270,460 C280,420 270,370 260,330" fill="#3792C4" />
+  </g>
+  
+  <!-- Body -->
+  <g class="body">
+    <ellipse cx="250" cy="270" rx="45" ry="70" fill="#81C9F3" />
+    <ellipse cx="250" cy="260" rx="35" ry="60" fill="white" />
+    
+    <!-- Legs -->
+    <path d="M230,330 L220,370 L210,380 L220,380 L230,370 Z" fill="#F0D048" />
+    <path d="M270,330 L280,370 L290,380 L280,380 L270,370 Z" fill="#F0D048" />
+    <path d="M225,370 L215,385 L220,385 L230,375 Z" fill="#BB9F30" />
+    <path d="M275,370 L285,385 L280,385 L270,375 Z" fill="#BB9F30" />
+    
+    <!-- Neck -->
+    <path d="M250,200 C240,220 240,230 250,260 C260,230 260,220 250,200" fill="#81C9F3" />
+    
+    <!-- Head -->
+    <ellipse cx="250" cy="180" rx="25" ry="30" fill="#81C9F3" />
+    <ellipse cx="250" cy="178" rx="18" ry="25" fill="white" />
+    
+    <!-- Eyes -->
+    <ellipse cx="240" cy="175" rx="5" ry="5" fill="#2B3F5D" />
+    <ellipse cx="260" cy="175" rx="5" ry="5" fill="#2B3F5D" />
+    <ellipse cx="242" cy="173" rx="2" ry="2" fill="white" />
+    <ellipse cx="262" cy="173" rx="2" ry="2" fill="white" />
+    
+    <!-- Beak -->
+    <path d="M250,185 L240,195 L260,195 Z" fill="#2B3F5D" />
+  </g>
+  
+  <!-- Crest -->
+  <g class="crest">
+    <path d="M250,160 C240,140 245,120 235,100 C250,110 260,140 250,160" fill="#3792C4" />
+    <path d="M250,160 C260,140 255,120 265,100 C250,110 240,140 250,160" fill="#3792C4" />
+    <path d="M250,155 C245,135 245,115 250,95 C255,115 255,135 250,155" fill="#5EB9E0" />
+  </g>
+  
+  <!-- Wings -->
+  <g class="wing-left">
+    <path d="M210,200 C150,160 100,180 60,150 C110,190 150,170 200,210" fill="#81C9F3" />
+    <path d="M200,210 C140,190 90,210 40,190 C100,220 150,200 190,220" fill="#81C9F3" />
+    <path d="M190,220 C130,220 80,240 30,230 C90,250 140,230 180,230" fill="#81C9F3" />
+    <path d="M180,230 C130,250 90,270 40,270 C100,280 150,260 170,240" fill="#81C9F3" />
+    <path d="M170,240 C130,280 100,300 60,320 C120,310 160,280 160,250" fill="#81C9F3" />
+    
+    <!-- Wing detail -->
+    <path d="M210,200 C170,180 130,190 100,170 C140,190 180,180 200,210" fill="#3792C4" />
+    <path d="M200,210 C160,200 120,210 80,200 C130,220 170,210 190,220" fill="#3792C4" />
+    <path d="M190,220 C150,230 110,240 70,240 C120,250 160,240 180,230" fill="#3792C4" />
+    <path d="M180,230 C140,250 110,260 80,270 C130,280 160,260 170,240" fill="#3792C4" />
+    <path d="M170,240 C140,270 120,290 90,300 C130,300 160,280 160,250" fill="#3792C4" />
+  </g>
+  
+  <g class="wing-right">
+    <path d="M290,200 C350,160 400,180 440,150 C390,190 350,170 300,210" fill="#81C9F3" />
+    <path d="M300,210 C360,190 410,210 460,190 C400,220 350,200 310,220" fill="#81C9F3" />
+    <path d="M310,220 C370,220 420,240 470,230 C410,250 360,230 320,230" fill="#81C9F3" />
+    <path d="M320,230 C370,250 410,270 460,270 C400,280 350,260 330,240" fill="#81C9F3" />
+    <path d="M330,240 C370,280 400,300 440,320 C380,310 340,280 340,250" fill="#81C9F3" />
+    
+    <!-- Wing detail -->
+    <path d="M290,200 C330,180 370,190 400,170 C360,190 320,180 300,210" fill="#3792C4" />
+    <path d="M300,210 C340,200 380,210 420,200 C370,220 330,210 310,220" fill="#3792C4" />
+    <path d="M310,220 C350,230 390,240 430,240 C380,250 340,240 320,230" fill="#3792C4" />
+    <path d="M320,230 C360,250 390,260 420,270 C370,280 340,260 330,240" fill="#3792C4" />
+    <path d="M330,240 C360,270 380,290 410,300 C370,300 340,280 340,250" fill="#3792C4" />
+  </g>
+</svg>

@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Venusaur (003) High Resolution -->
+  
+  <!-- Body -->
+  <g id="body">
+    <!-- Main body -->
+    <path d="M200,290 C140,290 110,270 95,235 C80,200 90,150 180,150 C270,150 280,200 265,235 C250,270 260,290 200,290 Z" fill="#4B9998">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M200,290 C140,290 110,270 95,235 C80,200 90,150 180,150 C270,150 280,200 265,235 C250,270 260,290 200,290 Z;
+                M200,295 C140,295 110,275 95,240 C80,205 90,155 180,155 C270,155 280,205 265,240 C250,275 260,295 200,295 Z;
+                M200,290 C140,290 110,270 95,235 C80,200 90,150 180,150 C270,150 280,200 265,235 C250,270 260,290 200,290 Z" />
+    </path>
+    
+    <!-- Underside -->
+    <path d="M170,290 C130,290 110,280 95,260 C105,280 140,300 200,300 C260,300 275,280 285,260 C275,280 250,290 215,290 Z" fill="#3A7778" />
+    
+    <!-- Spots -->
+    <path d="M140,230 C135,225 135,215 140,210 C145,205 155,205 160,210 C165,215 165,225 160,230 C155,235 145,235 140,230 Z" fill="#3A7778" />
+    <path d="M240,245 C235,240 235,230 240,225 C245,220 255,220 260,225 C265,230 265,240 260,245 C255,250 245,250 240,245 Z" fill="#3A7778" />
+    <path d="M180,260 C175,255 175,245 180,240 C185,235 195,235 200,240 C205,245 205,255 200,260 C195,265 185,265 180,260 Z" fill="#3A7778" />
+    <path d="M220,225 C215,220 215,210 220,205 C225,200 235,200 240,205 C245,210 245,220 240,225 C235,230 225,230 220,225 Z" fill="#3A7778" />
+  </g>
+  
+  <!-- Legs -->
+  <g id="legs">
+    <!-- Front right leg -->
+    <path d="M140,290 C130,290 125,300 130,310 C135,320 145,320 150,310 C155,300 150,290 140,290 Z" fill="#4B9998">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M140,290 C130,290 125,300 130,310 C135,320 145,320 150,310 C155,300 150,290 140,290 Z;
+                M140,295 C130,295 125,305 130,315 C135,325 145,325 150,315 C155,305 150,295 140,295 Z;
+                M140,290 C130,290 125,300 130,310 C135,320 145,320 150,310 C155,300 150,290 140,290 Z" />
+    </path>
+    
+    <!-- Front left leg -->
+    <path d="M250,290 C240,290 235,300 240,310 C245,320 255,320 260,310 C265,300 260,290 250,290 Z" fill="#4B9998">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M250,290 C240,290 235,300 240,310 C245,320 255,320 260,310 C265,300 260,290 250,290 Z;
+                M250,295 C240,295 235,305 240,315 C245,325 255,325 260,315 C265,305 260,295 250,295 Z;
+                M250,290 C240,290 235,300 240,310 C245,320 255,320 260,310 C265,300 260,290 250,290 Z" />
+    </path>
+    
+    <!-- Back right leg -->
+    <path d="M160,280 C150,285 145,295 150,305 C155,315 165,315 170,305 C175,295 170,275 160,280 Z" fill="#4B9998" />
+    
+    <!-- Back left leg -->
+    <path d="M230,280 C220,285 215,295 220,305 C225,315 235,315 240,305 C245,295 240,275 230,280 Z" fill="#4B9998" />
+  </g>
+  
+  <!-- Plant -->
+  <g id="plant">
+    <!-- Base bulb -->
+    <ellipse cx="190" cy="140" rx="90" ry="70" fill="#528E6F">
+      <animate attributeName="ry" dur="4s" repeatCount="indefinite" values="70;72;70" />
+    </ellipse>
+    
+    <!-- Large leaves -->
+    <path d="M120,120 C90,100 50,70 40,100 C30,130 60,140 120,120 Z" fill="#528E6F">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+        values="M120,120 C90,100 50,70 40,100 C30,130 60,140 120,120 Z;
+                M120,122 C90,102 50,72 40,102 C30,132 60,142 120,122 Z;
+                M120,120 C90,100 50,70 40,100 C30,130 60,140 120,120 Z" />
+    </path>
+    
+    <path d="M260,120 C290,100 330,70 340,100 C350,130 320,140 260,120 Z" fill="#528E6F">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+        values="M260,120 C290,100 330,70 340,100 C350,130 320,140 260,120 Z;
+                M260,122 C290,102 330,72 340,102 C350,132 320,142 260,122 Z;
+                M260,120 C290,100 330,70 340,100 C350,130 320,140 260,120 Z" />
+    </path>
+    
+    <!-- Mid-sized leaves -->
+    <path d="M140,90 C120,60 100,30 90,50 C80,70 110,100 140,90 Z" fill="#528E6F">
+      <animate attributeName="d" dur="4.5s" repeatCount="indefinite" 
+        values="M140,90 C120,60 100,30 90,50 C80,70 110,100 140,90 Z;
+                M140,92 C120,62 100,32 90,52 C80,72 110,102 140,92 Z;
+                M140,90 C120,60 100,30 90,50 C80,70 110,100 140,90 Z" />
+    </path>
+    
+    <path d="M240,90 C260,60 280,30 290,50 C300,70 270,100 240,90 Z" fill="#528E6F">
+      <animate attributeName="d" dur="4.5s" repeatCount="indefinite" 
+        values="M240,90 C260,60 280,30 290,50 C300,70 270,100 240,90 Z;
+                M240,92 C260,62 280,32 290,52 C300,72 270,102 240,92 Z;
+                M240,90 C260,60 280,30 290,50 C300,70 270,100 240,90 Z" />
+    </path>
+    
+    <!-- Smaller front leaves -->
+    <path d="M160,70 C150,40 145,20 135,30 C125,40 140,80 160,70 Z" fill="#528E6F">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M160,70 C150,40 145,20 135,30 C125,40 140,80 160,70 Z;
+                M160,72 C150,42 145,22 135,32 C125,42 140,82 160,72 Z;
+                M160,70 C150,40 145,20 135,30 C125,40 140,80 160,70 Z" />
+    </path>
+    
+    <path d="M220,70 C230,40 235,20 245,30 C255,40 240,80 220,70 Z" fill="#528E6F">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M220,70 C230,40 235,20 245,30 C255,40 240,80 220,70 Z;
+                M220,72 C230,42 235,22 245,32 C255,42 240,82 220,72 Z;
+                M220,70 C230,40 235,20 245,30 C255,40 240,80 220,70 Z" />
+    </path>
+    
+    <!-- Detail lines on leaves -->
+    <path d="M100,130 L50,80" fill="none" stroke="#457A5F" stroke-width="1.5" />
+    <path d="M300,130 L350,80" fill="none" stroke="#457A5F" stroke-width="1.5" />
+    <path d="M120,95 L100,40" fill="none" stroke="#457A5F" stroke-width="1.5" />
+    <path d="M260,95 L280,40" fill="none" stroke="#457A5F" stroke-width="1.5" />
+    
+    <!-- Flower -->
+    <g id="flower">
+      <!-- Main flower -->
+      <circle cx="190" cy="100" r="40" fill="#E75A7C">
+        <animate attributeName="r" dur="4s" repeatCount="indefinite" values="40;41;40" />
+      </circle>
+      
+      <!-- Flower petals -->
+      <ellipse cx="140" cy="100" rx="25" ry="22" fill="#E75A7C">
+        <animate attributeName="rx" dur="4s" repeatCount="indefinite" values="25;26;25" />
+      </ellipse>
+      <ellipse cx="240" cy="100" rx="25" ry="22" fill="#E75A7C">
+        <animate attributeName="rx" dur="4s" repeatCount="indefinite" values="25;26;25" />
+      </ellipse>
+      <ellipse cx="190" cy="50" rx="22" ry="25" fill="#E75A7C">
+        <animate attributeName="ry" dur="4s" repeatCount="indefinite" values="25;26;25" />
+      </ellipse>
+      <ellipse cx="190" cy="150" rx="22" ry="25" fill="#E75A7C">
+        <animate attributeName="ry" dur="4s" repeatCount="indefinite" values="25;26;25" />
+      </ellipse>
+      
+      <!-- Flower center -->
+      <circle cx="190" cy="100" r="25" fill="#D23D61">
+        <animate attributeName="r" dur="4s" repeatCount="indefinite" values="25;26;25" />
+      </circle>
+      
+      <!-- Flower core -->
+      <circle cx="190" cy="100" r="15" fill="#813826">
+        <animate attributeName="r" dur="4s" repeatCount="indefinite" values="15;16;15" />
+      </circle>
+      
+      <!-- Flower details -->
+      <circle cx="190" cy="100" r="5" fill="#6E2D1F" />
+      <circle cx="180" cy="95" r="2" fill="#6E2D1F" />
+      <circle cx="200" cy="95" r="2" fill="#6E2D1F" />
+      <circle cx="190" cy="110" r="2" fill="#6E2D1F" />
+      
+      <!-- Petal details -->
+      <path d="M150,85 Q140,100 150,115" fill="none" stroke="#D23D61" stroke-width="2" />
+      <path d="M230,85 Q240,100 230,115" fill="none" stroke="#D23D61" stroke-width="2" />
+      <path d="M175,60 Q190,50 205,60" fill="none" stroke="#D23D61" stroke-width="2" />
+      <path d="M175,140 Q190,150 205,140" fill="none" stroke="#D23D61" stroke-width="2" />
+    </g>
+  </g>
+  
+  <!-- Head -->
+  <g id="head">
+    <!-- Head shape -->
+    <path d="M140,190 C120,180 115,165 130,150 C145,135 185,135 200,150 C215,165 210,180 190,190" fill="#4B9998" />
+    
+    <!-- Eyes -->
+    <g id="eyes">
+      <!-- White of eyes -->
+      <ellipse cx="150" cy="160" rx="15" ry="18" fill="white" />
+      <ellipse cx="190" cy="160" rx="15" ry="18" fill="white" />
+      
+      <!-- Red part -->
+      <ellipse cx="150" cy="160" rx="10" ry="13" fill="#E65A5A">
+        <animate attributeName="cy" dur="6s" repeatCount="indefinite" values="160;162;160;158;160" />
+      </ellipse>
+      <ellipse cx="190" cy="160" rx="10" ry="13" fill="#E65A5A">
+        <animate attributeName="cy" dur="6s" repeatCount="indefinite" values="160;162;160;158;160" />
+      </ellipse>
+      
+      <!-- Black pupils -->
+      <ellipse cx="150" cy="159" rx="5" ry="7" fill="black">
+        <animate attributeName="cy" dur="6s" repeatCount="indefinite" values="159;161;159;157;159" />
+      </ellipse>
+      <ellipse cx="190" cy="159" rx="5" ry="7" fill="black">
+        <animate attributeName="cy" dur="6s" repeatCount="indefinite" values="159;161;159;157;159" />
+      </ellipse>
+      
+      <!-- Highlight -->
+      <ellipse cx="148" cy="156" rx="2" ry="3" fill="white">
+        <animate attributeName="cy" dur="6s" repeatCount="indefinite" values="156;158;156;154;156" />
+      </ellipse>
+      <ellipse cx="188" cy="156" rx="2" ry="3" fill="white">
+        <animate attributeName="cy" dur="6s" repeatCount="indefinite" values="156;158;156;154;156" />
+      </ellipse>
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M150,185 Q170,195 190,185" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+        values="M150,185 Q170,195 190,185;
+                M150,187 Q170,197 190,187;
+                M150,185 Q170,195 190,185" />
+    </path>
+    
+    <!-- Nostrils -->
+    <ellipse cx="160" cy="180" rx="3" ry="2" fill="#333" />
+    <ellipse cx="180" cy="180" rx="3" ry="2" fill="#333" />
+  </g>
+  
+  <!-- Ears -->
+  <g id="ears">
+    <path d="M130,150 C120,145 115,135 120,125 C125,115 135,115 140,120 C145,125 140,145 130,150 Z" fill="#4B9998">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M130,150 C120,145 115,135 120,125 C125,115 135,115 140,120 C145,125 140,145 130,150 Z;
+                M130,152 C120,147 115,137 120,127 C125,117 135,117 140,122 C145,127 140,147 130,152 Z;
+                M130,150 C120,145 115,135 120,125 C125,115 135,115 140,120 C145,125 140,145 130,150 Z" />
+    </path>
+    <path d="M200,150 C210,145 215,135 210,125 C205,115 195,115 190,120 C185,125 190,145 200,150 Z" fill="#4B9998">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M200,150 C210,145 215,135 210,125 C205,115 195,115 190,120 C185,125 190,145 200,150 Z;
+                M200,152 C210,147 215,137 210,127 C205,117 195,117 190,122 C185,127 190,147 200,152 Z;
+                M200,150 C210,145 215,135 210,125 C205,115 195,115 190,120 C185,125 190,145 200,150 Z" />
+    </path>
+  </g>
+</svg>

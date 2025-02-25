@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="bodyClip">
+      <ellipse cx="200" cy="220" rx="100" ry="80" />
+    </clipPath>
+  </defs>
+  
+  <!-- Main body -->
+  <ellipse cx="200" cy="220" rx="100" ry="80" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animate attributeName="ry" values="80;78;80;82;80" dur="3s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Tail -->
+  <path d="M120 240 C80 270, 80 320, 120 340 C140 350, 150 310, 130 290 Z" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 120 240;5 120 240;0 120 240;-5 120 240;0 120 240" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Head -->
+  <ellipse cx="240" cy="170" rx="70" ry="60" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2" />
+  
+  <!-- Face features -->
+  <!-- Eyes -->
+  <ellipse cx="260" cy="155" rx="15" ry="15" fill="white" stroke="#333" stroke-width="1.5" />
+  <ellipse cx="260" cy="155" rx="8" ry="8" fill="#333">
+    <animate attributeName="ry" values="8;2;8" dur="4s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Nose -->
+  <ellipse cx="285" cy="170" rx="10" ry="6" fill="#AA8866" />
+  
+  <!-- Mouth -->
+  <path d="M240 185 C250 195, 270 195, 280 185" fill="none" stroke="#333" stroke-width="2" />
+  <path d="M250 190 C255 210, 270 210, 275 190" fill="#FF9999" stroke="#993333" stroke-width="1">
+    <animate attributeName="d" values="M250 190 C255 200, 270 200, 275 190;M250 190 C255 205, 270 205, 275 190;M250 190 C255 200, 270 200, 275 190" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Tusks -->
+  <path d="M230 185 C225 205, 230 210, 240 215" fill="#FFEECC" stroke="#DDCCAA" stroke-width="1.5" />
+  <path d="M290 185 C295 205, 290 210, 280 215" fill="#FFEECC" stroke="#DDCCAA" stroke-width="1.5" />
+  
+  <!-- Flippers -->
+  <path d="M170 220 C150 240, 130 260, 140 280 C150 290, 170 270, 180 260" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 170 220;-5 170 220;0 170 220;5 170 220;0 170 220" dur="2s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M230 220 C250 240, 270 260, 260 280 C250 290, 230 270, 220 260" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 230 220;5 230 220;0 230 220;-5 230 220;0 230 220" dur="2s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Water splash effect (optional) -->
+  <g opacity="0.7">
+    <path d="M160 290 C170 280, 190 285, 200 290" fill="none" stroke="#88CCFF" stroke-width="2">
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="5s" repeatCount="indefinite" />
+    </path>
+    <path d="M240 290 C230 280, 210 285, 200 290" fill="none" stroke="#88CCFF" stroke-width="2">
+      <animate attributeName="opacity" values="0;0.7;0" dur="4s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

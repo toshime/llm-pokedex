@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Kangaskhan SVG Illustration -->
+  
+  <!-- Body -->
+  <path d="M200 300c-30 0-55-25-80-45s-40-40-40-70 10-65 40-85 60-25 90-25 70 5 100 25 40 55 40 85-15 50-40 70-50 45-80 45z" fill="#9b8778"/>
+  
+  <!-- Tail -->
+  <path d="M110 250c-10 20-30 40-40 45s-20 5-25-5 0-20 10-30 30-20 40-15z" fill="#9b8778"/>
+  
+  <!-- Left Arm -->
+  <path d="M125 200c-15 0-30 10-35 25s0 30 10 35 25 0 35-10 15-25 10-35-10-15-20-15z" fill="#9b8778"/>
+  
+  <!-- Right Arm -->
+  <path d="M275 200c15 0 30 10 35 25s0 30-10 35-25 0-35-10-15-25-10-35 10-15 20-15z" fill="#9b8778"/>
+  
+  <!-- Left Leg -->
+  <path d="M150 300c-5 15-15 30-25 40s-25 15-35 10-15-20-10-35 20-30 35-30 30 5 35 15z" fill="#9b8778"/>
+  
+  <!-- Right Leg -->
+  <path d="M250 300c5 15 15 30 25 40s25 15 35 10 15-20 10-35-20-30-35-30-30 5-35 15z" fill="#9b8778"/>
+  
+  <!-- Pouch -->
+  <ellipse cx="200" cy="260" rx="40" ry="30" fill="#e8d6a8"/>
+  
+  <!-- Baby Kangaskhan -->
+  <ellipse cx="200" cy="260" rx="20" ry="15" fill="#c5b1d6"/>
+  <circle cx="190" cy="255" r="3" fill="#444"/>
+  <circle cx="210" cy="255" r="3" fill="#444"/>
+  <path d="M195 265c3 2 7 2 10 0" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Facial Features -->
+  <circle cx="170" cy="180" r="10" fill="#444"/>
+  <circle cx="230" cy="180" r="10" fill="#444"/>
+  <path d="M180 210c10 10 30 10 40 0" fill="none" stroke="#444" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Ears -->
+  <path d="M150 140c-10-10-20-30-15-40s20-15 30-5 15 30 10 40-15 15-25 5z" fill="#e8d6a8"/>
+  <path d="M250 140c10-10 20-30 15-40s-20-15-30-5-15 30-10 40 15 15 25 5z" fill="#e8d6a8"/>
+  
+  <!-- Spikes -->
+  <path d="M185 150l-15-20M215 150l15-20" fill="none" stroke="#444" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Claws -->
+  <path d="M120 250l-10-10M130 255l-10-10M280 250l10-10M270 255l10-10" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+
+  <!-- Arbok (アーボック) -->
+  <g id="arbok">
+    <!-- Snake Body -->
+    <path d="M180 320 C220 300 240 270 250 230 C260 190 240 150 210 130 C180 110 150 120 130 150 C110 180 120 220 150 240 C180 260 220 250 230 220" fill="#a090c0">
+      <animate attributeName="d" 
+               values="M180 320 C220 300 240 270 250 230 C260 190 240 150 210 130 C180 110 150 120 130 150 C110 180 120 220 150 240 C180 260 220 250 230 220;
+                       M180 320 C230 310 250 280 255 240 C260 200 235 150 205 135 C175 120 145 130 125 160 C105 190 115 230 145 245 C175 260 215 245 225 215;
+                       M180 320 C220 300 240 270 250 230 C260 190 240 150 210 130 C180 110 150 120 130 150 C110 180 120 220 150 240 C180 260 220 250 230 220" 
+               dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Hood -->
+    <path d="M130 150 C150 130 170 120 200 120 C230 120 250 130 270 150 C290 170 270 210 230 220 C190 230 150 220 130 190 C120 170 120 160 130 150Z" fill="#a090c0">
+      <animate attributeName="d" 
+               values="M130 150 C150 130 170 120 200 120 C230 120 250 130 270 150 C290 170 270 210 230 220 C190 230 150 220 130 190 C120 170 120 160 130 150Z;
+                       M130 150 C155 125 175 115 200 115 C225 115 245 125 265 145 C285 165 265 205 225 215 C185 225 155 215 135 185 C125 165 125 160 130 150Z;
+                       M130 150 C150 130 170 120 200 120 C230 120 250 130 270 150 C290 170 270 210 230 220 C190 230 150 220 130 190 C120 170 120 160 130 150Z" 
+               dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Hood Pattern - Scared Face -->
+    <path d="M165 160 C175 150 190 145 200 145 C210 145 225 150 235 160 C245 170 245 185 235 195 C225 205 210 205 200 205 C190 205 175 205 165 195 C155 185 155 170 165 160Z" fill="#222222"/>
+    
+    <!-- Face Pattern - Eyes -->
+    <path d="M180 170 C185 165 195 165 200 170 C205 175 205 185 200 190 C195 195 185 195 180 190 C175 185 175 175 180 170Z" fill="#f8d850"/>
+    <path d="M220 170 C225 165 235 165 240 170 C245 175 245 185 240 190 C235 195 225 195 220 190 C215 185 215 175 220 170Z" fill="#f8d850"/>
+    
+    <!-- Angry Eyebrows -->
+    <path d="M175 160 C180 155 190 155 195 160" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M225 160 C230 155 240 155 245 160" fill="none" stroke="#222222" stroke-width="2"/>
+    
+    <!-- Hood Pattern Details -->
+    <path d="M150 135 C165 125 185 120 200 120 C215 120 235 125 250 135" fill="none" stroke="#222222" stroke-width="3"/>
+    <path d="M145 150 C160 140 180 135 200 135 C220 135 240 140 255 150" fill="none" stroke="#222222" stroke-width="3"/>
+    <path d="M140 165 C155 155 175 150 200 150 C225 150 245 155 260 165" fill="none" stroke="#222222" stroke-width="3"/>
+    <path d="M140 180 C155 170 175 165 200 165 C225 165 245 170 260 180" fill="none" stroke="#222222" stroke-width="3"/>
+    <path d="M145 195 C160 185 180 180 200 180 C220 180 240 185 255 195" fill="none" stroke="#222222" stroke-width="3"/>
+    <path d="M155 210 C170 200 185 195 200 195 C215 195 230 200 245 210" fill="none" stroke="#222222" stroke-width="3"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="185" cy="175" rx="6" ry="8" fill="#ff4040"/>
+    <ellipse cx="235" cy="175" rx="6" ry="8" fill="#ff4040"/>
+    <ellipse cx="185" cy="175" rx="2" ry="6" fill="black"/>
+    <ellipse cx="235" cy="175" rx="2" ry="6" fill="black"/>
+    
+    <!-- Mouth -->
+    <path d="M190 195 C200 205 220 205 230 195" fill="none" stroke="black" stroke-width="2">
+      <animate attributeName="d" 
+               values="M190 195 C200 205 220 205 230 195;
+                       M190 195 C200 200 220 200 230 195;
+                       M190 195 C200 205 220 205 230 195" 
+               dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Fangs -->
+    <path d="M195 195 L190 210" fill="none" stroke="white" stroke-width="3"/>
+    <path d="M225 195 L230 210" fill="none" stroke="white" stroke-width="3"/>
+    
+    <!-- Belly Scales -->
+    <path d="M180 250 C190 255 210 255 220 250" fill="none" stroke="#d8c0f0" stroke-width="2"/>
+    <path d="M175 265 C185 270 205 270 215 265" fill="none" stroke="#d8c0f0" stroke-width="2"/>
+    <path d="M170 280 C180 285 200 285 210 280" fill="none" stroke="#d8c0f0" stroke-width="2"/>
+    <path d="M175 295 C185 300 195 300 205 295" fill="none" stroke="#d8c0f0" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <path d="M180 320 C170 330 160 340 170 350 C180 360 190 350 200 340 C210 330 190 325 180 320Z" fill="#a090c0">
+      <animate attributeName="d" 
+               values="M180 320 C170 330 160 340 170 350 C180 360 190 350 200 340 C210 330 190 325 180 320Z;
+                       M180 320 C165 335 155 345 165 355 C175 365 185 355 195 345 C205 335 190 325 180 320Z;
+                       M180 320 C170 330 160 340 170 350 C180 360 190 350 200 340 C210 330 190 325 180 320Z" 
+               dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Rattle at tail tip -->
+    <circle cx="170" cy="350" r="5" fill="#f8d850"/>
+    
+    <!-- Hood Animation -->
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" 
+                      values="-3 200 200; 3 200 200; -3 200 200" 
+                      dur="2s" repeatCount="indefinite" additive="sum"/>
+  </g>
+</svg>

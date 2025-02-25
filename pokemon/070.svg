@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- ウツドン -->
+  <g id="utsudon">
+    <!-- 体（黄色い部分） -->
+    <ellipse cx="200" cy="220" rx="70" ry="80" fill="#E8E85C"/>
+    <path d="M200,220 C210,215 220,210 230,215 C240,220 245,230 240,240 C235,250 225,255 215,250 C205,245 200,235 200,220" fill="#D9D94A"/>
+    
+    <!-- 口 -->
+    <ellipse cx="160" cy="220" rx="40" ry="45" fill="#E5B8B8"/>
+    <ellipse cx="155" cy="225" rx="30" ry="35" fill="#000000" opacity="0.3"/>
+    
+    <!-- 目 -->
+    <circle cx="200" cy="180" r="20" fill="white"/>
+    <circle cx="205" cy="180" r="15" fill="#77C048"/>
+    <circle cx="210" cy="175" r="8" fill="black"/>
+    <circle cx="208" cy="172" r="3" fill="white"/>
+    
+    <!-- 上の葉っぱ -->
+    <path d="M200,140 C180,120 170,100 180,80 C190,60 210,50 230,60 C250,70 260,90 250,110 C240,130 220,140 200,140" fill="#77C048"/>
+    
+    <!-- 左の葉っぱ -->
+    <path d="M130,200 C110,190 90,190 80,170 C70,150 80,130 100,120 C120,110 140,120 150,140 C160,160 150,180 130,200" fill="#77C048"/>
+    
+    <!-- 右の葉っぱ -->
+    <path d="M270,200 C290,190 310,190 320,170 C330,150 320,130 300,120 C280,110 260,120 250,140 C240,160 250,180 270,200" fill="#77C048"/>
+    
+    <!-- アニメーション -->
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" values="0 200 220;3 200 220;0 200 220;-3 200 220;0 200 220" dur="2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" values="0,0;0,-5;0,0;0,5;0,0" dur="4s" repeatCount="indefinite" additive="sum"/>
+  </g>
+</svg>

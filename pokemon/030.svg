@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Nidorina (030) -->
+  <style>
+    .body {
+      animation: breathe 4s ease-in-out infinite;
+    }
+    .ear {
+      animation: earTwitch 6s ease-in-out infinite;
+    }
+    .front-leg {
+      animation: legMove 7s ease-in-out infinite;
+    }
+    .tail {
+      animation: tailWag 5s ease-in-out infinite;
+    }
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.015); }
+    }
+    @keyframes earTwitch {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+    }
+    @keyframes legMove {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(2px); }
+    }
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+  </style>
+  
+  <!-- Body -->
+  <g class="body">
+    <path d="M 160 210 Q 230 220, 260 190 Q 295 160, 290 120 Q 275 80, 220 85 Q 180 90, 150 105 Q 105 135, 100 175 Q 95 210, 120 225 Q 140 235, 160 210 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" />
+    
+    <!-- Spots -->
+    <circle cx="240" cy="150" r="12" fill="#88b4c5" />
+    <circle cx="200" cy="180" r="10" fill="#88b4c5" />
+    <circle cx="150" cy="160" r="9" fill="#88b4c5" />
+    <circle cx="180" cy="130" r="8" fill="#88b4c5" />
+  </g>
+
+  <!-- Tail -->
+  <g class="tail" transform-origin="110 190">
+    <path d="M 120 200 Q 90 205, 70 220 Q 60 230, 70 240 Q 85 245, 105 230 Q 115 220, 120 200 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" />
+  </g>
+
+  <!-- Ears -->
+  <g class="ear" transform-origin="205 90">
+    <path d="M 190 105 Q 175 80, 195 65 Q 210 55, 220 75 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" />
+  </g>
+  <g class="ear" transform-origin="265 95">
+    <path d="M 250 105 Q 255 75, 275 70 Q 295 75, 280 105 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" />
+  </g>
+  
+  <!-- Spikes -->
+  <path d="M 220 100 L 215 70 L 230 80 Z" fill="#e6e6e6" stroke="#88b4c5" stroke-width="1.5" />
+  <path d="M 245 105 L 250 80 L 260 95 Z" fill="#e6e6e6" stroke="#88b4c5" stroke-width="1.5" />
+  
+  <!-- Face -->
+  <circle cx="200" cy="125" r="16" fill="#4c8b9b" stroke="#2c6b8b" stroke-width="1.5" />
+  <circle cx="255" cy="125" r="16" fill="#4c8b9b" stroke="#2c6b8b" stroke-width="1.5" />
+  <circle cx="202" cy="122" r="6" fill="#ffffff" opacity="0.7" />
+  <circle cx="257" cy="122" r="6" fill="#ffffff" opacity="0.7" />
+  <circle cx="215" cy="140" r="3" fill="#1a1a1a" />
+  <circle cx="240" cy="140" r="3" fill="#1a1a1a" />
+  <path d="M 225 155 Q 230 160, 235 155" fill="none" stroke="#c74e4e" stroke-width="2.5" />
+  
+  <!-- Legs -->
+  <g class="front-leg">
+    <path d="M 150 210 Q 140 230, 145 250 Q 150 260, 165 255 Q 175 240, 165 210 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" />
+  </g>
+  <g class="front-leg">
+    <path d="M 190 210 Q 185 230, 190 250 Q 195 260, 210 255 Q 220 245, 210 210 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" offset="0.5s" />
+  </g>
+  <path d="M 230 200 Q 230 225, 240 245 Q 245 255, 260 250 Q 270 240, 255 200 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" />
+  <path d="M 260 185 Q 265 210, 275 230 Q 285 240, 295 230 Q 300 215, 285 185 Z" fill="#a8d4e5" stroke="#88b4c5" stroke-width="2" />
+  
+  <!-- Details -->
+  <path d="M 170 165 Q 227 180, 265 155" fill="none" stroke="#88b4c5" stroke-width="1.5" />
+  <path d="M 160 180 Q 230 195, 260 175" fill="none" stroke="#88b4c5" stroke-width="1" />
+</svg>

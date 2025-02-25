@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <style>
+      @keyframes sway {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(3deg); }
+      }
+      
+      @keyframes blink {
+        0%, 10%, 90%, 100% { transform: scaleY(1); }
+        15%, 85% { transform: scaleY(0.1); }
+      }
+      
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      
+      .palm-leaves {
+        animation: sway 4s ease-in-out infinite;
+        transform-origin: bottom center;
+      }
+      
+      .head-left {
+        animation: bounce 3s ease-in-out infinite;
+      }
+      
+      .head-right {
+        animation: bounce 3s ease-in-out infinite 1.5s;
+      }
+      
+      .eye-left, .eye-right {
+        animation: blink 4s ease-in-out infinite;
+        transform-origin: center;
+      }
+    </style>
+  </defs>
+
+  <!-- Body -->
+  <g transform="translate(200, 250)">
+    <!-- Legs -->
+    <path d="M-40 70 L-60 100 L-40 105 L-30 80 Z" fill="#b39c80" />
+    <path d="M40 70 L60 100 L40 105 L30 80 Z" fill="#b39c80" />
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="40" rx="60" ry="70" fill="#b39c80" />
+    
+    <!-- Body lines -->
+    <path d="M-40 20 C-20 30, 20 30, 40 20" fill="none" stroke="#8a7460" stroke-width="2" />
+    <path d="M-40 40 C-20 50, 20 50, 40 40" fill="none" stroke="#8a7460" stroke-width="2" />
+    
+    <!-- Arms -->
+    <path d="M-55 40 L-80 60 L-70 70 L-50 50 Z" fill="#b39c80" />
+    <path d="M55 40 L80 60 L70 70 L50 50 Z" fill="#b39c80" />
+    
+    <!-- Palm leaves group -->
+    <g class="palm-leaves">
+      <!-- Center Leaf -->
+      <path d="M0 -120 L-10 -20 L10 -20 Z" fill="#78c850" />
+      
+      <!-- Left Leaves -->
+      <path d="M0 -100 L-40 -180 L-20 -20 L0 -30 Z" fill="#78c850" />
+      <path d="M0 -90 L-70 -160 L-30 -20 L0 -30 Z" fill="#78c850" />
+      <path d="M0 -80 L-90 -130 L-40 -20 L0 -30 Z" fill="#78c850" />
+      
+      <!-- Right Leaves -->
+      <path d="M0 -100 L40 -180 L20 -20 L0 -30 Z" fill="#78c850" />
+      <path d="M0 -90 L70 -160 L30 -20 L0 -30 Z" fill="#78c850" />
+      <path d="M0 -80 L90 -130 L40 -20 L0 -30 Z" fill="#78c850" />
+      
+      <!-- Leaf details -->
+      <path d="M-40 -180 L-38 -160 M-70 -160 L-65 -145 M-90 -130 L-80 -120" fill="none" stroke="#5a9c38" stroke-width="2" />
+      <path d="M40 -180 L38 -160 M70 -160 L65 -145 M90 -130 L80 -120" fill="none" stroke="#5a9c38" stroke-width="2" />
+      <path d="M0 -120 L0 -90" fill="none" stroke="#5a9c38" stroke-width="2" />
+    </g>
+    
+    <!-- Heads group -->
+    <g class="head-left" transform="translate(-25, -30)">
+      <circle cx="0" cy="0" r="25" fill="#f8e8a0" />
+      <path d="M-10 15 C-5 25, 5 25, 10 15" fill="none" stroke="#b0a068" stroke-width="2" />
+      
+      <!-- Mouth (happy) -->
+      <path d="M-10 10 C-5 20, 5 20, 10 10" fill="#b0a068" />
+      
+      <!-- Eyes -->
+      <g class="eye-left" transform="translate(-10, -5)">
+        <ellipse cx="0" cy="0" rx="5" ry="7" fill="#333" />
+        <circle cx="-1" cy="-2" r="2" fill="white" />
+      </g>
+      
+      <g class="eye-right" transform="translate(10, -5)">
+        <ellipse cx="0" cy="0" rx="5" ry="7" fill="#333" />
+        <circle cx="-1" cy="-2" r="2" fill="white" />
+      </g>
+    </g>
+    
+    <g class="head-right" transform="translate(25, -30)">
+      <circle cx="0" cy="0" r="25" fill="#f8e8a0" />
+      
+      <!-- Eyes (closed happy) -->
+      <path d="M-10 -5 C-5 -10, -2 -10, 0 -5" fill="none" stroke="#333" stroke-width="2" />
+      <path d="M10 -5 C5 -10, 2 -10, 0 -5" fill="none" stroke="#333" stroke-width="2" />
+      
+      <!-- Mouth (happy) -->
+      <path d="M-10 5 C-5 15, 5 15, 10 5" fill="#b0a068" />
+    </g>
+  </g>
+</svg>

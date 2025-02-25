@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Kakuna Animation -->
+  <style>
+    @keyframes bodyPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    @keyframes eyeBlink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    @keyframes cocoonShimmer {
+      0% { opacity: 0.2; }
+      50% { opacity: 0.5; }
+      100% { opacity: 0.2; }
+    }
+    @keyframes slightFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    .kakuna-body { animation: bodyPulse 4s ease-in-out infinite, slightFloat 6s ease-in-out infinite; }
+    .kakuna-eye { animation: eyeBlink 4s ease-in-out infinite; transform-origin: center; }
+    .kakuna-shimmer { animation: cocoonShimmer 3s ease-in-out infinite; }
+  </style>
+  
+  <!-- Main body -->
+  <g class="kakuna-body">
+    <!-- Base body shape -->
+    <path d="M150 240 C120 240, 100 210, 100 150 C100 100, 120 60, 150 60 C180 60, 200 100, 200 150 C200 210, 180 240, 150 240 Z" fill="#E6C700"/>
+    
+    <!-- Shell segments -->
+    <path d="M150 240 C130 240, 120 230, 110 200 C110 190, 120 185, 130 190 C140 195, 160 195, 170 190 C180 185, 190 190, 190 200 C180 230, 170 240, 150 240 Z" fill="#D1B100"/>
+    <path d="M150 240 C140 230, 130 210, 130 180 L170 180 C170 210, 160 230, 150 240 Z" fill="#D1B100"/>
+    <path d="M130 180 C125 160, 125 140, 130 120 L170 120 C175 140, 175 160, 170 180 Z" fill="#D1B100"/>
+    <path d="M130 120 C125 110, 125 90, 130 80 C135 70, 165 70, 170 80 C175 90, 175 110, 170 120 Z" fill="#D1B100"/>
+    
+    <!-- Shine effects -->
+    <path class="kakuna-shimmer" d="M140 80 C145 75, 155 75, 160 80 C165 100, 165 140, 160 160 C155 165, 145 165, 140 160 C135 140, 135 100, 140 80 Z" fill="#FFFFFF"/>
+    
+    <!-- Eyes -->
+    <g transform="translate(135, 100)">
+      <ellipse class="kakuna-eye" cx="0" cy="0" rx="8" ry="12" fill="#000000"/>
+      <circle cx="-2" cy="-4" r="2" fill="#FFFFFF"/>
+    </g>
+    <g transform="translate(165, 100)">
+      <ellipse class="kakuna-eye" cx="0" cy="0" rx="8" ry="12" fill="#000000"/>
+      <circle cx="-2" cy="-4" r="2" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>

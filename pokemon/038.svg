@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    .tails {
+      animation: tailWave 6s infinite ease-in-out;
+      transform-origin: 220px 240px;
+    }
+    .body {
+      animation: breathe 4s infinite ease-in-out;
+      transform-origin: center;
+    }
+    .head {
+      animation: headTilt 8s infinite ease-in-out;
+      transform-origin: 170px 170px;
+    }
+    .mane {
+      animation: maneFlow 7s infinite ease-in-out;
+      transform-origin: 180px 150px;
+    }
+    @keyframes tailWave {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      75% { transform: rotate(-3deg); }
+    }
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.01); }
+    }
+    @keyframes headTilt {
+      0%, 100% { transform: rotate(0deg); }
+      30% { transform: rotate(1deg); }
+      70% { transform: rotate(-1deg); }
+    }
+    @keyframes maneFlow {
+      0%, 100% { transform: skewX(0deg); }
+      50% { transform: skewX(1deg); }
+    }
+  </style>
+
+  
+  <!-- Tails -->
+  <g class="tails">
+    <!-- Tail 1 -->
+    <path d="M260,220 C310,180 350,200 350,150 C350,110 320,100 300,120 C280,140 290,170 260,220 Z" fill="#F8E394"/>
+    <!-- Tail 2 -->
+    <path d="M250,230 C300,190 340,210 340,160 C340,120 310,110 290,130 C270,150 280,180 250,230 Z" fill="#F8E394"/>
+    <!-- Tail 3 -->
+    <path d="M240,240 C290,200 330,220 330,170 C330,130 300,120 280,140 C260,160 270,190 240,240 Z" fill="#F8E394"/>
+    <!-- Tail 4 -->
+    <path d="M230,245 C280,205 320,225 320,175 C320,135 290,125 270,145 C250,165 260,195 230,245 Z" fill="#F8E394"/>
+    <!-- Tail 5 -->
+    <path d="M220,250 C270,210 310,230 310,180 C310,140 280,130 260,150 C240,170 250,200 220,250 Z" fill="#F8E394"/>
+    <!-- Tail 6 -->
+    <path d="M210,255 C260,215 300,235 300,185 C300,145 270,135 250,155 C230,175 240,205 210,255 Z" fill="#F8E394"/>
+    <!-- Tail 7 -->
+    <path d="M200,260 C250,220 290,240 290,190 C290,150 260,140 240,160 C220,180 230,210 200,260 Z" fill="#F8E394"/>
+    <!-- Tail 8 -->
+    <path d="M190,265 C240,225 280,245 280,195 C280,155 250,145 230,165 C210,185 220,215 190,265 Z" fill="#F8E394"/>
+    <!-- Tail 9 -->
+    <path d="M180,270 C230,230 270,250 270,200 C270,160 240,150 220,170 C200,190 210,220 180,270 Z" fill="#F8E394"/>
+    
+    <!-- Tail Tips -->
+    <path d="M350,150 L360,130 L340,140 Z" fill="#F5A623"/>
+    <path d="M340,160 L350,140 L330,150 Z" fill="#F5A623"/>
+    <path d="M330,170 L340,150 L320,160 Z" fill="#F5A623"/>
+    <path d="M320,175 L330,155 L310,165 Z" fill="#F5A623"/>
+    <path d="M310,180 L320,160 L300,170 Z" fill="#F5A623"/>
+    <path d="M300,185 L310,165 L290,175 Z" fill="#F5A623"/>
+    <path d="M290,190 L300,170 L280,180 Z" fill="#F5A623"/>
+    <path d="M280,195 L290,175 L270,185 Z" fill="#F5A623"/>
+    <path d="M270,200 L280,180 L260,190 Z" fill="#F5A623"/>
+  </g>
+
+  <!-- Body -->
+  <g class="body">
+    <ellipse cx="170" cy="240" rx="60" ry="50" fill="#F8E394"/>
+    
+    <!-- Legs -->
+    <ellipse cx="130" cy="280" rx="15" ry="25" fill="#F8E394"/>
+    <ellipse cx="210" cy="280" rx="15" ry="25" fill="#F8E394"/>
+    <ellipse cx="130" cy="295" rx="10" ry="5" fill="#F5A623"/>
+    <ellipse cx="210" cy="295" rx="10" ry="5" fill="#F5A623"/>
+  </g>
+  
+  <!-- Head & Neck -->
+  <g class="head">
+    <ellipse cx="170" cy="170" rx="45" ry="40" fill="#F8E394"/>
+    
+    <!-- Snout -->
+    <path d="M170,180 L190,190 L150,190 Z" fill="#F8E394"/>
+    
+    <!-- Nose -->
+    <ellipse cx="170" cy="185" rx="5" ry="3" fill="#F5A623"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="155" cy="165" rx="7" ry="3" fill="#634E4C"/>
+    <ellipse cx="185" cy="165" rx="7" ry="3" fill="#634E4C"/>
+    <ellipse cx="155" cy="165" rx="2" ry="1" fill="#fff"/>
+    <ellipse cx="185" cy="165" rx="2" ry="1" fill="#fff"/>
+    
+    <!-- Ears -->
+    <path d="M145,145 L130,110 L155,125 Z" fill="#F8E394"/>
+    <path d="M195,145 L210,110 L185,125 Z" fill="#F8E394"/>
+  </g>
+  
+  <!-- Mane -->
+  <g class="mane">
+    <path d="M180,150 C220,120 230,90 220,70 C210,50 180,40 150,60 C120,80 130,120 180,150 Z" fill="#F8E394"/>
+    <path d="M160,150 C140,130 120,90 120,70 C120,50 140,40 160,50 C180,60 180,80 160,150 Z" fill="#F8E394"/>
+  </g>
+</svg>

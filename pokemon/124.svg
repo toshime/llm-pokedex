@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- ルージュラのアニメーション (より詳細版) -->
+  
+  <!-- ドレス (下部) -->
+  <path d="M200 270 C150 270, 100 310, 100 350 C100 380, 150 390, 200 390 C250 390, 300 380, 300 350 C300 310, 250 270, 200 270" fill="#EB2C3B">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M200 270 C150 270, 100 310, 100 350 C100 380, 150 390, 200 390 C250 390, 300 380, 300 350 C300 310, 250 270, 200 270;
+              M200 270 C155 275, 105 315, 105 355 C105 385, 155 395, 200 395 C245 395, 295 385, 295 355 C295 315, 245 275, 200 270;
+              M200 270 C150 270, 100 310, 100 350 C100 380, 150 390, 200 390 C250 390, 300 380, 300 350 C300 310, 250 270, 200 270" 
+    />
+  </path>
+  
+  <!-- ドレス (襞) -->
+  <path d="M130 330 C140 350, 150 370, 160 385" stroke="#C71A29" stroke-width="3" fill="none" />
+  <path d="M160 320 C170 340, 180 360, 190 385" stroke="#C71A29" stroke-width="3" fill="none" />
+  <path d="M200 315 C200 335, 200 355, 200 385" stroke="#C71A29" stroke-width="3" fill="none" />
+  <path d="M240 320 C230 340, 220 360, 210 385" stroke="#C71A29" stroke-width="3" fill="none" />
+  <path d="M270 330 C260 350, 250 370, 240 385" stroke="#C71A29" stroke-width="3" fill="none" />
+  
+  <!-- ドレス (上部) -->
+  <path d="M200 220 C170 220, 140 240, 135 270 C130 300, 160 330, 200 330 C240 330, 270 300, 265 270 C260 240, 230 220, 200 220" fill="#EB2C3B">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M200 220 C170 220, 140 240, 135 270 C130 300, 160 330, 200 330 C240 330, 270 300, 265 270 C260 240, 230 220, 200 220;
+              M200 220 C175 225, 145 245, 140 275 C135 305, 165 335, 200 335 C235 335, 265 305, 260 275 C255 245, 225 225, 200 220;
+              M200 220 C170 220, 140 240, 135 270 C130 300, 160 330, 200 330 C240 330, 270 300, 265 270 C260 240, 230 220, 200 220" 
+    />
+  </path>
+  
+  <!-- 体（胸の黄色部分） -->
+  <path d="M170 240 C160 250, 155 270, 165 285 C175 300, 190 305, 200 305 C210 305, 225 300, 235 285 C245 270, 240 250, 230 240 C215 225, 185 225, 170 240" fill="#FFBB22">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M170 240 C160 250, 155 270, 165 285 C175 300, 190 305, 200 305 C210 305, 225 300, 235 285 C245 270, 240 250, 230 240 C215 225, 185 225, 170 240;
+              M170 240 C160 255, 155 275, 165 290 C175 305, 190 310, 200 310 C210 310, 225 305, 235 290 C245 275, 240 255, 230 240 C215 225, 185 225, 170 240;
+              M170 240 C160 250, 155 270, 165 285 C175 300, 190 305, 200 305 C210 305, 225 300, 235 285 C245 270, 240 250, 230 240 C215 225, 185 225, 170 240" 
+    />
+  </path>
+  
+  <!-- 胸部分の境界線 -->
+  <path d="M170 240 C160 250, 155 270, 165 285 C175 300, 190 305, 200 305 C210 305, 225 300, 235 285 C245 270, 240 250, 230 240 C215 225, 185 225, 170 240" stroke="#CC9900" stroke-width="1.5" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M170 240 C160 250, 155 270, 165 285 C175 300, 190 305, 200 305 C210 305, 225 300, 235 285 C245 270, 240 250, 230 240 C215 225, 185 225, 170 240;
+              M170 240 C160 255, 155 275, 165 290 C175 305, 190 310, 200 310 C210 310, 225 305, 235 290 C245 275, 240 255, 230 240 C215 225, 185 225, 170 240;
+              M170 240 C160 250, 155 270, 165 285 C175 300, 190 305, 200 305 C210 305, 225 300, 235 285 C245 270, 240 250, 230 240 C215 225, 185 225, 170 240" 
+    />
+  </path>
+  
+  <!-- 体（紫色部分/首） -->
+  <path d="M180 210 C175 215, 170 225, 170 235 C170 245, 180 255, 200 255 C220 255, 230 245, 230 235 C230 225, 225 215, 220 210" fill="#9A46C3">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M180 210 C175 215, 170 225, 170 235 C170 245, 180 255, 200 255 C220 255, 230 245, 230 235 C230 225, 225 215, 220 210;
+              M180 205 C175 210, 170 220, 170 230 C170 240, 180 250, 200 250 C220 250, 230 240, 230 230 C230 220, 225 210, 220 205;
+              M180 210 C175 215, 170 225, 170 235 C170 245, 180 255, 200 255 C220 255, 230 245, 230 235 C230 225, 225 215, 220 210" 
+    />
+  </path>
+  
+  <!-- 腕（左） -->
+  <g>
+    <path d="M140 240 C110 250, 90 270, 80 300" stroke="#9A46C3" stroke-width="14" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M140 240 C110 250, 90 270, 80 300;
+                M140 240 C110 245, 95 260, 85 290;
+                M140 240 C110 250, 90 270, 80 300" 
+      />
+    </path>
+    
+    <!-- 手（左） -->
+    <path d="M80 300 C75 310, 70 315, 65 315 C55 315, 50 305, 55 295 C60 285, 70 285, 80 300" fill="#9A46C3">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M80 300 C75 310, 70 315, 65 315 C55 315, 50 305, 55 295 C60 285, 70 285, 80 300;
+                M85 290 C80 300, 75 305, 70 305 C60 305, 55 295, 60 285 C65 275, 75 275, 85 290;
+                M80 300 C75 310, 70 315, 65 315 C55 315, 50 305, 55 295 C60 285, 70 285, 80 300" 
+      />
+    </path>
+    
+    <!-- 指（左） -->
+    <path d="M70 300 C67 307, 64 314, 61 316" stroke="#8838B0" stroke-width="3" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M70 300 C67 307, 64 314, 61 316;
+                M75 290 C72 297, 69 304, 66 306;
+                M70 300 C67 307, 64 314, 61 316" 
+      />
+    </path>
+    <path d="M60 300 C57 307, 54 314, 51 316" stroke="#8838B0" stroke-width="3" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M60 300 C57 307, 54 314, 51 316;
+                M65 290 C62 297, 59 304, 56 306;
+                M60 300 C57 307, 54 314, 51 316" 
+      />
+    </path>
+  </g>
+  
+  <!-- 腕（右） -->
+  <g>
+    <path d="M260 240 C290 250, 310 270, 320 300" stroke="#9A46C3" stroke-width="14" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M260 240 C290 250, 310 270, 320 300;
+                M260 240 C290 245, 305 260, 315 290;
+                M260 240 C290 250, 310 270, 320 300" 
+      />
+    </path>
+    
+    <!-- 手（右） -->
+    <path d="M320 300 C325 310, 330 315, 335 315 C345 315, 350 305, 345 295 C340 285, 330 285, 320 300" fill="#9A46C3">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M320 300 C325 310, 330 315, 335 315 C345 315, 350 305, 345 295 C340 285, 330 285, 320 300;
+                M315 290 C320 300, 325 305, 330 305 C340 305, 345 295, 340 285 C335 275, 325 275, 315 290;
+                M320 300 C325 310, 330 315, 335 315 C345 315, 350 305, 345 295 C340 285, 330 285, 320 300" 
+      />
+    </path>
+    
+    <!-- 指（右） -->
+    <path d="M330 300 C333 307, 336 314, 339 316" stroke="#8838B0" stroke-width="3" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M330 300 C333 307, 336 314, 339 316;
+                M325 290 C328 297, 331 304, 334 306;
+                M330 300 C333 307, 336 314, 339 316" 
+      />
+    </path>
+    <path d="M340 300 C343 307, 346 314, 349 316" stroke="#8838B0" stroke-width="3" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M340 300 C343 307, 346 314, 349 316;
+                M335 290 C338 297, 341 304, 344 306;
+                M340 300 C343 307, 346 314, 349 316" 
+      />
+    </path>
+  </g>
+  
+  <!-- 頭/顔 -->
+  <ellipse cx="200" cy="170" rx="70" ry="80" fill="#9A46C3">
+    <animate attributeName="cy" dur="3s" repeatCount="indefinite" 
+      values="170;165;170" 
+    />
+  </ellipse>
+  
+  <!-- 髪（左側） -->
+  <path d="M130 150 C110 160, 95 190, 100 220 C105 250, 125 270, 145 260 C165 250, 175 230, 170 200 C165 170, 150 140, 130 150" fill="#FFDD44">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M130 150 C110 160, 95 190, 100 220 C105 250, 125 270, 145 260 C165 250, 175 230, 170 200 C165 170, 150 140, 130 150;
+              M130 145 C110 155, 95 185, 100 215 C105 245, 125 265, 145 255 C165 245, 175 225, 170 195 C165 165, 150 135, 130 145;
+              M130 150 C110 160, 95 190, 100 220 C105 250, 125 270, 145 260 C165 250, 175 230, 170 200 C165 170, 150 140, 130 150" 
+    />
+  </path>
+  
+  <!-- 髪（右側） -->
+  <path d="M270 150 C290 160, 305 190, 300 220 C295 250, 275 270, 255 260 C235 250, 225 230, 230 200 C235 170, 250 140, 270 150" fill="#FFDD44">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M270 150 C290 160, 305 190, 300 220 C295 250, 275 270, 255 260 C235 250, 225 230, 230 200 C235 170, 250 140, 270 150;
+              M270 145 C290 155, 305 185, 300 215 C295 245, 275 265, 255 255 C235 245, 225 225, 230 195 C235 165, 250 135, 270 145;
+              M270 150 C290 160, 305 190, 300 220 C295 250, 275 270, 255 260 C235 250, 225 230, 230 200 C235 170, 250 140, 270 150" 
+    />
+  </path>
+  
+  <!-- 髪の光沢 -->
+  <path d="M130 170 C135 160, 145 150, 155 155" stroke="#FFEE88" stroke-width="2" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M130 170 C135 160, 145 150, 155 155;
+              M130 165 C135 155, 145 145, 155 150;
+              M130 170 C135 160, 145 150, 155 155" 
+    />
+  </path>
+  <path d="M270 170 C265 160, 255 150, 245 155" stroke="#FFEE88" stroke-width="2" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M270 170 C265 160, 255 150, 245 155;
+              M270 165 C265 155, 255 145, 245 150;
+              M270 170 C265 160, 255 150, 245 155" 
+    />
+  </path>
+  
+  <!-- 顔のパーツ -->
+  <!-- 目（左） -->
+  <ellipse cx="170" cy="150" rx="18" ry="25" fill="white">
+    <animate attributeName="cy" dur="5s" repeatCount="indefinite" 
+      values="150;145;150" 
+    />
+  </ellipse>
+  <ellipse cx="170" cy="150" rx="8" ry="12" fill="black">
+    <animate attributeName="cy" dur="5s" repeatCount="indefinite" 
+      values="150;145;150" 
+    />
+    <animate attributeName="ry" dur="7s" repeatCount="indefinite" 
+      values="12;2;12" 
+    />
+  </ellipse>
+  <circle cx="173" cy="147" r="3" fill="white">
+    <animate attributeName="cy" dur="5s" repeatCount="indefinite" 
+      values="147;142;147" 
+    />
+  </circle>
+  
+  <!-- 目（右） -->
+  <ellipse cx="230" cy="150" rx="18" ry="25" fill="white">
+    <animate attributeName="cy" dur="5s" repeatCount="indefinite" 
+      values="150;145;150" 
+    />
+  </ellipse>
+  <ellipse cx="230" cy="150" rx="8" ry="12" fill="black">
+    <animate attributeName="cy" dur="5s" repeatCount="indefinite" 
+      values="150;145;150" 
+    />
+    <animate attributeName="ry" dur="7s" repeatCount="indefinite" 
+      values="12;2;12" 
+    />
+  </ellipse>
+  <circle cx="233" cy="147" r="3" fill="white">
+    <animate attributeName="cy" dur="5s" repeatCount="indefinite" 
+      values="147;142;147" 
+    />
+  </circle>
+  
+  <!-- 口 -->
+  <path d="M180 200 C190 215, 210 215, 220 200" stroke="#DD2255" stroke-width="6" stroke-linecap="round" fill="none">
+    <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+      values="M180 200 C190 215, 210 215, 220 200;
+              M180 195 C190 210, 210 210, 220 195;
+              M180 200 C190 215, 210 215, 220 200" 
+    />
+  </path>
+  
+  <!-- 三つの突起（額） -->
+  <circle cx="200" cy="110" r="11" fill="#9A46C3">
+    <animate attributeName="cy" dur="3s" repeatCount="indefinite" 
+      values="110;105;110" 
+    />
+  </circle>
+  <circle cx="170" cy="120" r="9" fill="#9A46C3">
+    <animate attributeName="cy" dur="3s" repeatCount="indefinite" 
+      values="120;115;120" 
+    />
+  </circle>
+  <circle cx="230" cy="120" r="9" fill="#9A46C3">
+    <animate attributeName="cy" dur="3s" repeatCount="indefinite" 
+      values="120;115;120" 
+    />
+  </circle>
+  
+  <!-- 突起の光沢 -->
+  <circle cx="199" cy="107" r="3" fill="#BA72E0">
+    <animate attributeName="cy" dur="3s" repeatCount="indefinite" 
+      values="107;102;107" 
+    />
+  </circle>
+  <circle cx="169" cy="117" r="2" fill="#BA72E0">
+    <animate attributeName="cy" dur="3s" repeatCount="indefinite" 
+      values="117;112;117" 
+    />
+  </circle>
+  <circle cx="229" cy="117" r="2" fill="#BA72E0">
+    <animate attributeName="cy" dur="3s" repeatCount="indefinite" 
+      values="117;112;117" 
+    />
+  </circle>
+  
+  <!-- ドレスの襞の動き -->
+  <path d="M135 340 C145 360, 155 380, 165 395" stroke="#C71A29" stroke-width="3" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M135 340 C145 360, 155 380, 165 395;
+              M135 345 C145 365, 155 385, 165 400;
+              M135 340 C145 360, 155 380, 165 395" 
+    />
+  </path>
+  <path d="M165 330 C175 350, 185 370, 195 395" stroke="#C71A29" stroke-width="3" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M165 330 C175 350, 185 370, 195 395;
+              M165 335 C175 355, 185 375, 195 400;
+              M165 330 C175 350, 185 370, 195 395" 
+    />
+  </path>
+  <path d="M200 325 C200 345, 200 365, 200 395" stroke="#C71A29" stroke-width="3" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M200 325 C200 345, 200 365, 200 395;
+              M200 330 C200 350, 200 370, 200 400;
+              M200 325 C200 345, 200 365, 200 395" 
+    />
+  </path>
+  <path d="M235 330 C225 350, 215 370, 205 395" stroke="#C71A29" stroke-width="3" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M235 330 C225 350, 215 370, 205 395;
+              M235 335 C225 355, 215 375, 205 400;
+              M235 330 C225 350, 215 370, 205 395" 
+    />
+  </path>
+  <path d="M265 340 C255 360, 245 380, 235 395" stroke="#C71A29" stroke-width="3" fill="none">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M265 340 C255 360, 245 380, 235 395;
+              M265 345 C255 365, 245 385, 235 400;
+              M265 340 C255 360, 245 380, 235 395" 
+    />
+  </path>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <style>
+    .egg1 { animation: wobble 3s ease-in-out infinite; }
+    .egg2 { animation: wobble 3s ease-in-out infinite 0.5s; }
+    .egg3 { animation: wobble 3s ease-in-out infinite 1s; }
+    .egg4 { animation: wobble 3s ease-in-out infinite 1.5s; }
+    .egg5 { animation: wobble 3s ease-in-out infinite 2s; }
+    .egg6 { animation: wobble 3s ease-in-out infinite 2.5s; }
+    
+    .crack { animation: pulse 2s ease-in-out infinite; }
+    .eye { animation: blink 4s ease-in-out infinite; }
+    
+    @keyframes wobble {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(-2px, 2px) rotate(-2deg); }
+      50% { transform: translate(0, -3px) rotate(0deg); }
+      75% { transform: translate(2px, 2px) rotate(2deg); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+    
+    @keyframes blink {
+      0%, 95%, 100% { transform: scaleY(1); }
+      97% { transform: scaleY(0.1); }
+    }
+  </style>
+
+  <!-- Egg 1 (bottom left) -->
+  <g class="egg1">
+    <ellipse cx="130" cy="240" rx="55" ry="60" fill="#F9D6D6" stroke="#E8B4B4" stroke-width="2"/>
+    <path class="crack" d="M100 220 L110 235 L95 245" fill="none" stroke="#E8B4B4" stroke-width="2"/>
+    <g class="eye">
+      <ellipse cx="110" cy="230" rx="8" ry="12" fill="#333"/>
+      <circle cx="107" cy="225" r="3" fill="white"/>
+    </g>
+    <path d="M125 250 C130 255, 140 255, 145 250" fill="none" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Egg 2 (bottom right) -->
+  <g class="egg2">
+    <ellipse cx="230" cy="250" rx="50" ry="55" fill="#F9D6D6" stroke="#E8B4B4" stroke-width="2"/>
+    <path class="crack" d="M250 230 L245 245 L260 250" fill="none" stroke="#E8B4B4" stroke-width="2"/>
+    <g class="eye">
+      <ellipse cx="250" cy="240" rx="8" ry="12" fill="#333"/>
+      <circle cx="247" cy="235" r="3" fill="white"/>
+    </g>
+    <path d="M220 260 C225 265, 235 265, 240 260" fill="none" stroke="#333" stroke-width="2" transform="rotate(-10 230 260)"/>
+  </g>
+
+  <!-- Egg 3 (middle left) -->
+  <g class="egg3">
+    <ellipse cx="130" cy="160" rx="52" ry="57" fill="#F9D6D6" stroke="#E8B4B4" stroke-width="2"/>
+    <path class="crack" d="M150 140 L140 155 L155 160" fill="none" stroke="#E8B4B4" stroke-width="2"/>
+    <g class="eye">
+      <ellipse cx="150" cy="150" rx="8" ry="12" fill="#333"/>
+      <circle cx="147" cy="145" r="3" fill="white"/>
+    </g>
+    <path d="M120 170 C125 180, 140 180, 145 170" fill="none" stroke="#333" stroke-width="2" transform="rotate(5 130 170)"/>
+  </g>
+
+  <!-- Egg 4 (top middle) -->
+  <g class="egg4">
+    <ellipse cx="190" cy="115" rx="48" ry="53" fill="#F9D6D6" stroke="#E8B4B4" stroke-width="2"/>
+    <ellipse cx="202" cy="95" rx="15" ry="10" fill="#F1C232" transform="rotate(10 202 95)"/>
+    <path class="crack" d="M180 100 L190 110 L175 115" fill="none" stroke="#E8B4B4" stroke-width="2"/>
+    <g class="eye">
+      <ellipse cx="175" cy="105" rx="7" ry="10" fill="#333"/>
+      <circle cx="172" cy="100" r="3" fill="white"/>
+    </g>
+    <path d="M195 125 C190 122, 180 122, 175 125" fill="none" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Egg 5 (middle right) -->
+  <g class="egg5">
+    <ellipse cx="250" cy="170" rx="50" ry="55" fill="#F9D6D6" stroke="#E8B4B4" stroke-width="2"/>
+    <path class="crack" d="M270 150 L260 165 L275 170" fill="none" stroke="#E8B4B4" stroke-width="2"/>
+    <g class="eye">
+      <ellipse cx="270" cy="160" rx="8" ry="12" fill="#333" transform="rotate(-5 270 160)"/>
+      <circle cx="267" cy="155" r="3" fill="white"/>
+    </g>
+    <path d="M235 180 L245 190 L255 180" fill="none" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Egg 6 (center) -->
+  <g class="egg6">
+    <ellipse cx="190" cy="190" rx="45" ry="50" fill="#F9D6D6" stroke="#E8B4B4" stroke-width="2"/>
+    <path class="crack" d="M175 170 L185 180 L170 190" fill="none" stroke="#E8B4B4" stroke-width="2"/>
+    <g class="eye">
+      <ellipse cx="175" cy="180" rx="7" ry="11" fill="#333"/>
+      <circle cx="172" cy="175" r="3" fill="white"/>
+    </g>
+    <path d="M190 200 C185 210, 195 210, 200 200" fill="none" stroke="#333" stroke-width="2" transform="rotate(-5 190 200)"/>
+  </g>
+</svg>

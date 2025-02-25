@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      @keyframes tail-swing {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(10deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes whisker-twitch {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(2px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes body-breathe {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.01); }
+        100% { transform: scale(1); }
+      }
+      @keyframes coin-shine {
+        0% { opacity: 0.7; }
+        50% { opacity: 1; }
+        100% { opacity: 0.7; }
+      }
+      @keyframes paw-move {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+        100% { transform: translateY(0); }
+      }
+      .tail {
+        transform-origin: 110px 260px;
+        animation: tail-swing 3s infinite ease-in-out;
+      }
+      .whiskers {
+        animation: whisker-twitch 4s infinite ease-in-out;
+      }
+      .body {
+        animation: body-breathe 4s infinite ease-in-out;
+      }
+      .coin {
+        animation: coin-shine 2s infinite ease-in-out;
+      }
+      .paw {
+        animation: paw-move 5s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+  
+  <!-- Body -->
+  <g class="body">
+    <path d="M200 270c-30 30-70 30-100 0s-30-70 0-100l50-60 50 60c30 30 30 70 0 100z" fill="#f3e3b5" />
+    
+    <!-- Paws -->
+    <g class="paw" style="animation-delay: 0.5s;">
+      <path d="M160 260c5 10 15 10 20 0l5-20c0-5-5-10-15-10s-15 5-15 10z" fill="#a87b45" />
+    </g>
+    <g class="paw" style="animation-delay: 1.5s;">
+      <path d="M230 260c5 10 15 10 20 0l5-20c0-5-5-10-15-10s-15 5-15 10z" fill="#a87b45" />
+    </g>
+    
+    <!-- Back legs -->
+    <path d="M170 290c5 10 15 10 20 0l5-10c0-5-5-10-15-10s-15 5-15 10z" fill="#a87b45" />
+    <path d="M220 290c5 10 15 10 20 0l5-10c0-5-5-10-15-10s-15 5-15 10z" fill="#a87b45" />
+  </g>
+
+  <!-- Tail -->
+  <g class="tail">
+    <path d="M110 260c-20 0-30 20-20 40s30 20 40 0c10-20 0-40-20-40z" fill="#f3e3b5" />
+    <path d="M105 290c-10 0-15 10-10 20s15 10 20 0c5-10 0-20-10-20z" fill="#a87b45" />
+  </g>
+  
+  <!-- Head -->
+  <g>
+    <ellipse cx="200" cy="140" rx="50" ry="60" fill="#f3e3b5" />
+    
+    <!-- Ears -->
+    <path d="M170 100c-10-20-30-20-40 0s0 30 20 30c10 0 20-20 20-30z" fill="#a87b45" />
+    <path d="M230 100c10-20 30-20 40 0s0 30-20 30c-10 0-20-20-20-30z" fill="#a87b45" />
+    <path d="M175 105c-5-10-15-10-20 0s0 15 10 15c5 0 10-10 10-15z" fill="#f3e3b5" />
+    <path d="M225 105c5-10 15-10 20 0s0 15-10 15c-5 0-10-10-10-15z" fill="#f3e3b5" />
+    
+    <!-- Eyes -->
+    <ellipse cx="180" cy="140" rx="10" ry="15" fill="#ffffff" />
+    <ellipse cx="220" cy="140" rx="10" ry="15" fill="#ffffff" />
+    <ellipse cx="180" cy="140" rx="3" ry="8" fill="#000000" />
+    <ellipse cx="220" cy="140" rx="3" ry="8" fill="#000000" />
+    
+    <!-- Nose -->
+    <path d="M200 155l-5 5h10z" fill="#f7a4a4" />
+    
+    <!-- Mouth -->
+    <path d="M190 165c0 5 5 10 10 10s10-5 10-10" fill="none" stroke="#f7a4a4" stroke-width="2" />
+    
+    <!-- Whiskers -->
+    <g class="whiskers">
+      <line x1="160" y1="150" x2="120" y2="140" stroke="#000000" stroke-width="1.5" />
+      <line x1="160" y1="155" x2="120" y2="155" stroke="#000000" stroke-width="1.5" />
+      <line x1="160" y1="160" x2="120" y2="170" stroke="#000000" stroke-width="1.5" />
+    </g>
+    <g class="whiskers" style="animation-delay: 1s;">
+      <line x1="240" y1="150" x2="280" y2="140" stroke="#000000" stroke-width="1.5" />
+      <line x1="240" y1="155" x2="280" y2="155" stroke="#000000" stroke-width="1.5" />
+      <line x1="240" y1="160" x2="280" y2="170" stroke="#000000" stroke-width="1.5" />
+    </g>
+    
+    <!-- Coin -->
+    <g class="coin">
+      <circle cx="200" cy="110" r="15" fill="#ffdb58" />
+      <path d="M195 105l5-5 5 5-5 5z" fill="#ffa500" />
+    </g>
+  </g>
+</svg>

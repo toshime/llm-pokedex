@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+
+  <!-- Fearow (オニドリル) -->
+  <g id="fearow">
+    <!-- Body -->
+    <path d="M200 220 C220 230 250 225 260 210 C270 195 260 180 240 175 C220 170 180 210 200 220Z" fill="#e8c098"/>
+    
+    <!-- Wings -->
+    <g id="leftWing">
+      <path d="M170 180 C130 160 90 180 70 210 C50 240 80 250 110 230 C140 210 150 200 170 190" fill="#d8a068"/>
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" 
+                        values="0 170 180; 15 170 180; 0 170 180" 
+                        dur="2s" repeatCount="indefinite"/>
+    </g>
+    
+    <g id="rightWing">
+      <path d="M230 180 C270 150 310 160 330 190 C350 220 320 240 290 220 C260 200 250 190 230 190" fill="#d8a068"/>
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" 
+                        values="0 230 180; -15 230 180; 0 230 180" 
+                        dur="2s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Neck -->
+    <path d="M240 175 C250 160 255 140 245 120 C235 100 225 80 220 60" fill="#d8a068"/>
+    
+    <!-- Head -->
+    <path d="M220 60 C210 50 210 40 220 30 C230 20 245 25 250 35 C255 45 230 70 220 60Z" fill="#d8a068"/>
+    
+    <!-- Beak -->
+    <path d="M250 35 L310 25 L250 45" fill="#ffb048">
+      <animate attributeName="d" values="M250 35 L310 25 L250 45; M250 35 L315 30 L250 45; M250 35 L310 25 L250 45" 
+               dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Crest -->
+    <path d="M220 40 C210 30 205 20 210 10 C215 0 225 5 230 15" fill="#d8a068"/>
+    
+    <!-- Feet -->
+    <path d="M190 220 L180 260 L190 260 L200 230" fill="#ffb048"/>
+    <path d="M220 220 L230 260 L220 260 L210 230" fill="#ffb048"/>
+    
+    <!-- Eye -->
+    <circle cx="235" cy="40" r="5" fill="black"/>
+    <circle cx="233" cy="38" r="2" fill="white"/>
+    
+    <!-- Body Animation -->
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" 
+                      values="0,0; 0,-8; 0,0" 
+                      dur="2s" repeatCount="indefinite"/>
+  </g>
+</svg>

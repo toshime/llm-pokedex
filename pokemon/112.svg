@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Rhydon - #112 -->
+  <style>
+    .body {
+      animation: bodyMove 3s infinite alternate;
+    }
+    .arm {
+      animation: armMove 2s infinite alternate;
+    }
+    .drill {
+      animation: drillSpin 4s linear infinite;
+    }
+    .tail {
+      animation: tailWag 3s infinite alternate;
+    }
+    
+    @keyframes bodyMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(0, 5px); }
+    }
+    
+    @keyframes armMove {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(10deg); }
+    }
+    
+    @keyframes drillSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes tailWag {
+      0% { transform: rotate(-10deg); }
+      100% { transform: rotate(10deg); }
+    }
+  </style>
+
+  <!-- Body -->
+  <g class="body">
+    <!-- Main Body -->
+    <path d="M250,300 C280,290 300,260 300,220 C300,180 280,150 250,140 C220,130 200,160 200,200 C200,240 220,270 250,300 Z" fill="#8c98a8"/>
+    
+    <!-- Belly -->
+    <path d="M240,280 C260,270 270,250 270,220 C270,190 260,170 240,160 C230,155 220,175 220,205 C220,235 230,270 240,280 Z" fill="#e0c8a0"/>
+  </g>
+
+  <!-- Head -->
+  <g>
+    <!-- Head Base -->
+    <path d="M250,140 C230,130 210,150 210,170 C210,190 230,210 250,220 C270,210 290,190 290,170 C290,150 270,130 250,140 Z" fill="#8c98a8"/>
+    
+    <!-- Drill Horn (with spinning animation) -->
+    <g class="drill" transform-origin="250 160">
+      <path d="M250,160 L230,130 L250,100 L270,130 Z" fill="#5d6977"/>
+    </g>
+    
+    <!-- Eyes -->
+    <circle cx="235" cy="170" r="5" fill="#333"/>
+    <circle cx="265" cy="170" r="5" fill="#333"/>
+    
+    <!-- Mouth -->
+    <path d="M240,185 C245,190 255,190 260,185" fill="none" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Arms -->
+  <g class="arm" transform-origin="195 210">
+    <path d="M195,210 C180,220 170,240 180,250 C190,260 200,250 210,240 Z" fill="#8c98a8"/>
+    <!-- Claws -->
+    <path d="M180,250 L175,260 L185,255 Z" fill="#e0c8a0"/>
+    <path d="M180,250 L170,255 L180,260 Z" fill="#e0c8a0"/>
+    <path d="M180,250 L165,250 L175,255 Z" fill="#e0c8a0"/>
+  </g>
+  
+  <g class="arm" transform-origin="305 210">
+    <path d="M305,210 C320,220 330,240 320,250 C310,260 300,250 290,240 Z" fill="#8c98a8"/>
+    <!-- Claws -->
+    <path d="M320,250 L325,260 L315,255 Z" fill="#e0c8a0"/>
+    <path d="M320,250 L330,255 L320,260 Z" fill="#e0c8a0"/>
+    <path d="M320,250 L335,250 L325,255 Z" fill="#e0c8a0"/>
+  </g>
+
+  <!-- Legs -->
+  <path d="M220,300 C210,310 200,330 210,350 C220,370 230,360 235,350 L240,370 L250,360 Z" fill="#8c98a8"/>
+  <path d="M280,300 C290,310 300,330 290,350 C280,370 270,360 265,350 L260,370 L250,360 Z" fill="#8c98a8"/>
+
+  <!-- Tail -->
+  <path class="tail" d="M250,300 C240,320 230,340 240,360 C250,380 260,370 270,350 C280,330 260,320 250,300 Z" fill="#8c98a8" transform-origin="250 330"/>
+</svg>

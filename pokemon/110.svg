@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bodyGrad1" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#a8a0d0" />
+      <stop offset="100%" stop-color="#7e74b0" />
+    </radialGradient>
+    <radialGradient id="bodyGrad2" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#9892c8" />
+      <stop offset="100%" stop-color="#6e6498" />
+    </radialGradient>
+  </defs>
+
+  <!-- Gas clouds -->
+  <g class="gas-clouds">
+    <circle cx="80" cy="100" r="20" fill="#d8d8b0" opacity="0.8">
+      <animate attributeName="cy" values="100;90;100" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0.6;0.8" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="120" r="25" fill="#d8d8b0" opacity="0.7">
+      <animate attributeName="cy" values="120;110;120" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="70" r="15" fill="#d8d8b0" opacity="0.9">
+      <animate attributeName="cy" values="70;60;70" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.9;0.7;0.9" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="250" r="18" fill="#d8d8b0" opacity="0.6">
+      <animate attributeName="cy" values="250;240;250" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="320" cy="230" r="22" fill="#d8d8b0" opacity="0.7">
+      <animate attributeName="cy" values="230;220;230" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Larger Main body -->
+  <g class="weezing-body-large">
+    <circle cx="150" cy="180" r="80" fill="url(#bodyGrad1)">
+      <animate attributeName="r" values="80;83;80" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Body bumps -->
+    <circle cx="110" cy="140" r="14" fill="#7e74b0" />
+    <circle cx="190" cy="150" r="16" fill="#7e74b0" />
+    <circle cx="180" cy="230" r="15" fill="#7e74b0" />
+    <circle cx="120" cy="210" r="13" fill="#7e74b0" />
+    <circle cx="155" cy="175" r="12" fill="#7e74b0" />
+  </g>
+
+  <!-- Smaller Main body -->
+  <g class="weezing-body-small">
+    <circle cx="270" cy="150" r="60" fill="url(#bodyGrad2)">
+      <animate attributeName="r" values="60;62;60" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Body bumps -->
+    <circle cx="240" cy="120" r="10" fill="#6e6498" />
+    <circle cx="300" cy="130" r="12" fill="#6e6498" />
+    <circle cx="290" cy="180" r="11" fill="#6e6498" />
+    <circle cx="250" cy="160" r="9" fill="#6e6498" />
+  </g>
+
+  <!-- Connecting tube -->
+  <path d="M200,160 C220,150 230,140 250,145" stroke="#7e74b0" stroke-width="15" fill="none" />
+
+  <!-- Face on larger body -->
+  <g class="face-large">
+    <!-- Eyes -->
+    <g class="eyes-large">
+      <ellipse cx="120" cy="160" rx="18" ry="12" fill="white" />
+      <ellipse cx="180" cy="160" rx="18" ry="12" fill="white" />
+      
+      <!-- Pupils -->
+      <ellipse cx="120" cy="160" rx="10" ry="6" fill="black">
+        <animate attributeName="rx" values="10;3;10" dur="5.5s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="180" cy="160" rx="10" ry="6" fill="black">
+        <animate attributeName="rx" values="10;3;10" dur="5.5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- Mouth with fangs -->
+    <path d="M130,200 Q150,215 170,200" stroke="black" stroke-width="3" fill="none" />
+    <path d="M135,200 L140,210 L145,200" fill="white" stroke="black" stroke-width="1" />
+    <path d="M155,200 L160,210 L165,200" fill="white" stroke="black" stroke-width="1" />
+  </g>
+
+  <!-- Face on smaller body -->
+  <g class="face-small">
+    <!-- Eyes -->
+    <g class="eyes-small">
+      <ellipse cx="255" cy="140" rx="15" ry="10" fill="white" />
+      <ellipse cx="285" cy="140" rx="15" ry="10" fill="white" />
+      
+      <!-- Pupils -->
+      <ellipse cx="255" cy="140" rx="8" ry="5" fill="black">
+        <animate attributeName="rx" values="8;2;8" dur="4.5s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="285" cy="140" rx="8" ry="5" fill="black">
+        <animate attributeName="rx" values="8;2;8" dur="4.5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M260,160 Q270,168 280,160" stroke="black" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- Skull and crossbones emblem on larger body -->
+  <g class="skull-emblem-large">
+    <circle cx="150" cy="230" r="18" fill="#f0f0f0" />
+    
+    <!-- Skull -->
+    <path d="M150,220 L141,230 L159,230 Z" fill="black" />
+    <circle cx="145" cy="225" r="3" fill="black" />
+    <circle cx="155" cy="225" r="3" fill="black" />
+    
+    <!-- Crossbones -->
+    <line x1="138" y1="235" x2="162" y2="245" stroke="black" stroke-width="3" />
+    <line x1="138" y1="245" x2="162" y2="235" stroke="black" stroke-width="3" />
+  </g>
+
+  <!-- Skull and crossbones emblem on smaller body -->
+  <g class="skull-emblem-small">
+    <circle cx="270" cy="180" r="15" fill="#f0f0f0" />
+    
+    <!-- Skull -->
+    <path d="M270,170 L263,178 L277,178 Z" fill="black" />
+    <circle cx="266" cy="174" r="2" fill="black" />
+    <circle cx="274" cy="174" r="2" fill="black" />
+    
+    <!-- Crossbones -->
+    <line x1="260" y1="185" x2="280" y2="195" stroke="black" stroke-width="3" />
+    <line x1="260" y1="195" x2="280" y2="185" stroke="black" stroke-width="3" />
+  </g>
+
+  <!-- Floating animation for both bodies -->
+  <animateTransform
+    xlink:href=".weezing-body-large"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-8; 0,0"
+    dur="4s"
+    repeatCount="indefinite"
+  />
+  
+  <animateTransform
+    xlink:href=".weezing-body-small"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-6; 0,0"
+    dur="3.5s"
+    repeatCount="indefinite"
+  />
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Shell layers -->
+  <path d="M200 100 C120 100, 100 160, 100 200 C100 280, 180 300, 200 300 C260 300, 300 260, 300 200 C300 140, 280 100, 200 100" fill="#e9e2ba" stroke="#2d2d2d" stroke-width="2"/>
+  <path d="M200 120 C140 120, 120 160, 120 200 C120 260, 160 280, 200 280 C240 280, 280 240, 280 200 C280 160, 260 120, 200 120" fill="#e0d8a0" stroke="#2d2d2d" stroke-width="1"/>
+  <path d="M200 140 C160 140, 140 160, 140 200 C140 240, 180 260, 200 260 C220 260, 260 240, 260 200 C260 160, 240 140, 200 140" fill="#d6ce96" stroke="#2d2d2d" stroke-width="1"/>
+  
+  <!-- Shell spiral line -->
+  <path d="M200 140 C160 160, 150 180, 160 200 C170 220, 190 220, 200 220 C210 220, 230 210, 240 190 C250 170, 240 150, 200 140" fill="none" stroke="#2d2d2d" stroke-width="1.5"/>
+  
+  <!-- Blue body parts -->
+  <path d="M170 270 C160 280, 150 310, 130 330 C110 350, 90 360, 70 350 C50 340, 40 320, 50 300 C60 280, 90 260, 120 260 C150 260, 180 260, 170 270" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="2"/>
+  <path d="M230 270 C240 280, 250 310, 270 330 C290 350, 310 360, 330 350 C350 340, 360 320, 350 300 C340 280, 310 260, 280 260 C250 260, 220 260, 230 270" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="2"/>
+  
+  <!-- Blue body middle part -->
+  <path d="M170 280 C190 290, 210 290, 230 280 C240 300, 220 320, 200 325 C180 320, 160 300, 170 280" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="2"/>
+  
+  <!-- Eyes with animation -->
+  <g id="left-eye">
+    <circle cx="170" cy="300" r="22" fill="white" stroke="#2d2d2d" stroke-width="2"/>
+    <circle cx="170" cy="300" r="12" fill="black"/>
+    <circle cx="165" cy="295" r="4" fill="white"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 170 300; 5 170 300; 0 170 300; -5 170 300; 0 170 300" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <g id="right-eye">
+    <circle cx="230" cy="300" r="22" fill="white" stroke="#2d2d2d" stroke-width="2"/>
+    <circle cx="230" cy="300" r="12" fill="black"/>
+    <circle cx="225" cy="295" r="4" fill="white"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 230 300; -5 230 300; 0 230 300; 5 230 300; 0 230 300" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Tentacle animation -->
+  <g id="tentacles">
+    <path d="M70 350 C65 355, 60 365, 55 370 C50 375, 45 370, 50 365 C55 360, 60 355, 70 350" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M70 350 C65 355, 60 365, 55 370 C50 375, 45 370, 50 365 C55 360, 60 355, 70 350;
+                                       M70 350 C65 360, 55 370, 50 375 C45 380, 40 375, 45 370 C50 365, 55 360, 70 350;
+                                       M70 350 C65 355, 60 365, 55 370 C50 375, 45 370, 50 365 C55 360, 60 355, 70 350" 
+              dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M90 360 C85 365, 80 375, 75 380 C70 385, 65 380, 70 375 C75 370, 80 365, 90 360" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M90 360 C85 365, 80 375, 75 380 C70 385, 65 380, 70 375 C75 370, 80 365, 90 360;
+                                       M90 360 C85 370, 75 380, 70 385 C65 390, 60 385, 65 380 C70 375, 75 370, 90 360;
+                                       M90 360 C85 365, 80 375, 75 380 C70 385, 65 380, 70 375 C75 370, 80 365, 90 360" 
+              dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M110 360 C105 365, 100 375, 95 380 C90 385, 85 380, 90 375 C95 370, 100 365, 110 360" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M110 360 C105 365, 100 375, 95 380 C90 385, 85 380, 90 375 C95 370, 100 365, 110 360;
+                                       M110 360 C105 370, 95 380, 90 385 C85 390, 80 385, 85 380 C90 375, 95 370, 110 360;
+                                       M110 360 C105 365, 100 375, 95 380 C90 385, 85 380, 90 375 C95 370, 100 365, 110 360" 
+              dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M310 360 C315 365, 320 375, 325 380 C330 385, 335 380, 330 375 C325 370, 320 365, 310 360" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M310 360 C315 365, 320 375, 325 380 C330 385, 335 380, 330 375 C325 370, 320 365, 310 360;
+                                       M310 360 C315 370, 325 380, 330 385 C335 390, 340 385, 335 380 C330 375, 325 370, 310 360;
+                                       M310 360 C315 365, 320 375, 325 380 C330 385, 335 380, 330 375 C325 370, 320 365, 310 360" 
+              dur="2.7s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M290 360 C295 365, 300 375, 305 380 C310 385, 315 380, 310 375 C305 370, 300 365, 290 360" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M290 360 C295 365, 300 375, 305 380 C310 385, 315 380, 310 375 C305 370, 300 365, 290 360;
+                                       M290 360 C295 370, 305 380, 310 385 C315 390, 320 385, 315 380 C310 375, 305 370, 290 360;
+                                       M290 360 C295 365, 300 375, 305 380 C310 385, 315 380, 310 375 C305 370, 300 365, 290 360" 
+              dur="2.3s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M330 350 C335 355, 340 365, 345 370 C350 375, 355 370, 350 365 C345 360, 340 355, 330 350" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M330 350 C335 355, 340 365, 345 370 C350 375, 355 370, 350 365 C345 360, 340 355, 330 350;
+                                       M330 350 C335 360, 345 370, 350 375 C355 380, 360 375, 355 370 C350 365, 345 360, 330 350;
+                                       M330 350 C335 355, 340 365, 345 370 C350 375, 355 370, 350 365 C345 360, 340 355, 330 350" 
+              dur="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Body bobbing animation -->
+  <animateTransform attributeType="xml" attributeName="transform" type="translate" 
+                    values="0,0; 0,-5; 0,0; 0,5; 0,0" 
+                    dur="4s" repeatCount="indefinite" 
+                    additive="sum"/>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Voltorb/Biriridama -->
+  <defs>
+    <radialGradient id="body-gradient-red" cx="50%" cy="50%" r="50%" fx="35%" fy="35%">
+      <stop offset="0%" stop-color="#ff9999" />
+      <stop offset="80%" stop-color="#e54747" />
+      <stop offset="100%" stop-color="#cc3333" />
+    </radialGradient>
+    <radialGradient id="body-gradient-white" cx="50%" cy="50%" r="50%" fx="35%" fy="35%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="90%" stop-color="#eeeeee" />
+      <stop offset="100%" stop-color="#cccccc" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main body -->
+  <g id="voltorb" filter="url(#shadow)">
+    <!-- Lower half (white) -->
+    <path d="M 30,100 A 70,70 0 0 0 170,100 A 70,70 0 0 0 30,100 Z" fill="url(#body-gradient-white)" />
+    
+    <!-- Upper half (red) -->
+    <path d="M 30,100 A 70,70 0 0 1 170,100 A 70,70 0 0 1 30,100 Z" fill="url(#body-gradient-red)" />
+    
+    <!-- Outline -->
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#000000" stroke-width="2.5" />
+    
+    <!-- Horizontal dividing line -->
+    <line x1="30" y1="100" x2="170" y2="100" stroke="#000000" stroke-width="2.5" />
+    
+    <!-- Eye -->
+    <g id="eye">
+      <path d="M 85,75 L 115,75 L 110,90 L 90,90 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+      <path d="M 90,90 L 110,90 L 107,95 L 93,95 Z" fill="#000000" />
+    </g>
+    
+    <!-- Highlight spot -->
+    <ellipse cx="70" cy="65" rx="15" ry="10" fill="#ffffff" fill-opacity="0.7" />
+  </g>
+
+  <!-- Animation for bobbing effect -->
+  <animateTransform
+    xlink:href="#voltorb"
+    attributeName="transform"
+    type="translate"
+    values="0 0; 0 -5; 0 0"
+    dur="2s"
+    repeatCount="indefinite"
+  />
+  
+  <!-- Animation for angry eye effect -->
+  <animate
+    xlink:href="#eye"
+    attributeName="transform"
+    values="scale(1) translate(0,0); scale(0.95) translate(0,2); scale(1) translate(0,0)"
+    dur="3s"
+    repeatCount="indefinite"
+  />
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Body -->
+  <path d="M200 120 C300 110, 330 180, 340 220 C350 260, 330 300, 280 320 C230 340, 140 330, 100 280 C70 240, 80 180, 120 150 C160 120, 180 125, 200 120 Z" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animate attributeName="d" values="M200 120 C300 110, 330 180, 340 220 C350 260, 330 300, 280 320 C230 340, 140 330, 100 280 C70 240, 80 180, 120 150 C160 120, 180 125, 200 120 Z;
+                                      M200 123 C300 113, 333 183, 343 223 C353 263, 333 303, 283 323 C233 343, 143 333, 103 283 C73 243, 83 183, 123 153 C163 123, 180 128, 200 123 Z;
+                                      M200 120 C300 110, 330 180, 340 220 C350 260, 330 300, 280 320 C230 340, 140 330, 100 280 C70 240, 80 180, 120 150 C160 120, 180 125, 200 120 Z" 
+          dur="5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Tail -->
+  <path d="M340 240 C360 230, 370 200, 390 190 C395 250, 390 270, 350 280 Z" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 340 240;5 340 240;0 340 240;-5 340 240;0 340 240" dur="4s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Head -->
+  <ellipse cx="140" cy="160" rx="60" ry="50" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animate attributeName="transform" values="rotate(0 140 160);rotate(2 140 160);rotate(0 140 160);rotate(-2 140 160);rotate(0 140 160)" dur="5s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Horn -->
+  <path d="M110 120 C100 100, 105 90, 110 80" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2" />
+  
+  <!-- Eyes -->
+  <ellipse cx="120" cy="145" rx="12" ry="12" fill="white" stroke="#333" stroke-width="1.5" />
+  <ellipse cx="120" cy="145" rx="6" ry="6" fill="#333">
+    <animate attributeName="ry" values="6;1;6" dur="4s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Nose -->
+  <ellipse cx="95" cy="155" rx="8" ry="5" fill="#AA8866" />
+  
+  <!-- Mouth -->
+  <path d="M95 170 C105 180, 120 180, 130 170" fill="none" stroke="#333" stroke-width="2">
+    <animate attributeName="d" values="M95 170 C105 180, 120 180, 130 170;M95 170 C105 175, 120 175, 130 170;M95 170 C105 180, 120 180, 130 170" dur="6s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Flippers -->
+  <path d="M190 200 C220 220, 230 260, 220 270 C200 280, 180 260, 170 240 Z" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 190 200;10 190 200;0 190 200;-5 190 200;0 190 200" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M150 250 C170 270, 180 300, 160 310 C140 315, 130 300, 120 280 Z" fill="#E8EDEF" stroke="#AAAFC2" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 150 250;-5 150 250;0 150 250;5 150 250;0 150 250" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Water droplets animation -->
+  <g opacity="0.6">
+    <circle cx="220" cy="300" r="3" fill="#88CCFF">
+      <animate attributeName="cy" values="300;280;300" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="290" r="4" fill="#88CCFF">
+      <animate attributeName="cy" values="290;265;290" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="280" cy="280" r="2" fill="#88CCFF">
+      <animate attributeName="cy" values="280;265;280" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.6;0" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Fangs/Tusks -->
+  <path d="M85 165 L75 180" fill="none" stroke="#FFEECC" stroke-width="4" stroke-linecap="round" />
+  <path d="M140 165 L150 180" fill="none" stroke="#FFEECC" stroke-width="4" stroke-linecap="round" />
+</svg>

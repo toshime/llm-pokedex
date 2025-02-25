@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background - transparent -->
+  
+  <!-- Caterpie Body Animation -->
+  <g id="caterpie">
+    <!-- Main body -->
+    <path d="M200,240 C240,240 280,220 300,190 C320,160 330,130 310,120 C290,110 270,130 260,150 C250,170 240,200 210,210 C180,220 150,210 130,190 C110,170 100,140 120,120 C140,100 170,110 190,130 C210,150 220,180 200,200" 
+          fill="#7ED957" stroke="#43A047" stroke-width="2">
+      <animate attributeName="d" 
+               dur="4s" 
+               repeatCount="indefinite"
+               values="M200,240 C240,240 280,220 300,190 C320,160 330,130 310,120 C290,110 270,130 260,150 C250,170 240,200 210,210 C180,220 150,210 130,190 C110,170 100,140 120,120 C140,100 170,110 190,130 C210,150 220,180 200,200;
+                      M200,245 C240,245 285,225 305,195 C325,165 335,135 315,125 C295,115 275,135 265,155 C255,175 245,205 215,215 C185,225 155,215 135,195 C115,175 105,145 125,125 C145,105 175,115 195,135 C215,155 225,185 205,205;
+                      M200,240 C240,240 280,220 300,190 C320,160 330,130 310,120 C290,110 270,130 260,150 C250,170 240,200 210,210 C180,220 150,210 130,190 C110,170 100,140 120,120 C140,100 170,110 190,130 C210,150 220,180 200,200" />
+    </path>
+    
+    <!-- Cream belly -->
+    <ellipse cx="220" cy="210" rx="35" ry="25" fill="#FFF9C4" stroke="#E6EE9C" stroke-width="1">
+      <animate attributeName="cy" dur="4s" repeatCount="indefinite" values="210;215;210" />
+    </ellipse>
+    
+    <!-- Green spots -->
+    <circle cx="290" cy="180" r="10" fill="#8BC34A">
+      <animate attributeName="cy" dur="4s" repeatCount="indefinite" values="180;185;180" />
+    </circle>
+    <circle cx="250" cy="200" r="12" fill="#8BC34A">
+      <animate attributeName="cy" dur="4s" repeatCount="indefinite" values="200;205;200" />
+    </circle>
+    <circle cx="180" cy="220" r="11" fill="#8BC34A">
+      <animate attributeName="cy" dur="4s" repeatCount="indefinite" values="220;225;220" />
+    </circle>
+    
+    <!-- Head -->
+    <circle cx="140" cy="150" r="35" fill="#7ED957" stroke="#43A047" stroke-width="2">
+      <animate attributeName="cy" dur="2s" repeatCount="indefinite" values="150;145;150" />
+    </circle>
+    
+    <!-- Eyes -->
+    <circle cx="125" cy="140" r="15" fill="#FFF9C4" stroke="#000" stroke-width="1">
+      <animate attributeName="cy" dur="2s" repeatCount="indefinite" values="140;135;140" />
+    </circle>
+    <circle cx="125" cy="140" r="8" fill="#000">
+      <animate attributeName="cy" dur="2s" repeatCount="indefinite" values="140;135;140" />
+    </circle>
+    
+    <!-- Antenna -->
+    <path d="M130,115 C130,100 115,90 100,95" stroke="#FF5722" stroke-width="8" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+               values="M130,115 C130,100 115,90 100,95;
+                      M130,110 C130,95 115,85 100,90;
+                      M130,115 C130,100 115,90 100,95" />
+    </path>
+    
+    <!-- Feet pairs (animated) -->
+    <g>
+      <!-- First pair -->
+      <path d="M150,180 C160,190 170,195 180,190" stroke="#FFF9C4" stroke-width="6" stroke-linecap="round" fill="none">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+                 values="M150,180 C160,190 170,195 180,190;
+                        M150,185 C160,195 170,200 180,195;
+                        M150,180 C160,190 170,195 180,190" />
+      </path>
+      
+      <!-- Second pair -->
+      <path d="M180,200 C190,210 200,215 210,210" stroke="#FFF9C4" stroke-width="6" stroke-linecap="round" fill="none">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+                 begin="0.5s"
+                 values="M180,200 C190,210 200,215 210,210;
+                        M180,205 C190,215 200,220 210,215;
+                        M180,200 C190,210 200,215 210,210" />
+      </path>
+      
+      <!-- Third pair -->
+      <path d="M210,220 C220,230 230,235 240,230" stroke="#FFF9C4" stroke-width="6" stroke-linecap="round" fill="none">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+                 begin="1s"
+                 values="M210,220 C220,230 230,235 240,230;
+                        M210,225 C220,235 230,240 240,235;
+                        M210,220 C220,230 230,235 240,230" />
+      </path>
+    </g>
+  </g>
+</svg>

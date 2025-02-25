@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+
+  
+  <!-- Gloom Body -->
+  <g id="gloom-body">
+    <!-- Blue body -->
+    <ellipse cx="150" cy="200" rx="45" ry="40" fill="#3D6B99"/>
+    
+    <!-- Arms -->
+    <g id="arms">
+      <path d="M110 190 Q100 195 95 205" stroke="#3D6B99" stroke-width="10" fill="none"/>
+      <path d="M190 190 Q200 195 205 205" stroke="#3D6B99" stroke-width="10" fill="none"/>
+    </g>
+    
+    <!-- Feet -->
+    <g id="feet">
+      <path d="M130 235 Q125 255 115 260" stroke="#3D6B99" stroke-width="10" fill="none"/>
+      <path d="M170 235 Q175 255 185 260" stroke="#3D6B99" stroke-width="10" fill="none"/>
+    </g>
+    
+    <!-- Face -->
+    <g id="face">
+      <!-- Eyes -->
+      <ellipse cx="135" cy="195" rx="8" ry="5" fill="#000"/>
+      <ellipse cx="165" cy="195" rx="8" ry="5" fill="#000"/>
+      
+      <!-- Mouth with drool -->
+      <path id="mouth" d="M140 210 Q150 220 160 210" stroke="#6B5B95" stroke-width="3" fill="none"/>
+      <path id="drool" d="M150 220 Q150 230 150 240" stroke="#add8e6" stroke-width="5" fill="#add8e6"/>
+    </g>
+    
+    <!-- Flower -->
+    <g id="flower">
+      <!-- Flower base -->
+      <ellipse cx="150" cy="140" rx="45" ry="15" fill="#8B4513"/>
+      
+      <!-- Flower petals (brown circles) -->
+      <circle cx="120" cy="120" r="18" fill="#8B4513"/>
+      <circle cx="150" cy="115" r="18" fill="#8B4513"/>
+      <circle cx="180" cy="120" r="18" fill="#8B4513"/>
+      <circle cx="110" cy="145" r="18" fill="#8B4513"/>
+      <circle cx="190" cy="145" r="18" fill="#8B4513"/>
+      
+      <!-- Orange leaves around base -->
+      <path d="M100 155 Q80 140 75 120" stroke="#FF7F50" stroke-width="10" fill="none"/>
+      <path d="M200 155 Q220 140 225 120" stroke="#FF7F50" stroke-width="10" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Animation -->
+  <style>
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes wobble {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      75% { transform: rotate(-2deg); }
+    }
+    @keyframes drip {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.3); }
+    }
+    #gloom-body {
+      animation: bob 3s ease-in-out infinite;
+    }
+    #flower {
+      transform-origin: 150px 150px;
+      animation: wobble 5s ease-in-out infinite;
+    }
+    #drool {
+      transform-origin: 150px 220px;
+      animation: drip 2s ease-in-out infinite;
+    }
+  </style>
+</svg>

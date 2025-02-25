@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#a8a0d0" />
+      <stop offset="100%" stop-color="#7e74b0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Gas clouds -->
+  <g class="gas-clouds">
+    <circle cx="60" cy="70" r="20" fill="#d8d8b0" opacity="0.8">
+      <animate attributeName="cy" values="70;65;70" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0.6;0.8" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="220" cy="90" r="15" fill="#d8d8b0" opacity="0.7">
+      <animate attributeName="cy" values="90;82;90" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="180" cy="200" r="18" fill="#d8d8b0" opacity="0.6">
+      <animate attributeName="cy" values="200;190;200" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="80" cy="190" r="12" fill="#d8d8b0" opacity="0.7">
+      <animate attributeName="cy" values="190;182;190" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Main body -->
+  <g class="koffing-body">
+    <circle cx="150" cy="150" r="70" fill="url(#bodyGrad)">
+      <animate attributeName="r" values="70;72;70" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Body bumps -->
+    <circle cx="120" cy="110" r="10" fill="#7e74b0" />
+    <circle cx="180" cy="130" r="12" fill="#7e74b0" />
+    <circle cx="160" cy="190" r="11" fill="#7e74b0" />
+    <circle cx="110" cy="170" r="9" fill="#7e74b0" />
+    <circle cx="135" cy="145" r="8" fill="#7e74b0" />
+  </g>
+
+  <!-- Face -->
+  <g class="face">
+    <!-- Eyes -->
+    <g class="eyes">
+      <ellipse cx="130" cy="140" rx="15" ry="10" fill="white" />
+      <ellipse cx="170" cy="140" rx="15" ry="10" fill="white" />
+      
+      <!-- Pupils -->
+      <ellipse cx="130" cy="140" rx="8" ry="5" fill="black">
+        <animate attributeName="rx" values="8;2;8" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="170" cy="140" rx="8" ry="5" fill="black">
+        <animate attributeName="rx" values="8;2;8" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M135,170 Q150,180 165,170" stroke="black" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- Skull and crossbones emblem -->
+  <g class="skull-emblem">
+    <circle cx="150" cy="190" r="15" fill="#f0f0f0" />
+    
+    <!-- Skull -->
+    <path d="M150,180 L143,188 L157,188 Z" fill="black" />
+    <circle cx="146" cy="184" r="2" fill="black" />
+    <circle cx="154" cy="184" r="2" fill="black" />
+    
+    <!-- Crossbones -->
+    <line x1="140" y1="195" x2="160" y2="205" stroke="black" stroke-width="3" />
+    <line x1="140" y1="205" x2="160" y2="195" stroke="black" stroke-width="3" />
+  </g>
+
+  <!-- Floating animation for the whole Pokémon -->
+  <animateTransform
+    xlink:href=".koffing-body"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-5; 0,0"
+    dur="3s"
+    repeatCount="indefinite"
+  />
+</svg>

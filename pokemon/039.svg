@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      75% { transform: rotate(-2deg); }
+    }
+    #body { animation: float 3s ease-in-out infinite; }
+    #left-ear, #right-ear { animation: wiggle 4s ease-in-out infinite; }
+    #left-eye, #right-eye { animation: blink 4s ease-in-out infinite; }
+  </style>
+  
+  <!-- Body -->
+  <g id="body">
+    <!-- Main body -->
+    <circle cx="200" cy="220" r="100" fill="#FFC0CB" />
+    
+    <!-- Ears -->
+    <g id="left-ear">
+      <path d="M160 140 L140 80 L180 110 Z" fill="#FFC0CB" />
+    </g>
+    <g id="right-ear">
+      <path d="M240 140 L260 80 L220 110 Z" fill="#FFC0CB" />
+    </g>
+    
+    <!-- Eyes -->
+    <g id="left-eye">
+      <circle cx="170" cy="190" r="20" fill="white" />
+      <circle cx="170" cy="190" r="15" fill="#39C5BB" />
+      <circle cx="165" cy="185" r="5" fill="white" />
+    </g>
+    <g id="right-eye">
+      <circle cx="230" cy="190" r="20" fill="white" />
+      <circle cx="230" cy="190" r="15" fill="#39C5BB" />
+      <circle cx="225" cy="185" r="5" fill="white" />
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M190 220 Q200 230 210 220" stroke="black" stroke-width="2" fill="none" />
+    
+    <!-- Arms -->
+    <ellipse cx="140" cy="240" rx="25" ry="15" fill="#FFC0CB" />
+    <ellipse cx="260" cy="240" rx="25" ry="15" fill="#FFC0CB" />
+    
+    <!-- Feet -->
+    <ellipse cx="175" cy="310" rx="25" ry="15" fill="#FFC0CB" />
+    <ellipse cx="225" cy="310" rx="25" ry="15" fill="#FFC0CB" />
+  </g>
+</svg>

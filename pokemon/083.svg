@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Farfetch'd Animation -->
+  
+  <!-- Body -->
+  <g id="body">
+    <path d="M180,200 Q200,180 220,195 Q240,210 235,230 Q230,250 210,260 Q190,270 170,255 Q160,240 180,200 Z" fill="#b3a898" stroke="#5a4d3f" stroke-width="2">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M180,200 Q200,180 220,195 Q240,210 235,230 Q230,250 210,260 Q190,270 170,255 Q160,240 180,200 Z;
+                M180,203 Q200,183 220,198 Q240,213 235,233 Q230,253 210,263 Q190,273 170,258 Q160,243 180,203 Z;
+                M180,200 Q200,180 220,195 Q240,210 235,230 Q230,250 210,260 Q190,270 170,255 Q160,240 180,200 Z"/>
+    </path>
+  </g>
+  
+  <!-- Head -->
+  <g id="head">
+    <path d="M220,165 Q245,150 265,165 Q275,180 270,200 Q260,220 240,210 Q220,200 220,165 Z" fill="#b3a898" stroke="#5a4d3f" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" from="-2 250 180" to="3 250 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Beak -->
+    <path d="M265,180 L290,185 L265,195 Z" fill="#e8be27" stroke="#5a4d3f" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="-2 250 180" to="3 250 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Eye -->
+    <ellipse cx="250" cy="175" rx="6" ry="8" fill="white" stroke="#5a4d3f" stroke-width="1">
+      <animateTransform attributeName="transform" type="rotate" from="-2 250 180" to="3 250 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    <ellipse cx="252" cy="175" rx="3" ry="4" fill="#5a4d3f">
+      <animate attributeName="cy" values="175;173;175" dur="4s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="rotate" from="-2 250 180" to="3 250 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    
+    <!-- Crest -->
+    <path d="M245,150 L250,130 L255,150 M240,145 L230,125 L242,148 M260,145 L270,125 L258,148" fill="none" stroke="#5a4d3f" stroke-width="3" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="-2 250 180" to="3 250 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+  </g>
+  
+  <!-- Leek/Green Onion -->
+  <g id="leek">
+    <path d="M185,210 L150,170 L145,160 L150,155 L160,165 L195,205 Z" fill="#eaeaea" stroke="#5a4d3f" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="-3 185 210" to="3 185 210" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M150,170 L120,140 L125,135 L155,165 Z" fill="#81a060" stroke="#5a4d3f" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="-3 185 210" to="3 185 210" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M145,160 L110,125 L115,120 L150,155 Z" fill="#81a060" stroke="#5a4d3f" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="-3 185 210" to="3 185 210" dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Legs -->
+  <g id="legs">
+    <!-- Left leg -->
+    <path d="M190,260 L200,290 L210,290 L200,260" fill="#e8be27" stroke="#5a4d3f" stroke-width="1.5">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M190,260 L200,290 L210,290 L200,260;
+                M190,260 L195,290 L205,290 L200,260;
+                M190,260 L200,290 L210,290 L200,260"/>
+    </path>
+    
+    <!-- Right leg -->
+    <path d="M220,255 L225,285 L235,285 L230,255" fill="#e8be27" stroke="#5a4d3f" stroke-width="1.5">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M220,255 L225,285 L235,285 L230,255;
+                M220,255 L230,285 L240,285 L230,255;
+                M220,255 L225,285 L235,285 L230,255"/>
+    </path>
+    
+    <!-- Feet -->
+    <path d="M200,290 L190,295 L210,295 Z" fill="#e8be27" stroke="#5a4d3f" stroke-width="1.5">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M200,290 L190,295 L210,295 Z;
+                M195,290 L185,295 L205,295 Z;
+                M200,290 L190,295 L210,295 Z"/>
+    </path>
+    <path d="M230,285 L220,290 L240,290 Z" fill="#e8be27" stroke="#5a4d3f" stroke-width="1.5">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M230,285 L220,290 L240,290 Z;
+                M235,285 L225,290 L245,290 Z;
+                M230,285 L220,290 L240,290 Z"/>
+    </path>
+  </g>
+  
+  <!-- Wing -->
+  <g id="wing">
+    <path d="M170,230 Q160,240 150,230 Q140,220 150,210 Q160,200 170,210 Z" fill="#b3a898" stroke="#5a4d3f" stroke-width="1.5">
+      <animate attributeName="d" dur="1.5s" repeatCount="indefinite" 
+        values="M170,230 Q160,240 150,230 Q140,220 150,210 Q160,200 170,210 Z;
+                M170,230 Q155,245 145,235 Q135,225 145,215 Q155,205 170,210 Z;
+                M170,230 Q160,240 150,230 Q140,220 150,210 Q160,200 170,210 Z"/>
+    </path>
+  </g>
+</svg>

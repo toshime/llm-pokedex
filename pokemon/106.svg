@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Hitmonlee SVG Animation -->
+  
+  <!-- Body -->
+  <g id="hitmonlee">
+    <!-- Main Body -->
+    <path d="M200 150 C215 140 225 140 230 160 C235 180 230 190 220 200 C210 210 200 210 190 200 C180 190 175 180 180 160 C185 140 195 140 200 150" fill="#a99173" />
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="130" rx="25" ry="30" fill="#a99173" />
+    
+    <!-- Eyes -->
+    <ellipse cx="190" cy="125" rx="5" ry="8" fill="#222" />
+    <ellipse cx="210" cy="125" rx="5" ry="8" fill="#222" />
+    
+    <!-- Left Arm -->
+    <g id="leftArm">
+      <path d="M180 165 C170 175 160 185 150 175 C140 165 135 155 145 145 C155 135 165 140 175 150" fill="#a99173" />
+      <ellipse cx="145" cy="145" rx="15" ry="12" fill="#e85e4f" />
+    </g>
+    
+    <!-- Right Arm -->
+    <g id="rightArm">
+      <path d="M220 165 C230 175 240 185 250 175 C260 165 265 155 255 145 C245 135 235 140 225 150" fill="#a99173" />
+      <ellipse cx="255" cy="145" rx="15" ry="12" fill="#e85e4f" />
+    </g>
+    
+    <!-- Left Leg -->
+    <g id="leftLeg">
+      <path d="M190 200 C180 210 175 220 170 240 C165 260 160 280 160 300 C160 320 170 330 180 320 C190 310 195 300 195 280 C195 260 195 240 190 220" fill="#a99173" />
+      <path d="M160 320 C155 330 155 340 170 345 C185 350 195 345 190 335 C185 325 180 320 170 320" fill="#efefef" />
+    </g>
+    
+    <!-- Right Leg -->
+    <g id="rightLeg">
+      <path d="M210 200 C220 210 225 220 230 240 C235 260 240 280 240 300 C240 320 230 330 220 320 C210 310 205 300 205 280 C205 260 205 240 210 220" fill="#a99173" />
+      <path d="M240 320 C245 330 245 340 230 345 C215 350 205 345 210 335 C215 325 220 320 230 320" fill="#efefef" />
+    </g>
+    
+    <!-- Bandages -->
+    <path d="M170 235 C180 237 190 237 200 235 C210 233 220 233 230 235" stroke="#f0e6d2" stroke-width="5" fill="none" />
+    <path d="M170 250 C180 252 190 252 200 250 C210 248 220 248 230 250" stroke="#f0e6d2" stroke-width="5" fill="none" />
+    <path d="M170 265 C180 267 190 267 200 265 C210 263 220 263 230 265" stroke="#f0e6d2" stroke-width="5" fill="none" />
+  </g>
+  
+  <!-- Animations -->
+  <style>
+    @keyframes kickAnimation {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(-30deg); }
+      100% { transform: rotate(0deg); }
+    }
+    
+    @keyframes punchAnimation {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(30deg); }
+      100% { transform: rotate(0deg); }
+    }
+    
+    #leftLeg {
+      transform-origin: 190px 200px;
+      animation: kickAnimation 2s infinite;
+    }
+    
+    #rightLeg {
+      transform-origin: 210px 200px;
+      animation: kickAnimation 2s infinite 1s;
+    }
+    
+    #leftArm {
+      transform-origin: 180px 165px;
+      animation: punchAnimation 1.5s infinite 0.5s;
+    }
+    
+    #rightArm {
+      transform-origin: 220px 165px;
+      animation: punchAnimation 1.5s infinite;
+    }
+  </style>
+</svg>

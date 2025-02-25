@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- ハクリュー (Dragonair) -->
+  
+  <defs>
+    <!-- Animation definitions -->
+    <animate id="orbGlow" attributeName="r" values="10;12;10" dur="2s" repeatCount="indefinite" />
+    <animate id="eyeBlink" attributeName="ry" values="6;1;6" dur="4s" begin="2s" repeatCount="indefinite" />
+  </defs>
+  
+  <!-- Tail Group -->
+  <g id="tail">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="-5,150,280;5,150,280;-5,150,280" dur="3s" repeatCount="indefinite" />
+    <path d="M120,340 C100,320 90,300 100,280 C110,260 130,250 150,260 C170,270 180,290 170,310 C160,330 140,360 120,340 Z" 
+          fill="#4f8bc6" stroke="#2b5b96" stroke-width="2" />
+  </g>
+  
+  <!-- Body Group -->
+  <g id="body">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="-2,240,250;2,240,250;-2,240,250" dur="4s" repeatCount="indefinite" />
+    <!-- Body -->
+    <path d="M160,280 C180,250 200,230 220,210 C240,190 260,180 280,190 C300,200 310,230 300,260 C290,290 270,310 240,320 C210,330 180,320 160,280 Z" 
+          fill="#4f8bc6" stroke="#2b5b96" stroke-width="2" />
+    
+    <!-- Lighter belly area -->
+    <path d="M130,320 C150,300 170,285 190,270 C230,240 260,230 270,250 C280,270 270,290 240,300 C210,310 190,300 170,280 C150,260 120,300 130,320 Z" 
+          fill="white" stroke="none" />
+  </g>
+  
+  <!-- Neck Group -->
+  <g id="neck">
+    <animateTransform attributeName="transform" type="rotate" 
+                     values="-3,280,150;3,280,150;-3,280,150" dur="5s" repeatCount="indefinite" />
+    <!-- Neck -->
+    <path d="M240,200 C220,180 210,150 220,120 C230,90 250,70 280,80 C310,90 320,120 310,150 C300,180 280,190 240,200 Z" 
+          fill="#4f8bc6" stroke="#2b5b96" stroke-width="2" />
+          
+    <!-- Orb on neck -->
+    <circle cx="280" cy="120" r="10" fill="#e3e8f5" stroke="#2b5b96" stroke-width="1.5">
+      <animate attributeName="r" values="10;12;10" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="280" cy="120" r="7" fill="#abd0f9" stroke="none">
+      <animate attributeName="r" values="7;9;7" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="278" cy="118" r="3" fill="white" stroke="none">
+      <animate attributeName="r" values="3;4;3" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Head Group -->
+  <g id="head">
+    <animateTransform attributeName="transform" type="translate" 
+                     values="0,-4;0,4;0,-4" dur="4s" repeatCount="indefinite" />
+    <!-- Head -->
+    <ellipse cx="290" cy="80" rx="30" ry="40" fill="#4f8bc6" stroke="#2b5b96" stroke-width="2" />
+    
+    <!-- Face -->
+    <ellipse cx="285" cy="75" rx="20" ry="25" fill="white" stroke="none" />
+    
+    <!-- Eyes -->
+    <ellipse cx="275" cy="65" rx="8" ry="10" fill="white" stroke="#2b5b96" stroke-width="1" />
+    <ellipse cx="277" cy="64" rx="4" ry="6" fill="#2b4b82" stroke="none">
+      <animate attributeName="ry" values="6;1;6" dur="4s" begin="2s" repeatCount="indefinite" />
+    </ellipse>
+    <circle cx="276" cy="62" r="2" fill="white" stroke="none" />
+    
+    <!-- Ear-like fins -->
+    <g id="fins">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="0,290,70;-5,290,70;0,290,70" dur="3s" repeatCount="indefinite" />
+      <path d="M265,45 C260,30 250,25 245,35 C240,45 245,60 255,55 Z" 
+            fill="white" stroke="#2b5b96" stroke-width="1.5" />
+      <path d="M315,45 C320,30 330,25 335,35 C340,45 335,60 325,55 Z" 
+            fill="white" stroke="#2b5b96" stroke-width="1.5" />
+    </g>
+    
+    <!-- Nose -->
+    <ellipse cx="265" cy="80" rx="5" ry="3" fill="#2b5b96" stroke="none" />
+  </g>
+</svg>

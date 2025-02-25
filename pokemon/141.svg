@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- カブトプス本体 -->
+  <g id="kabutops">
+    <!-- 体 -->
+    <path d="M200 120 C180 120, 170 190, 170 230 C170 270, 180 330, 200 340 C220 330, 230 270, 230 230 C230 190, 220 120, 200 120 Z" fill="#b89470" stroke="#7d6142" stroke-width="2">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+        M200 120 C180 120, 170 190, 170 230 C170 270, 180 330, 200 340 C220 330, 230 270, 230 230 C230 190, 220 120, 200 120 Z;
+        M200 125 C180 125, 175 195, 175 235 C175 275, 185 335, 200 345 C215 335, 225 275, 225 235 C225 195, 220 125, 200 125 Z;
+        M200 120 C180 120, 170 190, 170 230 C170 270, 180 330, 200 340 C220 330, 230 270, 230 230 C230 190, 220 120, 200 120 Z"
+      />
+    </path>
+    
+    <!-- 頭 -->
+    <path d="M170 75 C160 60, 180 40, 200 35 C220 40, 240 60, 230 75 C215 85, 185 85, 170 75 Z" fill="#b89470" stroke="#7d6142" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+        M170 75 C160 60, 180 40, 200 35 C220 40, 240 60, 230 75 C215 85, 185 85, 170 75 Z;
+        M172 77 C162 62, 182 42, 200 37 C218 42, 238 62, 228 77 C213 87, 187 87, 172 77 Z;
+        M170 75 C160 60, 180 40, 200 35 C220 40, 240 60, 230 75 C215 85, 185 85, 170 75 Z"
+      />
+    </path>
+    
+    <!-- 首 -->
+    <path d="M195 75 C190 90, 190 110, 200 120 C210 110, 210 90, 205 75 Z" fill="#b89470" stroke="#7d6142" stroke-width="1.5">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+        M195 75 C190 90, 190 110, 200 120 C210 110, 210 90, 205 75 Z;
+        M197 77 C192 92, 192 112, 200 122 C208 112, 208 92, 203 77 Z;
+        M195 75 C190 90, 190 110, 200 120 C210 110, 210 90, 205 75 Z"
+      />
+    </path>
+    
+    <!-- 目 -->
+    <g>
+      <circle cx="185" cy="55" r="6" fill="#000">
+        <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="55;53;55" />
+      </circle>
+      <circle cx="215" cy="55" r="6" fill="#000">
+        <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="55;53;55" />
+      </circle>
+    </g>
+    
+    <!-- 鎌（腕） -->
+    <g>
+      <!-- 左腕上部 -->
+      <path d="M170 140 C150 145, 130 155, 120 165" fill="none" stroke="#b89470" stroke-width="8" stroke-linecap="round">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+          M170 140 C150 145, 130 155, 120 165;
+          M170 142 C150 147, 130 157, 120 167;
+          M170 140 C150 145, 130 155, 120 165"
+        />
+      </path>
+      
+      <!-- 左腕中部 -->
+      <path d="M120 165 C110 180, 100 195, 95 210" fill="none" stroke="#b89470" stroke-width="6" stroke-linecap="round">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+          M120 165 C110 180, 100 195, 95 210;
+          M120 167 C110 182, 100 197, 95 212;
+          M120 165 C110 180, 100 195, 95 210"
+        />
+      </path>
+      
+      <!-- 左鎌刃 -->
+      <path d="M95 210 C80 230, 65 250, 55 270 C75 265, 90 255, 95 210" fill="#f2f2f2" stroke="#7d6142" stroke-width="1.5">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+          M95 210 C80 230, 65 250, 55 270 C75 265, 90 255, 95 210;
+          M95 212 C80 232, 65 252, 55 272 C75 267, 90 257, 95 212;
+          M95 210 C80 230, 65 250, 55 270 C75 265, 90 255, 95 210"
+        />
+      </path>
+      
+      <!-- 右腕上部 -->
+      <path d="M230 140 C250 145, 270 155, 280 165" fill="none" stroke="#b89470" stroke-width="8" stroke-linecap="round">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+          M230 140 C250 145, 270 155, 280 165;
+          M230 142 C250 147, 270 157, 280 167;
+          M230 140 C250 145, 270 155, 280 165"
+        />
+      </path>
+      
+      <!-- 右腕中部 -->
+      <path d="M280 165 C290 180, 300 195, 305 210" fill="none" stroke="#b89470" stroke-width="6" stroke-linecap="round">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+          M280 165 C290 180, 300 195, 305 210;
+          M280 167 C290 182, 300 197, 305 212;
+          M280 165 C290 180, 300 195, 305 210"
+        />
+      </path>
+      
+      <!-- 右鎌刃 -->
+      <path d="M305 210 C320 230, 335 250, 345 270 C325 265, 310 255, 305 210" fill="#f2f2f2" stroke="#7d6142" stroke-width="1.5">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+          M305 210 C320 230, 335 250, 345 270 C325 265, 310 255, 305 210;
+          M305 212 C320 232, 335 252, 345 272 C325 267, 310 257, 305 212;
+          M305 210 C320 230, 335 250, 345 270 C325 265, 310 255, 305 210"
+        />
+      </path>
+    </g>
+    
+    <!-- 脚 -->
+    <g>
+      <!-- 左脚 -->
+      <path d="M180 340 C175 350, 170 360, 160 370" fill="none" stroke="#b89470" stroke-width="8" stroke-linecap="round">
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+          M180 340 C175 350, 170 360, 160 370;
+          M180 342 C175 352, 170 362, 155 372;
+          M180 340 C175 350, 170 360, 160 370"
+        />
+      </path>
+      
+      <!-- 右脚 -->
+      <path d="M220 340 C225 350, 230 360, 240 370" fill="none" stroke="#b89470" stroke-width="8" stroke-linecap="round">
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+          M220 340 C225 350, 230 360, 240 370;
+          M220 342 C225 352, 230 362, 245 372;
+          M220 340 C225 350, 230 360, 240 370"
+        />
+      </path>
+    </g>
+    
+    <!-- 尾 -->
+    <path d="M200 340 C190 360, 180 370, 170 380 C160 385, 150 380, 155 370 C160 360, 180 350, 200 340 Z" fill="#b89470" stroke="#7d6142" stroke-width="1.5">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+        M200 340 C190 360, 180 370, 170 380 C160 385, 150 380, 155 370 C160 360, 180 350, 200 340 Z;
+        M200 345 C190 365, 180 375, 170 385 C160 390, 150 385, 155 375 C160 365, 180 355, 200 345 Z;
+        M200 340 C190 360, 180 370, 170 380 C160 385, 150 380, 155 370 C160 360, 180 350, 200 340 Z"
+      />
+    </path>
+  </g>
+</svg>

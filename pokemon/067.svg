@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Machoke (ゴーリキー) -->
+  
+  <!-- Body -->
+  <g id="machoke-body">
+    <!-- Head -->
+    <path d="M200 110 Q220 110 230 120 Q240 130 240 145 Q240 160 230 175 Q220 190 200 190 Q180 190 170 175 Q160 160 160 145 Q160 130 170 120 Q180 110 200 110 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M200 110 Q220 110 230 120 Q240 130 240 145 Q240 160 230 175 Q220 190 200 190 Q180 190 170 175 Q160 160 160 145 Q160 130 170 120 Q180 110 200 110 Z;
+                M200 115 Q220 115 230 125 Q240 135 240 150 Q240 165 230 180 Q220 195 200 195 Q180 195 170 180 Q160 165 160 150 Q160 135 170 125 Q180 115 200 115 Z;
+                M200 110 Q220 110 230 120 Q240 130 240 145 Q240 160 230 175 Q220 190 200 190 Q180 190 170 175 Q160 160 160 145 Q160 130 170 120 Q180 110 200 110 Z"/>
+    </path>
+    
+    <!-- Mouth/Snout -->
+    <path d="M185 160 Q200 170 215 160" fill="none" stroke="#000" stroke-width="2"/>
+    <path d="M185 170 Q200 165 215 170 Q200 180 185 170 Z" fill="#762C35" stroke="#000" stroke-width="1.5">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M185 170 Q200 165 215 170 Q200 180 185 170 Z;
+                M185 172 Q200 168 215 172 Q200 182 185 172 Z;
+                M185 170 Q200 165 215 170 Q200 180 185 170 Z"/>
+    </path>
+    
+    <!-- Eyes -->
+    <ellipse cx="180" cy="145" rx="10" ry="8" fill="#FFFFFF" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="220" cy="145" rx="10" ry="8" fill="#FFFFFF" stroke="#000" stroke-width="1.5"/>
+    <circle cx="182" cy="145" r="4" fill="#000000"/>
+    <circle cx="218" cy="145" r="4" fill="#000000">
+      <animate attributeName="r" dur="4s" repeatCount="indefinite" 
+        values="4;3;4"/>
+    </circle>
+    
+    <!-- Torso -->
+    <path d="M180 190 Q170 220 170 250 Q170 280 180 310 Q190 320 200 320 Q210 320 220 310 Q230 280 230 250 Q230 220 220 190 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M180 190 Q170 220 170 250 Q170 280 180 310 Q190 320 200 320 Q210 320 220 310 Q230 280 230 250 Q230 220 220 190 Z;
+                M180 195 Q170 225 170 255 Q170 285 180 315 Q190 325 200 325 Q210 325 220 315 Q230 285 230 255 Q230 225 220 195 Z;
+                M180 190 Q170 220 170 250 Q170 280 180 310 Q190 320 200 320 Q210 320 220 310 Q230 280 230 250 Q230 220 220 190 Z"/>
+    </path>
+    
+    <!-- Belt -->
+    <ellipse cx="200" cy="260" rx="35" ry="15" fill="#333333" stroke="#000" stroke-width="1.5"/>
+    <circle cx="200" cy="260" r="10" fill="#FFC900" stroke="#000" stroke-width="1.5">
+      <animate attributeName="r" dur="3s" repeatCount="indefinite"
+        values="10;9;10"/>
+    </circle>
+    
+    <!-- Markings on torso (red stripes) -->
+    <path d="M180 210 L220 210" stroke="#CE2029" stroke-width="3" stroke-linecap="round"/>
+    <path d="M175 225 L225 225" stroke="#CE2029" stroke-width="3" stroke-linecap="round"/>
+    <path d="M173 240 L227 240" stroke="#CE2029" stroke-width="3" stroke-linecap="round"/>
+    <path d="M175 280 L225 280" stroke="#CE2029" stroke-width="3" stroke-linecap="round"/>
+    <path d="M180 295 L220 295" stroke="#CE2029" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Left Arm -->
+    <g id="left-arm">
+      <path d="M170 200 Q150 210 130 230 Q110 250 105 280 Q103 295 110 300 Q117 305 125 290 Q133 275 140 260 Q150 240 170 225 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite"
+          values="M170 200 Q150 210 130 230 Q110 250 105 280 Q103 295 110 300 Q117 305 125 290 Q133 275 140 260 Q150 240 170 225 Z;
+                  M170 200 Q145 205 120 220 Q100 240 95 270 Q93 285 100 290 Q107 295 115 280 Q123 265 130 250 Q145 230 170 225 Z;
+                  M170 200 Q150 210 130 230 Q110 250 105 280 Q103 295 110 300 Q117 305 125 290 Q133 275 140 260 Q150 240 170 225 Z"/>
+      </path>
+      
+      <!-- Left Hand -->
+      <path d="M110 290 Q105 300 107 305 Q110 310 115 310 Q120 310 125 305 Q130 300 130 295 Q130 290 125 285 Q120 280 115 280 Q110 280 110 290 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite"
+          values="M110 290 Q105 300 107 305 Q110 310 115 310 Q120 310 125 305 Q130 300 130 295 Q130 290 125 285 Q120 280 115 280 Q110 280 110 290 Z;
+                  M100 280 Q95 290 97 295 Q100 300 105 300 Q110 300 115 295 Q120 290 120 285 Q120 280 115 275 Q110 270 105 270 Q100 270 100 280 Z;
+                  M110 290 Q105 300 107 305 Q110 310 115 310 Q120 310 125 305 Q130 300 130 295 Q130 290 125 285 Q120 280 115 280 Q110 280 110 290 Z"/>
+      </path>
+    </g>
+    
+    <!-- Right Arm -->
+    <g id="right-arm">
+      <path d="M230 200 Q250 210 270 230 Q290 250 295 280 Q297 295 290 300 Q283 305 275 290 Q267 275 260 260 Q250 240 230 225 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" begin="0.5s"
+          values="M230 200 Q250 210 270 230 Q290 250 295 280 Q297 295 290 300 Q283 305 275 290 Q267 275 260 260 Q250 240 230 225 Z;
+                  M230 200 Q255 205 280 220 Q300 240 305 270 Q307 285 300 290 Q293 295 285 280 Q277 265 270 250 Q255 230 230 225 Z;
+                  M230 200 Q250 210 270 230 Q290 250 295 280 Q297 295 290 300 Q283 305 275 290 Q267 275 260 260 Q250 240 230 225 Z"/>
+      </path>
+      
+      <!-- Right Hand -->
+      <path d="M290 290 Q295 300 293 305 Q290 310 285 310 Q280 310 275 305 Q270 300 270 295 Q270 290 275 285 Q280 280 285 280 Q290 280 290 290 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" begin="0.5s"
+          values="M290 290 Q295 300 293 305 Q290 310 285 310 Q280 310 275 305 Q270 300 270 295 Q270 290 275 285 Q280 280 285 280 Q290 280 290 290 Z;
+                  M300 280 Q305 290 303 295 Q300 300 295 300 Q290 300 285 295 Q280 290 280 285 Q280 280 285 275 Q290 270 295 270 Q300 270 300 280 Z;
+                  M290 290 Q295 300 293 305 Q290 310 285 310 Q280 310 275 305 Q270 300 270 295 Q270 290 275 285 Q280 280 285 280 Q290 280 290 290 Z"/>
+      </path>
+    </g>
+    
+    <!-- Legs -->
+    <path d="M180 320 Q170 340 170 360 Q170 370 180 375 Q190 380 195 370 Q200 360 195 320 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M180 320 Q170 340 170 360 Q170 370 180 375 Q190 380 195 370 Q200 360 195 320 Z;
+                M180 325 Q170 345 170 365 Q170 375 180 380 Q190 385 195 375 Q200 365 195 325 Z;
+                M180 320 Q170 340 170 360 Q170 370 180 375 Q190 380 195 370 Q200 360 195 320 Z"/>
+    </path>
+    <path d="M220 320 Q230 340 230 360 Q230 370 220 375 Q210 380 205 370 Q200 360 205 320 Z" fill="#A8A4C0" stroke="#000" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" begin="1.5s"
+        values="M220 320 Q230 340 230 360 Q230 370 220 375 Q210 380 205 370 Q200 360 205 320 Z;
+                M220 325 Q230 345 230 365 Q230 375 220 380 Q210 385 205 375 Q200 365 205 325 Z;
+                M220 320 Q230 340 230 360 Q230 370 220 375 Q210 380 205 370 Q200 360 205 320 Z"/>
+    </path>
+  </g>
+</svg>

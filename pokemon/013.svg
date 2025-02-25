@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Weedle Animation -->
+  <style>
+    @keyframes bodyWiggle {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(0, 3px); }
+    }
+    @keyframes headBob {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      50% { transform: translate(0, -2px) rotate(2deg); }
+    }
+    @keyframes hornWiggle {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-3deg); }
+    }
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    @keyframes eyeBlink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    .weedle-body { animation: bodyWiggle 2s ease-in-out infinite; }
+    .weedle-head { animation: headBob 2s ease-in-out infinite; }
+    .weedle-horn { animation: hornWiggle 2s ease-in-out infinite; }
+    .weedle-tail { animation: tailWag 2s ease-in-out infinite; transform-origin: 75px 190px; }
+    .weedle-eye { animation: eyeBlink 4s ease-in-out infinite; transform-origin: center; }
+  </style>
+  
+  <!-- Tail -->
+  <g class="weedle-tail">
+    <path d="M85 190 L60 195 L50 210" fill="none" stroke="#8B4513" stroke-width="8" stroke-linecap="round"/>
+    <path d="M50 210 L40 200" fill="none" stroke="#F8F8FF" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Body segments -->
+  <g class="weedle-body">
+    <!-- Rear segments -->
+    <circle cx="120" cy="190" r="15" fill="#CD853F"/>
+    <circle cx="150" cy="190" r="15" fill="#CD853F"/>
+    <circle cx="180" cy="190" r="15" fill="#CD853F"/>
+    
+    <!-- Middle segments with pink feet -->
+    <g>
+      <circle cx="120" cy="190" r="15" fill="#CD853F"/>
+      <circle cx="120" cy="205" r="5" fill="#FFB6C1"/>
+    </g>
+    <g>
+      <circle cx="150" cy="190" r="15" fill="#CD853F"/>
+      <circle cx="150" cy="205" r="5" fill="#FFB6C1"/>
+    </g>
+    <g>
+      <circle cx="180" cy="190" r="15" fill="#CD853F"/>
+      <circle cx="180" cy="205" r="5" fill="#FFB6C1"/>
+    </g>
+    
+    <!-- Front segments -->
+    <circle cx="210" cy="180" r="17" fill="#CD853F"/>
+    <circle cx="235" cy="165" r="19" fill="#CD853F"/>
+  </g>
+  
+  <!-- Head -->
+  <g class="weedle-head">
+    <circle cx="235" cy="145" r="25" fill="#CD853F"/>
+    
+    <!-- Nose -->
+    <circle cx="250" cy="145" r="10" fill="#FFB6C1"/>
+    
+    <!-- Eyes -->
+    <g class="weedle-eye">
+      <circle cx="235" cy="135" r="6" fill="#000"/>
+      <circle cx="236" cy="133" r="2" fill="#FFF"/>
+    </g>
+    
+    <!-- Horn -->
+    <g class="weedle-horn">
+      <path d="M235 120 L235 95" fill="none" stroke="#F8F8FF" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

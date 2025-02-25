@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Arcanine -->
+  <g id="arcanine">
+    <!-- Main body -->
+    <path d="M180 200 Q240 180 270 230 Q250 270 210 270 Q180 270 160 250 Q150 220 180 200Z" fill="#e8a952" />
+    
+    <!-- Head -->
+    <ellipse cx="160" cy="180" rx="40" ry="35" fill="#e8a952" />
+    
+    <!-- Mane -->
+    <path d="M120 140 Q100 120 125 130 Q115 110 135 125 Q130 100 145 120 Q150 90 160 115 Q175 85 180 115 Q200 95 195 120 Q215 105 205 125 Q220 115 210 130 Q205 140 185 135 Q195 150 170 145 Q180 160 155 155 Q140 165 130 150 Z" fill="#f5e7c0" />
+    
+    <!-- Chest mane -->
+    <path d="M160 200 Q180 210 160 230 Q140 220 120 230 Q110 220 120 210 Q130 205 140 210 Q150 205 160 200Z" fill="#f5e7c0" />
+    
+    <!-- Eyes -->
+    <ellipse cx="145" cy="175" rx="5" ry="4" fill="#333" />
+    <ellipse cx="175" cy="175" rx="5" ry="4" fill="#333" />
+    
+    <!-- Nose -->
+    <path d="M160 185 Q165 190 155 190 Q150 190 160 185Z" fill="#333" />
+    
+    <!-- Mouth -->
+    <path d="M155 190 Q160 195 165 190" fill="none" stroke="#333" stroke-width="1" />
+    
+    <!-- Ears -->
+    <path d="M135 140 Q125 130 135 150Z" fill="#e8a952" />
+    <path d="M185 140 Q195 130 185 150Z" fill="#e8a952" />
+    
+    <!-- Stripes -->
+    <path d="M190 220 L200 235 L210 220" fill="none" stroke="#333" stroke-width="8" />
+    <path d="M230 230 L240 245 L250 230" fill="none" stroke="#333" stroke-width="8" />
+    
+    <!-- Tail -->
+    <path d="M270 230 Q290 210 310 230 Q320 250 305 260 Q290 270 280 250Z" fill="#f5e7c0" />
+    
+    <!-- Legs -->
+    <path d="M180 270 L175 300" fill="none" stroke="#e8a952" stroke-width="12" />
+    <path d="M240 270 L245 300" fill="none" stroke="#e8a952" stroke-width="12" />
+    <path d="M200 270 L195 300" fill="none" stroke="#e8a952" stroke-width="12" />
+    <path d="M220 270 L225 300" fill="none" stroke="#e8a952" stroke-width="12" />
+  </g>
+
+  <!-- Animation -->
+  <style>
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(8deg); }
+    }
+    
+    #arcanine {
+      animation: breathe 4s ease-in-out infinite;
+      transform-origin: center;
+    }
+    
+    ellipse[cx="145"][cy="175"], ellipse[cx="175"][cy="175"] {
+      animation: blink 4s infinite;
+      transform-origin: center;
+    }
+    
+    path[d="M270 230 Q290 210 310 230 Q320 250 305 260 Q290 270 280 250Z"] {
+      animation: tailWag 2s infinite;
+      transform-origin: 270px 230px;
+    }
+  </style>
+</svg>

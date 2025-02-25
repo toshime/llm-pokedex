@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes tail-wag {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        75% { transform: rotate(-5deg); }
+      }
+      @keyframes flame-flicker {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 1; }
+      }
+      @keyframes ear-twitch {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(-3deg); }
+      }
+      .flareon-body {
+        animation: bounce 3s ease-in-out infinite;
+      }
+      .tail {
+        animation: tail-wag 2s ease-in-out infinite;
+        transform-origin: 120px 170px;
+      }
+      .flame-effect {
+        animation: flame-flicker 1.5s ease-in-out infinite;
+      }
+      .ear {
+        animation: ear-twitch 4s ease-in-out infinite;
+        transform-origin: bottom center;
+      }
+    </style>
+  </defs>
+
+  <!-- Main body group with animation -->
+  <g class="flareon-body">
+    <!-- Body -->
+    <ellipse cx="200" cy="200" rx="80" ry="50" fill="#e67e22" />
+    
+    <!-- Legs -->
+    <ellipse cx="160" cy="240" rx="15" ry="25" fill="#e67e22" />
+    <ellipse cx="240" cy="240" rx="15" ry="25" fill="#e67e22" />
+    <ellipse cx="170" cy="235" rx="12" ry="20" fill="#e67e22" />
+    <ellipse cx="230" cy="235" rx="12" ry="20" fill="#e67e22" />
+    
+    <!-- Paws -->
+    <ellipse cx="160" cy="260" rx="12" ry="8" fill="#f5d6a3" />
+    <ellipse cx="240" cy="260" rx="12" ry="8" fill="#f5d6a3" />
+    <ellipse cx="170" cy="253" rx="10" ry="7" fill="#f5d6a3" />
+    <ellipse cx="230" cy="253" rx="10" ry="7" fill="#f5d6a3" />
+    
+    <!-- Fur collar -->
+    <ellipse cx="200" cy="170" rx="70" ry="40" fill="#f5d6a3" />
+    
+    <!-- Head -->
+    <circle cx="200" cy="150" r="40" fill="#e67e22" />
+    
+    <!-- Face fur -->
+    <path d="M180,165 Q200,180 220,165" fill="none" stroke="#f5d6a3" stroke-width="15" />
+    <ellipse cx="200" cy="150" rx="30" ry="25" fill="#f5d6a3" />
+    
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="185" cy="140" rx="6" ry="8" fill="black" />
+      <ellipse cx="215" cy="140" rx="6" ry="8" fill="black" />
+      <circle cx="183" cy="138" r="2" fill="white" />
+      <circle cx="213" cy="138" r="2" fill="white" />
+    </g>
+    
+    <!-- Nose -->
+    <ellipse cx="200" cy="155" rx="5" ry="3" fill="#7b3f00" />
+    
+    <!-- Ears with animation -->
+    <g class="ear" style="animation-delay: -0.5s">
+      <path d="M175,115 L165,90 L180,110 Z" fill="#e67e22" />
+      <path d="M175,115 L165,90 L170,95 Z" fill="#a04000" />
+    </g>
+    
+    <g class="ear" style="animation-delay: 0.5s">
+      <path d="M225,115 L235,90 L220,110 Z" fill="#e67e22" />
+      <path d="M225,115 L235,90 L230,95 Z" fill="#a04000" />
+    </g>
+    
+    <!-- Tail with animation -->
+    <g class="tail">
+      <path d="M120,170 Q90,140 70,170 Q50,200 80,220 Q110,240 120,200 Z" fill="#f5d6a3" />
+      <path class="flame-effect" d="M80,180 Q70,160 75,170 Q65,150 70,165 Q60,140 75,160 Q85,145 80,165 Q95,150 85,170 Z" fill="#e67e22" fill-opacity="0.9" />
+    </g>
+  </g>
+</svg>

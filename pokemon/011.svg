@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Metapod with animation -->
+  <g id="metapod">
+    <!-- Main Body -->
+    <path d="M190,120 C160,130 140,160 130,200 C120,240 120,280 140,310 C160,340 200,350 240,330 C280,310 300,280 290,230 C280,180 260,140 230,120 C200,100 170,110 190,120Z" 
+          fill="#9CCC65" stroke="#689F38" stroke-width="2">
+      <animate attributeName="d" 
+               dur="6s" 
+               repeatCount="indefinite"
+               values="M190,120 C160,130 140,160 130,200 C120,240 120,280 140,310 C160,340 200,350 240,330 C280,310 300,280 290,230 C280,180 260,140 230,120 C200,100 170,110 190,120Z;
+                      M195,125 C165,135 145,165 135,205 C125,245 125,285 145,315 C165,345 205,355 245,335 C285,315 305,285 295,235 C285,185 265,145 235,125 C205,105 175,115 195,125Z;
+                      M190,120 C160,130 140,160 130,200 C120,240 120,280 140,310 C160,340 200,350 240,330 C280,310 300,280 290,230 C280,180 260,140 230,120 C200,100 170,110 190,120Z" />
+    </path>
+    
+    <!-- Segmentation Lines -->
+    <path d="M140,160 C180,170 220,170 260,160" stroke="#689F38" stroke-width="2" fill="none">
+      <animate attributeName="d" 
+               dur="6s" 
+               repeatCount="indefinite"
+               values="M140,160 C180,170 220,170 260,160;
+                      M145,165 C185,175 225,175 265,165;
+                      M140,160 C180,170 220,170 260,160" />
+    </path>
+    
+    <path d="M130,200 C170,210 230,210 270,200" stroke="#689F38" stroke-width="2" fill="none">
+      <animate attributeName="d" 
+               dur="6s" 
+               repeatCount="indefinite"
+               values="M130,200 C170,210 230,210 270,200;
+                      M135,205 C175,215 235,215 275,205;
+                      M130,200 C170,210 230,210 270,200" />
+    </path>
+    
+    <path d="M135,240 C175,250 225,250 265,240" stroke="#689F38" stroke-width="2" fill="none">
+      <animate attributeName="d" 
+               dur="6s" 
+               repeatCount="indefinite"
+               values="M135,240 C175,250 225,250 265,240;
+                      M140,245 C180,255 230,255 270,245;
+                      M135,240 C175,250 225,250 265,240" />
+    </path>
+    
+    <path d="M145,280 C175,290 215,290 255,280" stroke="#689F38" stroke-width="2" fill="none">
+      <animate attributeName="d" 
+               dur="6s" 
+               repeatCount="indefinite"
+               values="M145,280 C175,290 215,290 255,280;
+                      M150,285 C180,295 220,295 260,285;
+                      M145,280 C175,290 215,290 255,280" />
+    </path>
+    
+    <!-- Eye -->
+    <g>
+      <path d="M180,155 C175,150 175,140 180,135 C185,130 195,130 200,135 C205,140 205,150 200,155 C195,160 185,160 180,155Z" 
+            fill="white" stroke="#333" stroke-width="1">
+        <animate attributeName="d" 
+                 dur="6s" 
+                 repeatCount="indefinite"
+                 values="M180,155 C175,150 175,140 180,135 C185,130 195,130 200,135 C205,140 205,150 200,155 C195,160 185,160 180,155Z;
+                        M185,160 C180,155 180,145 185,140 C190,135 200,135 205,140 C210,145 210,155 205,160 C200,165 190,165 185,160Z;
+                        M180,155 C175,150 175,140 180,135 C185,130 195,130 200,135 C205,140 205,150 200,155 C195,160 185,160 180,155Z" />
+      </path>
+      
+      <circle cx="190" cy="145" r="5" fill="#333">
+        <animate attributeName="cy" 
+                 dur="6s" 
+                 repeatCount="indefinite"
+                 values="145;150;145" />
+      </circle>
+    </g>
+    
+    <!-- Subtle Breathing Effect on whole body -->
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="scale"
+      from="1 1"
+      to="1.01 1.01"
+      dur="3s"
+      repeatCount="indefinite"
+      additive="sum"
+      begin="0s"
+    />
+    
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      from="0 0"
+      to="0 -2"
+      dur="3s"
+      repeatCount="indefinite"
+      additive="sum"
+      begin="0s"
+    />
+  </g>
+</svg>

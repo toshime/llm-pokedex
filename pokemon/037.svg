@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    .tail {
+      animation: tailWag 3s infinite ease-in-out;
+      transform-origin: 190px 200px;
+    }
+    .ear-left {
+      animation: earTwitch 4s infinite ease-in-out;
+      transform-origin: 156px 125px;
+    }
+    .ear-right {
+      animation: earTwitch 4s infinite ease-in-out 0.5s;
+      transform-origin: 208px 126px;
+    }
+    .body {
+      animation: breathe 4s infinite ease-in-out;
+      transform-origin: center;
+    }
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+    @keyframes earTwitch {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-3deg); }
+    }
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.01); }
+    }
+  </style>
+
+  <!-- Tails -->
+  <g class="tail">
+    <!-- Tail 1 -->
+    <path d="M240,200 C280,180 320,200 320,160 C320,130 290,120 270,140 C250,160 260,180 240,200 Z" fill="#D68B62"/>
+    <!-- Tail 2 -->
+    <path d="M230,180 C270,170 300,180 300,140 C300,110 270,100 250,120 C230,140 250,160 230,180 Z" fill="#D68B62"/>
+    <!-- Tail 3 -->
+    <path d="M220,190 C260,160 290,170 290,130 C290,100 260,90 240,110 C220,130 240,170 220,190 Z" fill="#D68B62"/>
+    <!-- Tail 4 -->
+    <path d="M210,195 C250,165 280,175 280,135 C280,105 250,95 230,115 C210,135 230,175 210,195 Z" fill="#D68B62"/>
+    <!-- Tail 5 -->
+    <path d="M200,198 C240,170 270,180 270,140 C270,110 240,100 220,120 C200,140 220,180 200,198 Z" fill="#D68B62"/>
+    <!-- Tail 6 -->
+    <path d="M190,200 C230,175 260,185 260,145 C260,115 230,105 210,125 C190,145 210,185 190,200 Z" fill="#D68B62"/>
+  </g>
+
+  <!-- Body -->
+  <g class="body">
+    <ellipse cx="180" cy="220" rx="60" ry="50" fill="#D68B62"/>
+    
+    <!-- Legs -->
+    <ellipse cx="150" cy="260" rx="15" ry="20" fill="#D68B62"/>
+    <ellipse cx="210" cy="260" rx="15" ry="20" fill="#D68B62"/>
+    <ellipse cx="150" cy="270" rx="10" ry="5" fill="#8B5A2B"/>
+    <ellipse cx="210" cy="270" rx="10" ry="5" fill="#8B5A2B"/>
+    
+    <!-- Chest -->
+    <ellipse cx="180" cy="230" rx="30" ry="25" fill="#F2D2A9"/>
+    
+    <!-- Head -->
+    <ellipse cx="180" cy="150" rx="40" ry="35" fill="#D68B62"/>
+    
+    <!-- Ears -->
+    <path class="ear-left" d="M156,125 L140,90 L160,105 Z" fill="#D68B62"/>
+    <path class="ear-right" d="M208,126 L220,90 L200,105 Z" fill="#D68B62"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="165" cy="145" rx="7" ry="5" fill="#634E4C"/>
+    <ellipse cx="195" cy="145" rx="7" ry="5" fill="#634E4C"/>
+    <ellipse cx="165" cy="145" rx="3" ry="2" fill="#fff"/>
+    <ellipse cx="195" cy="145" rx="3" ry="2" fill="#fff"/>
+    
+    <!-- Nose -->
+    <ellipse cx="180" cy="160" rx="5" ry="3" fill="#8B5A2B"/>
+    
+    <!-- Mouth -->
+    <path d="M175,168 C178,172 182,172 185,168" fill="none" stroke="#8B5A2B" stroke-width="1.5"/>
+  </g>
+</svg>

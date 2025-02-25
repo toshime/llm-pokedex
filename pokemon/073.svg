@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <g id="dokukurage">
+    <!-- Main body -->
+    <ellipse cx="150" cy="120" rx="70" ry="60" fill="#6ec3e8">
+      <animate attributeName="cy" values="120;115;120;125;120" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Head dome -->
+    <path d="M90 120 Q150 70 210 120" fill="#6ec3e8" stroke="#6ec3e8" stroke-width="2">
+      <animate attributeName="d" values="M90 120 Q150 70 210 120;M90 115 Q150 65 210 115;M90 120 Q150 70 210 120" dur="4s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Red dome parts -->
+    <path d="M110 100 Q130 70 150 80 Q170 70 190 100" fill="#e64c4c" stroke="#e64c4c" stroke-width="1">
+      <animate attributeName="d" values="M110 100 Q130 70 150 80 Q170 70 190 100;M110 95 Q130 65 150 75 Q170 65 190 95;M110 100 Q130 70 150 80 Q170 70 190 100" dur="4s" repeatCount="indefinite" />
+    </path>
+    <ellipse cx="120" cy="100" rx="20" ry="15" fill="#e64c4c">
+      <animate attributeName="cy" values="100;95;100;105;100" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="180" cy="100" rx="20" ry="15" fill="#e64c4c">
+      <animate attributeName="cy" values="100;95;100;105;100" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Eyes -->
+    <circle cx="130" cy="120" r="8" fill="#e64c4c">
+      <animate attributeName="cy" values="120;115;120;125;120" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="130" cy="120" r="3" fill="white">
+      <animate attributeName="cy" values="120;115;120;125;120" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="170" cy="120" r="8" fill="#e64c4c">
+      <animate attributeName="cy" values="120;115;120;125;120" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="170" cy="120" r="3" fill="white">
+      <animate attributeName="cy" values="120;115;120;125;120" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Center gem -->
+    <circle cx="150" cy="100" r="6" fill="#e64c4c">
+      <animate attributeName="cy" values="100;95;100;105;100" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="100" r="2" fill="white">
+      <animate attributeName="cy" values="100;95;100;105;100" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Mouth -->
+    <path d="M140 140 Q150 150 160 140" fill="none" stroke="black" stroke-width="2">
+      <animate attributeName="d" values="M140 140 Q150 150 160 140;M140 135 Q150 145 160 135;M140 140 Q150 150 160 140" dur="4s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Tentacles -->
+    <g id="tentacles">
+      <!-- Left side tentacles -->
+      <path d="M100 150 Q90 180 80 200 Q70 210 65 205" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M100 150 Q90 180 80 200 Q70 210 65 205;M100 145 Q90 175 80 195 Q70 205 65 200;M100 150 Q90 180 80 200 Q70 210 65 205" dur="4s" repeatCount="indefinite" />
+      </path>
+      <path d="M110 155 Q100 190 95 215 Q90 225 85 220" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M110 155 Q100 190 95 215 Q90 225 85 220;M110 150 Q100 185 95 210 Q90 220 85 215;M110 155 Q100 190 95 215 Q90 225 85 220" dur="3.5s" repeatCount="indefinite" />
+      </path>
+      <path d="M120 160 Q115 200 110 230 Q105 240 100 235" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M120 160 Q115 200 110 230 Q105 240 100 235;M120 155 Q115 195 110 225 Q105 235 100 230;M120 160 Q115 200 110 230 Q105 240 100 235" dur="3.2s" repeatCount="indefinite" />
+      </path>
+      
+      <!-- Center tentacles -->
+      <path d="M140 165 Q140 205 135 245 Q130 255 125 250" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M140 165 Q140 205 135 245 Q130 255 125 250;M140 160 Q140 200 135 240 Q130 250 125 245;M140 165 Q140 205 135 245 Q130 255 125 250" dur="4.2s" repeatCount="indefinite" />
+      </path>
+      <path d="M160 165 Q160 205 165 245 Q170 255 175 250" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M160 165 Q160 205 165 245 Q170 255 175 250;M160 160 Q160 200 165 240 Q170 250 175 245;M160 165 Q160 205 165 245 Q170 255 175 250" dur="3.8s" repeatCount="indefinite" />
+      </path>
+      
+      <!-- Right side tentacles -->
+      <path d="M180 160 Q185 200 190 230 Q195 240 200 235" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M180 160 Q185 200 190 230 Q195 240 200 235;M180 155 Q185 195 190 225 Q195 235 200 230;M180 160 Q185 200 190 230 Q195 240 200 235" dur="3.3s" repeatCount="indefinite" />
+      </path>
+      <path d="M190 155 Q200 190 205 215 Q210 225 215 220" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M190 155 Q200 190 205 215 Q210 225 215 220;M190 150 Q200 185 205 210 Q210 220 215 215;M190 155 Q200 190 205 215 Q210 225 215 220" dur="4.5s" repeatCount="indefinite" />
+      </path>
+      <path d="M200 150 Q210 180 220 200 Q230 210 235 205" fill="none" stroke="#a7a7a7" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M200 150 Q210 180 220 200 Q230 210 235 205;M200 145 Q210 175 220 195 Q230 205 235 200;M200 150 Q210 180 220 200 Q230 210 235 205" dur="3.7s" repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+</svg>

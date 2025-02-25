@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffcc00" />
+      <stop offset="70%" stop-color="#ff7700" />
+      <stop offset="100%" stop-color="#ff5500" />
+    </radialGradient>
+  </defs>
+
+  <!-- Main fish body -->
+  <g id="azumaou">
+    <!-- Body -->
+    <ellipse cx="180" cy="140" rx="70" ry="60" fill="#ff7f50" stroke="#e05f30" stroke-width="2">
+      <animate attributeName="rx" values="70;72;70" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="60;62;60" dur="3s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- White belly -->
+    <path d="M140,170 C160,185 200,185 220,170" fill="#ffffff" stroke="#e0e0e0" stroke-width="1">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M140,170 C160,185 200,185 220,170;
+              M140,172 C160,187 200,187 220,172;
+              M140,170 C160,185 200,185 220,170" />
+    </path>
+    
+    <!-- Black stripes -->
+    <path d="M120,130 C140,125 160,125 170,130" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+      values="M120,130 C140,125 160,125 170,130;
+              M122,132 C142,127 162,127 172,132;
+              M120,130 C140,125 160,125 170,130" />
+    </path>
+    <path d="M190,130 C210,125 230,130 240,135" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+      values="M190,130 C210,125 230,130 240,135;
+              M192,132 C212,127 232,132 242,137;
+              M190,130 C210,125 230,130 240,135" />
+    </path>
+    
+    <!-- Fins -->
+    <!-- Top fin -->
+    <path d="M170,80 L180,50 L190,80" fill="#ffffff" stroke="#cccccc" stroke-width="1.5">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite"
+      values="M170,80 L180,50 L190,80;
+              M170,80 L178,45 L188,80;
+              M170,80 L180,50 L190,80" />
+    </path>
+    
+    <!-- Side fins -->
+    <!-- Left transparent fin with spots -->
+    <path d="M110,140 C60,110 50,160 90,170" fill="#eeeeee" fill-opacity="0.6" stroke="#cccccc" stroke-width="1.5">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite"
+      values="M110,140 C60,110 50,160 90,170;
+              M110,140 C65,115 55,165 95,175;
+              M110,140 C60,110 50,160 90,170" />
+    </path>
+    <!-- Right transparent fin with spots -->
+    <path d="M250,140 C300,110 310,160 270,170" fill="#eeeeee" fill-opacity="0.6" stroke="#cccccc" stroke-width="1.5">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite"
+      values="M250,140 C300,110 310,160 270,170;
+              M250,140 C295,115 305,165 265,175;
+              M250,140 C300,110 310,160 270,170" />
+    </path>
+    
+    <!-- Spots on fins -->
+    <!-- Left fin spots -->
+    <circle cx="80" cy="130" r="5" fill="#444444">
+      <animate attributeName="cy" values="130;133;130" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="70" cy="150" r="4" fill="#444444">
+      <animate attributeName="cy" values="150;153;150" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <!-- Right fin spots -->
+    <circle cx="280" cy="130" r="5" fill="#444444">
+      <animate attributeName="cy" values="130;133;130" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="290" cy="150" r="4" fill="#444444">
+      <animate attributeName="cy" values="150;153;150" dur="5s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Eye -->
+    <circle cx="120" cy="130" r="18" fill="url(#eyeGradient)" stroke="#e05f30" stroke-width="2" />
+    <circle cx="120" cy="130" r="8" fill="#000000">
+      <animate attributeName="r" values="8;7;8" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="117" cy="127" r="3" fill="white" />
+    
+    <!-- Mouth -->
+    <path d="M100,155 C110,165 130,165 140,155" fill="none" stroke="#cc3333" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite"
+      values="M100,155 C110,165 130,165 140,155;
+              M100,157 C110,167 130,167 140,157;
+              M100,155 C110,165 130,165 140,155" />
+    </path>
+  </g>
+</svg>

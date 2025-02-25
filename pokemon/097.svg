@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <style>
+    .body-sway {
+      animation: bodySway 3s infinite ease-in-out;
+      transform-origin: center bottom;
+    }
+    .pendulum-swing {
+      animation: pendulumSwing 2s infinite ease-in-out;
+      transform-origin: 155px 173px;
+    }
+    .arm-punch {
+      animation: armPunch 2.5s infinite ease-in-out;
+      transform-origin: 210px 140px;
+    }
+    @keyframes bodySway {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-2deg); }
+    }
+    @keyframes pendulumSwing {
+      0%, 100% { transform: rotate(20deg); }
+      50% { transform: rotate(-20deg); }
+    }
+    @keyframes armPunch {
+      0%, 100% { transform: rotate(0deg) translateX(0); }
+      50% { transform: rotate(-5deg) translateX(5px); }
+    }
+  </style>
+  
+  <!-- Shadow (optional) -->
+  <ellipse cx="150" cy="270" rx="70" ry="20" fill="rgba(0,0,0,0.1)"/>
+  
+  <!-- Main body -->
+  <g class="body-sway">
+    <!-- Body -->
+    <path d="M120 120 C100 150, 90 200, 95 250 C100 270, 130 280, 150 280 C170 280, 200 270, 205 250 C210 200, 200 150, 180 120 Z" fill="#F8D659"/>
+    
+    <!-- Head -->
+    <ellipse cx="150" cy="100" rx="50" ry="45" fill="#F8D659"/>
+    
+    <!-- Ears -->
+    <path d="M115 75 C105 60, 102 45, 105 30 C108 20, 115 25, 118 35 C120 45, 122 60, 125 70 Z" fill="#F8D659"/>
+    <path d="M185 75 C195 60, 198 45, 195 30 C192 20, 185 25, 182 35 C180 45, 178 60, 175 70 Z" fill="#F8D659"/>
+    
+    <!-- Face -->
+    <ellipse cx="130" cy="95" rx="7" ry="10" fill="#000"/>
+    <ellipse cx="170" cy="95" rx="7" ry="10" fill="#000"/>
+    <path d="M130 115 C140 125, 160 125, 170 115" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- White ruff -->
+    <path d="M110 120 C115 135, 130 145, 150 145 C170 145, 185 135, 190 120 C185 110, 170 100, 150 100 C130 100, 115 110, 110 120 Z" fill="#FFFFFF"/>
+    
+    <!-- Left arm -->
+    <path d="M120 150 C100 160, 90 175, 85 190 C80 200, 85 205, 95 200 C105 195, 115 180, 120 170 Z" fill="#F8D659"/>
+    
+    <!-- Right arm (the punching one) -->
+    <path class="arm-punch" d="M180 150 C200 160, 210 175, 225 185 C235 190, 235 200, 225 200 C215 195, 195 180, 190 170 Z" fill="#F8D659"/>
+    
+    <!-- Feet -->
+    <path d="M120 280 C110 290, 105 295, 105 300 C105 303, 115 303, 120 300 C125 295, 125 290, 120 280 Z" fill="#F8D659"/>
+    <path d="M180 280 C190 290, 195 295, 195 300 C195 303, 185 303, 180 300 C175 295, 175 290, 180 280 Z" fill="#F8D659"/>
+    
+    <!-- Pendulum -->
+    <g class="pendulum-swing">
+      <line x1="155" y1="173" x2="155" y2="220" stroke="#666" stroke-width="2"/>
+      <circle cx="155" cy="220" r="15" fill="#F0F0F0" stroke="#666" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

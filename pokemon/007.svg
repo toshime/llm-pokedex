@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Squirtle Body -->
+  <g id="squirtle">
+    <!-- Body -->
+    <ellipse cx="150" cy="160" rx="50" ry="55" fill="#75b8d5" />
+    
+    <!-- Shell -->
+    <ellipse cx="150" cy="170" rx="60" ry="50" fill="#d8af78" />
+    <ellipse cx="150" cy="170" rx="50" ry="40" fill="#e8c790" />
+    
+    <!-- Head -->
+    <circle cx="150" cy="90" r="40" fill="#75b8d5" />
+    
+    <!-- Eyes -->
+    <circle cx="135" cy="85" r="10" fill="white" />
+    <circle cx="165" cy="85" r="10" fill="white" />
+    <circle cx="135" cy="85" r="5" fill="black" />
+    <circle cx="165" cy="85" r="5" fill="black" />
+    <ellipse cx="138" cy="82" rx="2" ry="2" fill="white" />
+    <ellipse cx="168" cy="82" rx="2" ry="2" fill="white" />
+    
+    <!-- Mouth -->
+    <path d="M145 105 Q150 110 155 105" stroke="black" fill="none" stroke-width="2" />
+    
+    <!-- Arms -->
+    <g id="left-arm">
+      <path d="M100 150 Q90 140 95 130" stroke="#75b8d5" fill="#75b8d5" stroke-width="15" stroke-linecap="round" />
+    </g>
+    <g id="right-arm">
+      <path d="M200 150 Q210 140 205 130" stroke="#75b8d5" fill="#75b8d5" stroke-width="15" stroke-linecap="round" />
+    </g>
+    
+    <!-- Legs -->
+    <g id="left-leg">
+      <path d="M125 210 Q120 230 115 240" stroke="#75b8d5" fill="#75b8d5" stroke-width="15" stroke-linecap="round" />
+    </g>
+    <g id="right-leg">
+      <path d="M175 210 Q180 230 185 240" stroke="#75b8d5" fill="#75b8d5" stroke-width="15" stroke-linecap="round" />
+    </g>
+    
+    <!-- Tail -->
+    <g id="tail">
+      <path d="M210 170 Q240 160 250 180 Q245 190 230 185 Z" fill="#75b8d5" />
+    </g>
+  </g>
+  
+  <!-- Animations -->
+  <style>
+    @keyframes floatBody {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes blinkEyes {
+      0%, 95%, 100% { transform: scaleY(1); }
+      97% { transform: scaleY(0.1); }
+    }
+    @keyframes moveTail {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(15deg); }
+      75% { transform: rotate(-15deg); }
+    }
+    @keyframes moveArms {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-10deg); }
+    }
+    @keyframes moveLegs {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    
+    #squirtle {
+      animation: floatBody 3s ease-in-out infinite;
+    }
+    #squirtle circle:nth-child(3),
+    #squirtle circle:nth-child(4) {
+      animation: blinkEyes 4s infinite;
+      transform-origin: center;
+    }
+    #tail {
+      animation: moveTail 2s ease-in-out infinite;
+      transform-origin: 210px 170px;
+    }
+    #left-arm {
+      animation: moveArms 3s ease-in-out infinite;
+      transform-origin: 100px 150px;
+    }
+    #right-arm {
+      animation: moveArms 3s ease-in-out infinite alternate;
+      transform-origin: 200px 150px;
+    }
+    #left-leg {
+      animation: moveLegs 3s ease-in-out infinite;
+    }
+    #right-leg {
+      animation: moveLegs 3s ease-in-out infinite alternate;
+    }
+  </style>
+</svg>

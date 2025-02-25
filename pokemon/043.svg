@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+
+  <!-- Oddish Body -->
+  <g id="oddish-body">
+    <!-- Blue body -->
+    <ellipse cx="150" cy="200" rx="40" ry="40" fill="#3D6B99"/>
+    
+    <!-- Feet -->
+    <g id="feet">
+      <path d="M130 235 Q125 255 115 260" stroke="#3D6B99" stroke-width="10" fill="none"/>
+      <path d="M170 235 Q175 255 185 260" stroke="#3D6B99" stroke-width="10" fill="none"/>
+    </g>
+    
+    <!-- Face -->
+    <g id="face">
+      <!-- Eyes -->
+      <circle cx="135" cy="195" r="5" fill="#000"/>
+      <circle cx="165" cy="195" r="5" fill="#000"/>
+      
+      <!-- Mouth -->
+      <path d="M145 210 Q150 215 155 210" stroke="#000" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Leaves -->
+    <g id="leaves">
+      <path d="M150 160 Q125 130 130 100" stroke="#4CAF50" stroke-width="15" fill="#4CAF50"/>
+      <path d="M150 160 Q175 130 170 100" stroke="#4CAF50" stroke-width="15" fill="#4CAF50"/>
+      <path d="M150 160 Q115 145 100 120" stroke="#4CAF50" stroke-width="15" fill="#4CAF50"/>
+      <path d="M150 160 Q185 145 200 120" stroke="#4CAF50" stroke-width="15" fill="#4CAF50"/>
+      <path d="M150 160 Q150 120 150 90" stroke="#4CAF50" stroke-width="15" fill="#4CAF50"/>
+    </g>
+  </g>
+  
+  <!-- Animation -->
+  <style>
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes sway {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      75% { transform: rotate(-3deg); }
+    }
+    #oddish-body {
+      animation: bounce 2s ease-in-out infinite;
+    }
+    #leaves {
+      transform-origin: 150px 160px;
+      animation: sway 3s ease-in-out infinite;
+    }
+  </style>
+</svg>

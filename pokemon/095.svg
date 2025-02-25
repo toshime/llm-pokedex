@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Onix / イワーク -->
+  
+  <!-- Animation for body movement -->
+  <style>
+    @keyframes bodyWave {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
+      100% { transform: translateY(0); }
+    }
+    
+    @keyframes headTilt {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+    
+    @keyframes eyeBlink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    
+    .body-segment {
+      animation: bodyWave 3s ease-in-out infinite;
+      animation-delay: calc(var(--delay) * 0.2s);
+    }
+    
+    .head {
+      animation: headTilt 4s ease-in-out infinite;
+      transform-origin: 160px 180px;
+    }
+    
+    .eye {
+      animation: eyeBlink 4s infinite;
+      transform-origin: center;
+    }
+  </style>
+  
+  <!-- Head -->
+  <g class="head">
+    <!-- Base head shape -->
+    <path d="M140,150 L180,130 L220,150 L210,200 L150,200 Z" fill="#a0a0a8" stroke="#505058" stroke-width="2"/>
+    
+    <!-- Horn -->
+    <path d="M130,145 L155,90 L160,150" fill="#a0a0a8" stroke="#505058" stroke-width="2"/>
+    
+    <!-- Face details -->
+    <path d="M165,145 C165,145 175,160 190,160" fill="none" stroke="#505058" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Eye -->
+    <ellipse class="eye" cx="195" cy="150" rx="8" ry="12" fill="#ffffff" stroke="#505058"/>
+    <ellipse cx="195" cy="152" rx="4" ry="6" fill="#303038"/>
+  </g>
+  
+  <!-- Body segments -->
+  <g class="body-segment" style="--delay: 0">
+    <ellipse cx="180" cy="220" rx="35" ry="30" fill="#909098" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 1">
+    <ellipse cx="210" cy="250" rx="30" ry="27" fill="#909098" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 2">
+    <ellipse cx="235" cy="275" rx="25" ry="23" fill="#909098" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 3">
+    <ellipse cx="255" cy="300" rx="22" ry="20" fill="#808088" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 4">
+    <ellipse cx="275" cy="320" rx="20" ry="18" fill="#808088" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 5">
+    <ellipse cx="295" cy="335" rx="18" ry="16" fill="#707078" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 6">
+    <ellipse cx="315" cy="350" rx="15" ry="14" fill="#707078" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 7">
+    <ellipse cx="335" cy="362" rx="13" ry="12" fill="#606068" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 8">
+    <ellipse cx="352" cy="372" rx="10" ry="9" fill="#606068" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <g class="body-segment" style="--delay: 9">
+    <ellipse cx="365" cy="380" rx="8" ry="7" fill="#505058" stroke="#505058" stroke-width="2"/>
+  </g>
+  
+  <!-- Rock texture overlays -->
+  <g opacity="0.3">
+    <path d="M150,180 L160,170 L170,180 Z" fill="#505058"/>
+    <path d="M190,200 L200,210 L210,200 Z" fill="#505058"/>
+    <path d="M215,260 L225,265 L220,270 Z" fill="#505058"/>
+    <path d="M245,290 L255,295 L250,300 Z" fill="#505058"/>
+    <path d="M275,330 L280,335 L270,340 Z" fill="#505058"/>
+  </g>
+</svg>

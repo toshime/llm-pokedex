@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Zapdos (サンダー) SVG Animation -->
+  
+  <!-- Definitions for animations -->
+  <defs>
+    <!-- Electricity effect -->
+    <filter id="electricity" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" seed="3">
+        <animate attributeName="seed" from="0" to="100" dur="1s" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Body Group -->
+  <g id="zapdos">
+    <!-- Wings -->
+    <g id="wings">
+      <!-- Left Wing Spikes -->
+      <path d="M160 200 L80 120 L100 180 L40 130 L70 190 L20 170 L60 210 L10 220 L80 240" fill="#F6D851" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+          values="M160 200 L80 120 L100 180 L40 130 L70 190 L20 170 L60 210 L10 220 L80 240;
+                 M160 200 L75 115 L95 175 L35 125 L65 185 L15 165 L55 205 L5 215 L75 235;
+                 M160 200 L80 120 L100 180 L40 130 L70 190 L20 170 L60 210 L10 220 L80 240" />
+      </path>
+      
+      <!-- Right Wing Spikes -->
+      <path d="M320 200 L410 130 L380 180 L450 140 L420 190 L480 180 L440 210 L490 225 L420 240" fill="#F6D851" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+          values="M320 200 L410 130 L380 180 L450 140 L420 190 L480 180 L440 210 L490 225 L420 240;
+                 M320 200 L415 125 L385 175 L455 135 L425 185 L485 175 L445 205 L495 220 L425 235;
+                 M320 200 L410 130 L380 180 L450 140 L420 190 L480 180 L440 210 L490 225 L420 240" />
+      </path>
+      
+      <!-- Top Wing Spikes -->
+      <path d="M240 190 L250 100 L270 160 L290 80 L280 170 L320 90 L290 185 L340 130 L300 200" fill="#F6D851" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+          values="M240 190 L250 100 L270 160 L290 80 L280 170 L320 90 L290 185 L340 130 L300 200;
+                 M240 190 L245 95 L265 155 L285 75 L275 165 L315 85 L285 180 L335 125 L295 195;
+                 M240 190 L250 100 L270 160 L290 80 L280 170 L320 90 L290 185 L340 130 L300 200" />
+      </path>
+      
+      <!-- Bottom Wing Spikes -->
+      <path d="M210 200 L200 250 L180 210 L160 280 L170 230 L140 290 L180 240 L160 310 L200 250" fill="#F6D851" stroke="#000" stroke-width="2">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+          values="M210 200 L200 250 L180 210 L160 280 L170 230 L140 290 L180 240 L160 310 L200 250;
+                 M210 200 L195 255 L175 215 L155 285 L165 235 L135 295 L175 245 L155 315 L195 255;
+                 M210 200 L200 250 L180 210 L160 280 L170 230 L140 290 L180 240 L160 310 L200 250" />
+      </path>
+    </g>
+
+    <!-- Main Body -->
+    <ellipse cx="240" cy="200" rx="90" ry="50" fill="#F6D851" stroke="#000" stroke-width="2">
+      <animate attributeName="ry" values="50;53;50" dur="1s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Neck and Head -->
+    <path d="M250 180 C260 160 270 140 260 120 C250 100 240 90 220 100 C210 110 210 130 220 140 C230 150 240 160 250 180 Z" fill="#F6D851" stroke="#000" stroke-width="2">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+        values="M250 180 C260 160 270 140 260 120 C250 100 240 90 220 100 C210 110 210 130 220 140 C230 150 240 160 250 180 Z;
+                M250 180 C260 160 270 142 260 122 C250 102 240 92 220 102 C210 112 210 132 220 142 C230 152 240 160 250 180 Z;
+                M250 180 C260 160 270 140 260 120 C250 100 240 90 220 100 C210 110 210 130 220 140 C230 150 240 160 250 180 Z" />
+    </path>
+    
+    <!-- Beak -->
+    <path d="M220 110 L200 120 L220 130" fill="none" stroke="#000" stroke-width="2" />
+    
+    <!-- Eye -->
+    <circle cx="225" cy="115" r="5" fill="#000" />
+    
+    <!-- Legs -->
+    <path d="M220 240 L210 270 L220 280" fill="none" stroke="#000" stroke-width="2" />
+    <path d="M260 240 L270 270 L280 280" fill="none" stroke="#000" stroke-width="2" />
+    
+    <!-- Feet -->
+    <path d="M210 280 L200 280 L220 285 L230 280" fill="#F6D851" stroke="#000" stroke-width="2" />
+    <path d="M270 280 L260 280 L280 285 L290 280" fill="#F6D851" stroke="#000" stroke-width="2" />
+    
+    <!-- Electric Effects (animated) -->
+    <g filter="url(#electricity)">
+      <path d="M240 190 L250 100 M270 160 L290 80 M320 90 M340 130" stroke="#FFE87C" stroke-width="1" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.5s" repeatCount="indefinite" />
+      </path>
+      <path d="M320 200 L410 130 M380 180 L450 140" stroke="#FFE87C" stroke-width="1" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.5s" repeatCount="indefinite" />
+      </path>
+      <path d="M160 200 L80 120 M100 180 L40 130" stroke="#FFE87C" stroke-width="1" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.9;0.7" dur="0.5s" repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+  
+  <!-- Subtle hover animation for the entire Zapdos -->
+  <animateTransform 
+    xlink:href="#zapdos"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-5; 0,0"
+    dur="3s"
+    repeatCount="indefinite" />
+</svg>

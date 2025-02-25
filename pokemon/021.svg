@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  
+  <!-- Spearow (オニスズメ) Body Animation -->
+  <g id="spearow">
+    <!-- Body -->
+    <path d="M200 220 C230 220 250 190 245 170 C240 150 220 140 200 150 C180 160 170 200 200 220Z" fill="#e8c098"/>
+    
+    <!-- Wings -->
+    <g>
+      <path d="M170 180 C150 160 120 170 110 190 C100 210 130 220 150 210" fill="#b06048"/>
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 170 180" to="10 170 180" dur="0.8s" repeatCount="indefinite" additive="sum" />
+    </g>
+    
+    <!-- Head -->
+    <path d="M240 160 C260 150 265 130 250 120 C235 110 220 115 210 125 C200 135 220 170 240 160Z" fill="#a05038"/>
+    
+    <!-- Beak -->
+    <path d="M255 125 L280 115 L260 140" fill="#ffb048"/>
+    
+    <!-- Crest/Feathers -->
+    <path d="M220 120 C240 100 260 90 270 100 C280 110 260 115 240 115" fill="#e05040"/>
+    <path d="M230 110 C245 90 255 85 265 95 C275 105 255 110 235 110" fill="#e05040">
+      <animate attributeName="d" values="M230 110 C245 90 255 85 265 95 C275 105 255 110 235 110;
+                                        M230 110 C245 85 260 80 270 90 C280 100 260 105 235 110;
+                                        M230 110 C245 90 255 85 265 95 C275 105 255 110 235 110" 
+              dur="1.2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Tail -->
+    <path d="M170 210 C150 220 130 240 140 250 C150 260 170 240 190 230" fill="#a05038"/>
+    
+    <!-- Feet -->
+    <path d="M190 220 L180 250 L190 250 L200 230" fill="#ffb048"/>
+    <path d="M210 220 L220 250 L210 250 L200 230" fill="#ffb048"/>
+    
+    <!-- Eye -->
+    <circle cx="245" cy="130" r="5" fill="black"/>
+    <circle cx="243" cy="128" r="2" fill="white"/>
+    
+    <!-- Body Animation -->
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" 
+                      values="0,0; 0,-5; 0,0" 
+                      dur="1s" repeatCount="indefinite"/>
+  </g>
+</svg>

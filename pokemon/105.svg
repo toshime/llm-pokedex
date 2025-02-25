@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Marowak (ガラガラ) Animation -->
+  
+  <!-- Body -->
+  <g id="marowak-body">
+    <ellipse cx="150" cy="170" rx="45" ry="50" fill="#e2c88d">
+      <animate attributeName="cy" values="170;172;170" dur="1.5s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="150" cy="155" rx="35" ry="35" fill="#f8eac7">
+      <animate attributeName="cy" values="155;157;155" dur="1.5s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Tail -->
+    <path d="M195,170 Q220,160 230,190 Q235,210 220,215 Q205,220 195,190 Z" fill="#e2c88d">
+      <animate attributeName="d" values="M195,170 Q220,160 230,190 Q235,210 220,215 Q205,220 195,190 Z;
+                                       M195,170 Q220,170 235,195 Q240,215 220,220 Q205,225 195,190 Z;
+                                       M195,170 Q220,160 230,190 Q235,210 220,215 Q205,220 195,190 Z" 
+              dur="2s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Arms -->
+    <g id="marowak-arms">
+      <path d="M115,160 Q100,170 95,185 Q90,200 105,205 Q115,208 120,195 Q125,180 115,160 Z" fill="#e2c88d">
+        <animateTransform attributeName="transform" type="rotate" from="0 115 160" to="10 115 160" dur="1.5s" repeatCount="indefinite" additive="sum" />
+      </path>
+      
+      <path d="M185,160 Q200,150 210,165 Q220,180 210,190 Q200,195 190,185 Q185,175 185,160 Z" fill="#e2c88d">
+        <animateTransform attributeName="transform" type="rotate" from="0 185 160" to="-15 185 160" dur="1s" repeatCount="indefinite" additive="sum" />
+      </path>
+    </g>
+    
+    <!-- Brown Wristband -->
+    <path d="M210,165 Q215,160 220,165 Q225,170 220,175 Q215,180 210,175 Q205,170 210,165 Z" fill="#8B4513">
+      <animateTransform attributeName="transform" type="rotate" from="0 185 160" to="-15 185 160" dur="1s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Feet -->
+    <g id="marowak-feet">
+      <path d="M130,210 Q120,225 135,230 Q150,235 155,220 Q160,210 145,205 Z" fill="#e2c88d">
+        <animate attributeName="d" values="M130,210 Q120,225 135,230 Q150,235 155,220 Q160,210 145,205 Z;
+                                         M130,213 Q120,228 135,233 Q150,238 155,223 Q160,213 145,208 Z;
+                                         M130,210 Q120,225 135,230 Q150,235 155,220 Q160,210 145,205 Z" 
+                dur="1.5s" repeatCount="indefinite" />
+      </path>
+      
+      <path d="M170,210 Q180,225 165,230 Q150,235 145,220 Q140,210 155,205 Z" fill="#e2c88d">
+        <animate attributeName="d" values="M170,210 Q180,225 165,230 Q150,235 145,220 Q140,210 155,205 Z;
+                                         M170,213 Q180,228 165,233 Q150,238 145,223 Q140,213 155,208 Z;
+                                         M170,210 Q180,225 165,230 Q150,235 145,220 Q140,210 155,205 Z" 
+                dur="1.5s" repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+  
+  <!-- Skull Helmet -->
+  <g id="marowak-skull">
+    <path d="M100,100 Q125,70 175,70 Q200,70 205,100 Q210,130 195,145 Q180,160 150,160 
+             Q120,160 105,145 Q90,130 100,100 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Eye Socket -->
+    <ellipse cx="130" cy="110" rx="15" ry="15" fill="#784d27">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    
+    <!-- Eye -->
+    <ellipse cx="130" cy="110" rx="5" ry="5" fill="#000000">
+      <animate attributeName="cy" values="110;112;110" dur="4s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    
+    <!-- Skull Horns -->
+    <path d="M95,95 Q75,85 80,70 Q85,55 105,75 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <path d="M205,95 Q225,85 220,70 Q215,55 195,75 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+  </g>
+  
+  <!-- Bone -->
+  <g id="marowak-bone">
+    <path d="M200,150 L220,120 Q225,110 235,115 Q245,120 235,130 L225,140 L235,150 Q245,160 235,165 Q225,170 215,160 L200,150 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-10 185 160" to="5 185 160" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

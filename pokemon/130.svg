@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      @keyframes bodyWave {
+        0% { d: path('M250,250 C300,220 350,250 380,220 C410,190 430,130 420,80 C410,30 350,20 320,50 C290,80 330,120 300,150 C270,180 230,160 200,180 C170,200 150,240 130,280 C110,320 80,350 60,390'); }
+        50% { d: path('M250,250 C300,230 340,270 370,240 C400,210 420,150 410,100 C400,50 340,40 310,70 C280,100 320,140 290,170 C260,200 220,180 190,200 C160,220 140,260 120,300 C100,340 70,370 50,410'); }
+        100% { d: path('M250,250 C300,220 350,250 380,220 C410,190 430,130 420,80 C410,30 350,20 320,50 C290,80 330,120 300,150 C270,180 230,160 200,180 C170,200 150,240 130,280 C110,320 80,350 60,390'); }
+      }
+      
+      @keyframes finWave {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(-5deg); }
+      }
+      
+      @keyframes jawOpen {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(5px); }
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      #body {
+        animation: bodyWave 4s ease-in-out infinite;
+      }
+      
+      #dorsalFins {
+        animation: finWave 3s ease-in-out infinite;
+        transform-origin: center;
+      }
+      
+      #lowerJaw {
+        animation: jawOpen 2s ease-in-out infinite;
+        transform-origin: 420px 90px;
+      }
+      
+      #gyarados {
+        animation: float 6s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <g id="gyarados">
+    <!-- Body segments -->
+    <path id="body" d="M250,250 C300,220 350,250 380,220 C410,190 430,130 420,80 C410,30 350,20 320,50 C290,80 330,120 300,150 C270,180 230,160 200,180 C170,200 150,240 130,280 C110,320 80,350 60,390" 
+          fill="#3B9BFF" stroke="#000" stroke-width="3"/>
+    
+    <!-- Belly segments -->
+    <path d="M290,150 C270,165 250,165 240,180 C230,195 210,200 190,210 C170,220 155,245 140,270 C125,295 100,325 85,355" 
+          fill="#F0E8D0" stroke="#000" stroke-width="2"/>
+    
+    <!-- Dorsal fins -->
+    <g id="dorsalFins">
+      <path d="M420,80 L450,30 L430,70 L470,40 L440,80 Z" fill="#3B9BFF" stroke="#000" stroke-width="2"/>
+      <path d="M380,220 L420,180 L410,210 L440,190 L400,230 Z" fill="#3B9BFF" stroke="#000" stroke-width="2"/>
+      <path d="M300,150 L330,100 L320,130 L350,110 L320,160 Z" fill="#3B9BFF" stroke="#000" stroke-width="2"/>
+      <path d="M200,180 L230,130 L220,160 L240,140 L210,190 Z" fill="#3B9BFF" stroke="#000" stroke-width="2"/>
+      <path d="M130,280 L160,230 L150,260 L170,240 L140,290 Z" fill="#3B9BFF" stroke="#000" stroke-width="2"/>
+    </g>
+    
+    <!-- Head -->
+    <path d="M420,80 C440,60 450,40 425,35 C400,30 380,40 370,40 C360,40 340,30 320,50" 
+          fill="#3B9BFF" stroke="#000" stroke-width="3"/>
+    
+    <!-- Jaws -->
+    <path d="M425,35 C440,40 455,50 465,70" fill="none" stroke="#000" stroke-width="2"/>
+    <path id="lowerJaw" d="M420,80 C440,85 455,90 465,70" fill="#FF0000" stroke="#000" stroke-width="2"/>
+    
+    <!-- Teeth -->
+    <path d="M425,50 L428,60 M435,52 L438,62 M445,54 L448,64 M455,56 L458,66" 
+          fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Eyes -->
+    <circle cx="385" cy="45" r="8" fill="#FFFFFF" stroke="#000" stroke-width="1"/>
+    <circle cx="385" cy="45" r="4" fill="#000"/>
+    
+    <!-- Side fins -->
+    <path d="M300,170 L270,200 L290,210 L310,190 Z" fill="#F0E8D0" stroke="#000" stroke-width="2"/>
+    <path d="M200,210 L170,230 L190,250 L210,220 Z" fill="#F0E8D0" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

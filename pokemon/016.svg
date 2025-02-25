@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <style>
+    .head-feather {
+      animation: headBob 2s ease-in-out infinite;
+      transform-origin: 150px 100px;
+    }
+    .beak {
+      animation: beakOpen 4s ease-in-out infinite;
+      transform-origin: 110px 120px;
+    }
+    .wing {
+      animation: wingFlap 3s ease-in-out infinite;
+      transform-origin: 140px 140px;
+    }
+    .body {
+      animation: bodyBob 2s ease-in-out infinite;
+    }
+    .tail {
+      animation: tailWag 3s ease-in-out infinite alternate;
+      transform-origin: 170px 160px;
+    }
+    @keyframes headBob {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    @keyframes beakOpen {
+      0%, 40%, 60%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-10deg); }
+    }
+    @keyframes wingFlap {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+    }
+    @keyframes bodyBob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes tailWag {
+      0% { transform: rotate(-5deg); }
+      100% { transform: rotate(5deg); }
+    }
+  </style>
+  
+  <!-- Body -->
+  <g class="body">
+    <ellipse cx="150" cy="160" rx="45" ry="40" fill="#E8D28A" />
+    
+    <!-- Breast -->
+    <path d="M120 155 Q150 190 180 155" fill="#F4EFDA" />
+    
+    <!-- Brown back -->
+    <path d="M120 140 Q150 120 180 140 Q180 120 150 120 Q120 120 120 140" fill="#B87E43" />
+    
+    <!-- Tail -->
+    <g class="tail">
+      <path d="M180 160 L210 150 L200 170 L190 165 Z" fill="#B87E43" />
+    </g>
+    
+    <!-- Left leg -->
+    <path d="M135 195 L130 220 L125 220 L128 225 L135 225 L138 220 L140 195" fill="#CB8FA1" />
+    <path d="M125 225 L127 230 L136 230 L138 225" fill="#CB8FA1" />
+    
+    <!-- Right leg -->
+    <path d="M165 195 L170 220 L175 220 L172 225 L165 225 L162 220 L160 195" fill="#CB8FA1" />
+    <path d="M165 225 L163 230 L172 230 L175 225" fill="#CB8FA1" />
+    
+    <!-- Left claw -->
+    <path d="M126 230 L124 235 L127 235 L128 230" fill="#633956" />
+    <path d="M130 230 L130 235 L133 235 L133 230" fill="#633956" />
+    <path d="M135 230 L136 235 L139 235 L137 230" fill="#633956" />
+    
+    <!-- Right claw -->
+    <path d="M166 230 L164 235 L167 235 L168 230" fill="#633956" />
+    <path d="M170 230 L170 235 L173 235 L173 230" fill="#633956" />
+    <path d="M175 230 L176 235 L179 235 L177 230" fill="#633956" />
+  </g>
+  
+  <!-- Head -->
+  <g>
+    <!-- Cute blush marks -->
+    <ellipse cx="95" cy="125" rx="5" ry="3" fill="#FFB6C1" opacity="0.6" />
+    <circle cx="115" cy="120" r="25" fill="#E8D28A" />
+    
+    <!-- Eye - bigger and cuter -->
+    <circle cx="105" cy="115" r="7" fill="white" />
+    <circle cx="105" cy="114" r="3.5" fill="black" />
+    <circle cx="107" cy="112" r="1.5" fill="white" />
+    
+    <!-- Eyebrow - softer -->
+    <path d="M97 107 Q103 104 109 107" stroke="black" stroke-width="1" fill="none" />
+    
+    <!-- Beak -->
+    <g class="beak">
+      <path d="M90 120 L110 125 L90 130 Z" fill="#F093AC" />
+    </g>
+    
+    <!-- Head feathers -->
+    <g class="head-feather">
+      <path d="M115 95 L120 70 L130 90 L145 75 L135 95" fill="#B87E43" />
+    </g>
+  </g>
+  
+  <!-- Wing -->
+  <g class="wing">
+    <path d="M140 140 Q110 150 120 180 Q140 170 150 175 Q135 155 140 140" fill="#B87E43" />
+  </g>
+</svg>

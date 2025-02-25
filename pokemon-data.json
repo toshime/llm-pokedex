@@ -1,0 +1,597 @@
+{
+  "evolutionGroups": [
+    {
+      "name": "フシギダネ",
+      "pokemon": [
+        { "number": "001", "name": "フシギダネ", "types": ["くさ", "どく"] },
+        { "number": "002", "name": "フシギソウ", "types": ["くさ", "どく"] },
+        { "number": "003", "name": "フシギバナ", "types": ["くさ", "どく"] }
+      ]
+    },
+    {
+      "name": "ヒトカゲ",
+      "pokemon": [
+        { "number": "004", "name": "ヒトカゲ", "types": ["ほのお"] },
+        { "number": "005", "name": "リザード", "types": ["ほのお"] },
+        {
+          "number": "006",
+          "name": "リザードン",
+          "types": ["ほのお", "ひこう"]
+        }
+      ]
+    },
+    {
+      "name": "ゼニガメ",
+      "pokemon": [
+        { "number": "007", "name": "ゼニガメ", "types": ["みず"] },
+        { "number": "008", "name": "カメール", "types": ["みず"] },
+        { "number": "009", "name": "カメックス", "types": ["みず"] }
+      ]
+    },
+    {
+      "name": "キャタピー",
+      "pokemon": [
+        { "number": "010", "name": "キャタピー", "types": ["むし"] },
+        { "number": "011", "name": "トランセル", "types": ["むし"] },
+        { "number": "012", "name": "バタフリー", "types": ["むし", "ひこう"] }
+      ]
+    },
+    {
+      "name": "ビードル",
+      "pokemon": [
+        { "number": "013", "name": "ビードル", "types": ["むし", "どく"] },
+        { "number": "014", "name": "コクーン", "types": ["むし", "どく"] },
+        { "number": "015", "name": "スピアー", "types": ["むし", "どく"] }
+      ]
+    },
+    {
+      "name": "ポッポ",
+      "pokemon": [
+        { "number": "016", "name": "ポッポ", "types": ["ノーマル", "ひこう"] },
+        {
+          "number": "017",
+          "name": "ピジョン",
+          "types": ["ノーマル", "ひこう"]
+        },
+        {
+          "number": "018",
+          "name": "ピジョット",
+          "types": ["ノーマル", "ひこう"]
+        }
+      ]
+    },
+    {
+      "name": "コラッタ",
+      "pokemon": [
+        { "number": "019", "name": "コラッタ", "types": ["ノーマル"] },
+        { "number": "020", "name": "ラッタ", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "オニスズメ",
+      "pokemon": [
+        {
+          "number": "021",
+          "name": "オニスズメ",
+          "types": ["ノーマル", "ひこう"]
+        },
+        {
+          "number": "022",
+          "name": "オニドリル",
+          "types": ["ノーマル", "ひこう"]
+        }
+      ]
+    },
+    {
+      "name": "アーボ",
+      "pokemon": [
+        { "number": "023", "name": "アーボ", "types": ["どく"] },
+        { "number": "024", "name": "アーボック", "types": ["どく"] }
+      ]
+    },
+    {
+      "name": "ピカチュウ",
+      "pokemon": [
+        { "number": "025", "name": "ピカチュウ", "types": ["でんき"] },
+        { "number": "026", "name": "ライチュウ", "types": ["でんき"] }
+      ]
+    },
+    {
+      "name": "サンド",
+      "pokemon": [
+        { "number": "027", "name": "サンド", "types": ["じめん"] },
+        { "number": "028", "name": "サンドパン", "types": ["じめん"] }
+      ]
+    },
+    {
+      "name": "ニドラン♀",
+      "pokemon": [
+        { "number": "029", "name": "ニドラン♀", "types": ["どく"] },
+        { "number": "030", "name": "ニドリーナ", "types": ["どく"] },
+        { "number": "031", "name": "ニドクイン", "types": ["どく", "じめん"] }
+      ]
+    },
+    {
+      "name": "ニドラン♂",
+      "pokemon": [
+        { "number": "032", "name": "ニドラン♂", "types": ["どく"] },
+        { "number": "033", "name": "ニドリーノ", "types": ["どく"] },
+        { "number": "034", "name": "ニドキング", "types": ["どく", "じめん"] }
+      ]
+    },
+    {
+      "name": "ピッピ",
+      "pokemon": [
+        { "number": "035", "name": "ピッピ", "types": ["フェアリー"] },
+        { "number": "036", "name": "ピクシー", "types": ["フェアリー"] }
+      ]
+    },
+    {
+      "name": "ロコン",
+      "pokemon": [
+        { "number": "037", "name": "ロコン", "types": ["ほのお"] },
+        { "number": "038", "name": "キュウコン", "types": ["ほのお"] }
+      ]
+    },
+    {
+      "name": "プリン",
+      "pokemon": [
+        {
+          "number": "039",
+          "name": "プリン",
+          "types": ["ノーマル", "フェアリー"]
+        },
+        {
+          "number": "040",
+          "name": "プクリン",
+          "types": ["ノーマル", "フェアリー"]
+        }
+      ]
+    },
+    {
+      "name": "ズバット",
+      "pokemon": [
+        { "number": "041", "name": "ズバット", "types": ["どく", "ひこう"] },
+        { "number": "042", "name": "ゴルバット", "types": ["どく", "ひこう"] }
+      ]
+    },
+    {
+      "name": "ナゾノクサ",
+      "pokemon": [
+        { "number": "043", "name": "ナゾノクサ", "types": ["くさ", "どく"] },
+        { "number": "044", "name": "クサイハナ", "types": ["くさ", "どく"] },
+        { "number": "045", "name": "ラフレシア", "types": ["くさ", "どく"] }
+      ]
+    },
+    {
+      "name": "パラス",
+      "pokemon": [
+        { "number": "046", "name": "パラス", "types": ["むし", "くさ"] },
+        { "number": "047", "name": "パラセクト", "types": ["むし", "くさ"] }
+      ]
+    },
+    {
+      "name": "コンパン",
+      "pokemon": [
+        { "number": "048", "name": "コンパン", "types": ["むし", "どく"] },
+        { "number": "049", "name": "モルフォン", "types": ["むし", "どく"] }
+      ]
+    },
+    {
+      "name": "ディグダ",
+      "pokemon": [
+        { "number": "050", "name": "ディグダ", "types": ["じめん"] },
+        { "number": "051", "name": "ダグトリオ", "types": ["じめん"] }
+      ]
+    },
+    {
+      "name": "ニャース",
+      "pokemon": [
+        { "number": "052", "name": "ニャース", "types": ["ノーマル"] },
+        { "number": "053", "name": "ペルシアン", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "コダック",
+      "pokemon": [
+        { "number": "054", "name": "コダック", "types": ["みず"] },
+        { "number": "055", "name": "ゴルダック", "types": ["みず"] }
+      ]
+    },
+    {
+      "name": "マンキー",
+      "pokemon": [
+        { "number": "056", "name": "マンキー", "types": ["かくとう"] },
+        { "number": "057", "name": "オコリザル", "types": ["かくとう"] }
+      ]
+    },
+    {
+      "name": "ガーディ",
+      "pokemon": [
+        { "number": "058", "name": "ガーディ", "types": ["ほのお"] },
+        { "number": "059", "name": "ウインディ", "types": ["ほのお"] }
+      ]
+    },
+    {
+      "name": "ニョロモ",
+      "pokemon": [
+        { "number": "060", "name": "ニョロモ", "types": ["みず"] },
+        { "number": "061", "name": "ニョロゾ", "types": ["みず"] },
+        {
+          "number": "062",
+          "name": "ニョロボン",
+          "types": ["みず", "かくとう"]
+        }
+      ]
+    },
+    {
+      "name": "ケーシィ",
+      "pokemon": [
+        { "number": "063", "name": "ケーシィ", "types": ["エスパー"] },
+        { "number": "064", "name": "ユンゲラー", "types": ["エスパー"] },
+        { "number": "065", "name": "フーディン", "types": ["エスパー"] }
+      ]
+    },
+    {
+      "name": "ワンリキー",
+      "pokemon": [
+        { "number": "066", "name": "ワンリキー", "types": ["かくとう"] },
+        { "number": "067", "name": "ゴーリキー", "types": ["かくとう"] },
+        { "number": "068", "name": "カイリキー", "types": ["かくとう"] }
+      ]
+    },
+    {
+      "name": "マダツボミ",
+      "pokemon": [
+        { "number": "069", "name": "マダツボミ", "types": ["くさ", "どく"] },
+        { "number": "070", "name": "ウツドン", "types": ["くさ", "どく"] },
+        { "number": "071", "name": "ウツボット", "types": ["くさ", "どく"] }
+      ]
+    },
+    {
+      "name": "メノクラゲ",
+      "pokemon": [
+        { "number": "072", "name": "メノクラゲ", "types": ["みず", "どく"] },
+        { "number": "073", "name": "ドククラゲ", "types": ["みず", "どく"] }
+      ]
+    },
+    {
+      "name": "イシツブテ",
+      "pokemon": [
+        { "number": "074", "name": "イシツブテ", "types": ["いわ", "じめん"] },
+        { "number": "075", "name": "ゴローン", "types": ["いわ", "じめん"] },
+        { "number": "076", "name": "ゴローニャ", "types": ["いわ", "じめん"] }
+      ]
+    },
+    {
+      "name": "ポニータ",
+      "pokemon": [
+        { "number": "077", "name": "ポニータ", "types": ["ほのお"] },
+        { "number": "078", "name": "ギャロップ", "types": ["ほのお"] }
+      ]
+    },
+    {
+      "name": "ヤドン",
+      "pokemon": [
+        { "number": "079", "name": "ヤドン", "types": ["みず", "エスパー"] },
+        { "number": "080", "name": "ヤドラン", "types": ["みず", "エスパー"] }
+      ]
+    },
+    {
+      "name": "コイル",
+      "pokemon": [
+        { "number": "081", "name": "コイル", "types": ["でんき", "はがね"] },
+        {
+          "number": "082",
+          "name": "レアコイル",
+          "types": ["でんき", "はがね"]
+        }
+      ]
+    },
+    {
+      "name": "カモネギ",
+      "pokemon": [
+        {
+          "number": "083",
+          "name": "カモネギ",
+          "types": ["ノーマル", "ひこう"]
+        }
+      ]
+    },
+    {
+      "name": "ドードー",
+      "pokemon": [
+        {
+          "number": "084",
+          "name": "ドードー",
+          "types": ["ノーマル", "ひこう"]
+        },
+        {
+          "number": "085",
+          "name": "ドードリオ",
+          "types": ["ノーマル", "ひこう"]
+        }
+      ]
+    },
+    {
+      "name": "パウワウ",
+      "pokemon": [
+        { "number": "086", "name": "パウワウ", "types": ["みず"] },
+        { "number": "087", "name": "ジュゴン", "types": ["みず", "こおり"] }
+      ]
+    },
+    {
+      "name": "ベトベター",
+      "pokemon": [
+        { "number": "088", "name": "ベトベター", "types": ["どく"] },
+        { "number": "089", "name": "ベトベトン", "types": ["どく"] }
+      ]
+    },
+    {
+      "name": "シェルダー",
+      "pokemon": [
+        { "number": "090", "name": "シェルダー", "types": ["みず"] },
+        { "number": "091", "name": "パルシェン", "types": ["みず", "こおり"] }
+      ]
+    },
+    {
+      "name": "ゴース",
+      "pokemon": [
+        { "number": "092", "name": "ゴース", "types": ["ゴースト", "どく"] },
+        { "number": "093", "name": "ゴースト", "types": ["ゴースト", "どく"] },
+        { "number": "094", "name": "ゲンガー", "types": ["ゴースト", "どく"] }
+      ]
+    },
+    {
+      "name": "イワーク",
+      "pokemon": [
+        { "number": "095", "name": "イワーク", "types": ["いわ", "じめん"] }
+      ]
+    },
+    {
+      "name": "スリープ",
+      "pokemon": [
+        { "number": "096", "name": "スリープ", "types": ["エスパー"] },
+        { "number": "097", "name": "スリーパー", "types": ["エスパー"] }
+      ]
+    },
+    {
+      "name": "クラブ",
+      "pokemon": [
+        { "number": "098", "name": "クラブ", "types": ["みず"] },
+        { "number": "099", "name": "キングラー", "types": ["みず"] }
+      ]
+    },
+    {
+      "name": "ビリリダマ",
+      "pokemon": [
+        { "number": "100", "name": "ビリリダマ", "types": ["でんき"] },
+        { "number": "101", "name": "マルマイン", "types": ["でんき"] }
+      ]
+    },
+    {
+      "name": "タマタマ",
+      "pokemon": [
+        { "number": "102", "name": "タマタマ", "types": ["くさ", "エスパー"] },
+        { "number": "103", "name": "ナッシー", "types": ["くさ", "エスパー"] }
+      ]
+    },
+    {
+      "name": "カラカラ",
+      "pokemon": [
+        { "number": "104", "name": "カラカラ", "types": ["じめん"] },
+        { "number": "105", "name": "ガラガラ", "types": ["じめん"] }
+      ]
+    },
+    {
+      "name": "サワムラー",
+      "pokemon": [
+        { "number": "106", "name": "サワムラー", "types": ["かくとう"] },
+        { "number": "107", "name": "エビワラー", "types": ["かくとう"] }
+      ]
+    },
+    {
+      "name": "ベロリンガ",
+      "pokemon": [
+        { "number": "108", "name": "ベロリンガ", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "ドガース",
+      "pokemon": [
+        { "number": "109", "name": "ドガース", "types": ["どく"] },
+        { "number": "110", "name": "マタドガス", "types": ["どく"] }
+      ]
+    },
+    {
+      "name": "サイホーン",
+      "pokemon": [
+        { "number": "111", "name": "サイホーン", "types": ["じめん", "いわ"] },
+        { "number": "112", "name": "サイドン", "types": ["じめん", "いわ"] }
+      ]
+    },
+    {
+      "name": "ラッキー",
+      "pokemon": [
+        { "number": "113", "name": "ラッキー", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "モンジャラ",
+      "pokemon": [{ "number": "114", "name": "モンジャラ", "types": ["くさ"] }]
+    },
+    {
+      "name": "ガルーラ",
+      "pokemon": [
+        { "number": "115", "name": "ガルーラ", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "タッツー",
+      "pokemon": [
+        { "number": "116", "name": "タッツー", "types": ["みず"] },
+        { "number": "117", "name": "シードラ", "types": ["みず"] }
+      ]
+    },
+    {
+      "name": "トサキント",
+      "pokemon": [
+        { "number": "118", "name": "トサキント", "types": ["みず"] },
+        { "number": "119", "name": "アズマオウ", "types": ["みず"] }
+      ]
+    },
+    {
+      "name": "ヒトデマン",
+      "pokemon": [
+        { "number": "120", "name": "ヒトデマン", "types": ["みず"] },
+        {
+          "number": "121",
+          "name": "スターミー",
+          "types": ["みず", "エスパー"]
+        }
+      ]
+    },
+    {
+      "name": "バリヤード",
+      "pokemon": [
+        {
+          "number": "122",
+          "name": "バリヤード",
+          "types": ["エスパー", "フェアリー"]
+        }
+      ]
+    },
+    {
+      "name": "ストライク",
+      "pokemon": [
+        { "number": "123", "name": "ストライク", "types": ["むし", "ひこう"] }
+      ]
+    },
+    {
+      "name": "ルージュラ",
+      "pokemon": [
+        {
+          "number": "124",
+          "name": "ルージュラ",
+          "types": ["こおり", "エスパー"]
+        }
+      ]
+    },
+    {
+      "name": "エレブー",
+      "pokemon": [{ "number": "125", "name": "エレブー", "types": ["でんき"] }]
+    },
+    {
+      "name": "ブーバー",
+      "pokemon": [{ "number": "126", "name": "ブーバー", "types": ["ほのお"] }]
+    },
+    {
+      "name": "カイロス",
+      "pokemon": [{ "number": "127", "name": "カイロス", "types": ["むし"] }]
+    },
+    {
+      "name": "ケンタロス",
+      "pokemon": [
+        { "number": "128", "name": "ケンタロス", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "コイキング",
+      "pokemon": [
+        { "number": "129", "name": "コイキング", "types": ["みず"] },
+        { "number": "130", "name": "ギャラドス", "types": ["みず", "ひこう"] }
+      ]
+    },
+    {
+      "name": "ラプラス",
+      "pokemon": [
+        { "number": "131", "name": "ラプラス", "types": ["みず", "こおり"] }
+      ]
+    },
+    {
+      "name": "メタモン",
+      "pokemon": [
+        { "number": "132", "name": "メタモン", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "イーブイ",
+      "pokemon": [
+        { "number": "133", "name": "イーブイ", "types": ["ノーマル"] },
+        { "number": "134", "name": "シャワーズ", "types": ["みず"] },
+        { "number": "135", "name": "サンダース", "types": ["でんき"] },
+        { "number": "136", "name": "ブースター", "types": ["ほのお"] }
+      ]
+    },
+    {
+      "name": "ポリゴン",
+      "pokemon": [
+        { "number": "137", "name": "ポリゴン", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "オムナイト",
+      "pokemon": [
+        { "number": "138", "name": "オムナイト", "types": ["いわ", "みず"] },
+        { "number": "139", "name": "オムスター", "types": ["いわ", "みず"] }
+      ]
+    },
+    {
+      "name": "カブト",
+      "pokemon": [
+        { "number": "140", "name": "カブト", "types": ["いわ", "みず"] },
+        { "number": "141", "name": "カブトプス", "types": ["いわ", "みず"] }
+      ]
+    },
+    {
+      "name": "プテラ",
+      "pokemon": [
+        { "number": "142", "name": "プテラ", "types": ["いわ", "ひこう"] }
+      ]
+    },
+    {
+      "name": "カビゴン",
+      "pokemon": [
+        { "number": "143", "name": "カビゴン", "types": ["ノーマル"] }
+      ]
+    },
+    {
+      "name": "フリーザー",
+      "pokemon": [
+        {
+          "number": "144",
+          "name": "フリーザー",
+          "types": ["こおり", "ひこう"]
+        },
+        { "number": "145", "name": "サンダー", "types": ["でんき", "ひこう"] },
+        {
+          "number": "146",
+          "name": "ファイヤー",
+          "types": ["ほのお", "ひこう"]
+        }
+      ]
+    },
+    {
+      "name": "ミニリュウ",
+      "pokemon": [
+        { "number": "147", "name": "ミニリュウ", "types": ["ドラゴン"] },
+        { "number": "148", "name": "ハクリュー", "types": ["ドラゴン"] },
+        {
+          "number": "149",
+          "name": "カイリュー",
+          "types": ["ドラゴン", "ひこう"]
+        }
+      ]
+    },
+    {
+      "name": "ミュウツー",
+      "pokemon": [
+        { "number": "150", "name": "ミュウツー", "types": ["エスパー"] }
+      ]
+    },
+    {
+      "name": "ミュウ",
+      "pokemon": [{ "number": "151", "name": "ミュウ", "types": ["エスパー"] }]
+    }
+  ]
+}

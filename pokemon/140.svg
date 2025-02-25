@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- カブト本体 -->
+  <g id="kabuto">
+    <!-- 殻/背中 -->
+    <path d="M150 80 C90 80, 50 120, 50 165 C50 215, 100 250, 150 250 C200 250, 250 215, 250 165 C250 120, 210 80, 150 80 Z" fill="#b89470" stroke="#7d6142" stroke-width="2">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite" values="
+        M150 80 C90 80, 50 120, 50 165 C50 215, 100 250, 150 250 C200 250, 250 215, 250 165 C250 120, 210 80, 150 80 Z;
+        M150 85 C95 85, 55 125, 55 170 C55 220, 105 255, 150 255 C195 255, 245 220, 245 170 C245 125, 205 85, 150 85 Z;
+        M150 80 C90 80, 50 120, 50 165 C50 215, 100 250, 150 250 C200 250, 250 215, 250 165 C250 120, 210 80, 150 80 Z"
+      />
+    </path>
+    
+    <!-- 殻のディテール -->
+    <ellipse cx="150" cy="150" rx="85" ry="60" fill="#9a7d5f" />
+    <path d="M130 110 L110 140 L120 170 L150 185 L180 170 L190 140 L170 110 Z" fill="#876c4f" />
+    
+    <!-- 目 -->
+    <g>
+      <circle cx="120" cy="160" r="12" fill="#000">
+        <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="160;158;160" />
+      </circle>
+      <circle cx="180" cy="160" r="12" fill="#000">
+        <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="160;158;160" />
+      </circle>
+      <circle cx="120" cy="160" r="7" fill="#ff5555">
+        <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="160;158;160" />
+      </circle>
+      <circle cx="180" cy="160" r="7" fill="#ff5555">
+        <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="160;158;160" />
+      </circle>
+    </g>
+
+    <!-- 足 -->
+    <g>
+      <!-- 左前足 -->
+      <path d="M100 210 C90 220, 85 235, 95 240 C105 245, 110 235, 110 225" fill="#ffd28c" stroke="#7d6142" stroke-width="1">
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+          M100 210 C90 220, 85 235, 95 240 C105 245, 110 235, 110 225;
+          M100 210 C85 225, 80 240, 90 245 C100 250, 110 240, 110 225;
+          M100 210 C90 220, 85 235, 95 240 C105 245, 110 235, 110 225"
+        />
+      </path>
+      
+      <!-- 右前足 -->
+      <path d="M200 210 C210 220, 215 235, 205 240 C195 245, 190 235, 190 225" fill="#ffd28c" stroke="#7d6142" stroke-width="1">
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+          M200 210 C210 220, 215 235, 205 240 C195 245, 190 235, 190 225;
+          M200 210 C215 225, 220 240, 210 245 C200 250, 190 240, 190 225;
+          M200 210 C210 220, 215 235, 205 240 C195 245, 190 235, 190 225"
+        />
+      </path>
+      
+      <!-- 左後ろ足 -->
+      <path d="M120 230 C110 240, 105 255, 115 260 C125 265, 130 255, 130 245" fill="#ffd28c" stroke="#7d6142" stroke-width="1">
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+          M120 230 C110 240, 105 255, 115 260 C125 265, 130 255, 130 245;
+          M120 230 C105 245, 100 260, 110 265 C120 270, 130 260, 130 245;
+          M120 230 C110 240, 105 255, 115 260 C125 265, 130 255, 130 245"
+        />
+      </path>
+      
+      <!-- 右後ろ足 -->
+      <path d="M180 230 C190 240, 195 255, 185 260 C175 265, 170 255, 170 245" fill="#ffd28c" stroke="#7d6142" stroke-width="1">
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+          M180 230 C190 240, 195 255, 185 260 C175 265, 170 255, 170 245;
+          M180 230 C195 245, 200 260, 190 265 C180 270, 170 260, 170 245;
+          M180 230 C190 240, 195 255, 185 260 C175 265, 170 255, 170 245"
+        />
+      </path>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Kingler Animation -->
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="200" rx="50" ry="35" fill="#f8d3b9" stroke="#e67c45" stroke-width="2">
+    <animate attributeName="ry" values="35;32;35" dur="2.5s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Eyes -->
+  <g>
+    <circle cx="185" cy="190" r="5" fill="black" />
+    <circle cx="215" cy="190" r="5" fill="black" />
+    
+    <animate attributeName="transform" attributeType="XML" type="translate"
+      values="0 0; 0 -2; 0 0" dur="2.5s" repeatCount="indefinite" />
+  </g>
+  
+  <!-- Mouth -->
+  <path d="M190,205 Q200,212 210,205" fill="none" stroke="#333" stroke-width="2">
+    <animate attributeName="d" values="M190,205 Q200,212 210,205; M190,208 Q200,215 210,208; M190,205 Q200,212 210,205" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Legs -->
+  <g>
+    <!-- Left legs -->
+    <path d="M160,210 L140,235" fill="none" stroke="#e0c0b0" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" values="M160,210 L140,235; M160,210 L138,232; M160,210 L140,235" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M160,200 L135,220" fill="none" stroke="#e0c0b0" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" values="M160,200 L135,220; M160,200 L133,217; M160,200 L135,220" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M165,190 L140,200" fill="none" stroke="#e0c0b0" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" values="M165,190 L140,200; M165,190 L138,197; M165,190 L140,200" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Right legs -->
+    <path d="M240,210 L260,235" fill="none" stroke="#e0c0b0" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" values="M240,210 L260,235; M240,210 L262,232; M240,210 L260,235" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M240,200 L265,220" fill="none" stroke="#e0c0b0" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" values="M240,200 L265,220; M240,200 L267,217; M240,200 L265,220" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M235,190 L260,200" fill="none" stroke="#e0c0b0" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" values="M235,190 L260,200; M235,190 L262,197; M235,190 L260,200" dur="2.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Small Claw -->
+  <path d="M280,175 C300,160 305,170 295,185 C305,190 310,205 295,210 C280,215 265,205 270,190 Z" fill="#e67c45" stroke="#994c25" stroke-width="2">
+    <animate attributeName="d" values="M280,175 C300,160 305,170 295,185 C305,190 310,205 295,210 C280,215 265,205 270,190 Z; M280,175 C300,160 305,170 295,185 C308,192 313,207 295,210 C280,215 265,205 270,190 Z; M280,175 C300,160 305,170 295,185 C305,190 310,205 295,210 C280,215 265,205 270,190 Z" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M295,185 L270,190" fill="none" stroke="#994c25" stroke-width="2" />
+  
+  <!-- Giant Claw -->
+  <path d="M110,135 C70,110 60,130 80,160 C60,170 50,200 80,210 C110,220 140,200 130,170 Z" fill="#e67c45" stroke="#994c25" stroke-width="3">
+    <animate attributeName="d" values="M110,135 C70,110 60,130 80,160 C60,170 50,200 80,210 C110,220 140,200 130,170 Z; M110,135 C70,110 60,130 80,160 C55,172 45,202 80,210 C110,220 140,200 130,170 Z; M110,135 C70,110 60,130 80,160 C60,170 50,200 80,210 C110,220 140,200 130,170 Z" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M80,160 L130,170" fill="none" stroke="#994c25" stroke-width="3" />
+  
+  <!-- Claw spikes (giant) -->
+  <g>
+    <path d="M75,140 L72,130" fill="none" stroke="#994c25" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M75,140 L72,130; M74,141 L71,131; M75,140 L72,130" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M65,150 L58,145" fill="none" stroke="#994c25" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M65,150 L58,145; M64,151 L57,146; M65,150 L58,145" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M60,170 L50,170" fill="none" stroke="#994c25" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M60,170 L50,170; M59,171 L49,171; M60,170 L50,170" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M65,190 L55,195" fill="none" stroke="#994c25" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M65,190 L55,195; M64,191 L54,196; M65,190 L55,195" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M80,205 L75,215" fill="none" stroke="#994c25" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M80,205 L75,215; M79,206 L74,216; M80,205 L75,215" dur="2.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Claw spikes (small) -->
+  <g>
+    <path d="M295,195 L305,198" fill="none" stroke="#994c25" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M295,195 L305,198; M296,196 L306,199; M295,195 L305,198" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M290,180 L298,175" fill="none" stroke="#994c25" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="d" values="M290,180 L298,175; M291,181 L299,176; M290,180 L298,175" dur="2.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Mouth spikes -->
+  <path d="M195,208 L200,212 L205,208" fill="none" stroke="#994c25" stroke-width="1.5">
+    <animate attributeName="d" values="M195,208 L200,212 L205,208; M195,211 L200,215 L205,211; M195,208 L200,212 L205,208" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Forehead spike -->
+  <path d="M195,180 L200,173 L205,180" fill="none" stroke="#994c25" stroke-width="1.5">
+    <animate attributeName="d" values="M195,180 L200,173 L205,180; M195,178 L200,171 L205,178; M195,180 L200,173 L205,180" dur="2.5s" repeatCount="indefinite" />
+  </path>
+</svg>

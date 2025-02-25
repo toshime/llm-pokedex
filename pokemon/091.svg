@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- パルシェン (Cloyster) -->
+  
+  <!-- 貝殻の外側部分（メイン） -->
+  <path d="M150 240 C90 230 60 180 70 120 C80 60 220 60 230 120 C240 180 210 230 150 240" fill="#a8a0d0" stroke="#6c5ca0" stroke-width="3">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite" 
+      values="M150 240 C90 230 60 180 70 120 C80 60 220 60 230 120 C240 180 210 230 150 240;
+              M150 235 C95 225 65 175 75 125 C85 65 215 65 225 125 C235 175 205 225 150 235;
+              M150 240 C90 230 60 180 70 120 C80 60 220 60 230 120 C240 180 210 230 150 240" />
+  </path>
+  
+  <!-- スパイク（上部） -->
+  <path d="M90 80 L60 40 L100 70 L125 30 L140 65 L160 30 L175 65 L200 30 L240 80" fill="#a8a0d0" stroke="#6c5ca0" stroke-width="3">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+      values="M90 80 L60 40 L100 70 L125 30 L140 65 L160 30 L175 65 L200 30 L240 80;
+              M90 85 L60 45 L100 75 L125 35 L140 70 L160 35 L175 70 L200 35 L240 85;
+              M90 80 L60 40 L100 70 L125 30 L140 65 L160 30 L175 65 L200 30 L240 80" />
+  </path>
+  
+  <!-- スパイク（左右） -->
+  <path d="M60 120 L30 110 L55 125 L40 150 L65 145 L50 180 L75 170 M240 120 L270 110 L245 125 L260 150 L235 145 L250 180 L225 170" fill="#a8a0d0" stroke="#6c5ca0" stroke-width="3">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite" 
+      values="M60 120 L30 110 L55 125 L40 150 L65 145 L50 180 L75 170 M240 120 L270 110 L245 125 L260 150 L235 145 L250 180 L225 170;
+              M60 125 L30 115 L55 130 L40 155 L65 150 L50 185 L75 175 M240 125 L270 115 L245 130 L260 155 L235 150 L250 185 L225 175;
+              M60 120 L30 110 L55 125 L40 150 L65 145 L50 180 L75 170 M240 120 L270 110 L245 125 L260 150 L235 145 L250 180 L225 170" />
+  </path>
+  
+  <!-- 内側の黒い部分（顔） -->
+  <path d="M150 210 C120 210 100 190 100 140 C100 90 200 90 200 140 C200 190 180 210 150 210" fill="#202020">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+      values="M150 210 C120 210 100 190 100 140 C100 90 200 90 200 140 C200 190 180 210 150 210;
+              M150 205 C125 205 105 185 105 145 C105 95 195 95 195 145 C195 185 175 205 150 205;
+              M150 210 C120 210 100 190 100 140 C100 90 200 90 200 140 C200 190 180 210 150 210" />
+  </path>
+  
+  <!-- 目 -->
+  <ellipse cx="150" cy="155" rx="22" ry="25" fill="white">
+    <animate attributeName="ry" dur="3s" repeatCount="indefinite" values="25;22;25" />
+  </ellipse>
+  
+  <!-- 瞳 -->
+  <circle cx="150" cy="155" r="10" fill="black">
+    <animate attributeName="r" dur="3s" repeatCount="indefinite" values="10;8;10" />
+  </circle>
+  
+  <!-- 口（笑顔） -->
+  <path d="M135 180 C145 190 155 190 165 180" fill="none" stroke="white" stroke-width="3" stroke-linecap="round">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+      values="M135 180 C145 190 155 190 165 180;
+              M135 178 C145 188 155 188 165 178;
+              M135 180 C145 190 155 190 165 180" />
+  </path>
+</svg>

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="bodyClip">
+      <ellipse cx="200" cy="220" rx="90" ry="80" />
+    </clipPath>
+  </defs>
+  
+  <!-- Tail -->
+  <path d="M280 220 C310 220, 330 190, 320 160 C310 130, 280 130, 270 160" fill="#F9A8B9" stroke="#000" stroke-width="2">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M280 220 C310 220, 330 190, 320 160 C310 130, 280 130, 270 160;
+              M280 220 C310 230, 335 195, 325 165 C315 135, 285 135, 270 160;
+              M280 220 C310 220, 330 190, 320 160 C310 130, 280 130, 270 160" />
+  </path>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="220" rx="90" ry="80" fill="#F9A8B9" stroke="#000" stroke-width="2">
+    <animate attributeName="ry" values="80;78;80" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Belly marking -->
+  <path d="M160 190 Q200 230, 240 190 Q240 240, 200 270 Q160 240, 160 190" fill="#FFF1D1" stroke="#000" stroke-width="1.5">
+    <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+      values="M160 190 Q200 230, 240 190 Q240 240, 200 270 Q160 240, 160 190;
+              M160 190 Q200 228, 240 190 Q240 238, 200 268 Q160 238, 160 190;
+              M160 190 Q200 230, 240 190 Q240 240, 200 270 Q160 240, 160 190" />
+  </path>
+  
+  <!-- Belly stripes -->
+  <path d="M170 215 L230 215" stroke="#F3E4B0" stroke-width="6" fill="none">
+    <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+      values="M170 215 L230 215;
+              M170 213 L230 213;
+              M170 215 L230 215" />
+  </path>
+  <path d="M170 235 L230 235" stroke="#F3E4B0" stroke-width="6" fill="none">
+    <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+      values="M170 235 L230 235;
+              M170 233 L230 233;
+              M170 235 L230 235" />
+  </path>
+  
+  <!-- Circle on belly -->
+  <circle cx="200" cy="250" r="12" fill="#F3E4B0" stroke="#000" stroke-width="1.5">
+    <animate attributeName="cy" values="250;248;250" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Legs -->
+  <!-- Front leg -->
+  <ellipse cx="150" cy="280" rx="25" ry="20" fill="#F9A8B9" stroke="#000" stroke-width="2">
+    <animate attributeName="cy" values="280;282;280" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Back leg -->
+  <ellipse cx="250" cy="280" rx="25" ry="20" fill="#F9A8B9" stroke="#000" stroke-width="2">
+    <animate attributeName="cy" values="280;282;280" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Arms -->
+  <!-- Left arm -->
+  <path d="M135 180 C120 185, 110 195, 115 210 C120 225, 135 225, 145 215" fill="#F9A8B9" stroke="#000" stroke-width="2">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M135 180 C120 185, 110 195, 115 210 C120 225, 135 225, 145 215;
+              M135 182 C120 187, 108 197, 113 212 C118 227, 133 227, 145 217;
+              M135 180 C120 185, 110 195, 115 210 C120 225, 135 225, 145 215" />
+  </path>
+  
+  <!-- Right arm -->
+  <path d="M265 180 C280 185, 290 195, 285 210 C280 225, 265 225, 255 215" fill="#F9A8B9" stroke="#000" stroke-width="2">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite"
+      values="M265 180 C280 185, 290 195, 285 210 C280 225, 265 225, 255 215;
+              M265 182 C280 187, 292 197, 287 212 C282 227, 267 227, 255 217;
+              M265 180 C280 185, 290 195, 285 210 C280 225, 265 225, 255 215" />
+  </path>
+  
+  <!-- Head -->
+  <ellipse cx="200" cy="150" rx="55" ry="50" fill="#F9A8B9" stroke="#000" stroke-width="2">
+    <animate attributeName="cy" values="150;148;150" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Eyes -->
+  <!-- Left eye -->
+  <circle cx="180" cy="135" r="6" fill="white" stroke="#000" stroke-width="1.5">
+    <animate attributeName="cy" values="135;133;135" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="180" cy="135" r="3" fill="black">
+    <animate attributeName="cy" values="135;133;135" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Right eye -->
+  <circle cx="220" cy="135" r="6" fill="white" stroke="#000" stroke-width="1.5">
+    <animate attributeName="cy" values="135;133;135" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="220" cy="135" r="3" fill="black">
+    <animate attributeName="cy" values="135;133;135" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Nostrils -->
+  <ellipse cx="195" cy="150" rx="2" ry="3" fill="black">
+    <animate attributeName="cy" values="150;148;150" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse cx="205" cy="150" rx="2" ry="3" fill="black">
+    <animate attributeName="cy" values="150;148;150" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Tongue animation -->
+  <path d="M200 155 C200 185, 150 220, 100 215 C85 213, 80 195, 90 180 C100 165, 150 165, 200 155" fill="#EE7B9C" stroke="#000" stroke-width="2">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+      values="M200 155 C200 185, 150 220, 100 215 C85 213, 80 195, 90 180 C100 165, 150 165, 200 155;
+              M200 155 C200 180, 140 230, 90 220 C75 218, 70 200, 80 185 C90 170, 150 160, 200 155;
+              M200 155 C200 185, 150 220, 100 215 C85 213, 80 195, 90 180 C100 165, 150 165, 200 155" />
+  </path>
+</svg>

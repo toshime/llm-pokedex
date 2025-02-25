@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Clefairy (ピッピ) Animation -->
+  <style>
+    .body {
+      fill: #FFC0CB;
+    }
+    .ear-inner {
+      fill: #FFD1DC;
+    }
+    .ear-outline {
+      fill: #8B4513;
+    }
+    .wing {
+      fill: #FFD1DC;
+    }
+    .wing-outline {
+      fill: #8B4513;
+    }
+    .eye {
+      fill: #000000;
+    }
+    .mouth {
+      fill: #FF69B4;
+    }
+    .curl {
+      fill: none;
+      stroke: #8B4513;
+      stroke-width: 2;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    .clefairy {
+      animation: float 3s ease-in-out infinite;
+    }
+    .arm {
+      animation: wave 2s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .eyes {
+      animation: blink 4s infinite;
+      transform-origin: center;
+    }
+  </style>
+
+  <g class="clefairy">
+    <!-- Body -->
+    <ellipse cx="200" cy="210" rx="80" ry="90" class="body" />
+    
+    <!-- Ears -->
+    <path d="M160 130 L140 80 L170 110 Z" class="ear-outline" />
+    <path d="M163 127 L148 90 L173 115 Z" class="ear-inner" />
+    
+    <path d="M240 130 L260 80 L230 110 Z" class="ear-outline" />
+    <path d="M237 127 L252 90 L227 115 Z" class="ear-inner" />
+    
+    <!-- Arms -->
+    <g class="arm">
+      <path d="M130 200 Q110 220 105 245" class="body" stroke="#8B4513" stroke-width="1" />
+    </g>
+    <g class="arm" style="animation-delay: -1s;">
+      <path d="M270 200 Q290 220 295 245" class="body" stroke="#8B4513" stroke-width="1" />
+    </g>
+    
+    <!-- Wings -->
+    <path d="M140 190 Q120 210 130 240 Q150 220 140 190" class="wing-outline" />
+    <path d="M142 195 Q125 212 135 235 Q150 218 142 195" class="wing" />
+    
+    <path d="M260 190 Q280 210 270 240 Q250 220 260 190" class="wing-outline" />
+    <path d="M258 195 Q275 212 265 235 Q250 218 258 195" class="wing" />
+    
+    <!-- Feet -->
+    <ellipse cx="170" cy="290" rx="25" ry="15" class="body" stroke="#8B4513" stroke-width="1" />
+    <ellipse cx="230" cy="290" rx="25" ry="15" class="body" stroke="#8B4513" stroke-width="1" />
+    
+    <!-- Face -->
+    <g class="eyes">
+      <ellipse cx="175" cy="170" rx="7" ry="10" class="eye" />
+      <ellipse cx="225" cy="170" rx="7" ry="10" class="eye" />
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M185 190 Q200 205 215 190" stroke="#8B4513" stroke-width="2" fill="none" />
+    <path d="M190 200 Q200 210 210 200" class="mouth" />
+    
+    <!-- Curl -->
+    <path d="M200 130 Q220 120 225 135" class="curl" />
+  </g>
+</svg>

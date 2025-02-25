@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- ピカチュウ (Pikachu) -->
+  
+  <!-- Body -->
+  <g id="pikachu">
+    <!-- Tail -->
+    <path d="M300,200 L260,195 L240,180 L220,165 L210,150" fill="none" stroke="#FFD700" stroke-width="15" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 210 150" to="10 210 150" dur="1s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Main Body -->
+    <ellipse cx="200" cy="180" rx="70" ry="80" fill="#FFD700" />
+    
+    <!-- Face -->
+    <circle cx="200" cy="160" r="35" fill="#FFD700" />
+    
+    <!-- Ears -->
+    <g>
+      <path d="M160,120 L170,85 L185,115" fill="#FFD700" stroke="#000" stroke-width="2">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-5 160 120" to="5 160 120" dur="2s" repeatCount="indefinite" additive="sum" />
+      </path>
+      <path d="M240,120 L230,85 L215,115" fill="#FFD700" stroke="#000" stroke-width="2">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="5 240 120" to="-5 240 120" dur="2s" repeatCount="indefinite" additive="sum" />
+      </path>
+      <path d="M160,120 L170,85 L185,115" fill="#000" />
+      <path d="M240,120 L230,85 L215,115" fill="#000" />
+    </g>
+    
+    <!-- Red Cheeks -->
+    <circle cx="165" cy="170" r="12" fill="#FF6347" />
+    <circle cx="235" cy="170" r="12" fill="#FF6347" />
+    
+    <!-- Eyes -->
+    <ellipse cx="180" cy="145" rx="8" ry="10" fill="#000" />
+    <ellipse cx="220" cy="145" rx="8" ry="10" fill="#000" />
+    <circle cx="178" cy="142" r="3" fill="#FFF" />
+    <circle cx="218" cy="142" r="3" fill="#FFF" />
+    
+    <!-- Mouth -->
+    <path d="M190,175 Q200,185 210,175" fill="none" stroke="#000" stroke-width="2" />
+    <path d="M190,175 Q200,195 210,175" fill="#B22222">
+      <animate attributeName="d" values="M190,175 Q200,195 210,175;M190,175 Q200,185 210,175;M190,175 Q200,195 210,175" dur="4s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Arms -->
+    <path d="M150,190 L130,210" fill="none" stroke="#FFD700" stroke-width="15" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-5 150 190" to="15 150 190" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    <path d="M250,190 L270,210" fill="none" stroke="#FFD700" stroke-width="15" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="5 250 190" to="-15 250 190" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Feet -->
+    <ellipse cx="175" cy="255" rx="20" ry="10" fill="#FFD700" />
+    <ellipse cx="225" cy="255" rx="20" ry="10" fill="#FFD700" />
+    
+    <!-- Body Animation -->
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -5" dur="1s" repeatCount="indefinite" additive="sum" />
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes tailWag {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        75% { transform: rotate(-5deg); }
+      }
+      @keyframes spoonFloat {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-5px) rotate(5deg); }
+      }
+      @keyframes whiskerWiggle {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(2deg); }
+        75% { transform: rotate(-2deg); }
+      }
+      @keyframes blink {
+        0%, 95%, 100% { transform: scaleY(1); }
+        97% { transform: scaleY(0.1); }
+      }
+      .float { animation: float 3s ease-in-out infinite; }
+      .tail { animation: tailWag 2s ease-in-out infinite; }
+      .spoon { animation: spoonFloat 2.5s ease-in-out infinite; }
+      .whisker { animation: whiskerWiggle 1.5s ease-in-out infinite; }
+      .eyelid { animation: blink 4s ease-in-out infinite; }
+    </style>
+  </defs>
+  
+  <!-- Body -->
+  <g class="float">
+    <!-- Tail -->
+    <g class="tail" transform-origin="200 340">
+      <path d="M200 340 C180 380, 180 420, 220 440" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    </g>
+    
+    <!-- Main body -->
+    <path d="M180 280 C170 320, 170 380, 220 400 C270 410, 300 390, 320 350 C330 320, 325 270, 310 240 C290 210, 250 200, 220 210 C190 220, 180 250, 180 280Z" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Chest armor -->
+    <path d="M220 280 C240 285, 260 285, 280 280 C290 310, 290 340, 280 370 C260 380, 240 380, 220 370 C210 340, 210 310, 220 280Z" fill="#8B7355" stroke="#000" stroke-width="2"/>
+    
+    <!-- Head -->
+    <path d="M220 180 C200 190, 190 220, 200 240 C210 260, 240 270, 280 260 C310 250, 320 230, 310 200 C300 180, 280 170, 260 170 C240 170, 220 180, 220 180Z" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Ears -->
+    <path d="M240 170 C235 140, 220 130, 210 140 C200 150, 210 170, 220 180" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    <path d="M280 170 C290 140, 310 130, 320 140 C330 155, 320 170, 310 180" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Whiskers -->
+    <g class="whisker" transform-origin="310 190">
+      <path d="M310 190 L340 185" stroke="#000" stroke-width="2" fill="none"/>
+      <path d="M310 200 L340 205" stroke="#000" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Eyes -->
+    <circle cx="235" cy="210" r="10" fill="white" stroke="#000" stroke-width="1"/>
+    <circle cx="285" cy="210" r="10" fill="white" stroke="#000" stroke-width="1"/>
+    <g class="eyelid" transform-origin="235 210">
+      <circle cx="235" cy="210" r="5" fill="black"/>
+    </g>
+    <g class="eyelid" transform-origin="285 210">
+      <circle cx="285" cy="210" r="5" fill="black"/>
+    </g>
+    
+    <!-- Arm and spoon -->
+    <path d="M310 280 C330 270, 340 250, 330 240 C320 230, 300 240, 290 260" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <g class="spoon" transform-origin="350 230">
+      <path d="M330 240 L350 230" stroke="#000" stroke-width="2" fill="none"/>
+      <ellipse cx="360" cy="225" rx="10" ry="7" transform="rotate(-15, 360, 225)" fill="#CCCCCC" stroke="#000" stroke-width="1"/>
+      <path d="M360 225 L380 215" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Left arm -->
+    <path d="M190 280 C170 260, 160 240, 180 230 C200 220, 210 230, 220 250" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    
+    <!-- Legs -->
+    <path d="M240 400 C230 410, 220 430, 240 440 C260 445, 270 430, 265 415" fill="#F2D352" stroke="#000" stroke-width="2"/>
+    <path d="M280 400 C290 410, 300 430, 280 440 C260 445, 250 430, 255 415" fill="#F2D352" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

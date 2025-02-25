@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Mr. Mime / バリヤード Animation -->
+  
+  <!-- Definitions for animations -->
+  <defs>
+    <style>
+      @keyframes bodyBounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      
+      @keyframes armWave {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-15deg); }
+        75% { transform: rotate(15deg); }
+      }
+      
+      @keyframes handWiggle {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(10deg); }
+      }
+      
+      @keyframes legSway {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(3px); }
+      }
+      
+      @keyframes blush {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; }
+      }
+      
+      @keyframes wingFlap {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(-5deg); }
+      }
+      
+      .body {
+        animation: bodyBounce 2s ease-in-out infinite;
+      }
+      
+      .left-arm {
+        animation: armWave 2.5s ease-in-out infinite;
+        transform-origin: 135px 170px;
+      }
+      
+      .right-arm {
+        animation: armWave 2.5s ease-in-out infinite alternate;
+        transform-origin: 265px 170px;
+      }
+      
+      .left-hand {
+        animation: handWiggle 3s ease-in-out infinite;
+        transform-origin: 110px 215px;
+      }
+      
+      .right-hand {
+        animation: handWiggle 3s ease-in-out infinite alternate;
+        transform-origin: 290px 215px;
+      }
+      
+      .left-leg {
+        animation: legSway 3s ease-in-out infinite;
+      }
+      
+      .right-leg {
+        animation: legSway 3s ease-in-out infinite alternate;
+      }
+      
+      .blush {
+        animation: blush 4s ease-in-out infinite;
+      }
+      
+      .wing {
+        animation: wingFlap 2s ease-in-out infinite;
+        transform-origin: 200px 150px;
+      }
+    </style>
+  </defs>
+  
+  <!-- Main Body Parts -->
+  <g class="body">
+    <!-- Body Core -->
+    <ellipse cx="200" cy="200" rx="80" ry="85" fill="#f6f6f6" stroke="#000" stroke-width="2"/>
+    
+    <!-- Pink Sections -->
+    <circle cx="200" cy="160" r="30" fill="#FF6B8B" stroke="#000" stroke-width="2"/>
+    <circle cx="155" cy="195" r="30" fill="#FF6B8B" stroke="#000" stroke-width="2"/>
+    <circle cx="245" cy="195" r="30" fill="#FF6B8B" stroke="#000" stroke-width="2"/>
+    
+    <!-- Wing-like protrusions -->
+    <g class="wing left-wing">
+      <path d="M170 135 C150 110, 130 100, 120 120 C110 140, 130 150, 170 135 Z" fill="#1A3A5E" stroke="#000" stroke-width="2"/>
+    </g>
+    <g class="wing right-wing">
+      <path d="M230 135 C250 110, 270 100, 280 120 C290 140, 270 150, 230 135 Z" fill="#1A3A5E" stroke="#000" stroke-width="2"/>
+    </g>
+    
+    <!-- Head -->
+    <circle cx="200" cy="120" r="45" fill="#f6f6f6" stroke="#000" stroke-width="2"/>
+    
+    <!-- Face Features -->
+    <ellipse cx="200" cy="125" rx="25" ry="20" fill="#fff" stroke="#000" stroke-width="2"/> <!-- Mouth area -->
+    <path d="M185 125 C195 135, 205 135, 215 125" fill="none" stroke="#000" stroke-width="2"/> <!-- Smile -->
+    
+    <!-- Eyes -->
+    <circle cx="180" cy="105" r="8" fill="#000"/>
+    <circle cx="220" cy="105" r="8" fill="#000"/>
+    
+    <!-- Blush Spots -->
+    <circle class="blush" cx="170" cy="120" r="12" fill="#FF6B8B" fill-opacity="0.8"/>
+    <circle class="blush" cx="230" cy="120" r="12" fill="#FF6B8B" fill-opacity="0.8"/>
+    
+    <!-- Red Growths on Head -->
+    <circle cx="165" cy="85" r="10" fill="#FF6B8B" stroke="#000" stroke-width="2"/>
+    <circle cx="185" cy="75" r="10" fill="#FF6B8B" stroke="#000" stroke-width="2"/>
+    <circle cx="210" cy="75" r="10" fill="#FF6B8B" stroke="#000" stroke-width="2"/>
+    <circle cx="230" cy="85" r="10" fill="#FF6B8B" stroke="#000" stroke-width="2"/>
+  </g>
+  
+  <!-- Arms -->
+  <g class="left-arm">
+    <path d="M155 170 C140 180, 125 190, 110 210" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+    <g class="left-hand">
+      <circle cx="110" cy="215" r="15" fill="#fff" stroke="#000" stroke-width="2"/>
+      <line x1="105" y1="205" x2="105" y2="225" stroke="#000" stroke-width="1"/>
+      <line x1="110" y1="205" x2="110" y2="225" stroke="#000" stroke-width="1"/>
+      <line x1="115" y1="205" x2="115" y2="225" stroke="#000" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <g class="right-arm">
+    <path d="M245 170 C260 180, 275 190, 290 210" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+    <g class="right-hand">
+      <circle cx="290" cy="215" r="15" fill="#fff" stroke="#000" stroke-width="2"/>
+      <line x1="285" y1="205" x2="285" y2="225" stroke="#000" stroke-width="1"/>
+      <line x1="290" y1="205" x2="290" y2="225" stroke="#000" stroke-width="1"/>
+      <line x1="295" y1="205" x2="295" y2="225" stroke="#000" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Legs -->
+  <g class="left-leg">
+    <path d="M175 255 L175 280" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+    <path d="M160 280 C165 275, 175 290, 190 280" fill="#1A3A5E" stroke="#000" stroke-width="2"/> <!-- Boot -->
+  </g>
+  
+  <g class="right-leg">
+    <path d="M225 255 L225 280" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+    <path d="M210 280 C215 275, 225 290, 240 280" fill="#1A3A5E" stroke="#000" stroke-width="2"/> <!-- Boot -->
+  </g>
+</svg>

@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="purpleGradient" cx="50%" cy="50%" r="70%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#a8a8d8" />
+      <stop offset="70%" stop-color="#6868a8" />
+      <stop offset="100%" stop-color="#4848a0" />
+    </radialGradient>
+    <radialGradient id="gemGradient" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#ff9999" />
+      <stop offset="60%" stop-color="#dd3355" />
+      <stop offset="100%" stop-color="#990033" />
+    </radialGradient>
+    <radialGradient id="coreGradient" cx="50%" cy="50%" r="70%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#fff8b0" />
+      <stop offset="80%" stop-color="#f0d432" />
+      <stop offset="100%" stop-color="#d8b80e" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Front Star (Purple) -->
+  <g id="frontStar">
+    <!-- Front star points -->
+    <path d="M200,100 L220,160 L200,150 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M200,100 L220,160 L200,150 Z;
+                M200,95 L220,155 L200,145 Z;
+                M200,100 L220,160 L200,150 Z" />
+    </path>
+    <path d="M250,125 L235,165 L215,155 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.2s" repeatCount="indefinite" 
+        values="M250,125 L235,165 L215,155 Z;
+                M245,123 L233,163 L213,153 Z;
+                M250,125 L235,165 L215,155 Z" />
+    </path>
+    <path d="M275,175 L240,175 L225,160 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="2.8s" repeatCount="indefinite" 
+        values="M275,175 L240,175 L225,160 Z;
+                M270,173 L238,173 L223,158 Z;
+                M275,175 L240,175 L225,160 Z" />
+    </path>
+    <path d="M265,225 L235,195 L230,175 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.3s" repeatCount="indefinite" 
+        values="M265,225 L235,195 L230,175 Z;
+                M260,223 L233,193 L228,173 Z;
+                M265,225 L235,195 L230,175 Z" />
+    </path>
+    <path d="M225,260 L215,210 L230,190 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="2.9s" repeatCount="indefinite" 
+        values="M225,260 L215,210 L230,190 Z;
+                M223,255 L213,208 L228,188 Z;
+                M225,260 L215,210 L230,190 Z" />
+    </path>
+    <path d="M175,260 L185,210 L200,190 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.1s" repeatCount="indefinite" 
+        values="M175,260 L185,210 L200,190 Z;
+                M173,255 L183,208 L198,188 Z;
+                M175,260 L185,210 L200,190 Z" />
+    </path>
+    <path d="M135,225 L165,195 L180,175 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="2.7s" repeatCount="indefinite" 
+        values="M135,225 L165,195 L180,175 Z;
+                M138,223 L168,193 L183,173 Z;
+                M135,225 L165,195 L180,175 Z" />
+    </path>
+    <path d="M125,175 L160,175 L175,160 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.4s" repeatCount="indefinite" 
+        values="M125,175 L160,175 L175,160 Z;
+                M128,173 L163,173 L178,158 Z;
+                M125,175 L160,175 L175,160 Z" />
+    </path>
+    <path d="M150,125 L165,165 L185,155 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M150,125 L165,165 L185,155 Z;
+                M153,123 L168,163 L188,153 Z;
+                M150,125 L165,165 L185,155 Z" />
+    </path>
+  </g>
+  
+  <!-- Back Star (Purple, slightly offset) -->
+  <g id="backStar" transform="rotate(20, 200, 180)" opacity="0.9">
+    <!-- Back star points -->
+    <path d="M200,80 L220,140 L200,130 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.2s" repeatCount="indefinite" 
+        values="M200,80 L220,140 L200,130 Z;
+                M200,75 L220,135 L200,125 Z;
+                M200,80 L220,140 L200,130 Z" />
+    </path>
+    <path d="M260,105 L240,145 L220,135 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="2.9s" repeatCount="indefinite" 
+        values="M260,105 L240,145 L220,135 Z;
+                M255,103 L238,143 L218,133 Z;
+                M260,105 L240,145 L220,135 Z" />
+    </path>
+    <path d="M295,165 L250,155 L235,140 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.1s" repeatCount="indefinite" 
+        values="M295,165 L250,155 L235,140 Z;
+                M290,163 L248,153 L233,138 Z;
+                M295,165 L250,155 L235,140 Z" />
+    </path>
+    <path d="M285,230 L245,185 L240,155 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="2.8s" repeatCount="indefinite" 
+        values="M285,230 L245,185 L240,155 Z;
+                M280,228 L243,183 L238,153 Z;
+                M285,230 L245,185 L240,155 Z" />
+    </path>
+    <path d="M235,280 L225,210 L235,185 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.3s" repeatCount="indefinite" 
+        values="M235,280 L225,210 L235,185 Z;
+                M233,275 L223,208 L233,183 Z;
+                M235,280 L225,210 L235,185 Z" />
+    </path>
+    <path d="M165,280 L175,210 L165,185 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M165,280 L175,210 L165,185 Z;
+                M167,275 L177,208 L167,183 Z;
+                M165,280 L175,210 L165,185 Z" />
+    </path>
+    <path d="M115,230 L155,185 L160,155 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="2.9s" repeatCount="indefinite" 
+        values="M115,230 L155,185 L160,155 Z;
+                M118,228 L158,183 L163,153 Z;
+                M115,230 L155,185 L160,155 Z" />
+    </path>
+    <path d="M105,165 L150,155 L165,140 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.2s" repeatCount="indefinite" 
+        values="M105,165 L150,155 L165,140 Z;
+                M108,163 L153,153 L168,138 Z;
+                M105,165 L150,155 L165,140 Z" />
+    </path>
+    <path d="M140,105 L160,145 L180,135 Z" fill="url(#purpleGradient)">
+      <animate attributeName="d" dur="3.1s" repeatCount="indefinite" 
+        values="M140,105 L160,145 L180,135 Z;
+                M143,103 L163,143 L183,133 Z;
+                M140,105 L160,145 L180,135 Z" />
+    </path>
+  </g>
+  
+  <!-- Gold Center -->
+  <circle cx="200" cy="180" r="35" fill="url(#coreGradient)">
+    <animate attributeName="r" dur="2s" repeatCount="indefinite" 
+      values="35;33;35" />
+  </circle>
+  
+  <!-- Red Gem -->
+  <circle cx="200" cy="180" r="18" fill="url(#gemGradient)">
+    <animate attributeName="r" dur="1.5s" repeatCount="indefinite" 
+      values="18;16;18" />
+  </circle>
+  
+  <!-- Rotational Animation -->
+  <animateTransform 
+    xlink:href="#frontStar"
+    attributeName="transform"
+    type="rotate"
+    from="0 200 180"
+    to="360 200 180"
+    dur="30s"
+    repeatCount="indefinite" />
+    
+  <animateTransform 
+    xlink:href="#backStar"
+    attributeName="transform"
+    type="rotate"
+    from="20 200 180"
+    to="380 200 180"
+    dur="30s"
+    repeatCount="indefinite" />
+  
+  <!-- Pulsing Effect for both stars -->
+  <animate xlink:href="#frontStar" attributeName="opacity" 
+    values="1;0.9;1" dur="3s" repeatCount="indefinite" />
+  <animate xlink:href="#backStar" attributeName="opacity" 
+    values="0.9;0.8;0.9" dur="3s" repeatCount="indefinite" />
+</svg>

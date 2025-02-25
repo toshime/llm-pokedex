@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
+  <defs>
+    <style>
+      @keyframes shellWobble {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(3deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes bodyBreathe {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+      }
+      @keyframes blinkEyes {
+        0%, 90%, 100% { transform: scaleY(1); }
+        95% { transform: scaleY(0.1); }
+      }
+      @keyframes shellmouthMove {
+        0%, 40%, 100% { transform: scaleY(1) translateY(0); }
+        50%, 90% { transform: scaleY(0.9) translateY(2px); }
+      }
+      .shelltail {
+        transform-origin: 290px 230px;
+        animation: shellWobble 5s ease-in-out infinite;
+      }
+      .body {
+        transform-origin: center;
+        animation: bodyBreathe 4s ease-in-out infinite;
+      }
+      .eyes {
+        transform-origin: center;
+        animation: blinkEyes 5s ease-in-out infinite;
+      }
+      .shellmouth {
+        transform-origin: center;
+        animation: shellmouthMove 6s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  
+  <!-- Body -->
+  <g class="body">
+    <!-- Main body -->
+    <ellipse cx="175" cy="175" rx="85" ry="75" fill="#f9b7c4" />
+    
+    <!-- Head -->
+    <ellipse cx="115" cy="135" rx="50" ry="45" fill="#f9b7c4" />
+    
+    <!-- Belly -->
+    <path d="M120,180 C150,215 200,215 230,180" fill="#f4e6c9" />
+    
+    <!-- Arms -->
+    <ellipse cx="120" cy="210" rx="20" ry="40" fill="#f9b7c4" transform="rotate(-10, 120, 210)" />
+    <ellipse cx="230" cy="210" rx="20" ry="40" fill="#f9b7c4" transform="rotate(10, 230, 210)" />
+    
+    <!-- Legs -->
+    <ellipse cx="135" cy="250" rx="25" ry="15" fill="#f9b7c4" />
+    <ellipse cx="215" cy="250" rx="25" ry="15" fill="#f9b7c4" />
+  </g>
+  
+  <!-- Shellder on tail -->
+  <g class="shelltail">
+    <!-- Shell body -->
+    <path d="M270,200 C310,160 340,190 330,230 C320,260 290,270 270,235 Z" fill="#a4b6c5" />
+    
+    <!-- Shell spikes -->
+    <path d="M320,200 L335,190 L330,210 Z" fill="#85a3b9" />
+    <path d="M330,215 L350,215 L335,230 Z" fill="#85a3b9" />
+    <path d="M320,235 L335,250 L315,245 Z" fill="#85a3b9" />
+    
+    <!-- Shell mouth -->
+    <g class="shellmouth">
+      <path d="M280,205 C290,220 305,220 315,205" fill="none" stroke="white" stroke-width="3" />
+      <path d="M290,215 L305,215" fill="none" stroke="white" stroke-width="2" />
+    </g>
+    
+    <!-- Shell eyes -->
+    <ellipse cx="285" cy="200" rx="5" ry="8" fill="white" />
+    <ellipse cx="310" cy="200" rx="5" ry="8" fill="white" />
+    <ellipse cx="285" cy="200" rx="2" ry="4" fill="black" />
+    <ellipse cx="310" cy="200" rx="2" ry="4" fill="black" />
+  </g>
+  
+  <!-- Face -->
+  <g>
+    <!-- Eyes -->
+    <g class="eyes">
+      <ellipse cx="95" cy="120" rx="10" ry="12" fill="white" />
+      <ellipse cx="95" cy="120" rx="5" ry="7" fill="black" />
+      
+      <ellipse cx="135" cy="120" rx="10" ry="12" fill="white" />
+      <ellipse cx="135" cy="120" rx="5" ry="7" fill="black" />
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M95,155 C110,170 130,170 140,155" fill="none" stroke="#a07569" stroke-width="3" />
+    
+    <!-- Nose -->
+    <ellipse cx="115" cy="140" rx="15" ry="8" fill="#f4e6c9" />
+    
+    <!-- Ears -->
+    <ellipse cx="80" cy="100" rx="15" ry="12" fill="#f9b7c4" transform="rotate(-15, 80, 100)" />
+    <ellipse cx="150" cy="100" rx="15" ry="12" fill="#f9b7c4" transform="rotate(15, 150, 100)" />
+  </g>
+</svg>

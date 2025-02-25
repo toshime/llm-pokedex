@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+
+  <!-- Vileplume Body -->
+  <g id="vileplume-body">
+    <!-- Blue body -->
+    <ellipse cx="150" cy="220" rx="40" ry="35" fill="#3D6B99"/>
+    
+    <!-- Feet -->
+    <g id="feet">
+      <path d="M130 250 Q125 270 115 275" stroke="#3D6B99" stroke-width="10" fill="none"/>
+      <path d="M170 250 Q175 270 185 275" stroke="#3D6B99" stroke-width="10" fill="none"/>
+    </g>
+    
+    <!-- Face -->
+    <g id="face">
+      <!-- Eyes -->
+      <ellipse cx="135" cy="215" rx="5" ry="5" fill="#000"/>
+      <ellipse cx="165" cy="215" rx="5" ry="5" fill="#000"/>
+      
+      <!-- Small mouth -->
+      <path d="M145 225 Q150 228 155 225" stroke="#000" stroke-width="1.5" fill="none"/>
+    </g>
+    
+    <!-- Flower -->
+    <g id="flower">
+      <!-- Flower base (connecting to body) -->
+      <path d="M125 185 Q150 170 175 185" fill="#3D6B99"/>
+      
+      <!-- Flower main part (pink rafflesia) -->
+      <g id="petals">
+        <!-- Main dome/base of the flower -->
+        <ellipse cx="150" cy="150" rx="90" ry="30" fill="#FF5B9F"/>
+        
+        <!-- Upper petals structure -->
+        <path d="M60 150 Q150 70 240 150" fill="#FF5B9F"/>
+        
+        <!-- Petal separations/details -->
+        <path d="M90 125 Q120 90 150 80" stroke="#E03C80" stroke-width="2" fill="none"/>
+        <path d="M150 80 Q180 90 210 125" stroke="#E03C80" stroke-width="2" fill="none"/>
+        <path d="M80 140 Q90 130 100 125" stroke="#E03C80" stroke-width="2" fill="none"/>
+        <path d="M200 125 Q210 130 220 140" stroke="#E03C80" stroke-width="2" fill="none"/>
+        
+        <!-- Edge details for more organic look -->
+        <path d="M60 150 Q70 145 80 143" stroke="#E03C80" stroke-width="1.5" fill="none"/>
+        <path d="M220 143 Q230 145 240 150" stroke="#E03C80" stroke-width="1.5" fill="none"/>
+        
+        <!-- Side petal details -->
+        <path d="M70 150 Q90 160 110 155" stroke="#E03C80" stroke-width="1.5" fill="none"/>
+        <path d="M190 155 Q210 160 230 150" stroke="#E03C80" stroke-width="1.5" fill="none"/>
+      </g>
+      
+      <!-- White spots on flower (more detailed pattern) -->
+      <g id="spots">
+        <!-- Larger spots -->
+        <circle cx="90" cy="130" r="7" fill="white" opacity="0.8"/>
+        <circle cx="120" cy="110" r="7" fill="white" opacity="0.8"/>
+        <circle cx="150" cy="95" r="7" fill="white" opacity="0.8"/>
+        <circle cx="180" cy="110" r="7" fill="white" opacity="0.8"/>
+        <circle cx="210" cy="130" r="7" fill="white" opacity="0.8"/>
+        
+        <!-- Medium spots -->
+        <circle cx="105" cy="150" r="5" fill="white" opacity="0.8"/>
+        <circle cx="135" cy="135" r="5" fill="white" opacity="0.8"/>
+        <circle cx="165" cy="135" r="5" fill="white" opacity="0.8"/>
+        <circle cx="195" cy="150" r="5" fill="white" opacity="0.8"/>
+        <circle cx="100" cy="120" r="5" fill="white" opacity="0.8"/>
+        <circle cx="150" cy="120" r="5" fill="white" opacity="0.8"/>
+        <circle cx="200" cy="120" r="5" fill="white" opacity="0.8"/>
+        
+        <!-- Smaller spots -->
+        <circle cx="80" cy="140" r="3" fill="white" opacity="0.8"/>
+        <circle cx="110" cy="130" r="3" fill="white" opacity="0.8"/>
+        <circle cx="140" cy="105" r="3" fill="white" opacity="0.8"/>
+        <circle cx="160" cy="105" r="3" fill="white" opacity="0.8"/>
+        <circle cx="190" cy="130" r="3" fill="white" opacity="0.8"/>
+        <circle cx="220" cy="140" r="3" fill="white" opacity="0.8"/>
+        <circle cx="75" cy="150" r="3" fill="white" opacity="0.8"/>
+        <circle cx="225" cy="150" r="3" fill="white" opacity="0.8"/>
+      </g>
+      
+      <!-- Center hole with gradient for depth -->
+      <defs>
+        <radialGradient id="centerHoleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+          <stop offset="0%" stop-color="#4B2109"/>
+          <stop offset="100%" stop-color="#8B4513"/>
+        </radialGradient>
+      </defs>
+      <ellipse cx="150" cy="150" rx="25" ry="15" fill="url(#centerHoleGradient)"/>
+      
+      <!-- Inner rim of center hole -->
+      <ellipse cx="150" cy="150" rx="25" ry="15" stroke="#A54E2A" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Animation -->
+  <style>
+    @keyframes gentle-bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes petal-wave {
+      0%, 100% { transform: scaleX(1) scaleY(1) rotate(0deg); }
+      25% { transform: scaleX(1.02) scaleY(0.98) rotate(1deg); }
+      75% { transform: scaleX(0.98) scaleY(1.02) rotate(-1deg); }
+    }
+    @keyframes spot-shimmer {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 0.9; }
+    }
+    #vileplume-body {
+      animation: gentle-bob 4s ease-in-out infinite;
+    }
+    #flower {
+      transform-origin: 150px 150px;
+    }
+    #petals {
+      transform-origin: 150px 150px;
+      animation: petal-wave 6s ease-in-out infinite;
+    }
+    #spots {
+      animation: spot-shimmer 5s ease-in-out infinite;
+    }
+  </style>
+</svg>

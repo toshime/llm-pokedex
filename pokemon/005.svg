@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450">
+  <defs>
+    <radialGradient id="flameGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFF00" />
+      <stop offset="50%" stop-color="#FF9900" />
+      <stop offset="100%" stop-color="#FF3300" />
+      <animate attributeName="fy" values="50%;40%;50%;60%;50%" dur="2s" repeatCount="indefinite" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="240" rx="80" ry="90" fill="#F05B57" />
+  
+  <!-- Belly -->
+  <ellipse cx="200" cy="250" rx="60" ry="70" fill="#FFF6D9" />
+  
+  <!-- Neck -->
+  <path d="M200,150 Q195,170 195,190" stroke="#F05B57" stroke-width="35" stroke-linecap="round" fill="none" />
+  
+  <!-- Head -->
+  <path d="M170,115 Q200,80 230,115 Q245,135 230,150 Q215,160 185,160 Q170,150 155,135 Q155,120 170,115" fill="#F05B57">
+    <animate attributeName="d" values="M170,115 Q200,80 230,115 Q245,135 230,150 Q215,160 185,160 Q170,150 155,135 Q155,120 170,115;M170,117 Q200,82 230,117 Q247,137 232,152 Q217,162 183,162 Q168,152 153,137 Q153,122 170,117;M170,115 Q200,80 230,115 Q245,135 230,150 Q215,160 185,160 Q170,150 155,135 Q155,120 170,115" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Horn -->
+  <path d="M225,100 L245,75" stroke="#F05B57" stroke-width="12" stroke-linecap="round" fill="none" />
+  
+  <!-- Eyes -->
+  <ellipse cx="180" cy="120" rx="12" ry="15" fill="white" />
+  <ellipse cx="220" cy="120" rx="12" ry="15" fill="white" />
+  <ellipse cx="180" cy="120" rx="6" ry="9" fill="#4465AB" />
+  <ellipse cx="220" cy="120" rx="6" ry="9" fill="#4465AB" />
+  <ellipse cx="182" cy="118" rx="2" ry="2" fill="white" />
+  <ellipse cx="222" cy="118" rx="2" ry="2" fill="white" />
+  
+  <!-- Mouth -->
+  <path d="M185,145 Q200,155 215,145" stroke="black" stroke-width="2" fill="none" />
+  <path d="M185,145 Q200,160 215,145" fill="#CD544D" />
+  
+  <!-- Arms with claws -->
+  <path d="M140,230 Q120,210 125,190" stroke="#F05B57" stroke-width="20" stroke-linecap="round" fill="none">
+    <animate attributeName="d" values="M140,230 Q120,210 125,190;M140,230 Q115,205 120,185;M140,230 Q120,210 125,190" dur="3s" repeatCount="indefinite" />
+  </path>
+  <path d="M120,190 L110,175" stroke="#F05B57" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M110,175 L100,180" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M110,175 L95,170" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M110,175 L105,160" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" />
+  
+  <path d="M260,230 Q280,210 275,190" stroke="#F05B57" stroke-width="20" stroke-linecap="round" fill="none">
+    <animate attributeName="d" values="M260,230 Q280,210 275,190;M260,230 Q285,205 280,185;M260,230 Q280,210 275,190" dur="3s" repeatCount="indefinite" />
+  </path>
+  <path d="M275,190 L290,175" stroke="#F05B57" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M290,175 L300,180" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M290,175 L305,170" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M290,175 L295,160" stroke="white" stroke-width="6" stroke-linecap="round" fill="none" />
+  
+  <!-- Legs with claws -->
+  <path d="M160,320 Q150,340 140,360" stroke="#F05B57" stroke-width="25" stroke-linecap="round" fill="none" />
+  <path d="M140,360 L130,370" stroke="white" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M140,360 L120,365" stroke="white" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M140,360 L140,375" stroke="white" stroke-width="8" stroke-linecap="round" fill="none" />
+  
+  <path d="M240,320 Q250,340 260,360" stroke="#F05B57" stroke-width="25" stroke-linecap="round" fill="none" />
+  <path d="M260,360 L270,370" stroke="white" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M260,360 L280,365" stroke="white" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M260,360 L260,375" stroke="white" stroke-width="8" stroke-linecap="round" fill="none" />
+  
+  <!-- Tail -->
+  <path d="M130,270 Q90,290 70,250 Q60,230 70,220" stroke="#F05B57" stroke-width="25" stroke-linecap="round" fill="none">
+    <animate attributeName="d" values="M130,270 Q90,290 70,250 Q60,230 70,220;M130,270 Q85,285 65,245 Q55,225 65,215;M130,270 Q90,290 70,250 Q60,230 70,220" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Flame -->
+  <g>
+    <ellipse cx="70" cy="220" rx="20" ry="28" fill="url(#flameGradient)">
+      <animate attributeName="ry" values="28;33;28;23;28" dur="1s" repeatCount="indefinite" />
+    </ellipse>
+    <path d="M70,195 Q85,185 85,165 Q85,150 70,140 Q55,150 55,165 Q55,185 70,195" fill="url(#flameGradient)">
+      <animate attributeName="d" values="M70,195 Q85,185 85,165 Q85,150 70,140 Q55,150 55,165 Q55,185 70,195;M70,195 Q90,180 90,160 Q90,145 70,135 Q50,145 50,160 Q50,180 70,195;M70,195 Q85,185 85,165 Q85,150 70,140 Q55,150 55,165 Q55,185 70,195" dur="1.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

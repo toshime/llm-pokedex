@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Body -->
+  <ellipse cx="250" cy="250" rx="120" ry="130" fill="#FFAEC9">
+    <animate attributeName="ry" values="130;125;130" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Arms -->
+  <g id="leftArm">
+    <path d="M145,215 C125,195 105,205 95,225 C85,245 95,265 115,270 C135,275 150,255 145,215" fill="#FFAEC9">
+      <animate attributeName="d" values="M145,215 C125,195 105,205 95,225 C85,245 95,265 115,270 C135,275 150,255 145,215;
+                                          M145,215 C125,200 105,215 95,235 C85,255 95,275 115,280 C135,285 150,265 145,215;
+                                          M145,215 C125,195 105,205 95,225 C85,245 95,265 115,270 C135,275 150,255 145,215" 
+              dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <g id="rightArm">
+    <path d="M355,215 C375,195 395,205 405,225 C415,245 405,265 385,270 C365,275 350,255 355,215" fill="#FFAEC9">
+      <animate attributeName="d" values="M355,215 C375,195 395,205 405,225 C415,245 405,265 385,270 C365,275 350,255 355,215;
+                                          M355,215 C375,200 395,215 405,235 C415,255 405,275 385,280 C365,285 350,265 355,215;
+                                          M355,215 C375,195 395,205 405,225 C415,245 405,265 385,270 C365,275 350,255 355,215" 
+              dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Feet -->
+  <ellipse cx="200" cy="360" rx="30" ry="20" fill="#FFAEC9">
+    <animate attributeName="cy" values="360;365;360" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="300" cy="360" rx="30" ry="20" fill="#FFAEC9">
+    <animate attributeName="cy" values="360;365;360" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+
+  <!-- Egg pouch -->
+  <ellipse cx="250" cy="290" rx="40" ry="50" fill="#F8F8F8" />
+
+  <!-- Egg -->
+  <ellipse cx="250" cy="290" rx="30" ry="40" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="2">
+    <animate attributeName="ry" values="40;38;40" dur="2s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Face -->
+  <!-- Eyes -->
+  <g id="left-eye">
+    <ellipse cx="220" cy="210" rx="7" ry="10" fill="#000">
+      <animate attributeName="ry" values="10;2;10" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  
+  <g id="right-eye">
+    <ellipse cx="280" cy="210" rx="7" ry="10" fill="#000">
+      <animate attributeName="ry" values="10;2;10" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  
+  <!-- Mouth -->
+  <path d="M235,235 C245,245 255,245 265,235" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round">
+    <animate attributeName="d" values="M235,235 C245,245 255,245 265,235;
+                                      M235,236 C245,248 255,248 265,236;
+                                      M235,235 C245,245 255,245 265,235" 
+            dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Hair curls -->
+  <g id="left-hair">
+    <path d="M180,170 C170,140 150,135 130,150 C110,165 110,185 130,195 C150,205 170,190 180,170" fill="#FFAEC9">
+      <animate attributeName="d" values="M180,170 C170,140 150,135 130,150 C110,165 110,185 130,195 C150,205 170,190 180,170;
+                                        M180,170 C170,145 150,140 130,155 C110,170 110,190 130,200 C150,210 170,195 180,170;
+                                        M180,170 C170,140 150,135 130,150 C110,165 110,185 130,195 C150,205 170,190 180,170" 
+              dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <g id="right-hair">
+    <path d="M320,170 C330,140 350,135 370,150 C390,165 390,185 370,195 C350,205 330,190 320,170" fill="#FFAEC9">
+      <animate attributeName="d" values="M320,170 C330,140 350,135 370,150 C390,165 390,185 370,195 C350,205 330,190 320,170;
+                                        M320,170 C330,145 350,140 370,155 C390,170 390,190 370,200 C350,210 330,195 320,170;
+                                        M320,170 C330,140 350,135 370,150 C390,165 390,185 370,195 C350,205 330,190 320,170" 
+              dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Cheeks -->
+  <circle cx="200" cy="230" r="15" fill="#FFD1DC" opacity="0.7" />
+  <circle cx="300" cy="230" r="15" fill="#FFD1DC" opacity="0.7" />
+</svg>

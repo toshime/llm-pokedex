@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Geodude / イシツブテ (Pokédex #074) -->
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes punchLeft {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-15deg); }
+    }
+    @keyframes punchRight {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+    }
+    @keyframes blink {
+      0%, 95%, 100% { opacity: 1; }
+      97% { opacity: 0; }
+    }
+    .float { animation: float 3s ease-in-out infinite; }
+    .punch-left { animation: punchLeft 2.5s ease-in-out infinite; transform-origin: center right; }
+    .punch-right { animation: punchRight 2.5s ease-in-out infinite; transform-origin: center left; }
+    .blink { animation: blink 4s infinite; }
+  </style>
+
+  <!-- Body -->
+  <g class="float">
+    <!-- Main rock body -->
+    <ellipse cx="200" cy="170" rx="60" ry="50" fill="#b0aea0" />
+    <path d="M160 145 C170 130, 230 130, 240 145" fill="#b0aea0" stroke="#a09e90" stroke-width="1" />
+    
+    <!-- Rock textures -->
+    <path d="M170 140 L180 150 L165 160" fill="none" stroke="#8c8a7c" stroke-width="2" />
+    <path d="M230 140 L220 150 L235 160" fill="none" stroke="#8c8a7c" stroke-width="2" />
+    <ellipse cx="180" cy="180" rx="10" ry="8" fill="#a09e90" />
+    <ellipse cx="220" cy="180" rx="12" ry="9" fill="#a09e90" />
+    
+    <!-- Face -->
+    <!-- Eyes background -->
+    <circle cx="180" cy="150" r="15" fill="white" />
+    <circle cx="220" cy="150" r="15" fill="white" />
+    
+    <!-- Red pupils -->
+    <circle cx="180" cy="150" r="10" fill="#ec4646" />
+    <circle cx="220" cy="150" r="10" fill="#ec4646" />
+    
+    <!-- Black pupils -->
+    <circle cx="180" cy="150" r="5" fill="black" />
+    <circle cx="220" cy="150" r="5" fill="black" />
+    
+    <!-- Eyelids -->
+    <path class="blink" d="M165 150 C180 140, 195 140, 195 150" fill="#b0aea0" />
+    <path class="blink" d="M205 150 C220 140, 235 140, 235 150" fill="#b0aea0" />
+    
+    <!-- Angry eyebrows -->
+    <path d="M170 135 L190 145" fill="none" stroke="#706c60" stroke-width="3" />
+    <path d="M230 135 L210 145" fill="none" stroke="#706c60" stroke-width="3" />
+    
+    <!-- Mouth -->
+    <path d="M185 170 C200 185, 215 170, 215 170" fill="none" stroke="#706c60" stroke-width="3" />
+  </g>
+
+  <!-- Arms -->
+  <g class="punch-left" transform-origin="160 155">
+    <path d="M160 155 C140 155, 120 165, 110 175" fill="#b0aea0" stroke="#8c8a7c" stroke-width="1" />
+    <circle cx="110" cy="175" r="18" fill="#b0aea0" />
+    <path d="M110 175 C105 170, 100 170, 95 175 C90 180, 90 185, 95 190 C100 195, 105 195, 110 190" 
+          fill="#b0aea0" stroke="#8c8a7c" stroke-width="1" />
+  </g>
+
+  <g class="punch-right" transform-origin="240 155">
+    <path d="M240 155 C260 155, 280 165, 290 175" fill="#b0aea0" stroke="#8c8a7c" stroke-width="1" />
+    <circle cx="290" cy="175" r="18" fill="#b0aea0" />
+    <path d="M290 175 C295 170, 300 170, 305 175 C310 180, 310 185, 305 190 C300 195, 295 195, 290 190" 
+          fill="#b0aea0" stroke="#8c8a7c" stroke-width="1" />
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      @keyframes earWiggle {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-2deg); }
+        75% { transform: rotate(2deg); }
+      }
+      @keyframes tailWag {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(-5deg); }
+      }
+      @keyframes bodyBounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+      }
+      @keyframes blink {
+        0%, 45%, 55%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.1); }
+      }
+      .ear-left { animation: earWiggle 3s ease-in-out infinite; transform-origin: 140px 100px; }
+      .ear-right { animation: earWiggle 3s ease-in-out infinite alternate; transform-origin: 260px 100px; }
+      .tail { animation: tailWag 2s ease-in-out infinite; transform-origin: 90px 230px; }
+      .body { animation: bodyBounce 4s ease-in-out infinite; }
+      .eye-left, .eye-right { animation: blink 4s linear infinite; transform-origin: center; }
+    </style>
+  </defs>
+
+  <!-- Body -->
+  <g class="body">
+    <!-- Main body -->
+    <path d="M150 230 C160 280, 240 280, 250 230 C270 200, 270 160, 250 130 C230 100, 170 100, 150 130 C130 160, 130 200, 150 230" fill="#b8906e"/>
+    
+    <!-- Chest fur -->
+    <path d="M160 240 C180 260, 220 260, 240 240 C230 270, 200 280, 170 270 Z" fill="#f5e6d0"/>
+    <ellipse cx="200" cy="220" rx="45" ry="35" fill="#f5e6d0"/>
+    
+    <!-- Left ear -->
+    <g class="ear-left">
+      <path d="M140 120 L100 50 L165 80 Z" fill="#b8906e"/>
+      <path d="M140 120 L110 60 L165 80 Z" fill="#614225" fill-opacity="0.2"/>
+    </g>
+    
+    <!-- Right ear -->
+    <g class="ear-right">
+      <path d="M260 120 L300 50 L235 80 Z" fill="#b8906e"/>
+      <path d="M260 120 L290 60 L235 80 Z" fill="#614225" fill-opacity="0.2"/>
+    </g>
+    
+    <!-- Face -->
+    <circle cx="200" cy="160" r="35" fill="#b8906e"/>
+    
+    <!-- Eyes -->
+    <ellipse class="eye-left" cx="185" cy="150" rx="8" ry="10" fill="#472213"/>
+    <ellipse class="eye-right" cx="215" cy="150" rx="8" ry="10" fill="#472213"/>
+    
+    <!-- Nose -->
+    <ellipse cx="200" cy="165" rx="6" ry="4" fill="#472213"/>
+    
+    <!-- Mouth -->
+    <path d="M195 173 C198 175, 202 175, 205 173" stroke="#472213" stroke-width="1.5" fill="none"/>
+    
+    <!-- Paws -->
+    <ellipse cx="170" cy="250" rx="15" ry="10" fill="#b8906e"/>
+    <ellipse cx="230" cy="250" rx="15" ry="10" fill="#b8906e"/>
+    
+    <!-- Tail -->
+    <g class="tail">
+      <path d="M120 230 C80 220, 40 190, 70 160 C100 130, 150 150, 150 220" fill="#b8906e"/>
+      <path d="M70 160 C90 140, 130 160, 130 200 Z" fill="#f5e6d0"/>
+    </g>
+    
+    <!-- Reflections in eyes -->
+    <circle cx="182" cy="147" r="3" fill="white"/>
+    <circle cx="212" cy="147" r="3" fill="white"/>
+  </g>
+</svg>

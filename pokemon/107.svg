@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Hitmonchan SVG Animation -->
+  
+  <!-- Body Group -->
+  <g id="hitmonchan">
+    <!-- Body -->
+    <path d="M200 180 C215 180 230 190 235 210 C240 230 235 250 225 260 C215 270 205 270 200 270 C195 270 185 270 175 260 C165 250 160 230 165 210 C170 190 185 180 200 180" fill="#a99173" />
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="150" rx="25" ry="30" fill="#a99173" />
+    
+    <!-- Eyes -->
+    <ellipse cx="190" cy="145" rx="5" ry="8" fill="#222" />
+    <ellipse cx="210" cy="145" rx="5" ry="8" fill="#222" />
+    
+    <!-- Dress/Tunic -->
+    <path d="M175 210 C185 215 195 218 200 218 C205 218 215 215 225 210 C230 220 235 230 230 240 C225 250 215 255 200 255 C185 255 175 250 170 240 C165 230 170 220 175 210" fill="#e6e6e6" />
+    
+    <!-- Left Arm -->
+    <g id="leftArm">
+      <path d="M175 210 C165 205 158 200 155 190 C152 180 150 170 145 160 C140 150 125 145 115 155 C105 165 110 175 120 180 C130 185 140 180 147 170 C154 160 156 175 158 185 C160 195 165 205 170 210" fill="#a99173" />
+      <ellipse cx="115" cy="165" rx="15" ry="12" fill="#e85e4f" />
+    </g>
+    
+    <!-- Right Arm -->
+    <g id="rightArm">
+      <path d="M225 210 C235 205 242 200 245 190 C248 180 250 170 255 160 C260 150 275 145 285 155 C295 165 290 175 280 180 C270 185 260 180 253 170 C246 160 244 175 242 185 C240 195 235 205 230 210" fill="#a99173" />
+      <ellipse cx="285" cy="165" rx="15" ry="12" fill="#e85e4f" />
+    </g>
+    
+    <!-- Left Leg -->
+    <path d="M185 270 C180 280 175 290 175 300 C175 310 175 320 180 330 C185 340 190 345 195 340 C200 335 200 325 200 315 C200 305 200 295 195 285" fill="#a99173" />
+    
+    <!-- Right Leg -->
+    <path d="M215 270 C220 280 225 290 225 300 C225 310 225 320 220 330 C215 340 210 345 205 340 C200 335 200 325 200 315 C200 305 200 295 205 285" fill="#a99173" />
+    
+    <!-- Purple Shoes -->
+    <path d="M175 325 C170 330 170 340 180 345 C190 350 200 345 200 335 C200 325 195 320 185 320" fill="#e6e6e6" />
+    <path d="M225 325 C230 330 230 340 220 345 C210 350 200 345 200 335 C200 325 205 320 215 320" fill="#e6e6e6" />
+    
+    <!-- Crown-like Head Feature -->
+    <path d="M185 125 L175 110 L185 115 L195 105 L200 115 L205 105 L215 115 L225 110 L215 125" fill="#a99173" />
+  </g>
+  
+  <!-- Animations -->
+  <style>
+    @keyframes boxingAnimation {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(20deg); transform: translateX(10px); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-20deg); transform: translateX(-10px); }
+      100% { transform: rotate(0deg); }
+    }
+    
+    @keyframes bobAnimation {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    #leftArm {
+      transform-origin: 175px 210px;
+      animation: boxingAnimation 1s infinite;
+    }
+    
+    #rightArm {
+      transform-origin: 225px 210px;
+      animation: boxingAnimation 1s infinite 0.5s;
+    }
+    
+    #hitmonchan {
+      animation: bobAnimation 2s infinite;
+    }
+  </style>
+</svg>

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- サンダース (Jolteon) -->
+  
+  <!-- Body -->
+  <g id="jolteon-body">
+    <!-- Main body -->
+    <path d="M180 220 Q220 230 235 210 Q250 190 240 160 Q230 130 200 120 Q170 110 150 140 Q130 170 150 200 Q170 230 180 220 Z" fill="#fada5e" stroke="#d0b43c" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M180 220 Q220 230 235 210 Q250 190 240 160 Q230 130 200 120 Q170 110 150 140 Q130 170 150 200 Q170 230 180 220 Z;
+                M180 220 Q225 235 240 215 Q255 195 245 165 Q235 135 200 125 Q165 115 145 145 Q125 175 145 205 Q165 235 180 220 Z;
+                M180 220 Q220 230 235 210 Q250 190 240 160 Q230 130 200 120 Q170 110 150 140 Q130 170 150 200 Q170 230 180 220 Z"/>
+    </path>
+    
+    <!-- White collar -->
+    <path d="M170 135 Q190 120 210 120 Q230 120 235 135 Q240 150 235 165 Q230 180 210 180 Q190 180 170 165 Q160 150 170 135 Z" fill="#f5f2d0" stroke="#e6e0a8" stroke-width="2"/>
+  </g>
+  
+  <!-- Head -->
+  <g id="jolteon-head">
+    <path d="M200 120 Q225 115 230 95 Q235 75 220 65 Q205 55 185 65 Q165 75 170 95 Q175 115 200 120 Z" fill="#fada5e" stroke="#d0b43c" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M200 120 Q225 115 230 95 Q235 75 220 65 Q205 55 185 65 Q165 75 170 95 Q175 115 200 120 Z;
+                M200 120 Q225 115 230 95 Q235 75 220 65 Q205 55 185 65 Q165 75 170 95 Q175 115 200 120 Z;
+                M200 120 Q225 115 235 95 Q240 75 225 65 Q210 55 180 65 Q160 75 165 95 Q170 115 200 120 Z;
+                M200 120 Q225 115 230 95 Q235 75 220 65 Q205 55 185 65 Q165 75 170 95 Q175 115 200 120 Z"/>
+    </path>
+    
+    <!-- Face features -->
+    <ellipse cx="190" cy="85" rx="4" ry="6" fill="#47196b"/>
+    <ellipse cx="215" cy="85" rx="4" ry="6" fill="#47196b"/>
+    <ellipse cx="188" cy="83" rx="1.5" ry="1.5" fill="white"/>
+    <ellipse cx="213" cy="83" rx="1.5" ry="1.5" fill="white"/>
+    <path d="M195 95 Q202.5 100 210 95" fill="none" stroke="#d0b43c" stroke-width="2"/>
+  </g>
+  
+  <!-- Spikes/fur on head -->
+  <g id="jolteon-spikes-head">
+    <path d="M220 65 L230 35 L225 65" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 220 65; 5 220 65; 0 220 65" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M200 60 L210 25 L205 60" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 200 60; -5 200 60; 0 200 60" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M180 60 L170 25 L175 60" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 180 60; 5 180 60; 0 180 60" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Ears -->
+    <path d="M170 70 L150 40 L165 70" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 170 70; -5 170 70; 0 170 70" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M230 70 L250 40 L235 70" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 230 70; 5 230 70; 0 230 70" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Spikes/fur on body -->
+  <g id="jolteon-spikes-body">
+    <path d="M235 140 L265 125 L235 145" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 235 140; 5 235 140; 0 235 140" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M235 160 L270 150 L235 165" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 235 160; 4 235 160; 0 235 160" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M235 180 L265 185 L235 185" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 235 180; 5 235 180; 0 235 180" dur="1.7s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M160 140 L130 125 L160 145" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 160 140; -5 160 140; 0 160 140" dur="1.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M150 160 L115 150 L150 165" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 150 160; -4 150 160; 0 150 160" dur="2.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M155 180 L125 185 L155 185" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 155 180; -5 155 180; 0 155 180" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M180 210 L165 240 L180 215" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 180 210; -4 180 210; 0 180 210" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M200 215 L200 245 L205 215" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 200 215; 3 200 215; 0 200 215" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M220 210 L235 240 L225 215" fill="#fada5e" stroke="#d0b43c" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 220 210; 5 220 210; 0 220 210" dur="1.7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Legs -->
+  <g id="jolteon-legs">
+    <path d="M155 205 Q150 240 160 250 Q170 260 175 250 Q180 240 180 220" fill="#fada5e" stroke="#d0b43c" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M155 205 Q150 240 160 250 Q170 260 175 250 Q180 240 180 220;
+                M155 205 Q145 240 155 255 Q165 265 175 255 Q185 245 180 220;
+                M155 205 Q150 240 160 250 Q170 260 175 250 Q180 240 180 220"/>
+    </path>
+    <path d="M225 205 Q230 240 225 250 Q220 260 210 250 Q200 240 210 220" fill="#fada5e" stroke="#d0b43c" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M225 205 Q230 240 225 250 Q220 260 210 250 Q200 240 210 220;
+                M225 205 Q235 240 230 255 Q225 265 215 255 Q205 245 210 220;
+                M225 205 Q230 240 225 250 Q220 260 210 250 Q200 240 210 220"/>
+    </path>
+    
+    <path d="M150 160 Q140 175 145 190 Q150 205 155 205" fill="#fada5e" stroke="#d0b43c" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M150 160 Q140 175 145 190 Q150 205 155 205;
+                M150 160 Q135 175 140 195 Q145 210 155 205;
+                M150 160 Q140 175 145 190 Q150 205 155 205"/>
+    </path>
+    <path d="M235 160 Q245 175 240 190 Q235 205 225 205" fill="#fada5e" stroke="#d0b43c" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M235 160 Q245 175 240 190 Q235 205 225 205;
+                M235 160 Q250 175 245 195 Q240 210 225 205;
+                M235 160 Q245 175 240 190 Q235 205 225 205"/>
+    </path>
+  </g>
+  
+  <!-- Tail -->
+  <path d="M200 210 L190 225 L215 235 L195 245 L220 255 L205 265 L230 275" fill="#fada5e" stroke="#d0b43c" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="-3 200 210; 3 200 210; -3 200 210" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

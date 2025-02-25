@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <style>
+    .head-crest {
+      animation: crestWave 3s ease-in-out infinite;
+      transform-origin: 100px 90px;
+    }
+    .wing {
+      animation: wingFlap 2.5s ease-in-out infinite;
+      transform-origin: 150px 150px;
+    }
+    .tail {
+      animation: tailWag 3s ease-in-out infinite alternate;
+      transform-origin: 190px 160px;
+    }
+    .body {
+      animation: bodyBob 2s ease-in-out infinite;
+    }
+    .beak {
+      animation: beakOpen 4s ease-in-out infinite;
+      transform-origin: 85px 120px;
+    }
+    @keyframes crestWave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-8deg); }
+    }
+    @keyframes wingFlap {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      50% { transform: translate(0, -15px) rotate(20deg); }
+    }
+    @keyframes tailWag {
+      0% { transform: rotate(-5deg); }
+      100% { transform: rotate(5deg); }
+    }
+    @keyframes bodyBob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes beakOpen {
+      0%, 40%, 60%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-10deg); }
+    }
+  </style>
+
+  <!-- Body -->
+  <g class="body">
+    <ellipse cx="150" cy="150" rx="55" ry="50" fill="#E8D28A" />
+    
+    <!-- Breast -->
+    <path d="M120 150 Q150 190 180 150" fill="#F4EFDA" />
+    
+    <!-- Back -->
+    <path d="M120 135 Q150 120 180 135 Q180 120 150 120 Q120 120 120 135" fill="#CE7E44" />
+    
+    <!-- Left leg -->
+    <path d="M135 195 L130 225 L125 225 L128 230 L135 230 L138 225 L140 195" fill="#CB8FA1" />
+    <path d="M125 230 L127 235 L136 235 L138 230" fill="#CB8FA1" />
+    
+    <!-- Right leg -->
+    <path d="M165 195 L170 225 L175 225 L172 230 L165 230 L162 225 L160 195" fill="#CB8FA1" />
+    <path d="M165 230 L163 235 L172 235 L175 230" fill="#CB8FA1" />
+    
+    <!-- Left claw -->
+    <path d="M126 235 L124 240 L127 240 L128 235" fill="#633956" />
+    <path d="M130 235 L130 240 L133 240 L133 235" fill="#633956" />
+    <path d="M135 235 L136 240 L139 240 L137 235" fill="#633956" />
+    
+    <!-- Right claw -->
+    <path d="M166 235 L164 240 L167 240 L168 235" fill="#633956" />
+    <path d="M170 235 L170 240 L173 240 L173 235" fill="#633956" />
+    <path d="M175 235 L176 240 L179 240 L177 235" fill="#633956" />
+  </g>
+  
+  <!-- Head -->
+  <g>
+    <!-- Cute blush marks -->
+    <ellipse cx="75" cy="125" rx="6" ry="3.5" fill="#FFB6C1" opacity="0.6" />
+    <circle cx="95" cy="120" r="25" fill="#E8D28A" />
+    
+    <!-- Eye - bigger and cuter -->
+    <circle cx="85" cy="115" r="8" fill="white" />
+    <circle cx="85" cy="114" r="4" fill="black" />
+    <circle cx="87" cy="112" r="2" fill="white" />
+    
+    <!-- Eyebrow - softer -->
+    <path d="M77 106 Q83 102 90 106" stroke="black" stroke-width="1" fill="none" />
+    
+    <!-- Beak -->
+    <g class="beak">
+      <path d="M70 120 L90 125 L70 130 Z" fill="#F093AC" />
+    </g>
+    
+    <!-- Head crest -->
+    <g class="head-crest">
+      <path d="M105 95 L190 30 L160 85 L180 60 L150 90" fill="#FFC53D" />
+      <path d="M110 100 L170 70 L140 105" fill="#FFC53D" />
+      <path d="M112 105 L165 85 L135 110" fill="#FFC53D" />
+    </g>
+  </g>
+  
+  <!-- Wings -->
+  <g class="wing">
+    <!-- Left wing (frontal view) -->
+    <path d="M120 140 L60 160 L70 190 L120 180" fill="#CE7E44" />
+    <path d="M120 140 L75 120 L50 150 L60 160" fill="#CE7E44" />
+    <path d="M70 190 L80 195 L120 185 L120 180" fill="#E8D28A" />
+    
+    <!-- Right wing (hidden/back) implied by body shape -->
+  </g>
+  
+  <!-- Tail -->
+  <g class="tail">
+    <path d="M195 145 L240 120 L230 140 L245 130 L225 150" fill="#CE7E44" />
+    <path d="M195 155 L235 175 L230 185 L205 170" fill="#F6603C" />
+  </g>
+</svg>

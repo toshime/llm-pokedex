@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Gengar Body -->
+  <g id="gengar">
+    <path id="body" d="M200 280c-55 0-100-45-100-100 0-55 45-100 100-100s100 45 100 100c0 55-45 100-100 100z" fill="#7D6E9B">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M200 280c-55 0-100-45-100-100 0-55 45-100 100-100s100 45 100 100c0 55-45 100-100 100z;
+                M200 290c-60 0-105-45-105-110 0-55 45-95 105-95s105 40 105 95c0 65-45 110-105 110z;
+                M200 280c-55 0-100-45-100-100 0-55 45-100 100-100s100 45 100 100c0 55-45 100-100 100z"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Arms -->
+    <path id="leftArm" d="M130 220c-15 10-30 5-45-5" stroke="#7D6E9B" stroke-width="20" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2s" repeatCount="indefinite"
+        values="M130 220c-15 10-30 5-45-5;
+                M130 230c-15 15-35 5-50-10;
+                M130 220c-15 10-30 5-45-5"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <path id="rightArm" d="M270 220c15 10 30 5 45-5" stroke="#7D6E9B" stroke-width="20" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="2.5s" repeatCount="indefinite" 
+        values="M270 220c15 10 30 5 45-5;
+                M270 230c15 15 35 5 50-10;
+                M270 220c15 10 30 5 45-5"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Spikes on head -->
+    <path id="spikes" d="M160 130l-15-30 M200 120l0-40 M240 130l15-30" stroke="#7D6E9B" stroke-width="20" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M160 130l-15-30 M200 120l0-40 M240 130l15-30;
+                M160 125l-20-35 M200 115l0-45 M240 125l20-35;
+                M160 130l-15-30 M200 120l0-40 M240 130l15-30"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Mouth -->
+    <path id="mouth" d="M140 200c20 30 100 30 120 0" stroke="#333" stroke-width="4" fill="#E66D8F">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M140 200c20 30 100 30 120 0;
+                M140 210c20 35 100 35 120 0;
+                M140 200c20 30 100 30 120 0"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Teeth -->
+    <path id="teeth" d="M160 200l0 15 M180 200l0 18 M200 200l0 20 M220 200l0 18 M240 200l0 15" stroke="white" stroke-width="8" stroke-linecap="round">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M160 200l0 15 M180 200l0 18 M200 200l0 20 M220 200l0 18 M240 200l0 15;
+                M160 210l0 20 M180 210l0 23 M200 210l0 25 M220 210l0 23 M240 210l0 20;
+                M160 200l0 15 M180 200l0 18 M200 200l0 20 M220 200l0 18 M240 200l0 15"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Eyes -->
+    <circle id="leftEye" cx="160" cy="160" r="20" fill="#E86462">
+      <animate attributeName="r" dur="5s" repeatCount="indefinite" 
+        values="20;22;20;22;20" 
+        calcMode="linear" />
+      <animate attributeName="cy" dur="3s" repeatCount="indefinite"
+        values="160;155;160"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </circle>
+    
+    <circle id="rightEye" cx="240" cy="160" r="20" fill="#E86462">
+      <animate attributeName="r" dur="5s" repeatCount="indefinite" 
+        values="20;22;20;22;20" 
+        calcMode="linear" />
+      <animate attributeName="cy" dur="3s" repeatCount="indefinite"
+        values="160;155;160"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </circle>
+    
+    <!-- Pupils -->
+    <circle id="leftPupil" cx="165" cy="160" r="10" fill="white">
+      <animate attributeName="cy" dur="3s" repeatCount="indefinite"
+        values="160;155;160"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </circle>
+    
+    <circle id="rightPupil" cx="245" cy="160" r="10" fill="white">
+      <animate attributeName="cy" dur="3s" repeatCount="indefinite"
+        values="160;155;160"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </circle>
+  </g>
+</svg>

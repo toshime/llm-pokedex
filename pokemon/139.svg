@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Shell layers -->
+  <path d="M200 80 C130 80, 100 140, 100 200 C100 280, 160 320, 200 320 C240 320, 300 280, 300 200 C300 120, 270 80, 200 80" fill="#e9e2ba" stroke="#2d2d2d" stroke-width="2"/>
+  <path d="M200 100 C140 100, 120 150, 120 200 C120 270, 170 300, 200 300 C230 300, 280 270, 280 200 C280 130, 260 100, 200 100" fill="#e0d8a0" stroke="#2d2d2d" stroke-width="1"/>
+  <path d="M200 120 C160 120, 140 160, 140 200 C140 240, 180 280, 200 280 C220 280, 260 240, 260 200 C260 160, 240 120, 200 120" fill="#d6ce96" stroke="#2d2d2d" stroke-width="1"/>
+  
+  <!-- Shell spiral line -->
+  <path d="M200 120 C160 140, 150 170, 160 200 C170 230, 190 240, 200 240 C210 240, 230 230, 240 200 C250 170, 240 140, 200 120" fill="none" stroke="#2d2d2d" stroke-width="1.5"/>
+  
+  <!-- Shell spikes -->
+  <path d="M140 130 C130 120, 120 110, 110 105 C100 100, 115 120, 120 130 C125 140, 135 145, 140 130" fill="#e9e2ba" stroke="#2d2d2d" stroke-width="1.5"/>
+  <path d="M260 130 C270 120, 280 110, 290 105 C300 100, 285 120, 280 130 C275 140, 265 145, 260 130" fill="#e9e2ba" stroke="#2d2d2d" stroke-width="1.5"/>
+  <path d="M200 95 C195 85, 190 75, 185 65 C180 55, 200 60, 215 65 C220 75, 210 90, 200 95" fill="#e9e2ba" stroke="#2d2d2d" stroke-width="1.5"/>
+  
+  <!-- Blue body parts -->
+  <path d="M165 290 C150 310, 130 330, 110 340 C90 350, 70 350, 60 330 C50 310, 60 290, 80 280 C100 270, 140 270, 165 290" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="2"/>
+  <path d="M235 290 C250 310, 270 330, 290 340 C310 350, 330 350, 340 330 C350 310, 340 290, 320 280 C300 270, 260 270, 235 290" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="2"/>
+  
+  <!-- Blue body middle part and mouth -->
+  <path d="M165 290 C175 300, 185 310, 200 315 C215 310, 225 300, 235 290 C245 310, 225 330, 200 335 C175 330, 155 310, 165 290" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <ellipse cx="200" cy="320" rx="25" ry="15" fill="#333" stroke="#2d2d2d" stroke-width="1.5"/>
+  
+  <!-- Teeth -->
+  <path d="M180 315 L185 328 L190 315" fill="white" stroke="#2d2d2d" stroke-width="1"/>
+  <path d="M195 315 L200 328 L205 315" fill="white" stroke="#2d2d2d" stroke-width="1"/>
+  <path d="M210 315 L215 328 L220 315" fill="white" stroke="#2d2d2d" stroke-width="1"/>
+  
+  <!-- Eyes with animation -->
+  <g id="left-eye">
+    <ellipse cx="160" cy="290" rx="17" ry="20" fill="#f6e75f" stroke="#2d2d2d" stroke-width="1.5"/>
+    <ellipse cx="160" cy="290" rx="7" ry="17" fill="black"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 160 290; 5 160 290; 0 160 290; -5 160 290; 0 160 290" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <g id="right-eye">
+    <ellipse cx="240" cy="290" rx="17" ry="20" fill="#f6e75f" stroke="#2d2d2d" stroke-width="1.5"/>
+    <ellipse cx="240" cy="290" rx="7" ry="17" fill="black"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 240 290; -5 240 290; 0 240 290; 5 240 290; 0 240 290" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Tentacle animation -->
+  <g id="tentacles">
+    <!-- Left side tentacles -->
+    <path d="M60 330 C50 335, 40 345, 30 350 C20 355, 15 350, 20 345 C25 340, 35 335, 60 330" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M60 330 C50 335, 40 345, 30 350 C20 355, 15 350, 20 345 C25 340, 35 335, 60 330;
+                                       M60 330 C50 340, 35 350, 25 355 C15 360, 10 355, 15 350 C20 345, 30 340, 60 330;
+                                       M60 330 C50 335, 40 345, 30 350 C20 355, 15 350, 20 345 C25 340, 35 335, 60 330" 
+              dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M80 350 C70 360, 60 370, 50 375 C40 380, 35 375, 40 370 C45 365, 55 360, 80 350" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M80 350 C70 360, 60 370, 50 375 C40 380, 35 375, 40 370 C45 365, 55 360, 80 350;
+                                       M80 350 C70 365, 55 375, 45 380 C35 385, 30 380, 35 375 C40 370, 50 365, 80 350;
+                                       M80 350 C70 360, 60 370, 50 375 C40 380, 35 375, 40 370 C45 365, 55 360, 80 350" 
+              dur="2.3s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M100 345 C90 355, 80 365, 70 370 C60 375, 55 370, 60 365 C65 360, 75 355, 100 345" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M100 345 C90 355, 80 365, 70 370 C60 375, 55 370, 60 365 C65 360, 75 355, 100 345;
+                                       M100 345 C90 360, 75 370, 65 375 C55 380, 50 375, 55 370 C60 365, 70 360, 100 345;
+                                       M100 345 C90 355, 80 365, 70 370 C60 375, 55 370, 60 365 C65 360, 75 355, 100 345" 
+              dur="2.7s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M120 340 C110 350, 100 360, 90 365 C80 370, 75 365, 80 360 C85 355, 95 350, 120 340" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M120 340 C110 350, 100 360, 90 365 C80 370, 75 365, 80 360 C85 355, 95 350, 120 340;
+                                       M120 340 C110 355, 95 365, 85 370 C75 375, 70 370, 75 365 C80 360, 90 355, 120 340;
+                                       M120 340 C110 350, 100 360, 90 365 C80 370, 75 365, 80 360 C85 355, 95 350, 120 340" 
+              dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Right side tentacles -->
+    <path d="M340 330 C350 335, 360 345, 370 350 C380 355, 385 350, 380 345 C375 340, 365 335, 340 330" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M340 330 C350 335, 360 345, 370 350 C380 355, 385 350, 380 345 C375 340, 365 335, 340 330;
+                                       M340 330 C350 340, 365 350, 375 355 C385 360, 390 355, 385 350 C380 345, 370 340, 340 330;
+                                       M340 330 C350 335, 360 345, 370 350 C380 355, 385 350, 380 345 C375 340, 365 335, 340 330" 
+              dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M320 350 C330 360, 340 370, 350 375 C360 380, 365 375, 360 370 C355 365, 345 360, 320 350" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M320 350 C330 360, 340 370, 350 375 C360 380, 365 375, 360 370 C355 365, 345 360, 320 350;
+                                       M320 350 C330 365, 345 375, 355 380 C365 385, 370 380, 365 375 C360 370, 350 365, 320 350;
+                                       M320 350 C330 360, 340 370, 350 375 C360 380, 365 375, 360 370 C355 365, 345 360, 320 350" 
+              dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M300 345 C310 355, 320 365, 330 370 C340 375, 345 370, 340 365 C335 360, 325 355, 300 345" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M300 345 C310 355, 320 365, 330 370 C340 375, 345 370, 340 365 C335 360, 325 355, 300 345;
+                                       M300 345 C310 360, 325 370, 335 375 C345 380, 350 375, 345 370 C340 365, 330 360, 300 345;
+                                       M300 345 C310 355, 320 365, 330 370 C340 375, 345 370, 340 365 C335 360, 325 355, 300 345" 
+              dur="2.8s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M280 340 C290 350, 300 360, 310 365 C320 370, 325 365, 320 360 C315 355, 305 350, 280 340" fill="#6ab9d9" stroke="#2d2d2d" stroke-width="1.5">
+      <animate attributeName="d" values="M280 340 C290 350, 300 360, 310 365 C320 370, 325 365, 320 360 C315 355, 305 350, 280 340;
+                                       M280 340 C290 355, 305 365, 315 370 C325 375, 330 370, 325 365 C320 360, 310 355, 280 340;
+                                       M280 340 C290 350, 300 360, 310 365 C320 370, 325 365, 320 360 C315 355, 305 350, 280 340" 
+              dur="3.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Mouth animation -->
+  <animate xlink:href="#mouth" attributeName="ry" values="15;12;15" dur="1s" repeatCount="indefinite"/>
+  
+  <!-- Body bobbing animation -->
+  <animateTransform attributeType="xml" attributeName="transform" type="translate" 
+                    values="0,0; 0,-5; 0,0; 0,5; 0,0" 
+                    dur="4s" repeatCount="indefinite" 
+                    additive="sum"/>
+</svg>

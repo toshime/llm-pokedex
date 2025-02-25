@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <style>
+    .body {
+      animation: float 3s infinite alternate ease-in-out;
+    }
+    .wing-left {
+      animation: wingFlap 4s infinite alternate ease-in-out;
+      transform-origin: 160px 150px;
+    }
+    .wing-right {
+      animation: wingFlap 4s infinite alternate-reverse ease-in-out;
+      transform-origin: 240px 150px;
+    }
+    .arm-blade-left {
+      animation: bladeSwing 5s infinite alternate ease-in-out;
+      transform-origin: 125px 180px;
+    }
+    .arm-blade-right {
+      animation: bladeSwing 5s infinite alternate-reverse ease-in-out;
+      transform-origin: 275px 180px;
+    }
+    .head {
+      animation: headTilt 6s infinite alternate ease-in-out;
+      transform-origin: 200px 130px;
+    }
+    .leg-left, .leg-right {
+      animation: legSway 4s infinite alternate ease-in-out;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+    @keyframes wingFlap {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(15deg); }
+    }
+    @keyframes bladeSwing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-15deg); }
+    }
+    @keyframes headTilt {
+      0% { transform: rotate(-3deg); }
+      100% { transform: rotate(3deg); }
+    }
+    @keyframes legSway {
+      0% { transform: translateX(-2px); }
+      100% { transform: translateX(2px); }
+    }
+  </style>
+
+  <!-- Body -->
+  <g class="body">
+    <!-- Legs -->
+    <g class="leg-left">
+      <path d="M170 260 L160 320 L175 340" fill="none" stroke="#74C365" stroke-width="12" stroke-linecap="round" />
+      <path d="M175 340 L160 350 L180 350" fill="none" stroke="#538F40" stroke-width="10" stroke-linecap="round" />
+    </g>
+    <g class="leg-right">
+      <path d="M230 260 L240 320 L225 340" fill="none" stroke="#74C365" stroke-width="12" stroke-linecap="round" />
+      <path d="M225 340 L240 350 L220 350" fill="none" stroke="#538F40" stroke-width="10" stroke-linecap="round" />
+    </g>
+
+    <!-- Main body -->
+    <ellipse cx="200" cy="220" rx="45" ry="70" fill="#74C365" />
+    <ellipse cx="200" cy="190" rx="40" ry="45" fill="#8CD67F" />
+    
+    <!-- Wings -->
+    <path class="wing-left" d="M160 150 C120 120, 80 180, 100 240 C110 260, 150 230, 160 200" fill="#D7F4C9" stroke="#8CD67F" stroke-width="2" />
+    <path class="wing-right" d="M240 150 C280 120, 320 180, 300 240 C290 260, 250 230, 240 200" fill="#D7F4C9" stroke="#8CD67F" stroke-width="2" />
+    
+    <!-- Arms with blades -->
+    <g class="arm-blade-left">
+      <path d="M170 180 L120 170" fill="none" stroke="#74C365" stroke-width="10" stroke-linecap="round" />
+      <path d="M120 170 C80 150, 60 110, 80 80" fill="none" stroke="#D7F4C9" stroke-width="12" stroke-linecap="round" />
+      <path d="M80 80 C90 85, 100 90, 120 170" fill="none" stroke="#D7F4C9" stroke-width="3" />
+    </g>
+    <g class="arm-blade-right">
+      <path d="M230 180 L280 170" fill="none" stroke="#74C365" stroke-width="10" stroke-linecap="round" />
+      <path d="M280 170 C320 150, 340 110, 320 80" fill="none" stroke="#D7F4C9" stroke-width="12" stroke-linecap="round" />
+      <path d="M320 80 C310 85, 300 90, 280 170" fill="none" stroke="#D7F4C9" stroke-width="3" />
+    </g>
+    
+    <!-- Head -->
+    <g class="head">
+      <path d="M200 130 L200 100 L210 70" fill="none" stroke="#74C365" stroke-width="15" stroke-linecap="round" />
+      <ellipse cx="200" cy="130" rx="25" ry="20" fill="#74C365" />
+      
+      <!-- Face details -->
+      <circle cx="190" cy="125" r="3" fill="#333333" /> <!-- Left eye -->
+      <circle cx="210" cy="125" r="3" fill="#333333" /> <!-- Right eye -->
+      <path d="M195 135 L205 135" fill="none" stroke="#333333" stroke-width="2" /> <!-- Mouth -->
+      
+      <!-- Horn/crest -->
+      <path d="M200 110 L180 90" fill="none" stroke="#74C365" stroke-width="8" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

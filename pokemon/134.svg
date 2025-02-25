@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- シャワーズ (Vaporeon) -->
+  
+  <!-- Body -->
+  <g id="vaporeon-body">
+    <path d="M200 220 Q220 240 230 260 Q240 280 220 300 Q200 320 180 300 Q160 280 170 260 Q180 240 200 220" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M200 220 Q220 240 230 260 Q240 280 220 300 Q200 320 180 300 Q160 280 170 260 Q180 240 200 220;
+                M200 220 Q225 240 235 260 Q245 280 225 300 Q205 325 175 300 Q155 280 165 260 Q175 240 200 220;
+                M200 220 Q220 240 230 260 Q240 280 220 300 Q200 320 180 300 Q160 280 170 260 Q180 240 200 220"/>
+    </path>
+    
+    <!-- Main body -->
+    <path d="M200 210 Q230 200 240 170 Q250 140 230 110 Q210 80 185 85 Q160 90 145 110 Q130 130 140 170 Q150 200 180 210 Z" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M200 210 Q230 200 240 170 Q250 140 230 110 Q210 80 185 85 Q160 90 145 110 Q130 130 140 170 Q150 200 180 210 Z;
+                M200 210 Q235 200 245 170 Q255 140 235 110 Q215 80 185 85 Q155 90 140 110 Q125 130 135 170 Q145 200 175 210 Z;
+                M200 210 Q230 200 240 170 Q250 140 230 110 Q210 80 185 85 Q160 90 145 110 Q130 130 140 170 Q150 200 180 210 Z"/>
+    </path>
+    
+    <!-- Collar -->
+    <path d="M185 90 Q190 105 200 110 Q210 105 215 90" fill="#f5f2d0" stroke="#e6e0a8" stroke-width="2"/>
+  </g>
+  
+  <!-- Head -->
+  <g id="vaporeon-head">
+    <path d="M185 85 Q200 75 215 85 Q230 95 230 110 Q230 125 215 135 Q200 145 185 135 Q170 125 170 110 Q170 95 185 85 Z" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+        values="M185 85 Q200 75 215 85 Q230 95 230 110 Q230 125 215 135 Q200 145 185 135 Q170 125 170 110 Q170 95 185 85 Z;
+                M185 85 Q200 75 215 85 Q230 95 230 110 Q230 125 215 135 Q200 145 185 135 Q170 125 170 110 Q170 95 185 85 Z;
+                M185 85 Q200 75 215 85 Q230 95 230 110 Q230 125 215 140 Q200 150 185 140 Q170 125 170 110 Q170 95 185 85 Z;
+                M185 85 Q200 75 215 85 Q230 95 230 110 Q230 125 215 135 Q200 145 185 135 Q170 125 170 110 Q170 95 185 85 Z"/>
+    </path>
+    
+    <!-- Ears -->
+    <path d="M175 85 L165 65 L185 75 Z" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" values="0 175 85; -5 175 85; 0 175 85" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M225 85 L235 65 L215 75 Z" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" values="0 225 85; 5 225 85; 0 225 85" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Face features -->
+    <ellipse cx="190" cy="105" rx="5" ry="7" fill="#111"/>
+    <ellipse cx="210" cy="105" rx="5" ry="7" fill="#111"/>
+    <ellipse cx="188" cy="103" rx="2" ry="2" fill="white"/>
+    <ellipse cx="208" cy="103" rx="2" ry="2" fill="white"/>
+    <path d="M195 120 Q200 125 205 120" fill="none" stroke="#3a7da8" stroke-width="2"/>
+  </g>
+  
+  <!-- Legs -->
+  <g id="vaporeon-legs">
+    <path d="M160 160 Q150 170 145 190 Q140 210 150 220" fill="none" stroke="#3a7da8" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M160 160 Q150 170 145 190 Q140 210 150 220;
+                M160 160 Q155 175 150 195 Q145 215 155 225;
+                M160 160 Q150 170 145 190 Q140 210 150 220"/>
+    </path>
+    <path d="M240 160 Q250 170 255 190 Q260 210 250 220" fill="none" stroke="#3a7da8" stroke-width="2">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M240 160 Q250 170 255 190 Q260 210 250 220;
+                M240 160 Q245 175 250 195 Q255 215 245 225;
+                M240 160 Q250 170 255 190 Q260 210 250 220"/>
+    </path>
+  </g>
+  
+  <!-- Fin on head -->
+  <path d="M200 80 L200 50 L210 65 L220 55 L215 75" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+    <animateTransform attributeName="transform" type="rotate" values="0 200 80; 5 200 80; 0 200 80; -5 200 80; 0 200 80" dur="5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Tail -->
+  <path d="M220 300 Q250 310 280 290 Q310 270 320 230 Q330 190 300 170 Q270 150 250 180" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" 
+      values="M220 300 Q250 310 280 290 Q310 270 320 230 Q330 190 300 170 Q270 150 250 180;
+              M220 300 Q250 310 290 300 Q320 280 330 240 Q340 200 310 180 Q280 160 250 180;
+              M220 300 Q250 310 280 290 Q310 270 320 230 Q330 190 300 170 Q270 150 250 180"/>
+  </path>
+  <path d="M320 230 Q340 240 350 230 Q360 220 355 210 Q350 200 335 205 Q320 210 320 230 Z" fill="#64b9fb" stroke="#3a7da8" stroke-width="2">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M320 230 Q340 240 350 230 Q360 220 355 210 Q350 200 335 205 Q320 210 320 230 Z;
+              M320 230 Q340 240 355 235 Q365 225 360 215 Q355 205 340 210 Q325 215 320 230 Z;
+              M320 230 Q340 240 350 230 Q360 220 355 210 Q350 200 335 205 Q320 210 320 230 Z"/>
+  </path>
+</svg>

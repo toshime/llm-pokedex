@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Rhyhorn - #111 -->
+  <style>
+    .body {
+      animation: bodyMove 3s infinite alternate;
+    }
+    .head {
+      animation: headMove 3s infinite alternate;
+    }
+    .leg {
+      animation: legMove 2s infinite alternate;
+    }
+    .tail {
+      animation: tailWag 2.5s infinite alternate;
+    }
+    
+    @keyframes bodyMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(0, 5px); }
+    }
+    
+    @keyframes headMove {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(5deg); }
+    }
+    
+    @keyframes legMove {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
+    
+    @keyframes tailWag {
+      0% { transform: rotate(-5deg); }
+      100% { transform: rotate(5deg); }
+    }
+  </style>
+
+  <!-- Body Base -->
+  <g class="body">
+    <!-- Main Body -->
+    <path d="M300,280 C340,260 350,220 330,190 C310,160 240,170 200,190 C160,210 150,250 170,280 C190,310 260,300 300,280 Z" fill="#8c98a8"/>
+    
+    <!-- Armor plates -->
+    <path d="M280,230 C300,220 310,200 300,185 C290,170 260,175 240,185 C220,195 210,215 220,230 C230,245 260,240 280,230 Z" fill="#5d6977"/>
+    <path d="M250,270 C270,260 280,240 270,225 C260,210 230,215 210,225 C190,235 180,255 190,270 C200,285 230,280 250,270 Z" fill="#5d6977"/>
+    <path d="M210,240 C230,230 240,210 230,195 C220,180 190,185 170,195 C150,205 140,225 150,240 C160,255 190,250 210,240 Z" fill="#5d6977"/>
+  </g>
+
+  <!-- Head -->
+  <g class="head" transform-origin="180 190">
+    <!-- Base Head -->
+    <path d="M180,190 C150,180 130,200 120,220 C110,240 120,260 150,270 C180,280 200,260 210,240 C220,220 210,200 180,190 Z" fill="#8c98a8"/>
+    
+    <!-- Horn -->
+    <path d="M130,210 L90,190 L120,230 Z" fill="#5d6977"/>
+    
+    <!-- Eye -->
+    <circle cx="150" cy="225" r="5" fill="#333"/>
+  </g>
+
+  <!-- Legs -->
+  <g class="leg" transform-origin="170 300">
+    <path d="M170,300 L160,330 L180,330 Z" fill="#8c98a8"/>
+  </g>
+  <g class="leg" transform-origin="210 310">
+    <path d="M210,310 L200,340 L220,340 Z" fill="#8c98a8"/>
+  </g>
+  <g class="leg" transform-origin="270 310">
+    <path d="M270,310 L260,340 L280,340 Z" fill="#8c98a8"/>
+  </g>
+  <g class="leg" transform-origin="310 300">
+    <path d="M310,300 L300,330 L320,330 Z" fill="#8c98a8"/>
+  </g>
+
+  <!-- Tail -->
+  <path class="tail" d="M330,230 C350,220 360,230 350,240 C340,250 330,240 330,230 Z" fill="#8c98a8" transform-origin="340 235"/>
+</svg>

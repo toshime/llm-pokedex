@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Body -->
+  <g id="growlithe">
+    <!-- Main body -->
+    <path d="M200 200 Q240 180 230 240 Q200 260 170 240 Q160 180 200 200Z" fill="#e8a952" />
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="160" rx="40" ry="35" fill="#e8a952" />
+    
+    <!-- Mane -->
+    <path d="M190 130 Q200 110 210 130 Q230 120 225 140 Q245 135 235 150 Q260 155 240 165 Q250 180 230 175 Q240 195 220 185 Q210 200 200 180 Q190 200 180 185 Q160 195 170 175 Q150 180 160 165 Q140 155 160 150 Q150 135 170 140 Q165 120 185 130Z" fill="#f5e7c0" />
+    
+    <!-- Eyes -->
+    <ellipse cx="185" cy="155" rx="5" ry="4" fill="#333" />
+    <ellipse cx="215" cy="155" rx="5" ry="4" fill="#333" />
+    
+    <!-- Nose -->
+    <path d="M200 165 Q205 170 195 170 Q190 170 200 165Z" fill="#333" />
+    
+    <!-- Mouth -->
+    <path d="M195 170 Q200 175 205 170" fill="none" stroke="#333" stroke-width="1" />
+    
+    <!-- Ears -->
+    <path d="M175 130 Q165 120 170 135Z" fill="#e8a952" />
+    <path d="M225 130 Q235 120 230 135Z" fill="#e8a952" />
+    
+    <!-- Stripes -->
+    <path d="M190 220 L180 230 L170 220" fill="none" stroke="#333" stroke-width="5" />
+    <path d="M220 220 L230 230 L240 220" fill="none" stroke="#333" stroke-width="5" />
+    
+    <!-- Tail -->
+    <path d="M170 240 Q150 250 140 230 Q135 220 155 225Z" fill="#f5e7c0" />
+    
+    <!-- Legs -->
+    <path d="M180 240 L175 270" fill="none" stroke="#e8a952" stroke-width="10" />
+    <path d="M220 240 L225 270" fill="none" stroke="#e8a952" stroke-width="10" />
+    <path d="M190 240 L185 270" fill="none" stroke="#e8a952" stroke-width="10" />
+    <path d="M210 240 L215 270" fill="none" stroke="#e8a952" stroke-width="10" />
+  </g>
+
+  <!-- Animation -->
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    
+    #growlithe {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    ellipse[cx="185"][cy="155"], ellipse[cx="215"][cy="155"] {
+      animation: blink 4s infinite;
+      transform-origin: center;
+    }
+    
+    path[d="M170 240 Q150 250 140 230 Q135 220 155 225Z"] {
+      animation: tailWag 2s infinite;
+      transform-origin: 170px 240px;
+    }
+  </style>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      @keyframes tailWiggle {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        75% { transform: rotate(-5deg); }
+      }
+      
+      @keyframes mouthMove {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.7); }
+      }
+      
+      @keyframes finFlap {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(-10deg); }
+      }
+      
+      #koiking {
+        animation: float 3s ease-in-out infinite;
+      }
+      
+      #tail {
+        animation: tailWiggle 1.5s ease-in-out infinite;
+        transform-origin: 190px 200px;
+      }
+      
+      #mouth {
+        animation: mouthMove 2s ease-in-out infinite;
+        transform-origin: center;
+      }
+      
+      #pectoralFin {
+        animation: finFlap 2s ease-in-out infinite;
+        transform-origin: 260px 220px;
+      }
+    </style>
+  </defs>
+
+  <g id="koiking">
+    <!-- Body -->
+    <path d="M260,200 C320,160 340,220 310,250 C270,290 210,270 180,240 C150,210 160,170 200,150 C240,130 230,170 260,200 Z" fill="#FF7F50" stroke="#000" stroke-width="2"/>
+    
+    <!-- Crown/Top fin -->
+    <path d="M240,130 L270,80 L290,120 L310,70 L300,130 Z" fill="#FFD700" stroke="#000" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <g id="tail">
+      <path d="M180,200 L160,180 L140,210 L160,240 L170,220 Z" fill="#FFD700" stroke="#000" stroke-width="2"/>
+      <path d="M170,220 L140,220 L120,250 L150,260 L180,240 Z" fill="#FFD700" stroke="#000" stroke-width="2"/>
+      <path d="M180,200 L150,190 L130,170 L160,160 L180,170 Z" fill="#FFD700" stroke="#000" stroke-width="2"/>
+    </g>
+    
+    <!-- Pectoral fin -->
+    <path id="pectoralFin" d="M260,220 L230,240 L240,260 L270,250 Z" fill="#FFFFFF" stroke="#000" stroke-width="2"/>
+    
+    <!-- Mouth -->
+    <path id="mouth" d="M310,220 L280,220 L290,235 L310,220 Z" fill="#FFFFFF" stroke="#000" stroke-width="2"/>
+    
+    <!-- Eye -->
+    <circle cx="290" cy="190" r="15" fill="#FFFFFF" stroke="#000" stroke-width="2"/>
+    <circle cx="290" cy="190" r="7" fill="#000"/>
+    
+    <!-- Whiskers -->
+    <path d="M310,210 L340,200" stroke="#000" stroke-width="2" fill="none"/>
+    <path d="M310,230 L340,240" stroke="#000" stroke-width="2" fill="none"/>
+  </g>
+</svg>

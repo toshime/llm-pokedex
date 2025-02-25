@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="20%" stop-color="#FFDBEE" />
+      <stop offset="100%" stop-color="#FFAFD1" />
+    </radialGradient>
+  </defs>
+
+  <!-- Main Tail -->
+  <path d="M200,230 Q180,260 160,300 Q140,350 180,320 Q220,290 200,230" fill="url(#bodyGradient)" stroke="#D991B6" stroke-width="2">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+      M200,230 Q180,260 160,300 Q140,350 180,320 Q220,290 200,230;
+      M200,230 Q190,270 170,310 Q150,360 190,330 Q230,300 200,230;
+      M200,230 Q180,260 160,300 Q140,350 180,320 Q220,290 200,230"
+    />
+  </path>
+
+  <!-- Second Tail (long floating one) -->
+  <path d="M180,170 Q130,140 80,180 Q60,230 110,210 Q150,190 180,170" fill="url(#bodyGradient)" stroke="#D991B6" stroke-width="2">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="
+      M180,170 Q130,140 80,180 Q60,230 110,210 Q150,190 180,170;
+      M180,170 Q130,150 80,190 Q60,240 110,220 Q150,200 180,170;
+      M180,170 Q130,140 80,180 Q60,230 110,210 Q150,190 180,170"
+    />
+  </path>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="200" rx="35" ry="55" fill="url(#bodyGradient)" stroke="#D991B6" stroke-width="2">
+    <animate attributeName="ry" dur="2s" repeatCount="indefinite" values="55;53;55" />
+  </ellipse>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="140" rx="40" ry="35" fill="url(#bodyGradient)" stroke="#D991B6" stroke-width="2">
+    <animate attributeName="cy" dur="2s" repeatCount="indefinite" values="140;138;140" />
+  </ellipse>
+
+  <!-- Ears -->
+  <ellipse cx="180" cy="105" rx="10" ry="18" fill="url(#bodyGradient)" stroke="#D991B6" stroke-width="2" transform="rotate(-10,180,105)">
+    <animate attributeName="transform" dur="3s" repeatCount="indefinite" values="rotate(-10,180,105);rotate(-15,180,105);rotate(-10,180,105)" />
+  </ellipse>
+  <ellipse cx="220" cy="105" rx="10" ry="18" fill="url(#bodyGradient)" stroke="#D991B6" stroke-width="2" transform="rotate(10,220,105)">
+    <animate attributeName="transform" dur="3s" repeatCount="indefinite" values="rotate(10,220,105);rotate(15,220,105);rotate(10,220,105)" />
+  </ellipse>
+
+  <!-- Legs -->
+  <path d="M190,250 Q185,270 180,290" fill="none" stroke="#D991B6" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="d" dur="2.5s" repeatCount="indefinite" values="
+      M190,250 Q185,270 180,290;
+      M190,250 Q187,273 182,293;
+      M190,250 Q185,270 180,290"
+    />
+  </path>
+  <path d="M210,250 Q215,270 220,290" fill="none" stroke="#D991B6" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="d" dur="2.5s" repeatCount="indefinite" values="
+      M210,250 Q215,270 220,290;
+      M210,250 Q213,273 218,293;
+      M210,250 Q215,270 220,290"
+    />
+  </path>
+
+  <!-- Eyes -->
+  <ellipse cx="185" cy="135" rx="8" ry="10" fill="#6E88C9">
+    <animate attributeName="ry" dur="5s" repeatCount="indefinite" values="10;3;10" />
+  </ellipse>
+  <ellipse cx="215" cy="135" rx="8" ry="10" fill="#6E88C9">
+    <animate attributeName="ry" dur="5s" repeatCount="indefinite" values="10;3;10" />
+  </ellipse>
+  
+  <!-- Eye highlights -->
+  <circle cx="182" cy="132" r="3" fill="white" />
+  <circle cx="212" cy="132" r="3" fill="white" />
+
+  <!-- Mouth -->
+  <path d="M198,150 Q200,155 202,150" fill="none" stroke="#D991B6" stroke-width="2" stroke-linecap="round">
+    <animate attributeName="d" dur="4s" repeatCount="indefinite" values="
+      M198,150 Q200,155 202,150;
+      M197,153 Q200,158 203,153;
+      M198,150 Q200,155 202,150"
+    />
+  </path>
+</svg>

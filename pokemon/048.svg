@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#6f549e" />
+      <stop offset="100%" stop-color="#4a3968" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Legs -->
+  <g id="legs">
+    <!-- Back Legs -->
+    <path d="M120 300 Q110 320 130 325 Q140 325 145 315 L140 300 Z" fill="#c7b78a" />
+    <path d="M280 300 Q290 320 270 325 Q260 325 255 315 L260 300 Z" fill="#c7b78a" />
+    
+    <!-- Front Legs -->
+    <path d="M145 290 Q135 320 155 330 Q170 330 170 315 L165 290 Z" fill="#c7b78a" />
+    <path d="M255 290 Q265 320 245 330 Q230 330 230 315 L235 290 Z" fill="#c7b78a" />
+  </g>
+  
+  <!-- Body -->
+  <circle id="body" cx="200" cy="230" r="100" fill="url(#bodyGradient)" />
+  <path id="fur" d="M130 170 Q140 150 160 140 Q180 130 200 130 Q220 130 240 140 Q260 150 270 170 Q280 190 280 210 Q280 230 270 250 Q260 270 240 280 Q220 290 200 290 Q180 290 160 280 Q140 270 130 250 Q120 230 120 210 Q120 190 130 170 Z" fill="#5b4582" />
+  
+  <!-- Eyes -->
+  <g id="eyes">
+    <circle cx="160" cy="190" r="30" fill="#e84c6c">
+      <animate attributeName="r" values="30;28;30" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="240" cy="190" r="30" fill="#e84c6c">
+      <animate attributeName="r" values="30;28;30" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Nose -->
+  <path id="nose" d="M190 220 Q200 230 210 220 Q215 215 210 210 Q200 205 190 210 Q185 215 190 220 Z" fill="#e84c6c" />
+  
+  <!-- Fangs -->
+  <path id="fangs" d="M180 215 Q175 225 185 230 M220 215 Q225 225 215 230" stroke="#e84c6c" stroke-width="3" fill="none" />
+  
+  <!-- Antennae -->
+  <g id="antennae">
+    <path d="M170 140 Q150 100 140 70" stroke="#a49cc9" stroke-width="5" fill="none">
+      <animate attributeName="d" values="M170 140 Q150 100 140 70; M170 140 Q155 95 145 65; M170 140 Q150 100 140 70" dur="3s" repeatCount="indefinite" />
+    </path>
+    <circle cx="140" cy="70" r="10" fill="#a49cc9">
+      <animate attributeName="cy" values="70;65;70" dur="3s" repeatCount="indefinite" />
+    </circle>
+    
+    <path d="M230 140 Q250 100 260 70" stroke="#a49cc9" stroke-width="5" fill="none">
+      <animate attributeName="d" values="M230 140 Q250 100 260 70; M230 140 Q245 95 255 65; M230 140 Q250 100 260 70" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    <circle cx="260" cy="70" r="10" fill="#a49cc9">
+      <animate attributeName="cy" values="70;65;70" dur="3s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Body Animation -->
+  <animateTransform 
+    xlink:href="#body"
+    attributeName="transform"
+    type="translate"
+    values="0 0; 0 -5; 0 0"
+    dur="2s"
+    repeatCount="indefinite" />
+  
+  <!-- Legs Animation -->
+  <animateTransform 
+    xlink:href="#legs"
+    attributeName="transform"
+    type="translate"
+    values="0 0; 0 -2; 0 0"
+    dur="2s"
+    repeatCount="indefinite" />
+</svg>

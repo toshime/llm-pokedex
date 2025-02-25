@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Electabuzz - Pokémon #125 -->
+  
+  <!-- Definitions for animations -->
+  <defs>
+    <!-- Animation for body bouncing -->
+    <animateTransform id="bodyBounce"
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0,-5; 0,0"
+      dur="0.8s"
+      repeatCount="indefinite" />
+      
+    <!-- Animation for arm swinging -->
+    <animateTransform id="rightArmSwing"
+      attributeName="transform"
+      type="rotate"
+      values="0,130,120; 15,130,120; 0,130,120"
+      dur="1.2s"
+      repeatCount="indefinite" />
+      
+    <animateTransform id="leftArmSwing"
+      attributeName="transform"
+      type="rotate"
+      values="0,270,120; -15,270,120; 0,270,120"
+      dur="1.2s"
+      repeatCount="indefinite" />
+      
+    <!-- Animation for tail wagging -->
+    <animateTransform id="tailWag"
+      attributeName="transform"
+      type="rotate"
+      values="-5,200,230; 5,200,230; -5,200,230"
+      dur="1s"
+      repeatCount="indefinite" />
+      
+    <!-- Electricity sparking animations -->
+    <animate id="sparkOpacity"
+      attributeName="opacity"
+      values="0.7;1;0.7;0.9;0.7"
+      dur="0.3s"
+      repeatCount="indefinite" />
+  </defs>
+
+  <!-- Main Body Group -->
+  <g id="electabuzz">
+    <!-- Tail -->
+    <g id="tail">
+      <path d="M200,230 C210,260 230,280 200,310 C170,320 160,290 175,270 C185,260 190,250 200,230Z" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="-5,200,230; 5,200,230; -5,200,230"
+          dur="1s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Black stripes on tail -->
+      <path d="M192,250 C200,260 215,270 200,280 C185,275 185,260 192,250Z" fill="#000000" />
+      <path d="M185,290 C190,295 190,300 185,305 C180,300 180,295 185,290Z" fill="#000000" />
+    </g>
+    
+    <!-- Legs -->
+    <g id="legs">
+      <!-- Left leg -->
+      <path d="M170,230 C160,260 150,280 160,310 C165,320 180,320 185,310 C190,300 185,280 185,260 C185,250 180,240 170,230Z" fill="#F9DB17" stroke="#000000" stroke-width="3" />
+      <!-- Black stripes on left leg -->
+      <path d="M165,250 C160,260 155,270 160,280 C170,275 175,260 165,250Z" fill="#000000" />
+      <path d="M170,290 C165,295 160,305 165,310 C175,305 175,290 170,290Z" fill="#000000" />
+      <!-- Left foot claw -->
+      <path d="M160,320 C155,325 150,330 160,335 C170,330 170,320 160,320Z" fill="#FFFFFF" stroke="#000000" stroke-width="2" />
+      
+      <!-- Right leg -->
+      <path d="M230,230 C240,260 250,280 240,310 C235,320 220,320 215,310 C210,300 215,280 215,260 C215,250 220,240 230,230Z" fill="#F9DB17" stroke="#000000" stroke-width="3" />
+      <!-- Black stripes on right leg -->
+      <path d="M235,250 C240,260 245,270 240,280 C230,275 225,260 235,250Z" fill="#000000" />
+      <path d="M230,290 C235,295 240,305 235,310 C225,305 225,290 230,290Z" fill="#000000" />
+      <!-- Right foot claw -->
+      <path d="M240,320 C245,325 250,330 240,335 C230,330 230,320 240,320Z" fill="#FFFFFF" stroke="#000000" stroke-width="2" />
+    </g>
+    
+    <!-- Body -->
+    <g id="body">
+      <ellipse cx="200" cy="180" rx="50" ry="65" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </ellipse>
+      
+      <!-- Black stripes on body -->
+      <path d="M170,140 C185,145 195,150 200,160 C205,150 215,145 230,140 C225,130 215,125 200,125 C185,125 175,130 170,140Z" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+      <path d="M170,180 C180,185 190,190 200,190 C210,190 220,185 230,180 C230,190 220,200 200,200 C180,200 170,190 170,180Z" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+      <path d="M180,220 C190,225 210,225 220,220 C215,230 205,235 195,235 C185,235 185,230 180,220Z" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- Left Arm -->
+    <g id="leftArm">
+      <path d="M150,120 C135,105 120,100 110,110 C100,120 100,140 110,160 C115,170 125,160 130,155 C140,145 145,135 150,120Z" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,150,120; -15,150,120; 0,150,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Black stripes on left arm -->
+      <path d="M145,125 C135,115 125,115 120,120 C125,130 135,135 145,125Z" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,150,120; -15,150,120; 0,150,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Left fist -->
+      <path d="M105,150 C95,155 90,165 105,170 C120,165 120,150 105,150Z" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,150,120; -15,150,120; 0,150,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Left claw -->
+      <path d="M90,160 C85,163 80,170 90,175 C100,170 105,160 90,160Z" fill="#FFFFFF" stroke="#000000" stroke-width="2">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,150,120; -15,150,120; 0,150,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- Right Arm -->
+    <g id="rightArm">
+      <path d="M250,120 C265,105 280,100 290,110 C300,120 300,140 290,160 C285,170 275,160 270,155 C260,145 255,135 250,120Z" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,250,120; 15,250,120; 0,250,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Black stripes on right arm -->
+      <path d="M255,125 C265,115 275,115 280,120 C275,130 265,135 255,125Z" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,250,120; 15,250,120; 0,250,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Right fist -->
+      <path d="M295,150 C305,155 310,165 295,170 C280,165 280,150 295,150Z" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,250,120; 15,250,120; 0,250,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Right claw -->
+      <path d="M310,160 C315,163 320,170 310,175 C300,170 295,160 310,160Z" fill="#FFFFFF" stroke="#000000" stroke-width="2">
+        <animateTransform 
+          attributeName="transform"
+          type="rotate"
+          values="0,250,120; 15,250,120; 0,250,120"
+          dur="1.2s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- Head -->
+    <g id="head">
+      <ellipse cx="200" cy="110" rx="35" ry="40" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </ellipse>
+      
+      <!-- Head horns -->
+      <path d="M175,80 C170,60 170,50 180,40 C190,50 190,70 175,80Z" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+      <path d="M225,80 C230,60 230,50 220,40 C210,50 210,70 225,80Z" fill="#F9DB17" stroke="#000000" stroke-width="3">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+      
+      <!-- Black stripes on head -->
+      <path d="M180,85 C185,90 190,95 185,100 C175,95 175,85 180,85Z" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+      <path d="M220,85 C215,90 210,95 215,100 C225,95 225,85 220,85Z" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+      
+      <!-- Face -->
+      <ellipse cx="185" cy="105" rx="7" ry="10" fill="#FFFFFF" stroke="#000000" stroke-width="2">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="215" cy="105" rx="7" ry="10" fill="#FFFFFF" stroke="#000000" stroke-width="2">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </ellipse>
+      <circle cx="185" cy="105" r="3" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </circle>
+      <circle cx="215" cy="105" r="3" fill="#000000">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Mouth -->
+      <path d="M190,120 C195,125 205,125 210,120" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round">
+        <animateTransform 
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,-5; 0,0"
+          dur="0.8s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- Electricity effects -->
+    <g id="electricity1" opacity="0.8">
+      <path d="M110,140 L100,130 L95,145 L90,135" fill="none" stroke="#FFE500" stroke-width="3" stroke-linecap="round">
+        <animate 
+          attributeName="opacity"
+          values="0.6;1;0.6"
+          dur="0.3s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <g id="electricity2" opacity="0.8">
+      <path d="M290,140 L300,130 L305,145 L310,135" fill="none" stroke="#FFE500" stroke-width="3" stroke-linecap="round">
+        <animate 
+          attributeName="opacity"
+          values="0.6;1;0.6"
+          dur="0.3s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+</svg>

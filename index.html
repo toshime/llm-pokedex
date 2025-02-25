@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポケモン図鑑</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- React と React DOM のスクリプト -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <!-- Babel のスクリプト -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.2/babel.min.js"></script>
+    <!-- アイコンの追加 -->
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="pokeball-decoration left"></div>
+      <div class="header-content">
+        <h1>ポケモン図鑑</h1>
+        <p>全国のポケモンを探索する旅に出よう！(著:Claude 3.7 Sonnet)</p>
+        <img
+          src="./oak.svg"
+          alt="オーキド博士"
+          class="professor-oak"
+          width="200"
+          height="200"
+        />
+      </div>
+      <div class="pokeball-decoration right"></div>
+    </header>
+
+    <div id="root" class="container">
+      <!-- Reactコンポーネントがここにマウントされます -->
+    </div>
+
+    <!-- モーダル用のコンテナ（Reactポータル用） -->
+    <div id="modal-root"></div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="pokeball-icon"></div>
+        <p>Claude 3.7 Sonnetポケモン図鑑 &copy; 2025</p>
+      </div>
+    </footer>
+
+    <!-- Reactコンポーネント -->
+    <script type="text/babel">
+      // モーダルコンポーネント（Reactポータルを使用）
+      const Modal = ({ children, onClose }) => {
+        // モーダルが開かれた際に背景スクロールを無効化
+        React.useEffect(() => {
+          document.body.style.overflow = "hidden";
+          // クリーンアップ関数でスクロールを再有効化
+          return () => {
+            document.body.style.overflow = "auto";
+          };
+        }, []);
+
+        const handleModalClick = (e) => {
+          if (e.target.classList.contains("modal")) {
+            onClose();
+          }
+        };
+
+        // モーダルを別のDOM要素にレンダリング（ポータル）
+        return ReactDOM.createPortal(
+          <div className="modal" onClick={handleModalClick}>
+            {children}
+          </div>,
+          document.getElementById("modal-root")
+        );
+      };
+
+      // ポケモン詳細モーダルコンポーネント
+      const PokemonModal = ({ pokemon, onClose }) => {
+        return (
+          <Modal onClose={onClose}>
+            <div className="modal-content">
+              <span className="close-modal" onClick={onClose}>
+                &times;
+              </span>
+              <div className="pokemon-detail">
+                <div className="detail-header">
+                  <div className="detail-number">No.{pokemon.number}</div>
+                  <h2 className="detail-name">{pokemon.name}</h2>
+                  <div className="detail-types">
+                    {pokemon.types.map((type, index) => (
+                      <span
+                        key={index}
+                        className={`type-badge ${pokemon.types[index]}`}
+                      >
+                        {type}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pokemon-image-container">
+                  <div className="pokeball-background"></div>
+                  <img
+                    src={`pokemon/${pokemon.number}.svg`}
+                    alt={pokemon.name}
+                  />
+                </div>
+              </div>
+            </div>
+          </Modal>
+        );
+      };
+
+      // ポケモンカードコンポーネント
+      const PokemonCard = ({ pokemon }) => {
+        const [showModal, setShowModal] = React.useState(false);
+
+        const openModal = () => setShowModal(true);
+        const closeModal = () => setShowModal(false);
+
+        return (
+          <React.Fragment>
+            <div className="pokemon-card" onClick={openModal}>
+              <div className="pokemon-number">No.{pokemon.number}</div>
+              <div className="pokemon-info">
+                <div className="pokemon-name">{pokemon.name}</div>
+                <div className="pokemon-types">
+                  {pokemon.types.map((type, index) => (
+                    <span
+                      key={index}
+                      className={`type-badge ${pokemon.types[index]}`}
+                    >
+                      {type}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="pokemon-icon-wrapper">
+                <img
+                  src={`pokemon/${pokemon.number}.svg`}
+                  className="pokemon-icon"
+                  alt={pokemon.name}
+                />
+              </div>
+            </div>
+
+            {showModal && (
+              <PokemonModal pokemon={pokemon} onClose={closeModal} />
+            )}
+          </React.Fragment>
+        );
+      };
+
+      // 進化グループコンポーネント
+      const EvolutionGroup = ({ group }) => {
+        return (
+          <div className="evolution-group">
+            <div className="evolution-header">
+              <div className="pokeball-mini"></div>
+              <h2 className="evolution-title">{group.name}</h2>
+            </div>
+            <div className="pokemon-list">
+              {group.pokemon.map((pokemon) => (
+                <PokemonCard key={pokemon.id} pokemon={pokemon} />
+              ))}
+            </div>
+          </div>
+        );
+      };
+
+      // メインアプリケーションコンポーネント
+      const App = () => {
+        const [pokemonGroups, setPokemonGroups] = React.useState([]);
+        const [loading, setLoading] = React.useState(true);
+        const [error, setError] = React.useState(null);
+
+        React.useEffect(() => {
+          // JSONを読み込む
+          fetch("pokemon-data.json")
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("ポケモンデータの読み込みに失敗しました");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              setPokemonGroups(data.evolutionGroups);
+              setLoading(false);
+            })
+            .catch((error) => {
+              console.error("データ読み込みエラー:", error);
+              setError(error.message);
+              setLoading(false);
+            });
+        }, []);
+
+        if (loading) {
+          return (
+            <div className="loading">
+              <div className="loading-pokeball"></div>
+              <p>ロード中...</p>
+            </div>
+          );
+        }
+
+        if (error) {
+          return <div className="error-message">エラー: {error}</div>;
+        }
+
+        return (
+          <div className="evolution-groups">
+            {pokemonGroups.map((group) => (
+              <EvolutionGroup key={group.id} group={group} />
+            ))}
+          </div>
+        );
+      };
+
+      // アプリケーションをDOMにレンダリング
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>

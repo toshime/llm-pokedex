@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Raticate Body Group -->
+  <g id="raticate-body">
+    <!-- Main Body -->
+    <path d="M250,200 C270,220 280,250 240,270 C200,290 150,280 130,260 C110,240 100,210 110,180 C120,150 140,130 170,130 C200,130 230,140 250,170 C270,200 250,200 250,200 Z" fill="#D2B48C" stroke="#000" stroke-width="2"/>
+    
+    <!-- Belly -->
+    <path d="M240,270 C210,280 160,275 140,260 C120,245 110,220 120,190 C130,160 150,150 180,155 C210,160 235,180 240,210 C245,240 240,270 240,270 Z" fill="#FFF8DC" stroke="#000" stroke-width="2"/>
+    
+    <!-- Tail -->
+    <path d="M250,200 C270,190 300,180 320,190 C340,200 350,220 340,240 C330,260 310,270 290,260 C270,250 250,210 250,200 Z" fill="#D2B48C" stroke="#000" stroke-width="2"/>
+    <path d="M340,240 C350,235 360,230 370,240 C380,250 360,270 350,260 C340,250 340,240 340,240 Z" fill="#D2B48C" stroke="#000" stroke-width="2"/>
+    
+    <!-- Ears -->
+    <path d="M170,130 C160,110 140,90 130,95 C120,100 125,120 135,135 C145,150 170,130 170,130 Z" fill="#D2B48C" stroke="#000" stroke-width="2"/>
+    <path d="M170,130 C180,110 200,90 210,95 C220,100 215,120 205,135 C195,150 170,130 170,130 Z" fill="#D2B48C" stroke="#000" stroke-width="2"/>
+    
+    <!-- Inner Ears -->
+    <path d="M135,135 C130,120 132,105 136,105 C140,105 145,115 142,130 C139,145 135,135 135,135 Z" fill="#FF9999" stroke="#000" stroke-width="1"/>
+    <path d="M205,135 C210,120 208,105 204,105 C200,105 195,115 198,130 C201,145 205,135 205,135 Z" fill="#FF9999" stroke="#000" stroke-width="1"/>
+    
+    <!-- Face Details -->
+    <!-- Eyes -->
+    <ellipse cx="160" cy="170" rx="10" ry="8" fill="#FFF" stroke="#000" stroke-width="1"/>
+    <ellipse cx="190" cy="170" rx="10" ry="8" fill="#FFF" stroke="#000" stroke-width="1"/>
+    <ellipse cx="160" cy="170" rx="6" ry="6" fill="#FF0000"/>
+    <ellipse cx="190" cy="170" rx="6" ry="6" fill="#FF0000"/>
+    <ellipse cx="162" cy="168" rx="2" ry="2" fill="#FFF"/>
+    <ellipse cx="192" cy="168" rx="2" ry="2" fill="#FFF"/>
+    
+    <!-- Nose -->
+    <path d="M175,185 C170,185 165,190 170,195 C175,200 185,200 190,195 C195,190 190,185 185,185 Z" fill="#FF69B4" stroke="#000" stroke-width="1"/>
+    
+    <!-- Whiskers -->
+    <line x1="170" y1="190" x2="130" y2="180" stroke="#000" stroke-width="1"/>
+    <line x1="170" y1="190" x2="130" y2="190" stroke="#000" stroke-width="1"/>
+    <line x1="170" y1="190" x2="130" y2="200" stroke="#000" stroke-width="1"/>
+    <line x1="190" y1="190" x2="230" y2="180" stroke="#000" stroke-width="1"/>
+    <line x1="190" y1="190" x2="230" y2="190" stroke="#000" stroke-width="1"/>
+    <line x1="190" y1="190" x2="230" y2="200" stroke="#000" stroke-width="1"/>
+    
+    <!-- Mouth and Teeth -->
+    <path d="M175,195 C173,205 177,215 185,215 C193,215 197,205 195,195" fill="none" stroke="#000" stroke-width="1"/>
+    
+    <!-- Large Front Teeth -->
+    <path d="M165,195 L165,220 C165,225 175,225 175,220 L175,195 Z" fill="#FFF" stroke="#000" stroke-width="1"/>
+    <path d="M195,195 L195,220 C195,225 185,225 185,220 L185,195 Z" fill="#FFF" stroke="#000" stroke-width="1"/>
+    
+    <!-- Feet -->
+    <path d="M140,250 C135,255 130,265 135,270 C140,275 150,275 155,270 C160,265 155,255 150,250 Z" fill="#FF9999" stroke="#000" stroke-width="1"/>
+    <path d="M200,260 C195,265 190,275 195,280 C200,285 210,285 215,280 C220,275 215,265 210,260 Z" fill="#FF9999" stroke="#000" stroke-width="1"/>
+    
+    <!-- Front paws -->
+    <path d="M160,210 C155,215 150,225 155,230 C160,235 170,235 175,230 C180,225 175,215 170,210 Z" fill="#FF9999" stroke="#000" stroke-width="1"/>
+  </g>
+  
+  <!-- Animation -->
+  <animateTransform 
+    xlink:href="#raticate-body"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 0,-5; 0,0"
+    dur="0.8s"
+    repeatCount="indefinite"/>
+</svg>

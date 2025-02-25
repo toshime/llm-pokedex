@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Cubone (カラカラ) Animation -->
+  
+  <!-- Body -->
+  <g id="cubone-body">
+    <ellipse cx="150" cy="170" rx="40" ry="45" fill="#e2c88d" />
+    <ellipse cx="150" cy="155" rx="32" ry="30" fill="#f8eac7" />
+    
+    <!-- Tail -->
+    <path d="M190,180 Q210,190 220,170 Q225,160 215,155 Q205,150 195,170 Z" fill="#e2c88d" />
+    
+    <!-- Arms -->
+    <g id="cubone-arms">
+      <path d="M120,160 Q110,155 105,165 Q100,175 110,178 Q115,180 120,175 Z" fill="#e2c88d">
+        <animateTransform attributeName="transform" type="rotate" from="0 120 160" to="10 120 160" dur="1s" repeatCount="indefinite" additive="sum" />
+      </path>
+      
+      <path d="M180,160 Q190,155 195,165 Q200,175 190,178 Q185,180 180,175 Z" fill="#e2c88d">
+        <animateTransform attributeName="transform" type="rotate" from="0 180 160" to="-10 180 160" dur="1s" repeatCount="indefinite" additive="sum" />
+      </path>
+    </g>
+    
+    <!-- Feet -->
+    <g id="cubone-feet">
+      <path d="M130,200 Q125,210 140,215 Q150,217 155,210 Q160,205 150,200 Z" fill="#e2c88d">
+        <animate attributeName="d" values="M130,200 Q125,210 140,215 Q150,217 155,210 Q160,205 150,200 Z;
+                                         M130,203 Q125,213 140,218 Q150,220 155,213 Q160,208 150,203 Z;
+                                         M130,200 Q125,210 140,215 Q150,217 155,210 Q160,205 150,200 Z" 
+                dur="1s" repeatCount="indefinite" />
+      </path>
+      
+      <path d="M170,200 Q175,210 160,215 Q150,217 145,210 Q140,205 150,200 Z" fill="#e2c88d">
+        <animate attributeName="d" values="M170,200 Q175,210 160,215 Q150,217 145,210 Q140,205 150,200 Z;
+                                         M170,203 Q175,213 160,218 Q150,220 145,213 Q140,208 150,203 Z;
+                                         M170,200 Q175,210 160,215 Q150,217 145,210 Q140,205 150,200 Z" 
+                dur="1s" repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+  
+  <!-- Skull Helmet -->
+  <g id="cubone-skull">
+    <path d="M110,110 Q130,80 170,80 Q190,80 195,110 Q200,140 185,150 Q170,160 155,160 
+             Q140,160 125,155 Q110,150 105,140 Q100,120 110,110 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Eye Socket -->
+    <ellipse cx="140" cy="120" rx="15" ry="15" fill="#784d27">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    
+    <!-- Eye -->
+    <ellipse cx="140" cy="120" rx="6" ry="6" fill="#000000">
+      <animate attributeName="cy" values="120;122;120" dur="4s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    
+    <!-- Skull Horns -->
+    <path d="M105,105 Q90,95 95,85 Q100,75 115,90 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <path d="M195,105 Q210,95 205,85 Q200,75 185,90 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-2 150 120" to="2 150 120" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+  </g>
+  
+  <!-- Bone -->
+  <g id="cubone-bone">
+    <path d="M120,170 L110,140 Q105,130 115,125 Q125,120 125,130 L130,145 L115,165 Z" fill="#e6e6e6">
+      <animateTransform attributeName="transform" type="rotate" from="-5 120 170" to="5 120 170" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

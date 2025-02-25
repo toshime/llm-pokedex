@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Background is transparent by default -->
+  
+  <!-- Tail -->
+  <path d="M130 190 Q160 230 200 240 Q170 230 150 200 Z" fill="#98cbf0" stroke="#000" stroke-width="2">
+    <animate attributeName="d" 
+             values="M130 190 Q160 230 200 240 Q170 230 150 200 Z;
+                     M130 190 Q160 240 200 250 Q170 240 150 200 Z;
+                     M130 190 Q160 230 200 240 Q170 230 150 200 Z" 
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Body -->
+  <circle cx="130" cy="150" r="60" fill="#5a9de8" stroke="#000" stroke-width="2">
+    <animate attributeName="cy" 
+             values="150;148;150;152;150" 
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Belly Spiral -->
+  <g>
+    <circle cx="130" cy="150" r="40" fill="white" stroke="#000" stroke-width="2"/>
+    <path d="M130 150 Q140 140 150 150 Q140 160 130 150" fill="black">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 130 150"
+                        to="360 130 150"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+    </path>
+    <path d="M130 150 Q110 140 130 130 Q150 140 130 150" fill="black">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 130 150"
+                        to="360 130 150"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+    </path>
+    <path d="M130 150 Q110 160 110 140 Q130 120 150 140 Q130 160 130 150" fill="black">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 130 150"
+                        to="360 130 150"
+                        dur="3s"
+                        repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Eyes -->
+  <g>
+    <circle cx="155" cy="120" r="15" fill="white" stroke="#000" stroke-width="2">
+      <animate attributeName="cy" 
+               values="120;118;120;122;120" 
+               dur="2s" 
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="155" cy="120" r="10" fill="#333">
+      <animate attributeName="cy" 
+               values="120;118;120;122;120" 
+               dur="2s" 
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="117" r="3" fill="white">
+      <animate attributeName="cy" 
+               values="117;115;117;119;117" 
+               dur="2s" 
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Mouth/Lips -->
+  <ellipse cx="140" cy="135" rx="8" ry="5" fill="#f9a1bc" stroke="#000" stroke-width="1.5">
+    <animate attributeName="cy" 
+             values="135;133;135;137;135" 
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </ellipse>
+</svg>

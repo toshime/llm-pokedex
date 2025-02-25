@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    .body {
+      animation: float 3s infinite ease-in-out;
+    }
+    .wing-left {
+      animation: flapLeft 1.5s infinite ease-in-out;
+      transform-origin: 100px 150px;
+    }
+    .wing-right {
+      animation: flapRight 1.5s infinite ease-in-out;
+      transform-origin: 300px 150px;
+    }
+    .tongue {
+      animation: tongueDroop 4s infinite ease-in-out;
+      transform-origin: 200px 210px;
+    }
+    .jaw {
+      animation: jawOpen 6s infinite ease-in-out;
+      transform-origin: 200px 165px;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes flapLeft {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-20deg); }
+    }
+    @keyframes flapRight {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(20deg); }
+    }
+    @keyframes tongueDroop {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.1); }
+    }
+    @keyframes jawOpen {
+      0%, 20%, 80%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(10deg); }
+    }
+  </style>
+  
+  <!-- Body Group -->
+  <g class="body">
+    <!-- Main Body -->
+    <ellipse cx="200" cy="150" rx="60" ry="70" fill="#5e92c2"/>
+    
+    <!-- Eyes -->
+    <circle cx="180" cy="130" r="10" fill="white"/>
+    <circle cx="220" cy="130" r="10" fill="white"/>
+    <circle cx="180" cy="130" r="5" fill="black"/>
+    <circle cx="220" cy="130" r="5" fill="black"/>
+    
+    <!-- Ears -->
+    <path d="M160 100 C140 75, 135 65, 155 95" fill="#5e92c2" stroke="#333" stroke-width="1"/>
+    <path d="M240 100 C260 75, 265 65, 245 95" fill="#5e92c2" stroke="#333" stroke-width="1"/>
+    
+    <!-- Feet -->
+    <ellipse cx="180" cy="225" rx="10" ry="5" fill="#5e92c2"/>
+    <ellipse cx="220" cy="225" rx="10" ry="5" fill="#5e92c2"/>
+    
+    <!-- Jaw - Upper Part Fixed -->
+    <path d="M150 165 C200 150, 250 150, 300 165" fill="#5e92c2" stroke="#333" stroke-width="1"/>
+    
+    <!-- Lower Jaw Animated -->
+    <path class="jaw" d="M150 165 C185 210, 215 210, 250 165" fill="#5e92c2" stroke="#333" stroke-width="1"/>
+    
+    <!-- Tongue -->
+    <path class="tongue" d="M200 170 C200 170, 200 205, 200 215" stroke="#ff6b8e" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- Teeth -->
+    <path d="M165 165 L170 175" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <path d="M175 162 L180 172" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <path d="M225 162 L220 172" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <path d="M235 165 L230 175" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Wings -->
+  <path class="wing-left" d="M150 150 C80 120, 30 80, 20 170 C40 195, 80 200, 150 180" fill="#ad6bac" stroke="#333" stroke-width="1"/>
+  <path class="wing-right" d="M250 150 C320 120, 370 80, 380 170 C360 195, 320 200, 250 180" fill="#ad6bac" stroke="#333" stroke-width="1"/>
+</svg>

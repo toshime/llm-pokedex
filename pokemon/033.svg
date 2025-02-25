@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- White Background -->
+  <rect width="400" height="400" fill="white"/>
+  
+  <!-- Nidorino Body -->
+  <g id="nidorino">
+    <!-- Body -->
+    <ellipse cx="200" cy="240" rx="100" ry="70" fill="#b689b6"/>
+    
+    <!-- Head -->
+    <path d="M120,210 C110,170 150,140 190,150 C230,155 250,180 260,210 C220,220 160,220 120,210" fill="#b689b6"/>
+    
+    <!-- Spikes on Back -->
+    <path d="M170,180 L150,130 L190,170 Z" fill="#b689b6">
+      <animate attributeName="d" dur="2.5s" repeatCount="indefinite"
+               values="M170,180 L150,130 L190,170 Z;
+                      M170,180 L145,125 L190,170 Z;
+                      M170,180 L150,130 L190,170 Z"/>
+    </path>
+    <path d="M210,170 L220,110 L240,160 Z" fill="#b689b6">
+      <animate attributeName="d" dur="2.2s" repeatCount="indefinite"
+               values="M210,170 L220,110 L240,160 Z;
+                      M210,170 L225,105 L240,160 Z;
+                      M210,170 L220,110 L240,160 Z"/>
+    </path>
+    <path d="M250,190 L280,140 L260,200 Z" fill="#b689b6">
+      <animate attributeName="d" dur="1.8s" repeatCount="indefinite"
+               values="M250,190 L280,140 L260,200 Z;
+                      M250,190 L285,135 L260,200 Z;
+                      M250,190 L280,140 L260,200 Z"/>
+    </path>
+    
+    <!-- Inner Ear -->
+    <path d="M175,165 L165,135 L185,160 Z" fill="#36a3a2"/>
+    <path d="M215,160 L225,125 L235,155 Z" fill="#36a3a2"/>
+    
+    <!-- Spots -->
+    <circle cx="160" cy="230" r="15" fill="#9a6d9a"/>
+    <circle cx="200" cy="270" r="12" fill="#9a6d9a"/>
+    <circle cx="240" cy="230" r="18" fill="#9a6d9a"/>
+    <circle cx="220" cy="210" r="10" fill="#9a6d9a"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="165" cy="185" rx="10" ry="10" fill="#ffffff"/>
+    <ellipse cx="167" cy="185" rx="5" ry="5" fill="#a02c2c"/>
+    
+    <!-- Horn -->
+    <path d="M185,155 L175,115 L200,135 Z" fill="#9a6d9a"/>
+    
+    <!-- Feet -->
+    <ellipse cx="140" cy="300" rx="20" ry="15" fill="#b689b6"/>
+    <ellipse cx="260" cy="300" rx="20" ry="15" fill="#b689b6"/>
+    
+    <!-- Tail -->
+    <path d="M290,240 C310,230 330,250 320,270 C310,290 280,260 290,240" fill="#b689b6">
+      <animate attributeName="d" dur="1.5s" repeatCount="indefinite"
+               values="M290,240 C310,230 330,250 320,270 C310,290 280,260 290,240;
+                      M290,240 C315,235 335,255 325,275 C315,295 280,260 290,240;
+                      M290,240 C310,230 330,250 320,270 C310,290 280,260 290,240"/>
+    </path>
+    
+    <!-- Mouth -->
+    <path d="M160,195 C170,200 185,200 190,195" fill="none" stroke="#9a6d9a" stroke-width="2"/>
+    
+    <animate xlink:href="#nidorino" attributeName="transform" attributeType="XML"
+      type="translate" from="0 0" to="0 -3" dur="0.8s" repeatCount="indefinite" additive="sum" />
+  </g>
+</svg>

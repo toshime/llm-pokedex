@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Clefable (ピクシー) Animation -->
+  <style>
+    .body {
+      fill: #FADADD;
+    }
+    .ear-inner {
+      fill: #FFE4E1;
+    }
+    .ear-outline {
+      fill: #8B4513;
+    }
+    .wing {
+      fill: #FFE4E1;
+    }
+    .wing-outline {
+      fill: #8B4513;
+    }
+    .eye {
+      fill: #000000;
+    }
+    .mouth {
+      fill: #FF69B4;
+    }
+    .curl {
+      fill: none;
+      stroke: #8B4513;
+      stroke-width: 2;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      75% { transform: rotate(-3deg); }
+    }
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    .clefable {
+      animation: float 3s ease-in-out infinite;
+    }
+    .arm {
+      animation: wave 2s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .wing {
+      animation: wiggle 2.5s ease-in-out infinite;
+      transform-origin: top center;
+    }
+    .eyes {
+      animation: blink 4s infinite;
+      transform-origin: center;
+    }
+  </style>
+
+  <g class="clefable">
+    <!-- Body -->
+    <ellipse cx="200" cy="210" rx="90" ry="95" class="body" />
+    
+    <!-- Ears - more pointed -->
+    <path d="M155 130 L125 65 L165 105 Z" class="ear-outline" />
+    <path d="M158 127 L133 75 L165 110 Z" class="ear-inner" />
+    
+    <path d="M245 130 L275 65 L235 105 Z" class="ear-outline" />
+    <path d="M242 127 L267 75 L235 110 Z" class="ear-inner" />
+    
+    <!-- Arms -->
+    <g class="arm">
+      <path d="M125 200 Q100 220 95 245" class="body" stroke="#8B4513" stroke-width="1" />
+    </g>
+    <g class="arm" style="animation-delay: -1s;">
+      <path d="M275 200 Q300 220 305 245" class="body" stroke="#8B4513" stroke-width="1" />
+    </g>
+    
+    <!-- Wings - larger with pointed tips -->
+    <g class="wing">
+      <path d="M135 180 Q110 190 100 220 Q95 235 110 245 Q130 225 135 180" class="wing-outline" />
+      <path d="M133 185 Q113 195 105 220 Q100 233 110 240 Q125 223 133 185" class="wing" />
+    </g>
+    
+    <g class="wing" style="animation-delay: -1.25s;">
+      <path d="M265 180 Q290 190 300 220 Q305 235 290 245 Q270 225 265 180" class="wing-outline" />
+      <path d="M267 185 Q287 195 295 220 Q300 233 290 240 Q275 223 267 185" class="wing" />
+    </g>
+    
+    <!-- Feet -->
+    <ellipse cx="170" cy="290" rx="28" ry="15" class="body" stroke="#8B4513" stroke-width="1" />
+    <ellipse cx="230" cy="290" rx="28" ry="15" class="body" stroke="#8B4513" stroke-width="1" />
+    
+    <!-- Face -->
+    <g class="eyes">
+      <ellipse cx="175" cy="170" rx="8" ry="10" class="eye" />
+      <ellipse cx="225" cy="170" rx="8" ry="10" class="eye" />
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M180 190 Q200 205 220 190" stroke="#8B4513" stroke-width="2" fill="none" />
+    <path d="M185 200 Q200 210 215 200" class="mouth" />
+    
+    <!-- Curl -->
+    <path d="M200 130 Q225 120 230 135" class="curl" />
+  </g>
+</svg>

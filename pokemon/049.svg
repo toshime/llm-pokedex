@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8b4d8" />
+      <stop offset="100%" stop-color="#a990c0" />
+    </linearGradient>
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6daee" />
+      <stop offset="100%" stop-color="#c8b4d8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Wings -->
+  <g id="wings">
+    <!-- Left Upper Wing -->
+    <path d="M190 180 Q130 120 80 110 Q50 105 60 140 Q70 180 100 200 Q140 220 190 180 Z" fill="url(#wingGradient)" opacity="0.9">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-5 190 180; 5 190 180; -5 190 180"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+    
+    <!-- Left Lower Wing -->
+    <path d="M190 190 Q160 220 120 250 Q90 270 100 230 Q110 200 140 180 Q170 170 190 190 Z" fill="url(#wingGradient)" opacity="0.85">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-8 190 190; 2 190 190; -8 190 190"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+    
+    <!-- Right Upper Wing -->
+    <path d="M210 180 Q270 120 320 110 Q350 105 340 140 Q330 180 300 200 Q260 220 210 180 Z" fill="url(#wingGradient)" opacity="0.9">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="5 210 180; -5 210 180; 5 210 180"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+    
+    <!-- Right Lower Wing -->
+    <path d="M210 190 Q240 220 280 250 Q310 270 300 230 Q290 200 260 180 Q230 170 210 190 Z" fill="url(#wingGradient)" opacity="0.85">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="8 210 190; -2 210 190; 8 210 190"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+  </g>
+  
+  <!-- Body -->
+  <g id="body">
+    <!-- Main Body -->
+    <ellipse cx="200" cy="200" rx="25" ry="40" fill="url(#bodyGradient)" />
+    
+    <!-- Head -->
+    <circle cx="200" cy="160" r="20" fill="#b49cc9" />
+    
+    <!-- Eye -->
+    <circle cx="200" cy="155" r="10" fill="#fff" />
+    <circle cx="200" cy="155" r="6" fill="#3c3486" />
+    <circle cx="202" cy="153" r="2" fill="#fff" />
+    
+    <!-- Antennae -->
+    <path d="M185 145 Q175 125 170 105" stroke="#b49cc9" stroke-width="2" fill="none">
+      <animate attributeName="d" values="M185 145 Q175 125 170 105; M185 145 Q173 122 166 102; M185 145 Q175 125 170 105" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M215 145 Q225 125 230 105" stroke="#b49cc9" stroke-width="2" fill="none">
+      <animate attributeName="d" values="M215 145 Q225 125 230 105; M215 145 Q227 122 234 102; M215 145 Q225 125 230 105" dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Legs -->
+    <path d="M190 210 Q180 220 175 235" stroke="#b8a2ca" stroke-width="2" fill="none" />
+    <path d="M210 210 Q220 220 225 235" stroke="#b8a2ca" stroke-width="2" fill="none" />
+    <path d="M185 200 Q170 205 160 215" stroke="#b8a2ca" stroke-width="2" fill="none" />
+    <path d="M215 200 Q230 205 240 215" stroke="#b8a2ca" stroke-width="2" fill="none" />
+    <path d="M190 190 Q175 185 160 180" stroke="#b8a2ca" stroke-width="2" fill="none" />
+    <path d="M210 190 Q225 185 240 180" stroke="#b8a2ca" stroke-width="2" fill="none" />
+    
+    <!-- Abdomen Segments -->
+    <path d="M200 240 Q215 245 225 255 Q230 265 220 275 Q210 280 200 280 Q190 280 180 275 Q170 265 175 255 Q185 245 200 240 Z" fill="#a990b9" />
+  </g>
+  
+  <!-- Body Hover Animation -->
+  <animateTransform 
+    xlink:href="#body"
+    attributeName="transform"
+    type="translate"
+    values="0 0; 0 -5; 0 0"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"
+  />
+  
+  <!-- Wing Detail Lines -->
+  <g id="wingDetails" opacity="0.5">
+    <!-- Left Upper Wing -->
+    <path d="M190 180 Q160 160 130 150 M190 180 Q150 170 120 175 M190 180 Q160 140 130 130" stroke="#9c82b9" stroke-width="1" fill="none">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-5 190 180; 5 190 180; -5 190 180"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+    
+    <!-- Left Lower Wing -->
+    <path d="M190 190 Q170 210 150 220 M190 190 Q160 200 130 210" stroke="#9c82b9" stroke-width="1" fill="none">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-8 190 190; 2 190 190; -8 190 190"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+    
+    <!-- Right Upper Wing -->
+    <path d="M210 180 Q240 160 270 150 M210 180 Q250 170 280 175 M210 180 Q240 140 270 130" stroke="#9c82b9" stroke-width="1" fill="none">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="5 210 180; -5 210 180; 5 210 180"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+    
+    <!-- Right Lower Wing -->
+    <path d="M210 190 Q230 210 250 220 M210 190 Q240 200 270 210" stroke="#9c82b9" stroke-width="1" fill="none">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="8 210 190; -2 210 190; 8 210 190"
+        dur="1.5s"
+        repeatCount="indefinite"
+      />
+    </path>
+  </g>
+</svg>

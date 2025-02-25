@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes neckMove {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(3deg); }
+      75% { transform: rotate(-3deg); }
+    }
+    @keyframes blinkEyes {
+      0%, 94%, 100% { opacity: 1; }
+      95%, 99% { opacity: 0; }
+    }
+    @keyframes water {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(-10px); }
+    }
+    @keyframes shellBounce {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    @keyframes happyMouth {
+      0%, 100% { d: path('M190 130 C200 136, 210 136, 220 130'); }
+      50% { d: path('M190 132 C200 140, 210 140, 220 132'); }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    .body { animation: float 4s ease-in-out infinite; }
+    .neck { animation: neckMove 6s ease-in-out infinite; }
+    .eye-lid { animation: blinkEyes 5s infinite; }
+    .water { animation: water 3s ease-in-out infinite; }
+    .shell { animation: shellBounce 4s ease-in-out infinite; }
+    .mouth { animation: happyMouth 6s ease-in-out infinite; }
+    .twinkle { animation: twinkle 2s infinite; }
+  </style>
+
+  <!-- Water splash base -->
+  <g class="water">
+    <path d="M160 280 C120 270, 80 280, 60 300 C80 290, 120 285, 160 290 Z" fill="#5acdff" opacity="0.7" />
+    <path d="M240 280 C280 270, 320 280, 340 300 C320 290, 280 285, 240 290 Z" fill="#5acdff" opacity="0.7" />
+    <path d="M180 290 C200 280, 220 280, 240 290 C220 285, 200 285, 180 290 Z" fill="#5acdff" opacity="0.7" />
+  </g>
+
+  <!-- Shell -->
+  <g class="shell">
+    <ellipse cx="200" cy="260" rx="80" ry="55" fill="#b8b8b8" />
+    <path d="M200 240 C230 240, 260 250, 270 270 C260 280, 230 290, 200 290 C170 290, 140 280, 130 270 C140 250, 170 240, 200 240 Z" fill="#a0a0a0" />
+    <circle cx="180" cy="260" r="10" fill="#909090" />
+    <circle cx="210" cy="250" r="12" fill="#909090" />
+    <circle cx="230" cy="270" r="8" fill="#909090" />
+    
+    <!-- Sparkling effects on shell -->
+    <circle class="twinkle" cx="180" cy="260" r="2" fill="white" opacity="0.8" />
+    <circle class="twinkle" cx="210" cy="250" r="2" fill="white" opacity="0.8" style="animation-delay: 0.7s" />
+    <circle class="twinkle" cx="230" cy="270" r="2" fill="white" opacity="0.8" style="animation-delay: 1.3s" />
+  </g>
+
+  <!-- Body -->
+  <g class="body">
+    <path d="M200 260 C240 260, 270 270, 280 290 C270 320, 240 340, 200 340 C160 340, 130 320, 120 290 C130 270, 160 260, 200 260 Z" fill="#65d2ff" />
+    
+    <!-- Flippers -->
+    <path d="M140 290 C120 300, 90 320, 80 340 C110 330, 130 310, 140 290 Z" fill="#65d2ff" />
+    <path d="M260 290 C280 300, 310 320, 320 340 C290 330, 270 310, 260 290 Z" fill="#65d2ff" />
+    
+    <!-- Bottom flipper -->
+    <path d="M200 340 C220 340, 240 360, 240 380 C220 370, 180 370, 160 380 C160 360, 180 340, 200 340 Z" fill="#65d2ff" />
+  </g>
+
+  <!-- Neck and head -->
+  <g class="neck">
+    <path d="M200 250 C200 230, 190 200, 180 170 C170 140, 180 120, 200 110 C220 120, 230 140, 220 170 C210 200, 200 230, 200 250 Z" fill="#65d2ff" />
+    
+    <!-- Head -->
+    <path d="M200 110 C210 100, 230 90, 240 100 C250 110, 240 120, 230 125 C240 130, 230 140, 220 145 C210 150, 190 150, 180 145 C170 140, 160 130, 170 125 C160 120, 150 110, 160 100 C170 90, 190 100, 200 110 Z" fill="#65d2ff" />
+    
+    <!-- Horn -->
+    <path d="M200 95 C205 85, 220 75, 230 80 C240 85, 240 100, 230 110 C220 100, 210 100, 200 95 Z" fill="#65d2ff" />
+    
+    <!-- Eyes - bigger, more expressive -->
+    <ellipse cx="185" cy="115" rx="7" ry="9" fill="white" />
+    <ellipse cx="215" cy="115" rx="7" ry="9" fill="white" />
+    <circle cx="185" cy="116" r="4" fill="#000" />
+    <circle cx="215" cy="116" r="4" fill="#000" />
+    <circle cx="186" cy="114" r="2" fill="white" />
+    <circle cx="216" cy="114" r="2" fill="white" />
+    
+    <!-- Blush marks -->
+    <ellipse cx="175" cy="125" rx="8" ry="5" fill="#ff9999" opacity="0.5" />
+    <ellipse cx="225" cy="125" rx="8" ry="5" fill="#ff9999" opacity="0.5" />
+    
+    <!-- Eye lids -->
+    <path class="eye-lid" d="M178 115 C185 109, 192 109, 199 115 C192 121, 185 121, 178 115 Z" fill="#65d2ff" />
+    <path class="eye-lid" d="M208 115 C215 109, 222 109, 229 115 C222 121, 215 121, 208 115 Z" fill="#65d2ff" />
+    
+    <!-- Smiling Mouth -->
+    <path class="mouth" d="M190 130 C200 136, 210 136, 220 130" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Dots pattern on back -->
+  <g class="body">
+    <circle cx="170" cy="280" r="4" fill="#40b0e0" />
+    <circle cx="185" cy="290" r="4" fill="#40b0e0" />
+    <circle cx="200" cy="280" r="4" fill="#40b0e0" />
+    <circle cx="215" cy="290" r="4" fill="#40b0e0" />
+    <circle cx="230" cy="280" r="4" fill="#40b0e0" />
+  </g>
+  
+  <!-- Little water sparkles -->
+  <circle class="twinkle" cx="100" cy="300" r="3" fill="white" opacity="0.8" style="animation-delay: 0.5s" />
+  <circle class="twinkle" cx="140" cy="310" r="2" fill="white" opacity="0.8" style="animation-delay: 1.2s" />
+  <circle class="twinkle" cx="260" cy="305" r="2" fill="white" opacity="0.8" style="animation-delay: 0.3s" />
+  <circle class="twinkle" cx="300" cy="315" r="3" fill="white" opacity="0.8" style="animation-delay: 1.7s" />
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- ミニリュウ (Dratini) -->
+  
+  <defs>
+    <!-- Animation definitions -->
+    <animateTransform id="bodyFloat" attributeName="transform" type="translate" 
+                     values="0,-5;0,5;0,-5" dur="4s" repeatCount="indefinite" />
+    <animateTransform id="bodyWave" attributeName="transform" type="rotate" 
+                     values="-2,150,200;2,150,200;-2,150,200" dur="3s" repeatCount="indefinite" />
+    <animate id="eyeBlink" attributeName="ry" values="6;1;6" dur="3s" begin="1s" repeatCount="indefinite" />
+  </defs>
+  
+  <!-- Body Group -->
+  <g id="body">
+    <!-- Body -->
+    <path d="M150,200 C180,150 220,130 260,150 C300,170 320,220 330,270 C340,320 310,350 270,340 C230,330 210,300 190,250 C170,200 120,250 150,200 Z" 
+          fill="#92b3e5" stroke="#5478b0" stroke-width="2">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="-2,150,200;2,150,200;-2,150,200" dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Lighter belly -->
+    <path d="M230,170 C270,180 290,210 300,260 C310,310 290,330 260,320 C230,310 220,290 200,240 C180,190 190,160 230,170 Z" 
+          fill="#e3e8f5" stroke="none">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="-2,150,200;2,150,200;-2,150,200" dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Head Group -->
+  <g id="head">
+    <animateTransform attributeName="transform" type="translate" 
+                     values="0,-3;0,3;0,-3" dur="4s" repeatCount="indefinite" />
+    
+    <!-- Head -->
+    <ellipse cx="150" cy="180" rx="30" ry="40" fill="#92b3e5" stroke="#5478b0" stroke-width="2" />
+    
+    <!-- Face -->
+    <ellipse cx="140" cy="170" rx="20" ry="25" fill="#e3e8f5" stroke="none" />
+    
+    <!-- Eyes -->
+    <ellipse cx="135" cy="165" rx="8" ry="10" fill="white" stroke="#5478b0" stroke-width="1" />
+    <ellipse cx="137" cy="164" rx="4" ry="6" fill="#2b4b82" stroke="none">
+      <animate attributeName="ry" values="6;1;6" dur="3s" begin="1s" repeatCount="indefinite" />
+    </ellipse>
+    <circle cx="136" cy="162" r="2" fill="white" stroke="none" />
+    
+    <!-- Ear-like fins -->
+    <g id="fins">
+      <animateTransform attributeName="transform" type="rotate" 
+                       values="0,150,160;-3,150,160;0,150,160" dur="2s" repeatCount="indefinite" />
+      <path d="M125,145 C120,130 110,125 105,135 C100,145 105,160 115,155 Z" 
+            fill="#e3e8f5" stroke="#5478b0" stroke-width="1.5" />
+      <path d="M175,145 C180,130 190,125 195,135 C200,145 195,160 185,155 Z" 
+            fill="#e3e8f5" stroke="#5478b0" stroke-width="1.5" />
+    </g>
+    
+    <!-- Nose -->
+    <ellipse cx="125" cy="180" rx="5" ry="3" fill="#5478b0" stroke="none" />
+  </g>
+</svg>

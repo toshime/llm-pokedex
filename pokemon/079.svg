@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <style>
+      @keyframes tailWave {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes bodyBreathe {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+      }
+      @keyframes blinkEyes {
+        0%, 90%, 100% { transform: scaleY(1); }
+        95% { transform: scaleY(0.1); }
+      }
+      .tail {
+        transform-origin: 280px 190px;
+        animation: tailWave 4s ease-in-out infinite;
+      }
+      .body {
+        transform-origin: center;
+        animation: bodyBreathe 4s ease-in-out infinite;
+      }
+      .eyes {
+        transform-origin: center;
+        animation: blinkEyes 5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  
+  <!-- Body -->
+  <g class="body">
+    <!-- Main body -->
+    <ellipse cx="200" cy="190" rx="90" ry="65" fill="#f9b7c4" />
+    
+    <!-- Head -->
+    <ellipse cx="130" cy="160" rx="50" ry="40" fill="#f9b7c4" />
+    
+    <!-- Belly -->
+    <ellipse cx="190" cy="210" rx="60" ry="40" fill="#f4e6c9" />
+    
+    <!-- Legs -->
+    <ellipse cx="150" cy="245" rx="25" ry="15" fill="#f9b7c4" />
+    <ellipse cx="230" cy="245" rx="25" ry="15" fill="#f9b7c4" />
+  </g>
+  
+  <!-- Tail -->
+  <g class="tail">
+    <path d="M280,190 C320,170 350,150 350,120 C350,90 320,80 320,105 C320,125 300,150 280,170 Z" fill="#ea98ae" />
+  </g>
+  
+  <!-- Face -->
+  <g>
+    <!-- Eyes -->
+    <g class="eyes">
+      <ellipse cx="110" cy="145" rx="10" ry="10" fill="white" />
+      <ellipse cx="110" cy="145" rx="5" ry="5" fill="black" />
+      
+      <ellipse cx="140" cy="145" rx="10" ry="10" fill="white" />
+      <ellipse cx="140" cy="145" rx="5" ry="5" fill="black" />
+    </g>
+    
+    <!-- Mouth -->
+    <path d="M105,175 C120,190 140,190 155,175" fill="none" stroke="#a07569" stroke-width="3" />
+    
+    <!-- Nose -->
+    <ellipse cx="125" cy="160" rx="15" ry="8" fill="#f4e6c9" />
+    
+    <!-- Ears -->
+    <ellipse cx="105" cy="120" rx="15" ry="10" fill="#f9b7c4" transform="rotate(-15, 105, 120)" />
+    <ellipse cx="155" cy="120" rx="15" ry="10" fill="#f9b7c4" transform="rotate(15, 155, 120)" />
+  </g>
+</svg>

@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#b8d8e0" />
+      <stop offset="80%" stop-color="#7bafc0" />
+      <stop offset="100%" stop-color="#5a95a8" />
+    </radialGradient>
+    <linearGradient id="screwGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#909090" />
+      <stop offset="50%" stop-color="#606060" />
+      <stop offset="100%" stop-color="#404040" />
+    </linearGradient>
+    <linearGradient id="magnetGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a7a7a" />
+      <stop offset="100%" stop-color="#4a4a4a" />
+    </linearGradient>
+    <linearGradient id="magnetRedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b" />
+      <stop offset="100%" stop-color="#d43a3a" />
+    </linearGradient>
+    <linearGradient id="magnetBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#65b5ff" />
+      <stop offset="100%" stop-color="#3a85d4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Magneton Bodies -->
+  <!-- Main Body (Center) -->
+  <circle cx="250" cy="220" r="50" fill="url(#bodyGradient)" stroke="#333" stroke-width="3">
+    <animate attributeName="r" values="50;52;50;48;50" dur="4s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Top Left Body -->
+  <circle cx="170" cy="150" r="45" fill="url(#bodyGradient)" stroke="#333" stroke-width="3">
+    <animate attributeName="r" values="45;47;45;43;45" dur="4.5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Top Right Body -->
+  <circle cx="330" cy="150" r="45" fill="url(#bodyGradient)" stroke="#333" stroke-width="3">
+    <animate attributeName="r" values="45;47;45;43;45" dur="3.8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Eyes -->
+  <!-- Center Eye -->
+  <circle cx="250" cy="220" r="20" fill="white" stroke="#333" stroke-width="2" />
+  <circle cx="250" cy="220" r="12" fill="#eee" stroke="#333" stroke-width="1" />
+  <circle cx="250" cy="220" r="7" fill="black">
+    <animate attributeName="r" values="7;7;1;7" dur="5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Top Left Eye -->
+  <circle cx="170" cy="150" r="18" fill="white" stroke="#333" stroke-width="2" />
+  <circle cx="170" cy="150" r="10" fill="#eee" stroke="#333" stroke-width="1" />
+  <circle cx="170" cy="150" r="6" fill="black">
+    <animate attributeName="r" values="6;6;1;6" dur="5.5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Top Right Eye -->
+  <circle cx="330" cy="150" r="18" fill="white" stroke="#333" stroke-width="2" />
+  <circle cx="330" cy="150" r="10" fill="#eee" stroke="#333" stroke-width="1" />
+  <circle cx="330" cy="150" r="6" fill="black">
+    <animate attributeName="r" values="6;6;1;6" dur="4.8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Magnets -->
+  <!-- Center Left Magnet -->
+  <g id="centerLeftMagnet">
+    <path d="M190 220 L160 200 L150 220 L160 240 L190 220 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <path d="M150 220 L130 210 L125 220 L130 230 L150 220 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <rect x="125" y="210" width="10" height="20" rx="2" ry="2" fill="url(#magnetRedGradient)" stroke="#333" stroke-width="1" />
+    <rect x="115" y="214" width="10" height="12" rx="2" ry="2" fill="url(#magnetBlueGradient)" stroke="#333" stroke-width="1" />
+  </g>
+
+  <!-- Center Right Magnet -->
+  <g id="centerRightMagnet">
+    <path d="M310 220 L340 200 L350 220 L340 240 L310 220 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <path d="M350 220 L370 210 L375 220 L370 230 L350 220 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <rect x="365" y="210" width="10" height="20" rx="2" ry="2" fill="url(#magnetRedGradient)" stroke="#333" stroke-width="1" />
+    <rect x="375" y="214" width="10" height="12" rx="2" ry="2" fill="url(#magnetBlueGradient)" stroke="#333" stroke-width="1" />
+  </g>
+
+  <!-- Top Left Magnets -->
+  <g id="topLeftMagnetTop">
+    <path d="M170 100 L160 80 L170 60 L180 80 L170 100 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <path d="M170 60 L165 45 L170 35 L175 45 L170 60 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <rect x="165" y="35" width="10" height="15" rx="2" ry="2" fill="url(#magnetRedGradient)" stroke="#333" stroke-width="1" />
+    <rect x="170" y="25" width="10" height="10" rx="2" ry="2" fill="url(#magnetBlueGradient)" stroke="#333" stroke-width="1" />
+  </g>
+
+  <g id="topLeftMagnetLeft">
+    <path d="M120 150 L100 140 L90 150 L100 160 L120 150 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <path d="M90 150 L75 147 L65 150 L75 153 L90 150 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <rect x="65" y="145" width="10" height="10" rx="2" ry="2" fill="url(#magnetRedGradient)" stroke="#333" stroke-width="1" />
+    <rect x="55" y="147" width="10" height="6" rx="2" ry="2" fill="url(#magnetBlueGradient)" stroke="#333" stroke-width="1" />
+  </g>
+
+  <!-- Top Right Magnets -->
+  <g id="topRightMagnetTop">
+    <path d="M330 100 L320 80 L330 60 L340 80 L330 100 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <path d="M330 60 L325 45 L330 35 L335 45 L330 60 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <rect x="325" y="35" width="10" height="15" rx="2" ry="2" fill="url(#magnetRedGradient)" stroke="#333" stroke-width="1" />
+    <rect x="330" y="25" width="10" height="10" rx="2" ry="2" fill="url(#magnetBlueGradient)" stroke="#333" stroke-width="1" />
+  </g>
+
+  <g id="topRightMagnetRight">
+    <path d="M380 150 L400 140 L410 150 L400 160 L380 150 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <path d="M410 150 L425 147 L435 150 L425 153 L410 150 Z" fill="url(#magnetGradient)" stroke="#333" stroke-width="2" />
+    <rect x="425" y="145" width="10" height="10" rx="2" ry="2" fill="url(#magnetRedGradient)" stroke="#333" stroke-width="1" />
+    <rect x="435" y="147" width="10" height="6" rx="2" ry="2" fill="url(#magnetBlueGradient)" stroke="#333" stroke-width="1" />
+  </g>
+
+  <!-- Screws -->
+  <!-- Center Screws -->
+  <g id="centerTopScrew">
+    <circle cx="250" cy="160" r="12" fill="url(#screwGradient)" stroke="#333" stroke-width="2" />
+    <line x1="238" y1="160" x2="262" y2="160" stroke="#333" stroke-width="2" />
+    <line x1="250" y1="148" x2="250" y2="172" stroke="#333" stroke-width="2" />
+    <animateTransform attributeName="transform" type="rotate" from="0 250 160" to="360 250 160" dur="7s" repeatCount="indefinite" />
+  </g>
+
+  <g id="centerSmallScrew1">
+    <circle cx="225" cy="195" r="6" fill="url(#screwGradient)" stroke="#333" stroke-width="1" />
+    <line x1="221" y1="195" x2="229" y2="195" stroke="#333" stroke-width="1" />
+    <line x1="225" y1="191" x2="225" y2="199" stroke="#333" stroke-width="1" />
+    <animateTransform attributeName="transform" type="rotate" from="0 225 195" to="360 225 195" dur="4s" repeatCount="indefinite" />
+  </g>
+
+  <g id="centerSmallScrew2">
+    <circle cx="275" cy="195" r="6" fill="url(#screwGradient)" stroke="#333" stroke-width="1" />
+    <line x1="271" y1="195" x2="279" y2="195" stroke="#333" stroke-width="1" />
+    <line x1="275" y1="191" x2="275" y2="199" stroke="#333" stroke-width="1" />
+    <animateTransform attributeName="transform" type="rotate" from="0 275 195" to="360 275 195" dur="5s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Top Left Screws -->
+  <g id="topLeftTopScrew">
+    <circle cx="170" cy="100" r="10" fill="url(#screwGradient)" stroke="#333" stroke-width="2" />
+    <line x1="160" y1="100" x2="180" y2="100" stroke="#333" stroke-width="2" />
+    <line x1="170" y1="90" x2="170" y2="110" stroke="#333" stroke-width="2" />
+    <animateTransform attributeName="transform" type="rotate" from="0 170 100" to="360 170 100" dur="8s" repeatCount="indefinite" />
+  </g>
+
+  <g id="topLeftSmallScrew">
+    <circle cx="195" cy="140" r="6" fill="url(#screwGradient)" stroke="#333" stroke-width="1" />
+    <line x1="191" y1="140" x2="199" y2="140" stroke="#333" stroke-width="1" />
+    <line x1="195" y1="136" x2="195" y2="144" stroke="#333" stroke-width="1" />
+    <animateTransform attributeName="transform" type="rotate" from="0 195 140" to="360 195 140" dur="6s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Top Right Screws -->
+  <g id="topRightTopScrew">
+    <circle cx="330" cy="100" r="10" fill="url(#screwGradient)" stroke="#333" stroke-width="2" />
+    <line x1="320" y1="100" x2="340" y2="100" stroke="#333" stroke-width="2" />
+    <line x1="330" y1="90" x2="330" y2="110" stroke="#333" stroke-width="2" />
+    <animateTransform attributeName="transform" type="rotate" from="0 330 100" to="360 330 100" dur="7.5s" repeatCount="indefinite" />
+  </g>
+
+  <g id="topRightSmallScrew">
+    <circle cx="305" cy="140" r="6" fill="url(#screwGradient)" stroke="#333" stroke-width="1" />
+    <line x1="301" y1="140" x2="309" y2="140" stroke="#333" stroke-width="1" />
+    <line x1="305" y1="136" x2="305" y2="144" stroke="#333" stroke-width="1" />
+    <animateTransform attributeName="transform" type="rotate" from="0 305 140" to="360 305 140" dur="5.5s" repeatCount="indefinite" />
+  </g>
+  
+  <!-- Magnet animations -->
+  <animateTransform xlink:href="#centerLeftMagnet" attributeName="transform" type="rotate" values="-10 190 220;10 190 220;-10 190 220" dur="3s" repeatCount="indefinite" />
+  <animateTransform xlink:href="#centerRightMagnet" attributeName="transform" type="rotate" values="10 310 220;-10 310 220;10 310 220" dur="3.5s" repeatCount="indefinite" />
+  <animateTransform xlink:href="#topLeftMagnetTop" attributeName="transform" type="rotate" values="-8 170 100;8 170 100;-8 170 100" dur="3.2s" repeatCount="indefinite" />
+  <animateTransform xlink:href="#topLeftMagnetLeft" attributeName="transform" type="rotate" values="-12 120 150;12 120 150;-12 120 150" dur="2.8s" repeatCount="indefinite" />
+  <animateTransform xlink:href="#topRightMagnetTop" attributeName="transform" type="rotate" values="8 330 100;-8 330 100;8 330 100" dur="3.4s" repeatCount="indefinite" />
+  <animateTransform xlink:href="#topRightMagnetRight" attributeName="transform" type="rotate" values="12 380 150;-12 380 150;12 380 150" dur="3s" repeatCount="indefinite" />
+  
+  <!-- Overall slight floating animation for each unit -->
+  <animateTransform xlink:href="#centerBody" attributeName="transform" type="translate" values="0,0;0,-3;0,0;0,3;0,0" dur="5s" repeatCount="indefinite" additive="sum" />
+  <animateTransform xlink:href="#topLeftBody" attributeName="transform" type="translate" values="0,0;0,-4;0,0;0,4;0,0" dur="5.5s" repeatCount="indefinite" additive="sum" />
+  <animateTransform xlink:href="#topRightBody" attributeName="transform" type="translate" values="0,0;0,-2;0,0;0,2;0,0" dur="6s" repeatCount="indefinite" additive="sum" />
+</svg>

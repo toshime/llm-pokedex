@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Golem / ゴローン (Pokédex #076) -->
+  <style>
+    @keyframes breathe {
+      0%, 100% { transform: scale(1, 1); }
+      50% { transform: scale(1.02, 0.98); }
+    }
+    @keyframes rockShift {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      75% { transform: rotate(-2deg); }
+    }
+    @keyframes blink {
+      0%, 95%, 100% { opacity: 1; }
+      97% { opacity: 0; }
+    }
+    @keyframes armMove {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    .body { animation: breathe 4s ease-in-out infinite; }
+    .rock { animation: rockShift 5s ease-in-out infinite; }
+    .blink { animation: blink 4s infinite; }
+    .arm { animation: armMove 3s ease-in-out infinite alternate; }
+  </style>
+
+  <!-- Main body group -->
+  <g class="body" transform-origin="200 150">
+    <!-- Base body shape -->
+    <ellipse cx="200" cy="180" rx="90" ry="70" fill="#b5b3a1" />
+    
+    <!-- Rock shell -->
+    <g class="rock">
+      <!-- Base shell -->
+      <path d="M160 120 C150 100, 120 110, 110 130 C100 150, 110 190, 130 200 
+               C150 210, 200 210, 230 200 C250 190, 270 170, 280 150
+               C290 130, 280 110, 260 100 C240 90, 200 100, 170 110 Z" 
+            fill="#706e60" stroke="#5a5850" stroke-width="2" />
+      
+      <!-- Rock segments -->
+      <path d="M130 130 L160 150 L130 170" fill="#706e60" stroke="#5a5850" stroke-width="3" />
+      <path d="M250 120 L220 140 L260 160" fill="#706e60" stroke="#5a5850" stroke-width="3" />
+      <circle cx="190" cy="120" r="15" fill="#5a5850" />
+      <circle cx="230" cy="190" r="20" fill="#5a5850" />
+      <circle cx="150" cy="180" r="18" fill="#5a5850" />
+    </g>
+    
+    <!-- Face -->
+    <!-- Face structure -->
+    <path d="M170 150 C180 140, 220 140, 230 150 C240 160, 230 190, 200 200 C170 190, 160 160, 170 150 Z" 
+          fill="#b5b3a1" stroke="#a09e8c" stroke-width="1" />
+    
+    <!-- Eyes background -->
+    <ellipse cx="185" cy="160" rx="15" ry="10" fill="white" />
+    <ellipse cx="215" cy="160" rx="15" ry="10" fill="white" />
+    
+    <!-- Eyes -->
+    <ellipse cx="185" cy="160" rx="12" ry="7" fill="#ec4646" />
+    <ellipse cx="215" cy="160" rx="12" ry="7" fill="#ec4646" />
+    
+    <!-- Pupils -->
+    <ellipse cx="185" cy="160" rx="5" ry="4" fill="black" />
+    <ellipse cx="215" cy="160" rx="5" ry="4" fill="black" />
+    
+    <!-- Eyelids -->
+    <path class="blink" d="M170 160 C185 150, 200 150, 200 160" fill="#b5b3a1" />
+    <path class="blink" d="M200 160 C215 150, 230 150, 230 160" fill="#b5b3a1" />
+    
+    <!-- Mouth -->
+    <path d="M185 180 C200 185, 215 180, 215 180" fill="none" stroke="#5a5850" stroke-width="2" />
+  </g>
+
+  <!-- Left arm -->
+  <g class="arm" transform-origin="140 190">
+    <path d="M140 190 C130 200, 120 210, 110 215 C100 220, 90 215, 90 210 C90 205, 100 195, 110 190" 
+          fill="#b5b3a1" stroke="#a09e8c" stroke-width="1" />
+  </g>
+
+  <!-- Right arm -->
+  <g class="arm" transform-origin="260 190" style="animation-delay: 1.5s">
+    <path d="M260 190 C270 200, 280 210, 290 215 C300 220, 310 215, 310 210 C310 205, 300 195, 290 190" 
+          fill="#b5b3a1" stroke="#a09e8c" stroke-width="1" />
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="50%" r="60%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#A983B8" />
+      <stop offset="80%" stop-color="#7D5A8C" />
+    </radialGradient>
+  </defs>
+
+  <!-- Main body -->
+  <g class="body">
+    <path d="M120,200 C100,240 120,300 200,300 C280,300 300,240 280,200 C260,160 220,150 200,150 C180,150 140,160 120,200 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+        M120,200 C100,240 120,300 200,300 C280,300 300,240 280,200 C260,160 220,150 200,150 C180,150 140,160 120,200 Z;
+        M130,200 C110,250 130,300 200,310 C270,300 290,250 270,200 C250,170 220,160 200,160 C180,160 150,170 130,200 Z;
+        M120,200 C100,240 120,300 200,300 C280,300 300,240 280,200 C260,160 220,150 200,150 C180,150 140,160 120,200 Z
+      "/>
+    </path>
+  </g>
+
+  <!-- Arms/Protrusions -->
+  <g class="arms">
+    <!-- Left arm -->
+    <path d="M140,200 C130,220 100,230 90,220 C80,210 90,190 110,180 C130,170 150,180 140,200 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" dur="2.5s" repeatCount="indefinite" values="
+        M140,200 C130,220 100,230 90,220 C80,210 90,190 110,180 C130,170 150,180 140,200 Z;
+        M140,205 C130,225 95,235 85,225 C75,215 85,185 105,175 C125,165 150,185 140,205 Z;
+        M140,200 C130,220 100,230 90,220 C80,210 90,190 110,180 C130,170 150,180 140,200 Z
+      "/>
+    </path>
+    
+    <!-- Right arm -->
+    <path d="M260,200 C270,220 300,230 310,220 C320,210 310,190 290,180 C270,170 250,180 260,200 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" dur="2.5s" repeatCount="indefinite" values="
+        M260,200 C270,220 300,230 310,220 C320,210 310,190 290,180 C270,170 250,180 260,200 Z;
+        M260,205 C270,225 305,235 315,225 C325,215 315,185 295,175 C275,165 250,185 260,205 Z;
+        M260,200 C270,220 300,230 310,220 C320,210 310,190 290,180 C270,170 250,180 260,200 Z
+      "/>
+    </path>
+  </g>
+
+  <!-- Face -->
+  <g class="face">
+    <!-- Mouth -->
+    <path d="M175,210 C190,240 210,240 225,210" stroke="#333" stroke-width="5" fill="none">
+      <animate attributeName="d" dur="1.5s" repeatCount="indefinite" values="
+        M175,210 C190,240 210,240 225,210;
+        M175,220 C190,250 210,250 225,220;
+        M175,210 C190,240 210,240 225,210
+      "/>
+    </path>
+    
+    <!-- Left eye -->
+    <ellipse cx="180" cy="180" rx="15" ry="20" fill="white">
+      <animate attributeName="ry" dur="4s" repeatCount="indefinite" values="20;18;20"/>
+    </ellipse>
+    <ellipse cx="180" cy="180" rx="8" ry="12" fill="black">
+      <animate attributeName="cy" dur="4s" repeatCount="indefinite" values="180;182;180"/>
+    </ellipse>
+    
+    <!-- Right eye -->
+    <ellipse cx="220" cy="180" rx="15" ry="20" fill="white">
+      <animate attributeName="ry" dur="4s" repeatCount="indefinite" values="20;18;20"/>
+    </ellipse>
+    <ellipse cx="220" cy="180" rx="8" ry="12" fill="black">
+      <animate attributeName="cy" dur="4s" repeatCount="indefinite" values="180;182;180"/>
+    </ellipse>
+  </g>
+
+  <!-- Bubbles/Sludge effect -->
+  <g class="bubbles">
+    <circle cx="150" cy="260" r="12" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="260;255;260"/>
+    </circle>
+    <circle cx="250" cy="250" r="10" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="2.5s" repeatCount="indefinite" values="250;245;250"/>
+    </circle>
+    <circle cx="200" cy="270" r="8" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="2s" repeatCount="indefinite" values="270;265;270"/>
+    </circle>
+    <circle cx="170" cy="240" r="7" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="2.2s" repeatCount="indefinite" values="240;235;240"/>
+    </circle>
+    <circle cx="230" cy="265" r="9" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="2.7s" repeatCount="indefinite" values="265;260;265"/>
+    </circle>
+  </g>
+</svg>

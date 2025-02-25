@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes tailWave {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-10deg); }
+        75% { transform: rotate(10deg); }
+      }
+      @keyframes psychicPulse {
+        0%, 100% { opacity: 0.2; r: 12; }
+        50% { opacity: 0.8; r: 20; }
+      }
+      @keyframes psychicAura {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes eyeGlow {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; }
+      }
+      @keyframes handPose {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(15deg); }
+      }
+      .body { animation: float 4s ease-in-out infinite; }
+      .tail { animation: tailWave 2.5s ease-in-out infinite; }
+      .psychic-energy { animation: psychicPulse 1.5s ease-in-out infinite; }
+      .aura { animation: psychicAura 3s ease-in-out infinite; }
+      .eye-glow { animation: eyeGlow 2s ease-in-out infinite; }
+      .hand { animation: handPose 3s ease-in-out infinite; }
+    </style>
+    <radialGradient id="auraGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#C090D0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#8060A0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Psychic aura -->
+  <ellipse class="aura" cx="200" cy="200" rx="150" ry="180" fill="url(#auraGradient)" opacity="0.2"/>
+  
+  <!-- Tail -->
+  <g class="tail" transform-origin="170 220">
+    <path d="M170 220 Q 100 260, 60 320 Q 40 350, 50 280 Q 60 230, 90 190 Q 120 160, 150 180 Z" fill="#AA78B4" />
+    <path d="M170 220 Q 110 255, 75 305 Q 60 325, 65 280 Q 75 240, 95 205 Q 120 175, 150 180 Z" fill="#BB8BC7" />
+  </g>
+  
+  <!-- Body -->
+  <g class="body">
+    <!-- Lower body -->
+    <path d="M160 220 Q 170 270, 200 310 Q 230 270, 240 220 Z" fill="#E1D6E5" />
+    <path d="M180 220 Q 190 260, 200 290 Q 210 260, 220 220 Z" fill="#F0E8F2" />
+    
+    <!-- Torso -->
+    <path d="M160 220 Q 170 170, 200 150 Q 230 170, 240 220 Z" fill="#D1D1E0" />
+    <path d="M170 200 Q 180 165, 200 155 Q 220 165, 230 200 Z" fill="#E0E0EE" />
+    
+    <!-- Left arm - more dynamic pose -->
+    <path d="M160 180 Q 130 190, 110 170 Q 90 150, 105 130" fill="#D1D1E0" />
+    
+    <!-- Right arm - combat stance -->
+    <path d="M240 180 Q 270 160, 280 130 Q 290 100, 320 90" fill="#D1D1E0" />
+    
+    <!-- Neck -->
+    <path d="M185 150 Q 200 130, 215 150 Q 220 165, 200 170 Q 180 165, 185 150 Z" fill="#D1D1E0" />
+    
+    <!-- Head - slightly tilted for dramatic effect -->
+    <path d="M175 110 Q 185 70, 200 60 Q 215 70, 225 110 Q 230 130, 200 135 Q 170 130, 175 110 Z" fill="#D1D1E0" />
+    
+    <!-- Tubes -->
+    <path d="M180 115 Q 160 125, 145 105 Q 135 85, 155 75" fill="#D1D1E0" stroke="#B0B0C0" stroke-width="1" />
+    <path d="M220 115 Q 240 125, 255 105 Q 265 85, 245 75" fill="#D1D1E0" stroke="#B0B0C0" stroke-width="1" />
+    
+    <!-- Legs in action pose -->
+    <path d="M175 310 Q 170 330, 155 360 Q 150 370, 165 370 Q 185 370, 190 350 Z" fill="#D1D1E0" />
+    <path d="M225 310 Q 230 330, 245 360 Q 250 370, 235 370 Q 215 370, 210 350 Z" fill="#D1D1E0" />
+    
+    <!-- Feet -->
+    <path d="M155 370 Q 165 375, 190 370 L 190 380 Q 175 385, 155 380 Z" fill="#D1D1E0" />
+    <path d="M245 370 Q 235 375, 210 370 L 210 380 Q 225 385, 245 380 Z" fill="#D1D1E0" />
+    
+    <!-- Left hand - combat ready -->
+    <g class="hand" transform-origin="105 130">
+      <circle class="psychic-energy" cx="95" cy="120" r="15" fill="#BB8BC7" opacity="0.6" />
+      <path d="M105 120 L 90 130 L 100 140" fill="none" stroke="#D1D1E0" stroke-width="6" stroke-linecap="round" />
+      <path d="M110 115 L 100 130 L 105 145" fill="none" stroke="#D1D1E0" stroke-width="6" stroke-linecap="round" />
+      <path d="M115 120 L 110 130 L 110 140" fill="none" stroke="#D1D1E0" stroke-width="6" stroke-linecap="round" />
+    </g>
+    
+    <!-- Right hand - power pose -->
+    <g class="hand" transform-origin="320 90">
+      <circle class="psychic-energy" cx="330" cy="80" r="18" fill="#BB8BC7" opacity="0.7" />
+      <path d="M320 80 L 335 85 L 325 95" fill="none" stroke="#D1D1E0" stroke-width="6" stroke-linecap="round" />
+      <path d="M315 75 L 330 80 L 320 95" fill="none" stroke="#D1D1E0" stroke-width="6" stroke-linecap="round" />
+      <path d="M310 70 L 325 75 L 315 90" fill="none" stroke="#D1D1E0" stroke-width="6" stroke-linecap="round" />
+    </g>
+    
+    <!-- Glowing eyes for intensity -->
+    <g class="eye-glow">
+      <ellipse cx="188" cy="100" rx="6" ry="9" fill="#7B63CE" />
+      <ellipse cx="212" cy="100" rx="6" ry="9" fill="#7B63CE" />
+      <ellipse cx="188" cy="100" rx="3" ry="4" fill="#A090E0" />
+      <ellipse cx="212" cy="100" rx="3" ry="4" fill="#A090E0" />
+    </g>
+    
+    <!-- Additional psychic energy effects -->
+    <circle class="psychic-energy" cx="200" cy="200" r="8" fill="#BB8BC7" opacity="0.4" />
+    <circle class="psychic-energy" cx="250" cy="150" r="6" fill="#BB8BC7" opacity="0.5" />
+    <circle class="psychic-energy" cx="150" cy="150" r="5" fill="#BB8BC7" opacity="0.5" />
+  </g>
+</svg>

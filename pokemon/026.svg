@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- ライチュウ (Raichu) -->
+  
+  <!-- Raichu Group -->
+  <g id="raichu">
+    <!-- Tail -->
+    <path d="M300,180 L330,170 L350,150 L380,120" fill="none" stroke="#BF8830" stroke-width="12" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 300 180" to="10 300 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Lightning Bolt Tail Tip -->
+    <path d="M380,120 L365,140 L390,130 L375,160" fill="none" stroke="#FFD700" stroke-width="12" stroke-linecap="round">
+      <animate attributeName="stroke" values="#FFD700;#FFA500;#FFD700" dur="1s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Main Body -->
+    <ellipse cx="200" cy="180" rx="80" ry="70" fill="#BF8830" />
+    <ellipse cx="200" cy="220" rx="65" ry="40" fill="#F9E9CC" /> <!-- Cream belly -->
+    
+    <!-- Feet -->
+    <ellipse cx="160" cy="245" rx="20" ry="10" fill="#BF8830">
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 0" to="5 0" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    <ellipse cx="240" cy="245" rx="20" ry="10" fill="#BF8830">
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 0" to="-5 0" dur="2s" repeatCount="indefinite" additive="sum" />
+    </ellipse>
+    
+    <!-- Face -->
+    <circle cx="200" cy="150" r="40" fill="#BF8830" />
+    
+    <!-- Ears -->
+    <g>
+      <!-- Left Ear -->
+      <path d="M150,110 L140,60 L160,80" fill="#BF8830" stroke="#000" stroke-width="2">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-5 150 110" to="5 150 110" dur="3s" repeatCount="indefinite" additive="sum" />
+      </path>
+      <path d="M150,110 L140,60 L160,80" fill="#000" />
+      <ellipse cx="145" cy="75" rx="5" ry="10" fill="#FFD700" transform="rotate(-20 145 75)">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-20 145 75" to="-25 145 75" dur="3s" repeatCount="indefinite" additive="sum" />
+      </ellipse>
+      
+      <!-- Right Ear -->
+      <path d="M250,110 L260,60 L240,80" fill="#BF8830" stroke="#000" stroke-width="2">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="5 250 110" to="-5 250 110" dur="3s" repeatCount="indefinite" additive="sum" />
+      </path>
+      <path d="M250,110 L260,60 L240,80" fill="#000" />
+      <ellipse cx="255" cy="75" rx="5" ry="10" fill="#FFD700" transform="rotate(20 255 75)">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="20 255 75" to="25 255 75" dur="3s" repeatCount="indefinite" additive="sum" />
+      </ellipse>
+    </g>
+    
+    <!-- Eyes -->
+    <ellipse cx="185" cy="140" rx="8" ry="10" fill="#000" />
+    <ellipse cx="215" cy="140" rx="8" ry="10" fill="#000" />
+    <circle cx="183" cy="137" r="3" fill="#FFF" />
+    <circle cx="213" cy="137" r="3" fill="#FFF" />
+    
+    <!-- Cheeks -->
+    <circle cx="170" cy="155" r="10" fill="#FFD700">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="230" cy="155" r="10" fill="#FFD700">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Mouth -->
+    <path d="M190,165 Q200,175 210,165" fill="none" stroke="#000" stroke-width="2" />
+    
+    <!-- Arms -->
+    <path d="M140,180 L115,170" fill="none" stroke="#BF8830" stroke-width="15" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-5 140 180" to="15 140 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    <path d="M260,180 L285,170" fill="none" stroke="#BF8830" stroke-width="15" stroke-linecap="round">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="5 260 180" to="-15 260 180" dur="2s" repeatCount="indefinite" additive="sum" />
+    </path>
+    
+    <!-- Body Animation -->
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -5" dur="1.5s" repeatCount="indefinite" additive="sum" />
+  </g>
+</svg>

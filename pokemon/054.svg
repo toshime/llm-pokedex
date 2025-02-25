@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <style>
+    .head-bob {
+      animation: bob 2s ease-in-out infinite;
+    }
+    .tail-wag {
+      animation: wag 3s ease-in-out infinite;
+    }
+    .blink {
+      animation: blink 4s ease-in-out infinite;
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes wag {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(15deg); }
+      75% { transform: rotate(-15deg); }
+    }
+    @keyframes blink {
+      0%, 95%, 100% { opacity: 1; }
+      97% { opacity: 0; }
+    }
+  </style>
+  
+  <!-- Tail -->
+  <g class="tail-wag" transform-origin="140 210">
+    <path d="M140 210 L120 230 L110 245" fill="none" stroke="#EFC86E" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Feet -->
+  <ellipse cx="125" cy="255" rx="18" ry="10" fill="#C49A6C" />
+  <ellipse cx="175" cy="255" rx="18" ry="10" fill="#C49A6C" />
+  
+  <!-- Body -->
+  <ellipse cx="150" cy="210" rx="40" ry="45" fill="#F8D878" />
+  
+  <!-- Head group with bobbing animation -->
+  <g class="head-bob">
+    <!-- Main head -->
+    <ellipse cx="150" cy="150" rx="50" ry="45" fill="#F8D878" />
+    
+    <!-- Bill -->
+    <path d="M150 165 C130 175, 170 175, 150 165" fill="#F8D878" />
+    <ellipse cx="150" cy="180" rx="25" ry="15" fill="#EECFA1" />
+    
+    <!-- Eyes -->
+    <g class="blink">
+      <ellipse cx="130" cy="140" rx="15" ry="15" fill="white" />
+      <ellipse cx="170" cy="140" rx="15" ry="15" fill="white" />
+    </g>
+    
+    <!-- Black dot eyes -->
+    <circle cx="130" cy="140" r="3" fill="black" />
+    <circle cx="170" cy="140" r="3" fill="black" />
+    
+    <!-- Hair tuft -->
+    <path d="M150 105 L155 85 L145 90 L150 80" fill="none" stroke="#222" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Hands -->
+    <ellipse cx="110" cy="210" rx="12" ry="10" fill="#F8D878" />
+    <ellipse cx="190" cy="210" rx="12" ry="10" fill="#F8D878" />
+  </g>
+</svg>

@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Dugtrio Animation -->
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="40%" r="50%" fx="50%" fy="40%">
+      <stop offset="0%" stop-color="#c49a73" />
+      <stop offset="100%" stop-color="#a37c59" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Rocks/Ground -->
+  <g>
+    <ellipse cx="150" cy="240" rx="90" ry="30" fill="#8c8c8c" />
+    
+    <!-- Individual small rocks -->
+    <ellipse cx="90" cy="235" rx="15" ry="10" fill="#a3a3a3" />
+    <ellipse cx="120" cy="245" rx="12" ry="8" fill="#a3a3a3" />
+    <ellipse cx="160" cy="238" rx="14" ry="9" fill="#a3a3a3" />
+    <ellipse cx="190" cy="242" rx="13" ry="7" fill="#a3a3a3" />
+    <ellipse cx="220" cy="236" rx="16" ry="9" fill="#a3a3a3" />
+  </g>
+  
+  <!-- Left Diglett -->
+  <g>
+    <!-- Main body -->
+    <path d="M90,150 Q110,100 130,150 L130,220 Q110,235 90,220 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" 
+               values="M90,150 Q110,100 130,150 L130,220 Q110,235 90,220 Z;
+                       M90,155 Q110,105 130,155 L130,225 Q110,240 90,225 Z;
+                       M90,150 Q110,100 130,150 L130,220 Q110,235 90,220 Z"
+               dur="2.5s"
+               repeatCount="indefinite" />
+    </path>
+    
+    <!-- Nose -->
+    <ellipse cx="110" cy="155" rx="15" ry="9" fill="#f4b3c2">
+      <animate attributeName="cy" 
+               values="155;160;155" 
+               dur="2.5s" 
+               repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="100" cy="140" rx="5" ry="8" fill="#111">
+        <animate attributeName="cy" 
+                 values="140;145;140" 
+                 dur="2.5s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+      
+      <ellipse cx="120" cy="140" rx="5" ry="8" fill="#111">
+        <animate attributeName="cy" 
+                 values="140;145;140" 
+                 dur="2.5s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- Highlight on nose -->
+    <ellipse cx="107" cy="153" rx="5" ry="3" fill="white" opacity="0.4">
+      <animate attributeName="cy" 
+               values="153;158;153" 
+               dur="2.5s" 
+               repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  
+  <!-- Middle Diglett -->
+  <g>
+    <!-- Main body -->
+    <path d="M130,130 Q150,80 170,130 L170,210 Q150,225 130,210 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" 
+               values="M130,130 Q150,80 170,130 L170,210 Q150,225 130,210 Z;
+                       M130,125 Q150,75 170,125 L170,205 Q150,220 130,205 Z;
+                       M130,130 Q150,80 170,130 L170,210 Q150,225 130,210 Z"
+               dur="3s"
+               repeatCount="indefinite" />
+    </path>
+    
+    <!-- Nose -->
+    <ellipse cx="150" cy="135" rx="15" ry="9" fill="#f4b3c2">
+      <animate attributeName="cy" 
+               values="135;130;135" 
+               dur="3s" 
+               repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="140" cy="120" rx="5" ry="8" fill="#111">
+        <animate attributeName="cy" 
+                 values="120;115;120" 
+                 dur="3s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+      
+      <ellipse cx="160" cy="120" rx="5" ry="8" fill="#111">
+        <animate attributeName="cy" 
+                 values="120;115;120" 
+                 dur="3s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- Highlight on nose -->
+    <ellipse cx="147" cy="133" rx="5" ry="3" fill="white" opacity="0.4">
+      <animate attributeName="cy" 
+               values="133;128;133" 
+               dur="3s" 
+               repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  
+  <!-- Right Diglett -->
+  <g>
+    <!-- Main body -->
+    <path d="M170,150 Q190,100 210,150 L210,220 Q190,235 170,220 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" 
+               values="M170,150 Q190,100 210,150 L210,220 Q190,235 170,220 Z;
+                       M170,155 Q190,105 210,155 L210,225 Q190,240 170,225 Z;
+                       M170,150 Q190,100 210,150 L210,220 Q190,235 170,220 Z"
+               dur="2.2s"
+               repeatCount="indefinite" />
+    </path>
+    
+    <!-- Nose -->
+    <ellipse cx="190" cy="155" rx="15" ry="9" fill="#f4b3c2">
+      <animate attributeName="cy" 
+               values="155;160;155" 
+               dur="2.2s" 
+               repeatCount="indefinite" />
+    </ellipse>
+    
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="180" cy="140" rx="5" ry="8" fill="#111">
+        <animate attributeName="cy" 
+                 values="140;145;140" 
+                 dur="2.2s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+      
+      <ellipse cx="200" cy="140" rx="5" ry="8" fill="#111">
+        <animate attributeName="cy" 
+                 values="140;145;140" 
+                 dur="2.2s" 
+                 repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- Highlight on nose -->
+    <ellipse cx="187" cy="153" rx="5" ry="3" fill="white" opacity="0.4">
+      <animate attributeName="cy" 
+               values="153;158;153" 
+               dur="2.2s" 
+               repeatCount="indefinite" />
+    </ellipse>
+  </g>
+</svg>

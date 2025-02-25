@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- 背景を透過 -->
+  
+  <!-- 髪の毛 -->
+  <path d="M180 100 L160 80 L150 90 L145 80 L140 90 L130 80 L125 95 L115 90 L110 105 L100 100 L105 115 L120 125 L130 140 L150 150 L170 155 L200 155 L230 150 L250 140 L270 120 L280 100 L275 85 L265 80 L255 90 L245 80 L240 90 L230 85 L225 95 L215 90 L205 100 L195 95 Z" fill="#9b9b9b">
+    <animate attributeName="d" dur="2s" repeatCount="indefinite" 
+      values="M180 100 L160 80 L150 90 L145 80 L140 90 L130 80 L125 95 L115 90 L110 105 L100 100 L105 115 L120 125 L130 140 L150 150 L170 155 L200 155 L230 150 L250 140 L270 120 L280 100 L275 85 L265 80 L255 90 L245 80 L240 90 L230 85 L225 95 L215 90 L205 100 L195 95 Z;
+              M180 100 L160 80 L150 90 L145 80 L140 90 L130 80 L125 95 L115 90 L110 105 L100 100 L105 115 L120 125 L130 140 L150 150 L170 155 L200 155 L230 150 L250 140 L270 120 L280 100 L275 85 L265 80 L255 90 L245 80 L240 90 L230 85 L225 95 L215 90 L205 100 L195 95 Z;
+              M180 100 L160 80 L150 90 L145 80 L140 90 L130 80 L125 95 L115 90 L110 105 L100 100 L105 115 L120 125 L130 140 L150 150 L170 155 L200 155 L230 150 L250 140 L270 120 L280 100 L275 85 L265 80 L255 90 L245 80 L240 90 L230 85 L225 95 L215 90 L205 100 L195 95 Z" />
+  </path>
+  
+  <!-- 顔 -->
+  <path d="M120 130 L140 190 L160 230 L190 250 L210 250 L240 230 L260 190 L280 130 L250 140 L200 155 L150 140 Z" fill="#ffcc99" />
+  
+  <!-- 眉毛 -->
+  <path d="M150 160 L180 150" stroke="#333" stroke-width="6" stroke-linecap="round">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M150 160 L180 150;
+              M150 155 L180 145;
+              M150 160 L180 150" />
+  </path>
+  <path d="M220 150 L250 160" stroke="#333" stroke-width="6" stroke-linecap="round">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+      values="M220 150 L250 160;
+              M220 145 L250 155;
+              M220 150 L250 160" />
+  </path>
+  
+  <!-- 目 -->
+  <ellipse cx="165" cy="180" rx="10" ry="15" fill="white" />
+  <ellipse cx="235" cy="180" rx="10" ry="15" fill="white" />
+  <ellipse cx="165" cy="180" rx="5" ry="7" fill="#333">
+    <animate attributeName="cy" dur="4s" repeatCount="indefinite" 
+      values="180;178;180;182;180" />
+  </ellipse>
+  <ellipse cx="235" cy="180" rx="5" ry="7" fill="#333">
+    <animate attributeName="cy" dur="4s" repeatCount="indefinite" 
+      values="180;178;180;182;180" />
+  </ellipse>
+  
+  <!-- 鼻 -->
+  <path d="M195 190 L205 190 L200 200 Z" fill="#ffbb88" />
+  
+  <!-- 口 -->
+  <path d="M180 220 L220 220" stroke="#333" stroke-width="2" fill="none">
+    <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+      values="M180 220 L220 220;
+              M180 215 C200 225, 200 225, 220 215;
+              M180 220 L220 220" />
+  </path>
+  
+  <!-- 耳 -->
+  <path d="M120 160 L110 170 L115 190 L125 180 Z" fill="#ffcc99" />
+  <path d="M280 160 L290 170 L285 190 L275 180 Z" fill="#ffcc99" />
+  
+  <!-- 首 -->
+  <path d="M175 250 L185 280 L215 280 L225 250" fill="#ffcc99" />
+  
+  <!-- 白衣 -->
+  <path d="M140 280 L120 350 L100 420 L150 450 L200 470 L250 450 L300 420 L280 350 L260 280 L225 265 L215 280 L185 280 L175 265 Z" fill="#ffffff" />
+  
+  <!-- 赤いシャツ -->
+  <path d="M175 265 L165 320 L185 350 L200 360 L215 350 L235 320 L225 265 L215 280 L185 280 Z" fill="#cc3333" />
+  <path d="M165 320 L160 350 L185 350" fill="#cc3333" />
+  <path d="M235 320 L240 350 L215 350" fill="#cc3333" />
+  
+  <!-- シャツの襟 -->
+  <path d="M175 265 L185 280 L200 290 L215 280 L225 265 L215 255 L200 250 L185 255 Z" fill="#cc3333" />
+  
+  <!-- 白衣の襟 -->
+  <path d="M165 270 L175 265 L185 255 L200 250 L215 255 L225 265 L235 270 L230 290 L215 280 L200 290 L185 280 L170 290 Z" fill="#ffffff" />
+  
+  <!-- アニメーション用の呼吸動作 -->
+  <animate xlink:href="#body" attributeName="transform" attributeType="XML" 
+    type="translate" from="0 0" to="0 5" dur="3s" repeatCount="indefinite" additive="sum" />
+</svg>

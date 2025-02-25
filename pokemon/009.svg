@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Blastoise Body -->
+  <g id="blastoise">
+    <!-- Body -->
+    <ellipse cx="150" cy="160" rx="70" ry="65" fill="#527fa8" />
+    
+    <!-- Shell Back -->
+    <ellipse cx="150" cy="160" rx="80" ry="70" fill="#6b5333" />
+    
+    <!-- Shell Front -->
+    <path d="M90 140 Q100 200 150 220 Q200 200 210 140 Q200 110 150 110 Q100 110 90 140 Z" fill="#84684a" />
+    
+    <!-- Shell Plates -->
+    <rect x="110" y="130" width="20" height="10" rx="5" fill="#3d3d3d" />
+    <rect x="140" y="125" width="20" height="10" rx="5" fill="#3d3d3d" />
+    <rect x="170" y="130" width="20" height="10" rx="5" fill="#3d3d3d" />
+    
+    <!-- Cannons -->
+    <g id="left-cannon">
+      <rect x="100" y="125" width="25" height="15" rx="5" fill="#3d3d3d" />
+      <rect x="75" y="125" width="25" height="15" rx="5" fill="#5c5c5c" />
+    </g>
+    <g id="right-cannon">
+      <rect x="175" y="125" width="25" height="15" rx="5" fill="#3d3d3d" />
+      <rect x="200" y="125" width="25" height="15" rx="5" fill="#5c5c5c" />
+    </g>
+    
+    <!-- Head -->
+    <circle cx="150" cy="90" r="35" fill="#527fa8" />
+    
+    <!-- Eyes -->
+    <circle cx="135" cy="85" r="8" fill="white" />
+    <circle cx="165" cy="85" r="8" fill="white" />
+    <circle cx="135" cy="85" r="4" fill="black" />
+    <circle cx="165" cy="85" r="4" fill="black" />
+    <ellipse cx="137" cy="83" rx="2" ry="2" fill="white" />
+    <ellipse cx="167" cy="83" rx="2" ry="2" fill="white" />
+    
+    <!-- Mouth -->
+    <path d="M145 100 Q150 105 155 100" stroke="black" fill="none" stroke-width="2" />
+    
+    <!-- Arms -->
+    <g id="left-arm">
+      <path d="M90 160 Q70 165 60 180" stroke="#527fa8" fill="#527fa8" stroke-width="20" stroke-linecap="round" />
+    </g>
+    <g id="right-arm">
+      <path d="M210 160 Q230 165 240 180" stroke="#527fa8" fill="#527fa8" stroke-width="20" stroke-linecap="round" />
+    </g>
+    
+    <!-- Legs -->
+    <g id="left-leg">
+      <path d="M120 220 Q115 240 110 250" stroke="#527fa8" fill="#527fa8" stroke-width="20" stroke-linecap="round" />
+    </g>
+    <g id="right-leg">
+      <path d="M180 220 Q185 240 190 250" stroke="#527fa8" fill="#527fa8" stroke-width="20" stroke-linecap="round" />
+    </g>
+  </g>
+  
+  <!-- Animations -->
+  <style>
+    @keyframes floatBody {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    @keyframes blinkEyes {
+      0%, 95%, 100% { transform: scaleY(1); }
+      97% { transform: scaleY(0.1); }
+    }
+    @keyframes moveCannons {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-3deg); }
+    }
+    @keyframes moveArms {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-5deg); }
+    }
+    @keyframes moveLegs {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-2px); }
+    }
+    
+    #blastoise {
+      animation: floatBody 4s ease-in-out infinite;
+    }
+    #blastoise circle:nth-child(15),
+    #blastoise circle:nth-child(16) {
+      animation: blinkEyes 5s infinite;
+      transform-origin: center;
+    }
+    #left-cannon {
+      animation: moveCannons 3s ease-in-out infinite;
+      transform-origin: 125px 125px;
+    }
+    #right-cannon {
+      animation: moveCannons 3s ease-in-out infinite alternate;
+      transform-origin: 175px 125px;
+    }
+    #left-arm {
+      animation: moveArms 4s ease-in-out infinite;
+      transform-origin: 90px 160px;
+    }
+    #right-arm {
+      animation: moveArms 4s ease-in-out infinite alternate;
+      transform-origin: 210px 160px;
+    }
+    #left-leg {
+      animation: moveLegs 4s ease-in-out infinite;
+    }
+    #right-leg {
+      animation: moveLegs 4s ease-in-out infinite alternate;
+    }
+  </style>
+</svg>

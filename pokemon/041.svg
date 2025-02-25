@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    .body {
+      animation: float 3s infinite ease-in-out;
+    }
+    .wing-left {
+      animation: flapLeft 1.5s infinite ease-in-out;
+      transform-origin: 100px 130px;
+    }
+    .wing-right {
+      animation: flapRight 1.5s infinite ease-in-out;
+      transform-origin: 300px 130px;
+    }
+    .ear-left, .ear-right {
+      animation: earTwitch 4s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes flapLeft {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-15deg); }
+    }
+    @keyframes flapRight {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+    }
+    @keyframes earTwitch {
+      0%, 40%, 60%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-5deg); }
+    }
+  </style>
+  
+  <!-- Body Group -->
+  <g class="body">
+    <!-- Main Body -->
+    <ellipse cx="200" cy="140" rx="45" ry="65" fill="#5e92c2"/>
+    
+    <!-- Mouth -->
+    <path d="M200 155 C190 165, 210 165, 200 155" fill="none" stroke="black" stroke-width="1"/>
+    
+    <!-- Legs/Arms -->
+    <line x1="190" y1="190" x2="180" y2="230" stroke="#5e92c2" stroke-width="5" stroke-linecap="round"/>
+    <line x1="210" y1="190" x2="220" y2="230" stroke="#5e92c2" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Ears -->
+    <path class="ear-left" d="M170 110 C150 90, 145 80, 160 105" fill="#5e92c2" stroke="#333" stroke-width="1"/>
+    <path class="ear-right" d="M230 110 C250 90, 255 80, 240 105" fill="#5e92c2" stroke="#333" stroke-width="1"/>
+  </g>
+  
+  <!-- Wings -->
+  <path class="wing-left" d="M190 130 C120 130, 60 80, 40 160 C60 170, 100 190, 175 170" fill="#ad6bac" stroke="#333" stroke-width="1"/>
+  <path class="wing-right" d="M210 130 C280 130, 340 80, 360 160 C340 170, 300 190, 225 170" fill="#ad6bac" stroke="#333" stroke-width="1"/>
+</svg>

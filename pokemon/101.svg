@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <!-- Electrode/Marumine -->
+  <defs>
+    <radialGradient id="body-gradient-white" cx="50%" cy="50%" r="50%" fx="35%" fy="35%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="90%" stop-color="#eeeeee" />
+      <stop offset="100%" stop-color="#dddddd" />
+    </radialGradient>
+    <radialGradient id="body-gradient-red" cx="50%" cy="50%" r="50%" fx="35%" fy="35%">
+      <stop offset="0%" stop-color="#ff9999" />
+      <stop offset="80%" stop-color="#e54747" />
+      <stop offset="100%" stop-color="#cc3333" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main body -->
+  <g id="electrode" filter="url(#shadow)">
+    <!-- Upper half (white) -->
+    <path d="M 30,100 A 70,70 0 0 1 170,100 A 70,70 0 0 1 30,100 Z" fill="url(#body-gradient-white)" />
+    
+    <!-- Lower half (red) -->
+    <path d="M 30,100 A 70,70 0 0 0 170,100 A 70,70 0 0 0 30,100 Z" fill="url(#body-gradient-red)" />
+    
+    <!-- Outline -->
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#000000" stroke-width="2.5" />
+    
+    <!-- Horizontal dividing line -->
+    <line x1="30" y1="100" x2="170" y2="100" stroke="#000000" stroke-width="2.5" />
+    
+    <!-- Eyes -->
+    <g id="eyes">
+      <path d="M 65,70 L 85,90 M 65,90 L 85,70" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      <path d="M 115,70 L 135,90 M 115,90 L 135,70" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+    </g>
+    
+    <!-- Mouth -->
+    <g id="mouth">
+      <path d="M 70,125 C 85,140 115,140 130,125" stroke="#000000" stroke-width="3" fill="none" />
+      <path d="M 85,125 L 95,125 M 105,125 L 115,125" stroke="#000000" stroke-width="3" />
+    </g>
+    
+    <!-- Highlight spot -->
+    <ellipse cx="70" cy="55" rx="15" ry="10" fill="#ffffff" fill-opacity="0.7" />
+  </g>
+
+  <!-- Animation for slight rotation -->
+  <animateTransform
+    xlink:href="#electrode"
+    attributeName="transform"
+    type="rotate"
+    values="0 100 100; 5 100 100; 0 100 100; -5 100 100; 0 100 100"
+    dur="4s"
+    repeatCount="indefinite"
+  />
+  
+  <!-- Animation for mouth -->
+  <animateTransform
+    xlink:href="#mouth"
+    attributeName="transform"
+    type="translate"
+    values="0 0; 0 -2; 0 0; 0 -2; 0 0"
+    dur="2s"
+    repeatCount="indefinite"
+  />
+  
+  <!-- Animation for eyes -->
+  <animateTransform
+    xlink:href="#eyes"
+    attributeName="transform"
+    type="scale"
+    values="1 1; 1.1 0.9; 1 1"
+    dur="3s"
+    repeatCount="indefinite"
+    additive="sum"
+  />
+</svg>

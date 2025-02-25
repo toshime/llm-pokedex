@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      @keyframes fly {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(0, -20px); }
+      }
+      @keyframes wingFlap {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(-15deg); }
+      }
+      @keyframes tailWag {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(5deg); }
+      }
+      @keyframes mouthOpen {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(1.2); }
+      }
+      .body {
+        animation: fly 3s ease-in-out infinite;
+      }
+      .leftWing {
+        animation: wingFlap 1.5s ease-in-out infinite;
+        transform-origin: 180px 180px;
+      }
+      .rightWing {
+        animation: wingFlap 1.5s ease-in-out infinite;
+        transform-origin: 320px 180px;
+      }
+      .tail {
+        animation: tailWag 2s ease-in-out infinite;
+        transform-origin: 250px 240px;
+      }
+      .jaw {
+        animation: mouthOpen 2s ease-in-out infinite;
+        transform-origin: 250px 170px;
+      }
+    </style>
+  </defs>
+
+  <!-- Body -->
+  <g class="body">
+    <!-- Main body -->
+    <path d="M250 180 C290 170, 310 210, 300 240 C290 270, 260 280, 240 280 C220 280, 190 270, 180 240 C170 210, 210 170, 250 180 Z" fill="#a8a8c0" />
+    
+    <!-- Head -->
+    <path d="M250 160 C270 140, 290 150, 280 170 C270 190, 230 190, 220 170 C210 150, 230 140, 250 160 Z" fill="#a8a8c0" />
+    
+    <!-- Neck -->
+    <path d="M240 170 C245 175, 255 175, 260 170 L260 180 C255 185, 245 185, 240 180 Z" fill="#a8a8c0" />
+    
+    <!-- Left Wing -->
+    <g class="leftWing">
+      <path d="M180 180 C140 160, 100 140, 80 180 C70 200, 90 220, 120 210 C150 200, 170 190, 180 180 Z" fill="#a371b9" />
+    </g>
+    
+    <!-- Right Wing -->
+    <g class="rightWing">
+      <path d="M320 180 C360 160, 400 140, 420 180 C430 200, 410 220, 380 210 C350 200, 330 190, 320 180 Z" fill="#a371b9" />
+    </g>
+    
+    <!-- Jaw -->
+    <g class="jaw">
+      <path d="M220 170 C235 190, 265 190, 280 170 L280 190 C265 210, 235 210, 220 190 Z" fill="#a8a8c0" />
+      <path d="M225 190 C240 200, 260 200, 275 190 C270 195, 260 205, 250 205 C240 205, 230 195, 225 190 Z" fill="#f8f8f8" />
+    </g>
+    
+    <!-- Eyes -->
+    <ellipse cx="235" cy="160" rx="5" ry="7" fill="#ffffff" />
+    <ellipse cx="265" cy="160" rx="5" ry="7" fill="#ffffff" />
+    <ellipse cx="235" cy="160" rx="2" ry="3" fill="#000000" />
+    <ellipse cx="265" cy="160" rx="2" ry="3" fill="#000000" />
+    
+    <!-- Tail -->
+    <g class="tail">
+      <path d="M250 280 C240 300, 230 320, 220 340 C210 360, 250 360, 260 340 C270 330, 260 310, 250 280 Z" fill="#a8a8c0" />
+      <path d="M260 340 C270 350, 280 360, 290 380 L295 390 L280 370 C270 350, 265 345, 260 340 Z" fill="#a8a8c0" />
+    </g>
+    
+    <!-- Feet -->
+    <path d="M230 280 C225 290, 220 300, 225 305 C230 310, 240 305, 240 300 L240 280 Z" fill="#a8a8c0" />
+    <path d="M270 280 C275 290, 280 300, 275 305 C270 310, 260 305, 260 300 L260 280 Z" fill="#a8a8c0" />
+  </g>
+</svg>

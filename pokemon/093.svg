@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Haunter Body -->
+  <g id="haunter">
+    <!-- Main body/head -->
+    <path id="body" d="M200 250c-45 0-85-30-85-75 0-45 40-75 85-75s85 30 85 75c0 45-40 75-85 75z" fill="#7D6E9B">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M200 250c-45 0-85-30-85-75 0-45 40-75 85-75s85 30 85 75c0 45-40 75-85 75z;
+                M200 260c-50 0-90-35-90-85 0-50 40-80 90-80s90 30 90 80c0 50-40 85-90 85z;
+                M200 250c-45 0-85-30-85-75 0-45 40-75 85-75s85 30 85 75c0 45-40 75-85 75z"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Spikes on head -->
+    <path id="spikes" d="M150 130l-25-35 M190 120l-5-45 M210 120l5-45 M250 130l25-35" stroke="#7D6E9B" stroke-width="15" stroke-linecap="round" fill="none">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M150 130l-25-35 M190 120l-5-45 M210 120l5-45 M250 130l25-35;
+                M150 125l-30-40 M190 115l-7-50 M210 115l7-50 M250 125l30-40;
+                M150 130l-25-35 M190 120l-5-45 M210 120l5-45 M250 130l25-35"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Hands/Claws -->
+    <g id="leftHand">
+      <path d="M100 230c-10 0-20-5-25-15-5-10-5-20 0-30 5-10 15-15 25-15 10 0 20 5 25 15" fill="#7D6E9B">
+        <animateTransform attributeName="transform" type="translate" 
+          values="0,0; -10,10; 0,0" 
+          dur="3s" repeatCount="indefinite" 
+          calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"/>
+      </path>
+      <!-- Claws -->
+      <path d="M85 200l-15-15 M95 195l-5-20 M105 195l5-20 M115 200l15-15" stroke="#7D6E9B" stroke-width="5" stroke-linecap="round" fill="none">
+        <animateTransform attributeName="transform" type="translate" 
+          values="0,0; -10,10; 0,0" 
+          dur="3s" repeatCount="indefinite" 
+          calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"/>
+      </path>
+    </g>
+    
+    <g id="rightHand">
+      <path d="M300 230c10 0 20-5 25-15 5-10 5-20 0-30-5-10-15-15-25-15-10 0-20 5-25 15" fill="#7D6E9B">
+        <animateTransform attributeName="transform" type="translate" 
+          values="0,0; 10,10; 0,0" 
+          dur="2.5s" repeatCount="indefinite" 
+          calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"/>
+      </path>
+      <!-- Claws -->
+      <path d="M315 200l15-15 M305 195l5-20 M295 195l-5-20 M285 200l-15-15" stroke="#7D6E9B" stroke-width="5" stroke-linecap="round" fill="none">
+        <animateTransform attributeName="transform" type="translate" 
+          values="0,0; 10,10; 0,0" 
+          dur="2.5s" repeatCount="indefinite" 
+          calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"/>
+      </path>
+    </g>
+    
+    <!-- Mouth -->
+    <path id="mouth" d="M160 190c25 25 55 25 80 0" stroke="#333" stroke-width="3" fill="#E66D8F">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M160 190c25 25 55 25 80 0;
+                M160 200c25 30 55 30 80 0;
+                M160 190c25 25 55 25 80 0"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Teeth -->
+    <path id="teeth" d="M175 190l0 15 M200 190l0 20 M225 190l0 15" stroke="white" stroke-width="6" stroke-linecap="round">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" 
+        values="M175 190l0 15 M200 190l0 20 M225 190l0 15;
+                M175 200l0 20 M200 200l0 25 M225 200l0 20;
+                M175 190l0 15 M200 190l0 20 M225 190l0 15"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </path>
+    
+    <!-- Eyes -->
+    <circle id="leftEye" cx="175" cy="150" r="15" fill="white">
+      <animate attributeName="r" dur="5s" repeatCount="indefinite" 
+        values="15;17;15;17;15" 
+        calcMode="linear" />
+    </circle>
+    
+    <circle id="rightEye" cx="225" cy="150" r="15" fill="white">
+      <animate attributeName="r" dur="5s" repeatCount="indefinite" 
+        values="15;17;15;17;15" 
+        calcMode="linear" />
+    </circle>
+    
+    <!-- Pupils -->
+    <circle id="leftPupil" cx="175" cy="150" r="5" fill="#333">
+      <animate attributeName="cx" dur="3s" repeatCount="indefinite"
+        values="175;172;175"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </circle>
+    
+    <circle id="rightPupil" cx="225" cy="150" r="5" fill="#333">
+      <animate attributeName="cx" dur="3s" repeatCount="indefinite"
+        values="225;228;225"
+        calcMode="spline" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" />
+    </circle>
+  </g>
+</svg>

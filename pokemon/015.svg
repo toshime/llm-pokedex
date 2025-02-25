@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Beedrill Animation -->
+  <style>
+    @keyframes wingsFlutter {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(15deg); }
+      75% { transform: rotate(-15deg); }
+    }
+    @keyframes bodyHover {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(0, -5px); }
+    }
+    @keyframes stingerTwitch {
+      0%, 75%, 100% { transform: rotate(0deg); }
+      85% { transform: rotate(-2deg); }
+    }
+    @keyframes armWiggle {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    @keyframes antennaeWave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(5deg); }
+    }
+    
+    .beedrill-leftwing { 
+      animation: wingsFlutter 0.2s linear infinite; 
+      transform-origin: 150px 120px;
+    }
+    .beedrill-rightwing { 
+      animation: wingsFlutter 0.2s linear infinite;
+      transform-origin: 150px 120px;
+      animation-delay: 0.1s;
+    }
+    .beedrill-body { 
+      animation: bodyHover 3s ease-in-out infinite; 
+    }
+    .beedrill-stinger { 
+      animation: stingerTwitch 4s ease-in-out infinite; 
+      transform-origin: 150px 165px;
+    }
+    .beedrill-leftarm, .beedrill-rightarm { 
+      animation: armWiggle 2s ease-in-out infinite; 
+    }
+    .beedrill-leftarm {
+      transform-origin: 135px 120px;
+    }
+    .beedrill-rightarm {
+      transform-origin: 165px 120px;
+      animation-delay: 1s;
+    }
+    .beedrill-antennae {
+      animation: antennaeWave 3s ease-in-out infinite;
+      transform-origin: 150px 100px;
+    }
+  </style>
+  
+  <!-- Wings -->
+  <g class="beedrill-leftwing">
+    <path d="M150 120 L100 80 L120 140 Z" fill="rgba(255,255,255,0.7)" stroke="#6A6A6A" stroke-width="1"/>
+    <path d="M150 120 L80 100 L120 150 Z" fill="rgba(255,255,255,0.7)" stroke="#6A6A6A" stroke-width="1"/>
+  </g>
+  <g class="beedrill-rightwing">
+    <path d="M150 120 L200 80 L180 140 Z" fill="rgba(255,255,255,0.7)" stroke="#6A6A6A" stroke-width="1"/>
+    <path d="M150 120 L220 100 L180 150 Z" fill="rgba(255,255,255,0.7)" stroke="#6A6A6A" stroke-width="1"/>
+  </g>
+  
+  <!-- Body -->
+  <g class="beedrill-body">
+    <!-- Head -->
+    <circle cx="150" cy="100" r="20" fill="#FFCC00"/>
+    <g class="beedrill-antennae">
+      <path d="M140 85 L130 65" stroke="black" stroke-width="2" fill="none"/>
+      <path d="M160 85 L170 65" stroke="black" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Eyes -->
+    <ellipse cx="140" cy="95" rx="5" ry="7" fill="#FF0000"/>
+    <ellipse cx="160" cy="95" rx="5" ry="7" fill="#FF0000"/>
+    
+    <!-- Thorax -->
+    <ellipse cx="150" cy="135" rx="15" ry="25" fill="#FFCC00"/>
+    <path d="M135 135 L165 135" stroke="black" stroke-width="1.5" fill="none"/>
+    <path d="M135 145 L165 145" stroke="black" stroke-width="1.5" fill="none"/>
+    <path d="M135 155 L165 155" stroke="black" stroke-width="1.5" fill="none"/>
+    
+    <!-- Abdomen -->
+    <path d="M150 165 L150 205" stroke="#FFCC00" stroke-width="30" stroke-linecap="round"/>
+    <path d="M138 175 L162 175" stroke="black" stroke-width="1.5" fill="none"/>
+    <path d="M138 185 L162 185" stroke="black" stroke-width="1.5" fill="none"/>
+    <path d="M138 195 L162 195" stroke="black" stroke-width="1.5" fill="none"/>
+    
+    <!-- Legs -->
+    <path d="M145 145 L130 170" stroke="black" stroke-width="2" fill="none"/>
+    <path d="M155 145 L170 170" stroke="black" stroke-width="2" fill="none"/>
+    <path d="M145 155 L125 185" stroke="black" stroke-width="2" fill="none"/>
+    <path d="M155 155 L175 185" stroke="black" stroke-width="2" fill="none"/>
+    
+    <!-- Stinger -->
+    <g class="beedrill-stinger">
+      <path d="M150 205 L150 235" stroke="#FFCC00" stroke-width="5" fill="none"/>
+      <path d="M150 235 L140 245 L150 240 L160 245 Z" fill="#FFCC00"/>
+    </g>
+    
+    <!-- Arms with stingers -->
+    <g class="beedrill-leftarm">
+      <path d="M135 120 L100 120" stroke="#FFCC00" stroke-width="6" fill="none"/>
+      <path d="M100 120 L80 110 L70 125 L90 130 Z" fill="#FFFFFF" stroke="#6A6A6A" stroke-width="1"/>
+    </g>
+    <g class="beedrill-rightarm">
+      <path d="M165 120 L200 120" stroke="#FFCC00" stroke-width="6" fill="none"/>
+      <path d="M200 120 L220 110 L230 125 L210 130 Z" fill="#FFFFFF" stroke="#6A6A6A" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

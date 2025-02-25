@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="50%" r="60%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#AC87BF" />
+      <stop offset="80%" stop-color="#805B90" />
+    </radialGradient>
+    <radialGradient id="highlightGradient" cx="50%" cy="50%" r="60%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#BFA0CF" />
+      <stop offset="80%" stop-color="#9C77AD" />
+    </radialGradient>
+  </defs>
+
+  <!-- Main body - larger and more spread out than Grimer -->
+  <g class="body">
+    <path d="M80,220 C40,280 70,320 200,330 C330,320 360,280 320,220 C300,180 250,170 200,170 C150,170 100,180 80,220 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite" values="
+        M80,220 C40,280 70,320 200,330 C330,320 360,280 320,220 C300,180 250,170 200,170 C150,170 100,180 80,220 Z;
+        M90,230 C50,290 80,330 200,340 C320,330 350,290 310,230 C290,190 250,180 200,180 C150,180 110,190 90,230 Z;
+        M80,220 C40,280 70,320 200,330 C330,320 360,280 320,220 C300,180 250,170 200,170 C150,170 100,180 80,220 Z
+      "/>
+    </path>
+  </g>
+
+  <!-- Left arm/protrusion -->
+  <g class="leftArm">
+    <path d="M120,230 C100,250 60,260 40,240 C20,220 30,190 60,180 C90,170 140,210 120,230 Z" fill="url(#bodyGradient)">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" values="
+        M120,230 C100,250 60,260 40,240 C20,220 30,190 60,180 C90,170 140,210 120,230 Z;
+        M120,235 C100,255 55,265 35,245 C15,225 25,185 55,175 C85,165 140,215 120,235 Z;
+        M120,230 C100,250 60,260 40,240 C20,220 30,190 60,180 C90,170 140,210 120,230 Z
+      "/>
+    </path>
+  </g>
+
+  <!-- Face - larger and more menacing than Grimer -->
+  <g class="face">
+    <!-- Mouth - wider, more open -->
+    <path d="M150,220 C180,270 220,270 250,220" stroke="#333" stroke-width="8" fill="none">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" values="
+        M150,220 C180,270 220,270 250,220;
+        M150,230 C180,280 220,280 250,230;
+        M150,220 C180,270 220,270 250,220
+      "/>
+    </path>
+    
+    <!-- Left eye -->
+    <ellipse cx="160" cy="190" rx="20" ry="25" fill="white">
+      <animate attributeName="ry" dur="5s" repeatCount="indefinite" values="25;23;25"/>
+    </ellipse>
+    <ellipse cx="160" cy="190" rx="12" ry="16" fill="black">
+      <animate attributeName="cy" dur="5s" repeatCount="indefinite" values="190;192;190"/>
+    </ellipse>
+    
+    <!-- Right eye -->
+    <ellipse cx="240" cy="190" rx="20" ry="25" fill="white">
+      <animate attributeName="ry" dur="5s" repeatCount="indefinite" values="25;23;25"/>
+    </ellipse>
+    <ellipse cx="240" cy="190" rx="12" ry="16" fill="black">
+      <animate attributeName="cy" dur="5s" repeatCount="indefinite" values="190;192;190"/>
+    </ellipse>
+  </g>
+
+  <!-- Additional body details - lumps and highlights -->
+  <g class="bodyDetails">
+    <!-- Body lumps -->
+    <path d="M130,250 C115,265 125,290 150,285 C175,280 170,250 150,240 C140,235 140,240 130,250 Z" fill="url(#highlightGradient)">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite" values="
+        M130,250 C115,265 125,290 150,285 C175,280 170,250 150,240 C140,235 140,240 130,250 Z;
+        M135,255 C120,270 130,295 155,290 C180,285 175,255 155,245 C145,240 145,245 135,255 Z;
+        M130,250 C115,265 125,290 150,285 C175,280 170,250 150,240 C140,235 140,240 130,250 Z
+      "/>
+    </path>
+    
+    <path d="M250,260 C235,275 245,300 270,295 C295,290 290,260 270,250 C260,245 260,250 250,260 Z" fill="url(#highlightGradient)">
+      <animate attributeName="d" dur="3.5s" repeatCount="indefinite" values="
+        M250,260 C235,275 245,300 270,295 C295,290 290,260 270,250 C260,245 260,250 250,260 Z;
+        M255,265 C240,280 250,305 275,300 C300,295 295,265 275,255 C265,250 265,255 255,265 Z;
+        M250,260 C235,275 245,300 270,295 C295,290 290,260 270,250 C260,245 260,250 250,260 Z
+      "/>
+    </path>
+  </g>
+
+  <!-- Bubbles/Sludge effects -->
+  <g class="bubbles">
+    <circle cx="120" cy="290" r="15" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="4s" repeatCount="indefinite" values="290;285;290"/>
+    </circle>
+    <circle cx="280" cy="280" r="14" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="3.5s" repeatCount="indefinite" values="280;275;280"/>
+    </circle>
+    <circle cx="200" cy="300" r="12" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="3s" repeatCount="indefinite" values="300;295;300"/>
+    </circle>
+    <circle cx="160" cy="270" r="10" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="3.2s" repeatCount="indefinite" values="270;265;270"/>
+    </circle>
+    <circle cx="240" cy="295" r="13" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="3.7s" repeatCount="indefinite" values="295;290;295"/>
+    </circle>
+    <circle cx="100" cy="260" r="11" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="2.8s" repeatCount="indefinite" values="260;255;260"/>
+    </circle>
+    <circle cx="300" cy="265" r="12" fill="#8F6AA0" opacity="0.7">
+      <animate attributeName="cy" dur="3.3s" repeatCount="indefinite" values="265;260;265"/>
+    </circle>
+  </g>
+</svg>
